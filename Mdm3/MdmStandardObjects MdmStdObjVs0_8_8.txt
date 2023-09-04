@@ -1,0 +1,25 @@
+        #region MdmStandardObjects
+        // <Section Summary>
+        // <Section Role="Declarations">
+        // <Section Id = "MdmStandardObjects">
+        // <Section Vs="MdmStdObjVs0_8_8">
+		// MdmStandardObjects MdmStdObjVs0_8_8
+        // <Area Id = "MdmImportTld">
+        // <Area Id = "omhLocalHandlerControl">
+        private Mhandler1 omhLocalHandler;
+        // <Area Id = "MdmStdObject">
+        private Mobject1 omoLocalMob;
+        // <Area Id = "MdmImportTld">
+        private MimportTld1 omcomaMdmAction;
+        // <Area Id = "ConsoleObjects">
+        public TextWriter ocotConsoleWriter;
+        // public TextWriter ocotStandardOutput;
+        public TextReader ocitConsoleReader;
+        public StreamWriter ocoConsoleWriter;
+        // public StreamWriter ocoStandardOutput;
+        public StreamReader ociConsoleReader;
+        // public StreamWriter oceErrorWriter;
+        public IOException oceConsoleException;
+        public TextWriter oceErrorWriter;
+        //
+        #endregion

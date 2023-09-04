@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2C73982E-0566-475D-9F0F-50E1F0B465F5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mdm.Oss.Decl</RootNamespace>
+    <AssemblyName>Mdm1Oss1Decl1</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <NoWarn>CS0162, CS0168, CS0169, CS0219, CS0414, CS0649, CS1572, CS1587, CS1591, IDE1006, IDE1051, IDE1059;</NoWarn>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CalculationTask\CalculationTaskDef.cs" />
+    <Compile Include="CalculationTask\CalculationTaskInterface.cs" />
+    <Compile Include="Components\CharsConst.cs" />
+    <Compile Include="Components\mCalendarControl.cs" />
+    <Compile Include="Components\mComponents.cs" />
+    <Compile Include="Components\mDropDownControlClass1.cs" />
+    <Compile Include="Components\DbPickDict.cs" />
+    <Compile Include="Components\StdDictionary.cs" />
+    <Compile Include="Components\StdNotifyDef.cs" />
+    <Compile Include="Components\StdNotifyIconDef.cs" />
+    <Compile Include="Introspection\ApplicationIntrospection.cs" />
+    <Compile Include="Introspection\Win32Windows.cs" />
+    <Compile Include="Meta\ClassFeatures.cs" />
+    <Compile Include="Meta\iClassFeatures.cs" />
+    <Compile Include="State\RunControlUi.cs" />
+    <Compile Include="Std\iStdBaseForm.cs" />
+    <Compile Include="Console\iTrace.cs" />
+    <Compile Include="Console\StdBaseRunConsoleControl.cs" />
+    <Compile Include="mFileType\FileTypeDef.cs" />
+    <Compile Include="Console\mConsoleTask.cs" />
+    <Compile Include="Std\StdBaseDef.cs" />
+    <Compile Include="Std\StdFormEvents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Std\StdFormDef.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Std\StdDef.cs" />
+    <Compile Include="Std\StdBaseRunDef.cs" />
+    <Compile Include="Std\StdBaseRunFileDef.cs" />
+    <Compile Include="State\FileControl.cs" />
+    <Compile Include="Components\mMessageDetails.cs" />
+    <Compile Include="Components\MickString1.cs" />
+    <Compile Include="Introspection\mObjectIntrospection.cs" />
+    <Compile Include="Std\StdBasePickSyntaxDef.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReadMe.cs" />
+    <Compile Include="State\RunControl.cs" />
+    <Compile Include="State\State.cs" />
+    <Compile Include="Std\StdEnums.cs" />
+    <Compile Include="Components\StdMessage.cs" />
+    <Compile Include="Std\StdResult.cs" />
+    <Compile Include="Std\StdThread.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="zDeclRemoved.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="IWshRuntimeLibrary">
+      <Guid>{F935DC20-1CF0-11D0-ADB9-00C04FD58A0B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Shell32">
+      <Guid>{50A7E9B0-70EF-11D1-B75A-00A0C90564FE}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

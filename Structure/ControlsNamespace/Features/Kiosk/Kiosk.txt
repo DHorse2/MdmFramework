@@ -1,0 +1,30 @@
+WPF Kiosk
+To create a WPF kiosk, the application should be set to fill the entire screen and prevent the user from minimizing or otherwise interacting with any other part of the system.
+To force the application’s main window into a maximized, borderless form, the following XAML can be used:
+
+<Window x:Class="TestWPF.Window1"
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="Kiosk"
+WindowStyle="None" 
+WindowState="Maximized" 
+Topmost="True"
+> 
+<!-- Add Window Content -->
+</Window>
+
+
+Additionally, the developers could trap certain key-strokes to prevent users from circumventing the application and accessing other system resources.
+
+
+Silverlight Kiosk
+Kiosks in Silverlight act slightly differently, because Silverlight applications cannot set the full-screen mode during instantiation or in the page’s Loaded event handler. Instead, full –screen mode can only be entered upon response of a user-initiated event such as a key-press.
+
+The following code will switch from full-screen to normal mode when the user presses the Escape key (assuming the handler is attached to the page’s KeyDown event):
+
+C# void Page_KeyDown(object sender, KeyEventArgs e) { if (e.Key == Key.Escape) App.Current.Host.Content.IsFullScreen = !App.Current.Host.Content.IsFullScreen; }
+
+VISUAL BASIC Private Sub Page_KeyDown(ByVal sender As Object, ByVal e As KeyEventArgs) If e.Key = Key.Escape Then App.Current.Host.Content.IsFullScreen = _ Not App.Current.Host.Content.IsFullScreen End If End Sub
+
+Note, full-screen mode for Silverlight only forces the Silverlight application into full screen; any surrounding HTML is lost in full-screen mode.
+In addition, Silverlight also limits keyboard entry to the following keys: ESCAPE, UP, DOWN, LEFT, RIGHT, PAGE UP, PAGE DOWN, HOME, END, SPACEBAR, TAB, and ENTER. This limitation is by design so that a malicious web site is prevented from mimicking the system’s operating system to trick the user.
+

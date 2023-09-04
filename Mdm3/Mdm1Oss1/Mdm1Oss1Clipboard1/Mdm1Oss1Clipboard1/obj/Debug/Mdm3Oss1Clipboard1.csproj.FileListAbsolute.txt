@@ -1,0 +1,115 @@
+C:\Srt Project1\Mdm\Mdm3\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\obj\Debug\Mdm3Oss1Clipboard1.csprojResolveAssemblyReference.cache
+C:\Srt Project1\Mdm\Mdm3\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Mdm1Oss1Clipboard1.exe.config
+C:\Srt Project1\Mdm\Mdm3\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Mdm1Oss1Clipboard1.exe
+C:\Srt Project1\Mdm\Mdm3\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Mdm1Oss1Clipboard1.pdb
+C:\Srt Project1\Mdm\Mdm3\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Mdm1Oss1Decl1.dll
+C:\Srt Project1\Mdm\Mdm3\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Mdm1Oss1DefBase1.dll
+C:\Srt Project1\Mdm\Mdm3\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Mdm1Oss1File1.dll
+C:\Srt Project1\Mdm\Mdm3\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Mdm1Oss1Mobject1.dll
+C:\Srt Project1\Mdm\Mdm3\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Mdm1Oss1Shell1Base1.dll
+C:\Srt Project1\Mdm\Mdm3\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Mdm1Pick1Syntax1.dll
+C:\Srt Project1\Mdm\Mdm3\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Mdm1Srt1Transform1.exe
+C:\Srt Project1\Mdm\Mdm3\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Mdm2World1Base1.dll
+C:\Srt Project1\Mdm\Mdm3\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Mdm2World1User1.exe
+C:\Srt Project1\Mdm\Mdm3\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Interop.Shell32.dll
+C:\Srt Project1\Mdm\Mdm3\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Interop.IWshRuntimeLibrary.dll
+C:\Srt Project1\Mdm\Mdm3\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Mdm1Pick1Syntax1.pdb
+C:\Srt Project1\Mdm\Mdm3\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Mdm1Srt1Transform1.pdb
+C:\Srt Project1\Mdm\Mdm3\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Mdm2World1Base1.pdb
+C:\Srt Project1\Mdm\Mdm3\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Mdm2World1User1.pdb
+C:\Srt Project1\Mdm\Mdm3\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Mdm1Oss1Decl1.pdb
+C:\Srt Project1\Mdm\Mdm3\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Mdm1Oss1DefBase1.pdb
+C:\Srt Project1\Mdm\Mdm3\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Mdm1Oss1File1.pdb
+C:\Srt Project1\Mdm\Mdm3\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Mdm1Oss1File1.xml
+C:\Srt Project1\Mdm\Mdm3\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Mdm1Oss1Mobject1.pdb
+C:\Srt Project1\Mdm\Mdm3\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Mdm1Oss1Shell1Base1.pdb
+C:\Srt Project1\Mdm\Mdm3\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\obj\Debug\Interop.Shell32.dll
+C:\Srt Project1\Mdm\Mdm3\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\obj\Debug\Mdm3Oss1Clipboard1.csproj.ResolveComReference.cache
+C:\Srt Project1\Mdm\Mdm3\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\obj\Debug\Mdm.Oss.ClipUtil.ClipMetaDef.resources
+C:\Srt Project1\Mdm\Mdm3\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\obj\Debug\Mdm3Oss1Clipboard1.csproj.GenerateResource.Cache
+C:\Srt Project1\Mdm\Mdm3\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\obj\Debug\Mdm1Oss1Clipboard1.exe
+C:\Srt Project1\Mdm\Mdm3\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\obj\Debug\Mdm1Oss1Clipboard1.pdb
+F:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\obj\Debug\Mdm3Oss1Clipboard1.csprojAssemblyReference.cache
+F:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\obj\Debug\Mdm3Oss1Clipboard1.csproj.GenerateResource.cache
+F:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Mdm1Oss1Clipboard1.exe.config
+F:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Mdm1Oss1Clipboard1.exe
+F:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Mdm1Oss1Clipboard1.pdb
+F:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Interop.IWshRuntimeLibrary.dll
+F:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Interop.Shell32.dll
+F:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Mdm1Oss1Decl1.dll
+F:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Mdm1Oss1DefBase1.dll
+F:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Mdm1Oss1File1.dll
+F:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Mdm1Oss1Mobject1.dll
+F:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Mdm1Oss1Shell1Base1.dll
+F:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Mdm1Pick1Syntax1.dll
+F:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Mdm1Srt1Transform1.exe
+F:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Mdm2World1Base1.dll
+F:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Mdm2World1User1.exe
+F:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Mdm3Oss1Core1.dll
+F:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Pick1Db1.dll
+F:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Mdm1Pick1Syntax1.pdb
+F:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Pick1Db1.pdb
+F:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Mdm1Srt1Transform1.pdb
+F:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Mdm1Srt1Transform1.exe.config
+F:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Mdm3Oss1Core1.pdb
+F:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Mdm2World1Base1.pdb
+F:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Mdm2World1User1.pdb
+F:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Mdm1Oss1Decl1.pdb
+F:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Mdm1Oss1DefBase1.pdb
+F:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Mdm1Oss1File1.pdb
+F:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Mdm1Oss1File1.xml
+F:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Mdm1Oss1File1.dll.config
+F:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Mdm1Oss1Mobject1.pdb
+F:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Mdm1Oss1Shell1Base1.pdb
+F:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\obj\Debug\Mdm.Oss.ClipUtil.ClipFormMain.resources
+F:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\obj\Debug\Mdm3Oss1Clipboard1.csproj.CoreCompileInputs.cache
+F:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\obj\Debug\Mdm3Oss1Clipboard1.csproj.CopyComplete
+F:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\obj\Debug\Mdm1Oss1Clipboard1.exe
+F:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\obj\Debug\Mdm1Oss1Clipboard1.pdb
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\obj\Debug\Mdm3Oss1Clipboard1.csprojAssemblyReference.cache
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\obj\Debug\Mdm.Oss.ClipUtil.ClipFormMain.resources
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\obj\Debug\Mdm3Oss1Clipboard1.csproj.GenerateResource.cache
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\obj\Debug\Mdm3Oss1Clipboard1.csproj.CoreCompileInputs.cache
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\obj\Debug\Mdm1Oss1Clipboard1.exe
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\obj\Debug\Mdm1Oss1Clipboard1.pdb
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Mdm1Oss1Clipboard1.exe.config
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Mdm1Oss1Clipboard1.exe
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Mdm1Oss1Clipboard1.pdb
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Interop.IWshRuntimeLibrary.dll
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Interop.Shell32.dll
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Mdm1Oss1Decl1.dll
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Mdm1Oss1DefBase1.dll
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Mdm1Oss1File1.dll
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Mdm1Oss1Mobject1.dll
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Mdm1Oss1Shell1Base1.dll
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Mdm1Pick1Syntax1.dll
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Mdm1Srt1Transform1.exe
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Mdm2World1Base1.dll
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Mdm2World1User1.exe
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Mdm3Oss1Core1.dll
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Pick1Db1.dll
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Mdm1Pick1Syntax1.pdb
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Pick1Db1.pdb
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Mdm1Srt1Transform1.pdb
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Mdm1Srt1Transform1.exe.config
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Mdm3Oss1Core1.pdb
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Mdm2World1Base1.pdb
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Mdm2World1User1.pdb
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Mdm1Oss1Decl1.pdb
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Mdm1Oss1DefBase1.pdb
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Mdm1Oss1File1.pdb
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Mdm1Oss1File1.xml
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Mdm1Oss1File1.dll.config
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Mdm1Oss1Mobject1.pdb
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Mdm1Oss1Shell1Base1.pdb
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\obj\Debug\Mdm3Oss1Clipboard1.csproj.CopyComplete
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Resource\IconError.ico
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Resource\Root.ico
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Resource\COPYRIGHTS.MD
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Resource\Console_All.ico
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Resource\Console_Database.ico
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Resource\Console_Debug.ico
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Resource\Console_Error.ico
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Resource\Console_User.ico
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Resource\AppRoot.ico
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard1\bin\Debug\Resource\Consoles.ico

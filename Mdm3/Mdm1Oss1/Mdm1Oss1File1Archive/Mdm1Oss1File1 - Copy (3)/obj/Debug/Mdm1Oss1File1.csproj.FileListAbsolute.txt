@@ -1,0 +1,51 @@
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1File1\bin\Debug\Mdm1Oss1File1.dll
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1File1\bin\Debug\Mdm1Oss1File1.pdb
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1File1\bin\Debug\Mdm1Oss1Clipboard1.exe
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1File1\bin\Debug\Mdm1Oss1Code1.exe
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1File1\bin\Debug\Mdm1Oss1Mapplication1.exe
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1File1\bin\Debug\Mdm1Oss1OssFileCreation1.exe
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1File1\bin\Debug\Mdm1Oss1OssFileCreation1.pdb
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1File1\bin\Debug\Mdm1Oss1Clipboard1.pdb
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1File1\bin\Debug\Mdm1Oss1Mapplication1.pdb
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1File1\bin\Debug\Mdm1Oss1Code1.pdb
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1File1\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1File1\obj\Debug\Mdm1Oss1File1.Properties.Resources.resources
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1File1\obj\Debug\Mdm1Oss1File1.csproj.GenerateResource.Cache
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1File1\obj\Debug\Mdm1Oss1File1.dll
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1File1\obj\Debug\Mdm1Oss1File1.pdb
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1File1\bin\Debug\Mdm1Oss1Mobject1.exe
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1File1\bin\Debug\Mdm1Oss1Support1.exe
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1File1\bin\Debug\Mdm1Oss1Support1.pdb
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1File1\bin\Debug\Mdm1Oss1Mobject1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1File1\obj\Debug\ResolveAssemblyReference.cache
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1File1\obj\Debug\Mdm.Oss.FileUtil.Properties.Resources.resources
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1File1\obj\Debug\Mdm1Oss1File1.csproj.GenerateResource.Cache
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1File1\bin\Debug\Mdm1Oss1File1.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1File1\bin\Debug\Mdm1Oss1File1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1File1\bin\Debug\Mdm1Oss1Clipboard1.exe
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1File1\bin\Debug\Mdm1Oss1Code1.exe
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1File1\bin\Debug\Mdm1Oss1Decl1.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1File1\bin\Debug\Mdm1Oss1DefBase1.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1File1\bin\Debug\Mdm1Oss1Mapplication1.exe
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1File1\bin\Debug\Mdm1Oss1Mobject1.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1File1\bin\Debug\Mdm1Oss1Support1.exe
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1File1\bin\Debug\Mdm1Pick1Syntax1.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1File1\bin\Debug\Mdm1Oss1Shell1File1.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1File1\bin\Debug\Mdm1Oss1Shell1Base1.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1File1\bin\Debug\Mdm1Oss1UrlUtil1Hist1.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1File1\bin\Debug\Mdm1Oss1UrlUtil1Form1.exe
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1File1\bin\Debug\Mdm1Oss1Decl1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1File1\bin\Debug\Mdm1Oss1Shell1File1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1File1\bin\Debug\Mdm1Pick1Syntax1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1File1\bin\Debug\Mdm1Oss1Clipboard1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1File1\bin\Debug\Mdm1Oss1Shell1Base1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1File1\bin\Debug\Mdm1Oss1Mapplication1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1File1\bin\Debug\Mdm1Oss1Code1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1File1\bin\Debug\Mdm1Oss1DefBase1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1File1\bin\Debug\Mdm1Oss1Support1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1File1\bin\Debug\Mdm1Oss1UrlUtil1Hist1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1File1\bin\Debug\Mdm1Oss1UrlUtil1Form1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1File1\bin\Debug\Mdm1Oss1Mobject1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1File1\obj\Debug\Mdm1Oss1File1.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1File1\obj\Debug\Mdm1Oss1File1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1File1\bin\Debug\Mdm1Oss1File1.dll.config

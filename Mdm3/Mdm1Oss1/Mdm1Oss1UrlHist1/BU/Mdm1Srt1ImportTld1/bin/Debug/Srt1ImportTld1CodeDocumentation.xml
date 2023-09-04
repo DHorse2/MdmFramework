@@ -1,0 +1,135 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Mdm1Srt1ImportTld1</name>
+    </assembly>
+    <members>
+        <member name="T:Mdm.Srt.ImportTld.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Mdm.Srt.ImportTld.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Mdm.Srt.ImportTld.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="T:Mdm.Srt.InputTld.MinputTldApp">
+            <summary>
+            Interaction logic for MinputTldApp.xaml
+            </summary>
+            
+            <summary>
+            MinputTldApp
+            </summary>
+        </member>
+        <member name="M:Mdm.Srt.InputTld.MinputTldApp.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:Mdm.Srt.InputTld.MinputTldApp.Main">
+            <summary>
+            Application Entry Point.
+            </summary>
+        </member>
+        <member name="T:Mdm.Srt.InputTld.MinputTldPageDetail">
+            <summary>
+            Interaction logic for MinputTldPageDetail.xaml
+            </summary>
+            <summary>
+            MinputTldPageDetail
+            </summary>
+        </member>
+        <member name="M:Mdm.Srt.InputTld.MinputTldPageDetail.OkButtonPressedGotFocus(System.Object,System.Windows.RoutedEventArgs)">
+             End of Focus Control
+        </member>
+        <member name="M:Mdm.Srt.InputTld.MinputTldPageDetail.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Mdm.Srt.InputTld.IProcesFile1">
+            <summary>
+            Mdm1 Srt1 InputTld1 OpSys Bootstrap
+            Mdm.Srt.InputTld - IProcesFile1 Interface
+            </summary>
+            
+        </member>
+        <member name="T:Mdm.Srt.InputTld.MinputTldPageMain">
+            <summary>
+            MinputTldPageMain
+            </summary>
+        </member>
+        <member name="M:Mdm.Srt.InputTld.MinputTldPageMain.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:Mdm.Srt.InputTld.MinputTldThread.#ctor(Mdm.Oss.Mobj.Mobject)">
+            Create new instance of MinputTldThread and do some setup
+        </member>
+        <member name="M:Mdm.Srt.InputTld.MinputTldThread.CallerSynchronousStartClick(System.Object,System.Windows.RoutedEventArgs)">
+            Handles click event for synchronousStart button. 
+        </member>
+        <member name="M:Mdm.Srt.InputTld.MinputTldThread.CallerAsynchronousEventsStartClick(System.Object,System.Windows.RoutedEventArgs)">
+            Handles click event for wpfAsynchronousStart button. 
+        </member>
+        <member name="M:Mdm.Srt.InputTld.MinputTldThread.CallerAsynchronousEventsCancelClick(System.Object,System.Windows.RoutedEventArgs)">
+            Handles click event for cancel button. 
+        </member>
+        <member name="M:Mdm.Srt.InputTld.MinputTldThread.CallerAsynchronousNoEventsStartClick(System.Object,System.Windows.RoutedEventArgs)">
+            Handles click event for asynchronousStart button. 
+        </member>
+        <member name="M:Mdm.Srt.InputTld.MinputTldThread.backgroundWorker_DoWork(System.Object,System.ComponentModel.DoWorkEventArgs)">
+            Runs on secondary thread. 
+        </member>
+        <member name="M:Mdm.Srt.InputTld.MinputTldThread.backgroundWorker_ProgressChanged(System.Object,System.ComponentModel.ProgressChangedEventArgs)">
+            Method is called everytime omWt.ReportProgress is called which triggers ProgressChanged event. 
+        </member>
+        <member name="M:Mdm.Srt.InputTld.MinputTldThread.backgroundWorker_RunWorkerCompleted(System.Object,System.ComponentModel.RunWorkerCompletedEventArgs)">
+            Called when DoWork has completed. 
+        </member>
+        <member name="M:Mdm.Srt.InputTld.MinputTldThread.InputTldAsynchronouMethod(System.String)">
+            Used to simulate a long running function such as database call 
+            or the iteration of many rows. 
+        </member>
+        <member name="M:Mdm.Srt.InputTld.MinputTldThread.InputTldDoMethodAsync">
+            Used to simulate a long running function such as database call 
+            or the iteration of many rows. 
+        </member>
+        <member name="M:Mdm.Srt.InputTld.MinputTldThread.InputTldDoMethodSynchronous(System.String)">
+            Used to simulate a long running function such as database call 
+            or the iteration of many rows. 
+        </member>
+        <member name="M:Mdm.Srt.InputTld.MinputTldThread.CallbackMethod(System.IAsyncResult)">
+            Called when BeginInvoke is finished running. 
+        </member>
+        <member name="M:Mdm.Srt.InputTld.MinputTldThread.CallerUpdateSendMessageToUi(System.String)">
+            THREAD TWO Setup delegate to update ui on THREAD ONE with results 
+        </member>
+        <member name="M:Mdm.Srt.InputTld.MinputTldThread.CallerUpdateSendProgressToUi(System.ComponentModel.ProgressChangedEventArgs)">
+            THREAD TWO Setup delegate to update ui on THREAD ONE with results 
+        </member>
+        <member name="M:Mdm.Srt.InputTld.MinputTldThread.CallerSendMessageToUi(System.String)">
+            Update UI from Dispatcher Thread 
+        </member>
+        <member name="M:Mdm.Srt.InputTld.MinputTldThread.CallerSendProgressToUi(System.ComponentModel.ProgressChangedEventArgs)">
+            Update UI from Dispatcher Thread 
+        </member>
+        <member name="F:Mdm.Srt.InputTld.Mcontroller.iAppCancelProcessing">
+            <summary>
+            Interaction logic for MinputTldApp.xaml
+            </summary>
+            <summary>
+            Class Standard Properties
+            </summary>
+        </member>
+    </members>
+</doc>

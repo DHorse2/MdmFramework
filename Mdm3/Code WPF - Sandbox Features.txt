@@ -1,0 +1,103 @@
+Windows Presentation Foundation
+==========================
+Windows Presentation Foundation on the Web
+Microsoft .NET Framework 3.0 Runtime Components September CTP (PDC 2005 Build)
+
+Sandbox Features
+==============
+
+General 
+Browser window 
+Site of origin access 
+Isolated Storage File IO 
+File Open dialog 
+UIAutomation providers 
+Cicero IMEs 
+Commanding 
+Tablet stylus/ink 
+
+Web Integration 
+
+IE Download Dialog 
+Top Level User Initiated Navigation 
+HTML hosted in Frame or NavigationWindow. 
+mailto: links 
+URI (cmd line) Arguments 
+ASMX Web Services 
+WBAs hosted in HTML IFrame 
+
+XPS Documents 
+
+XPS Document Viewer 
+
+ Visuals 
+2-D 
+3-D 
+Animations 
+
+Media
+
+(and cross-domain rendering) 
+
+Image 
+Audio 
+Video 
+
+Flow Documents 
+
+Pagination 
+Text flow 
+Optimal paragraph 
+Hyphenation 
+
+Text 
+
+Embedded and system fonts 
+Adobe CFF 
+Glyphs 
+
+ Editing 
+Spell checking* 
+Text Box 
+Rich Text Box 
+Plaintext and Ink clipboard 
+Programmatic cut/copy 
+User-initiated paste (for example, CTRL+V) 
+
+Controls 
+
+Buttons 
+Sliders 
+Scroll Viewers 
+Pop-up controls (bound to window limits) 
+Pop-up-based controls (for example, Menu) 
+Basic controls 
+ 
+
+some of them coming in the Beta 2 release of Windows Presentation Foundation.
+
+Not all platform features are available in the sandbox. 
+This is by design. 
+Following are examples of features not enabled in the Beta 1 Internet sandbox.
+
+General 
+Standalone windows 
+Launching of new windows 
+App-defined dialogs 
+App-launched Save Dialog 
+UIAutomation clients 
+Web Integration 
+
+Windows Communication Foundation Web services 
+General Integration 
+
+HwndHost 
+Full speech support 
+
+ Media 
+Bitmap effects 
+Editing 
+
+Rich (RTF, XAML) clipboard 
+ 
+

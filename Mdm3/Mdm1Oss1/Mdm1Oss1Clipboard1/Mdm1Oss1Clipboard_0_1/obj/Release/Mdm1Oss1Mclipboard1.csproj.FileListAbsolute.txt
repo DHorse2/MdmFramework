@@ -1,0 +1,12 @@
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Clipboard1\bin\Release\Mdm1Oss1Clipboard1.exe.config
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Clipboard1\bin\Release\Mdm1Oss1Clipboard1.exe
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Clipboard1\bin\Release\Interop.AccessibilityCplAdminLib.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Clipboard1\obj\Release\ResolveAssemblyReference.cache
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Clipboard1\obj\Release\Interop.AccessibilityCplAdminLib.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Clipboard1\obj\Release\Mdm1Oss1Mclipboard1.csproj.ResolveComReference.cache
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Clipboard1\obj\Release\Mdm1Oss1Mclipboard1.csproj.GenerateResource.Cache
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Clipboard1\obj\Release\Mdm1Oss1Clipboard1.exe
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Clipboard1\bin\Release\Mdm1Oss1Shell1Base1.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Clipboard1\bin\Release\Mdm1Oss1Shell1Base1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Clipboard1\obj\Release\Mdm.Oss.ClipboardUtil.Mclipboard1Form1.resources
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Clipboard1\obj\Release\Mdm.Oss.ClipboardUtil.Properties.Resources.resources

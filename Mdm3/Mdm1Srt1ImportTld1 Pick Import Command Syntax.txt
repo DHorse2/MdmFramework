@@ -1,0 +1,77 @@
+            #region Page2 Syntax Comments
+            // using System.Windows; 
+            // RoutedEventArgs, RoutedEventHandler, Visibility
+            // using System.Windows.Controls; 
+            // Page
+            // using System.Windows.Navigation; 
+            // ReturnEventArgs
+
+            // namespace StructuredNavigationSample
+            // {
+            // public partial class CallingPage : Page
+            // {
+            // ... bunch of stuff here (as in a sample)
+            // ... as is Page1 is the CallingPage : Page
+            //     }
+            // }
+            // 
+            // Application Logic
+            // Code: C#
+            // Set Default Values for Page 2
+            // PICK R83 PQL IMPORT DELIMITED
+            // Per Reality, Ultimate, Cosmos
+            // Per All Unix Platform Vendor
+            // Pick Systems
+            // Axion Computer Software / Systems
+            // Macroscope Design Matrix
+            // MacroDm
+            //
+            // Syntax:
+            // 
+            // R83:
+            // Import InputFile.format OutputFile.format (<option>{, <option>, <option>, <option>, ...)
+            // 
+            // DOS60:
+            // Import InputFile.format {Server}.{Database}.OutputFile {(Options {)} }
+            //
+            // 
+            // Default:
+            // 
+            // Server:
+            // localhost
+            // SystemId
+            // PublicDomain
+            // IpAddress
+            // 
+            // Database:
+            // dbo
+            // <empty>
+            // <null>
+            // dev
+            // mdm
+            // acs
+            // workgroup
+            // guest
+            // xlink
+            // xml<node>
+            //
+            #endregion
+
+
+        public static void Main()
+        {
+            Mdm1Srt1ImportTld1.App app = new Mdm1Srt1ImportTld1.App();
+            app.InitializeComponent();
+
+        }
+
+            // App.Current.MainWindow.Close();
+            // System.Windows.Forms.Application.Exit();
+            // base.
+
+
+ToCreateMissingFile
+
+OptionToCreateMissingFileCurrent
+
+sFileOptions

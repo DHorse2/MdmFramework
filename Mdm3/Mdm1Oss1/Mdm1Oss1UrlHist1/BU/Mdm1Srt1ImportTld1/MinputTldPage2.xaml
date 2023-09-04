@@ -1,0 +1,699 @@
+﻿<PageFunction
+    x:Class="Mdm.Srt.InputTld.MinputTldPageDetail"
+    x:TypeArguments="sys:String" 
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:sys="clr-namespace:System;assembly=mscorlib" 
+    ToolTip="Utility to import single or multiple items from a text file."
+    Title="Page 2 - MacroDm Tilde File Multi-Item Import Utility" 
+    HorizontalAlignment="Stretch" 
+    VerticalAlignment="Stretch" 
+    AllowDrop="True" 
+    Loaded="Page2Loaded" 
+    Name="Tld1Page2"
+    KeepAlive="True"
+      MaxHeight="1400"
+      MaxWidth="1200"
+    SizeChanged="Page2SizeChanged" Width="Auto">
+    <!-- Width="1200" -->
+    <!-- MinWidth="250" -->
+    <!-- MinHeight="150" -->
+    <!-- MaxWidth="1400" -->
+    <!-- MaxHeight="1200" -->
+    <!-- WindowHeight="300"  -->
+    <!-- WindowWidth="500" -->
+    <!-- Page x:Class="Mdm.Srt.InputTld.Page2" -->
+    <!-- PageFunction -->
+    <!-- Page TypeArguments Goes Here -->
+    <!-- x:TypeArguments="sys:String" -->
+
+    <!-- Page Content Goes Here -->
+
+    <!-- PageFunction x:Class="Mdm.Srt.InputTld.Page2"
+
+<PageFunction x:TypeArguments="T">
+  Content
+</PageFunction>
+    
+    
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="MacroDm Tilde File Import Utility" FontSize="12" ToolTip="You may use this utility to import single or multiple items from a text file." WindowTitle="MacroDm Tilde File Multi-Item Import Utility" VerticalAlignment="Top" HorizontalAlignment="Left" AllowDrop="True" Loaded="PageLoaded" Name="Tld1Page2" -->
+    
+    <ScrollViewer Name="PageScrollViewer"  
+                  HorizontalScrollBarVisibility="Auto" 
+                  VerticalScrollBarVisibility="Auto"
+                  HorizontalContentAlignment="Stretch"
+                  VerticalContentAlignment="Stretch"
+                  FontStretch="Condensed">
+            <!-- Grid Definition -->
+        <Grid Name="PageGridMain" 
+            ShowGridLines="False" 
+              Width="Auto"
+              Height="Auto"
+            ToolTip="Check off any options you want to use on this import." 
+            VerticalAlignment="Stretch" 
+            HorizontalAlignment="Stretch" 
+            AllowDrop="True"
+              ScrollViewer.CanContentScroll="True">
+                <!-- Grid Rows -->
+            <Grid.RowDefinitions>
+                <!-- Blank -->
+                <!-- Heading -->
+                <RowDefinition Height ="45" MaxHeight="55" MinHeight="30" />
+                <!-- Heading and Tabs Row 0-1 40, 30 = 70 = 70 -->
+                <!-- Text Rows Row 2-4 3x45 = 135 = 205 -->
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <!-- Text Row (Tab lines) Row 5-8 4x20 = 80 = 285 -->
+                
+                <RowDefinition Height="1" />
+                <RowDefinition Height="1" />
+                <RowDefinition Height="1" />
+                <RowDefinition Height="10" />
+                
+                <!-- Start Close Page controls Row 9 = 50 = 335 -->
+                <RowDefinition Height="40" MinHeight="30" MaxHeight="50" SharedSizeGroup="TldButtonRows" Name="gcRow8" />
+                <RowDefinition Height="*" MinHeight="45" MaxHeight="200" SharedSizeGroup="TldConsoleRows" Name="gcRow9" />
+                <RowDefinition Height="30" MinHeight="30" MaxHeight="100" SharedSizeGroup="TldConsoleRows" Name="gcRow10" />
+                <RowDefinition Height="30" MinHeight="30" MaxHeight="100" SharedSizeGroup="TldConsoleRows" Name="gcRow11" />
+                <RowDefinition Height="25" MinHeight="5" MaxHeight="35" SharedSizeGroup="TldFooterRows" Name="gcRow12" />
+            </Grid.RowDefinitions>
+            <!-- Grid Rows -->
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Name ="gcCol0" MaxWidth="150" Width="150" />
+                <ColumnDefinition Name="gcCol1"
+                                  Width="68" />
+                <ColumnDefinition Name ="gcCol2" MaxWidth="115" MinWidth="115" Width="115" />
+                <ColumnDefinition Name ="gcCol3" Width="138"/>
+                <ColumnDefinition Name ="gcCol4" MaxWidth="700" MinWidth="115" Width="*" />
+                <ColumnDefinition Name ="gcCol5"
+                                  MaxWidth="1"
+                                  MinWidth="1"
+                                  Width="1"/>
+                <ColumnDefinition Name ="gcCol6" MaxWidth="1" MinWidth="1" Width="1" />
+                <ColumnDefinition Name="gcCol7"
+                                  MaxWidth="35"
+                                  MinWidth="15"
+                                  Width="20"
+                                  SharedSizeGroup="TldBorderCols" />
+            </Grid.ColumnDefinitions>
+            <!-- Controls Area -->
+            <!-- Headings Area -->
+            <Label Name="ApplicationHeading1" Grid.ColumnSpan="6" 
+                   FontSize="16" 
+                   HorizontalContentAlignment="Center" 
+                   VerticalContentAlignment="Center" 
+                   ToolTip="Utility to import single or multiple items from a text file." 
+                   Margin="3"
+                    FontStretch="Condensed"
+                   HorizontalAlignment="Left">MacroDm Import File Processing - Output Database</Label>
+            <TabControl Name="DatabaseTabControl1" 
+                       Grid.Row="1" 
+                        Grid.RowSpan="5"
+                       Grid.Column="0" 
+                       Grid.ColumnSpan="5" 
+                        MinWidth="200"
+                        MinHeight="200"
+                        FontStretch="Condensed"
+                        Margin="10"
+                        HorizontalContentAlignment="Left">
+                <!-- Tab 1 Database Output File -->
+                <TabItem Name="OutputFile1Tab1" Margin="0">
+                    <TabItem.Header>
+                        <StackPanel Orientation="Horizontal">
+                            <Ellipse Width="10" Height="10" Fill="DarkGray"/>
+                            <TextBlock>Output File</TextBlock>
+                        </StackPanel>
+                    </TabItem.Header>
+                    <!-- Control Labels and Input Area 1 -->
+                    <StackPanel 
+                        Orientation="Vertical"  
+                        Name="OutputFile1Tab1StackPanel"
+                                >
+                        <StackPanel 
+                            Orientation="Horizontal"  
+                            Name="OutputSystemStackPanel" >
+                            <!-- System -->
+                            <Label Name="OutputSystemLabel"
+                                   Grid.Row="3"
+                                   Margin="10" 
+                                   Padding="3" 
+                                   MinHeight="25" 
+                                   MinWidth="90" 
+                                   ClipToBounds="False" 
+                                   FontSize="12"
+                                   VerticalAlignment="Center" 
+                                   VerticalContentAlignment="Center" 
+                                   HorizontalContentAlignment="Right" 
+                                   Focusable="False"
+                                   MaxWidth="90">Output System</Label>
+                            <TextBox Name="OutputSystemLine" 
+                                   Grid.Row="3" 
+                                   Margin="10" 
+                                     Padding="3" 
+                                     MinHeight="25" 
+                                     MinWidth="80" 
+                                     MaxLines="3"
+                                     MaxLength="512"
+                                     TextAlignment="Left" 
+                                     FontSize="12" 
+ToolTip="Enter the name of the system where the output database resides" 
+                                     TextWrapping="WrapWithOverflow" 
+                                     VerticalContentAlignment="Center" 
+                                     ClipToBounds="False" 
+                                     VerticalScrollBarVisibility="Auto" 
+                                     AcceptsReturn="False" 
+                                     LostKeyboardFocus="OutputSystemLineLostFocus" 
+                                     GotFocus="OutputSystemLineGotFocus"
+                                     HorizontalContentAlignment="Left" />
+                        <!-- Database -->
+                            <Label Name="OutputDatabaseLabel" 
+                                   Grid.Row="3" 
+                                   Margin="10" 
+                                   Padding="3" 
+                                     MinHeight="25" 
+                                   MinWidth="90" 
+                                   HorizontalContentAlignment="Right" 
+                                   VerticalContentAlignment="Center" 
+                                   FontSize="12" 
+                                   ClipToBounds="False" 
+                                   Focusable="False"
+                                   MaxWidth="90">Output Database</Label>
+                            <TextBox Name="OutputDatabaseLine" 
+                                   Grid.Row="3" 
+                                   Margin="10" 
+                                     FontSize="12" 
+                                   Padding="3" 
+                                     MinHeight="25" 
+                                     MinWidth="80" 
+                                     MaxLength="512" 
+                                     MaxLines="3" 
+                                     TextAlignment="Left" 
+ToolTip="Enter the output Database that the process will use.  Normal an ADO or ODBC datased found in the control panerl." 
+                                     TextWrapping="WrapWithOverflow" 
+                                     VerticalAlignment="Stretch" 
+                                     VerticalContentAlignment="Center" 
+                                     VerticalScrollBarVisibility="Auto" 
+                                     ClipToBounds="False" 
+                                     AcceptsReturn="False" 
+                                     GotFocus="OutputDatabaseLineGotFocus" 
+                                     LostFocus="OutputDatabaseLineLostFocus" 
+                                     />
+                        </StackPanel>
+                        <!-- File Group -->
+                        <StackPanel Orientation="Horizontal"  
+                                    Name="OutputFileGroupNameStackPanel">
+                            <Label Name="OutputFileGroupNameLabel" 
+                                   Grid.Row="4" 
+                                   Margin="10" 
+                                   Padding="3" 
+                                   FontSize="12" 
+                                     MinHeight="25" 
+                                   MinWidth="90" 
+                                   HorizontalContentAlignment="Right" 
+                                   VerticalAlignment="Center" 
+                                   VerticalContentAlignment="Center" 
+                                   ClipToBounds="False" 
+                                   Focusable="False" 
+                                   HorizontalAlignment="Right"
+                                   MaxWidth="90">File Group</Label>
+                            <TextBox Name="OutputFileGroupLine" 
+                                   Grid.Row="4" 
+                                   Margin="10" 
+                                   Padding="3" 
+                                   FontSize="12" 
+                                     MinHeight="25" 
+                                     MinWidth="200"
+                                     MaxLength="512" 
+                                     MaxLines="3" 
+ToolTip="Enter the output file name to use in this database." 
+                                     VerticalContentAlignment="Center" 
+                                     ForceCursor="False" 
+                                     UndoLimit="5" 
+                                     ClipToBounds="False" 
+                                     VerticalScrollBarVisibility="Auto" 
+                                     TextWrapping="WrapWithOverflow" 
+                                     GotFocus="OutputFileGroupLineGotFocus" 
+                                     LostFocus="OutputFileGroupLineLostFocus" 
+                                     HorizontalScrollBarVisibility="Auto" 
+                                     HorizontalContentAlignment="Left" 
+                                     HorizontalAlignment="Stretch"
+                                     />
+                        </StackPanel>
+                        <!-- File -->
+                        <StackPanel Orientation="Horizontal"  
+                                    Name="OutputFileStackPanel"
+                                    Grid.IsSharedSizeScope="False">
+                            <Label Name="OutputFileNameLabel" 
+                                   Grid.Row="5" 
+                                   Margin="10" 
+                                   Padding="3" 
+                                   FontSize="12" 
+                                     MinHeight="25" 
+                                   MinWidth="90" 
+                                   HorizontalContentAlignment="Right" 
+                                   VerticalAlignment="Center" 
+                                   VerticalContentAlignment="Center" 
+                                   ClipToBounds="False" 
+                                   Focusable="False"
+                                   MaxWidth="90">Output File </Label>
+                            <TextBox Name="OutputFileLine" 
+                                   Grid.Row="5" 
+                                   Margin="10" 
+                                   Padding="3" 
+                                   FontSize="12" 
+                                     MinHeight="25" 
+                                     MinWidth="200"
+                                     MaxLength="512" 
+                                     MaxLines="3" 
+ToolTip="Enter the output file name to use in this database." 
+                                     VerticalContentAlignment="Center" 
+                                     ForceCursor="False" 
+                                     UndoLimit="5" 
+                                     ClipToBounds="False" 
+                                     VerticalScrollBarVisibility="Auto" 
+                                     TextWrapping="WrapWithOverflow" 
+                                     GotFocus="OutputFileLineGotFocus" 
+                                     LostFocus="OutputFileLineLostFocus" 
+                                     HorizontalScrollBarVisibility="Auto" 
+                                     HorizontalContentAlignment="Left" />
+                        </StackPanel>
+                    </StackPanel>
+                </TabItem>
+                <!-- Tab 2 - Database Server Master -->
+                <TabItem Name="DbMasterServer1Tab2">
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <Ellipse Width="10" Height="10" Fill="DarkGray"/>
+                        <TextBlock>Master(Server)</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                    <!-- Control Labels and Input Area 1 -->
+                    <StackPanel Orientation="Vertical" Name="DbServer1Tab2StackPanel">
+                        <!-- System -->
+                        <StackPanel Orientation="Horizontal" 
+                                    Name="DbMasterOutputSystemStackPanel">
+                            <Label Name="DbMasterOutputSystemLabel" 
+                                   Grid.Row="2" 
+                                   Margin="10" 
+                                   Padding="3" 
+                                   FontSize="12" 
+                                   MinHeight="25" 
+                                   MinWidth="90" 
+                                   ClipToBounds="False" 
+                                   HorizontalContentAlignment="Right" 
+                                   VerticalContentAlignment="Center" 
+                                   VerticalAlignment="Center" 
+                                   Focusable="False" 
+                                   HorizontalAlignment="Right"
+                                   MaxWidth="90">Output System</Label>
+                            <TextBox Name="DbMasterOutputSystemLine" 
+                                    Grid.Row="2" 
+                                    Margin="10" 
+                                    Padding="3" 
+                                    FontSize="12" 
+                                    MinHeight="25" 
+                                    MinWidth="200"
+                                     MaxLength="512" 
+                                    MaxLines="3" 
+                                    TextAlignment="Left" 
+ToolTip="Enter the name of the system where the output database resides" 
+                                    TextWrapping="WrapWithOverflow" 
+                                    VerticalContentAlignment="Center" 
+                                    ClipToBounds="False" 
+                                    VerticalScrollBarVisibility="Auto" 
+                                    AcceptsReturn="False" 
+                                    LostKeyboardFocus="OutputSystemLineLostFocus" 
+                                    GotFocus="OutputSystemLineGotFocus" 
+                                     />
+                        </StackPanel>
+                        <!-- Database -->
+                        <StackPanel Orientation="Horizontal" 
+                                    Name="DbMasterOutputDatabaseStackPanel">
+                            <Label Name="DbMasterOutputDatabaseLabel" 
+                                   Grid.Row="3" 
+                                   Margin="10" 
+                                   Padding="3" 
+                                   FontSize="11" 
+                                   MinHeight="25" 
+                                   MinWidth="90" 
+                                   HorizontalContentAlignment="Right" 
+                                   VerticalContentAlignment="Center" 
+                                   ClipToBounds="False" 
+                                   Focusable="False"
+                                   MaxWidth="90">Output Database</Label>
+                            <TextBox Name="DbMasterOutputDatabaseLine" 
+                                    Grid.Row="3" 
+                                    Margin="10" 
+                                    Padding="3" 
+                                    FontSize="12" 
+                                    MinHeight="25" 
+                                    MinWidth="200"
+                                     MaxLength="512" 
+                                    MaxLines="3" 
+                                    TextAlignment="Left" 
+ToolTip="Enter the output Database that the process will use.  Normal an ADO or ODBC datased found in the control panerl." 
+                                    Grid.IsSharedSizeScope="False" 
+                                    TextWrapping="WrapWithOverflow" 
+                                    VerticalContentAlignment="Center" 
+                                    ClipToBounds="False" 
+                                    VerticalScrollBarVisibility="Auto" 
+                                    AcceptsReturn="False" 
+                                    GotFocus="OutputDatabaseLineGotFocus" 
+                                    LostFocus="OutputDatabaseLineLostFocus" 
+                                     />
+                        </StackPanel>
+                        <!-- File -->
+                        <StackPanel Orientation="Horizontal" 
+                                    Name="DbMasterOutputFileNameStackPanel">
+                            <Label Name="DbMasterOutputFileNameLabel" 
+                                   Grid.Row="4" 
+                                   Margin="10" 
+                                   Padding="3" 
+                                   FontSize="12" 
+                                   MinHeight="25" 
+                                   MinWidth="90" 
+                                   HorizontalContentAlignment="Right" 
+                                   VerticalAlignment="Center" 
+                                   VerticalContentAlignment="Center" 
+                                   ClipToBounds="False" 
+                                   Focusable="False"
+                                   MaxWidth="90">Output File</Label>
+                            <TextBox Name="DbMasterOutputFileLine" 
+                                    Grid.Row="4" 
+                                    Margin="10" 
+                                    Padding="3" 
+                                    FontSize="12" 
+                                    MinHeight="25" 
+                                    MinWidth="200"
+                                    MaxLines="3" 
+ToolTip="Enter the output file name to use in this database." 
+                                    VerticalContentAlignment="Center" 
+                                    ForceCursor="False" 
+                                    UndoLimit="5" 
+                                    ClipToBounds="False" 
+                                    VerticalScrollBarVisibility="Auto" 
+                                    TextWrapping="WrapWithOverflow" 
+                                    GotFocus="OutputFileLineGotFocus" 
+                                    LostFocus="OutputFileLineLostFocus" 
+                                    HorizontalScrollBarVisibility="Auto" 
+                                    HorizontalContentAlignment="Left" />
+                        </StackPanel>
+                    </StackPanel>
+                </TabItem>
+                <!-- Tab 3 - Database Server User -->
+                <TabItem Name="DbUser1Tab3">
+                    <TabItem.Header>
+                        <StackPanel Orientation="Horizontal">
+                            <Ellipse Width="10" Height="10" Fill="DarkGray"/>
+                            <TextBlock>User</TextBlock>
+                        </StackPanel>
+                    </TabItem.Header>
+                    <!-- Control Labels and Input Area 1 -->
+                    <StackPanel Orientation="Vertical" Name="DbUser1Tab3StackPanel">
+                        <!-- User Name -->
+                        <StackPanel Orientation="Horizontal"  
+                            Name="DbUserIdSkackPanel">
+                            <Label Name="DbUserIdLabel" 
+                                   Grid.Row="2" 
+                                   Margin="10" 
+                                   Padding="3" 
+                                   FontSize="12" 
+                                   MinHeight="25" 
+                                   MinWidth="90" 
+                                   ClipToBounds="False" 
+                                   HorizontalContentAlignment="Right" 
+                                   VerticalContentAlignment="Center" 
+                                   VerticalAlignment="Center" 
+                                   Focusable="False"
+                                   MaxWidth="90">User Name</Label>
+                            <TextBox Name="DbUserNameLine" 
+                                    Grid.Row="2" 
+                                    Margin="10" 
+                                    Padding="3" 
+                                    FontSize="12" 
+                                    MinHeight="25" 
+                                    MinWidth="200"
+                                     MaxLength="512" 
+                                    MaxLines="3" 
+                                    TextAlignment="Left" 
+ToolTip="Enter the name of the system where the output database resides" 
+                                    Grid.IsSharedSizeScope="False" 
+                                    TextWrapping="WrapWithOverflow" 
+                                    VerticalContentAlignment="Center" 
+                                    ClipToBounds="False" 
+                                    VerticalScrollBarVisibility="Auto" 
+                                    AcceptsReturn="False" 
+                                    LostKeyboardFocus="UserNameLineLostFocus" 
+                                    GotFocus="UserNameLineGotFocus" 
+                                     />
+                        </StackPanel>
+                        <!-- User Password -->
+                        <StackPanel Orientation="Horizontal"  
+                            Name="DbUserPasswordStackPanel">
+                            <Label Name="DbUserPasswordLabel" 
+                                   Grid.Row="3" 
+                                  Margin="10" 
+                                   Padding="3" 
+                                   FontSize="12" 
+                                   MinHeight="25" 
+                                   MinWidth="90" 
+                                   HorizontalContentAlignment="Right" 
+                                   VerticalContentAlignment="Center" 
+                                   ClipToBounds="False" 
+                                   Focusable="False"
+                                   MaxWidth="90">User Password</Label>
+                            <TextBox Name="DbUserPasswordLine" 
+                                    Grid.Row="3" 
+                                    Margin="10" 
+                                    Padding="3" 
+                                    FontSize="12" 
+                                    MinHeight="25" 
+                                    MinWidth="200"
+                                     MaxLength="512" 
+                                    MaxLines="3" 
+                                    TextAlignment="Left" 
+ToolTip="Enter the output Database that the process will use.  Normal an ADO or ODBC datased found in the control panerl." 
+                                    TextWrapping="WrapWithOverflow" 
+                                    Cursor="IBeam" 
+                                    VerticalAlignment="Center" 
+                                    VerticalContentAlignment="Center" 
+                                    ClipToBounds="False" 
+                                    VerticalScrollBarVisibility="Auto" 
+                                    AcceptsReturn="False" 
+                                    GotFocus="UserPasswordLineGotFocus" 
+                                    LostFocus="UserPasswordLineLostFocus" 
+                                     />
+                        </StackPanel>
+                        <!-- Password Required -->
+                        <StackPanel Orientation="Horizontal"  
+                            Name="DbUserPasswordRequiredOptionStackPanel">
+                            <Label Name="DbUserPasswordRequiredOptionLabel" 
+                                   Grid.Row="4" 
+                                   Margin="10" 
+                                   Padding="3,0,0,0" 
+                                   FontSize="12" 
+                                   MinHeight="25" 
+                                   MinWidth="90" 
+                                   HorizontalContentAlignment="Right" 
+                                   VerticalContentAlignment="Stretch" 
+                                   ClipToBounds="False" 
+                                   Focusable="False"
+                                   MaxWidth="90"
+                                   VerticalAlignment="Stretch">Passwords</Label>
+                            <CheckBox Name="DbUserPasswordRequiredOption" 
+                                   Grid.Row="4" 
+                                   Margin="10" 
+                                   Padding="3,0,0,0" 
+                                   FontSize="12" 
+                                   MinHeight="20" 
+                                   MinWidth="120" 
+                                  ClipToBounds="False" 
+                                  Grid.IsSharedSizeScope="False" 
+                                  HorizontalAlignment="Right" 
+                                  HorizontalContentAlignment="Left" 
+                                  VerticalAlignment="Stretch" 
+                                  VerticalContentAlignment="Stretch" 
+                                  GotFocus="UserPasswordRequiredOptionGotFocus"
+                                  LostFocus="UserPasswordRequiredOptionLostFocus" 
+                                  IsChecked="True"
+                                      MaxWidth="120">Password Required</CheckBox>
+                        </StackPanel>
+                    </StackPanel>
+                </TabItem>
+                <!-- Tab 4 - Database Server Security -->
+                <TabItem Name="DbSecurity1Tab4">
+                    <TabItem.Header>
+                        <StackPanel Orientation="Horizontal">
+                            <Ellipse Width="10" Height="10" Fill="DarkGray"/>
+                            <TextBlock>Security</TextBlock>
+                        </StackPanel>
+                    </TabItem.Header>
+                    <!-- Control Labels and Input Area 1 -->
+                    <StackPanel Orientation="Vertical" 
+                                Name="DbSecurity1Tab4StackPanel">
+                        <StackPanel Orientation="Horizontal"  
+                            Name="DbSecurityMasterOutputSystemStackPanel">
+                            <!-- Security System Line -->
+                            <Label Name="DbSecurityMasterOutputSystemLabel" 
+                                   Grid.Row="2" 
+                                   Margin="10" 
+                                   Padding="3" 
+                                   FontSize="12" 
+                                   MinHeight="25" 
+                                   MinWidth="90" 
+                                   ClipToBounds="False" 
+                                   HorizontalContentAlignment="Right" 
+                                   VerticalContentAlignment="Center" 
+                                   VerticalAlignment="Center" 
+                                   Focusable="False"
+                                   MaxWidth="90">Output System</Label>
+                            <TextBox Name="DbSecurityMasterOutputSystemLine" 
+                                        Grid.Row="2" 
+                                        Margin="10" 
+                                        Padding="3" 
+                                        FontSize="12" 
+                                        MinHeight="25" 
+                                        MinWidth="200"
+                                     MaxLength="512" 
+                                        MaxLines="3" 
+                                        AcceptsReturn="False" 
+                                        ClipToBounds="False" 
+                                        Cursor="IBeam" 
+                                        TextAlignment="Left" 
+                                        TextWrapping="WrapWithOverflow" 
+ToolTip="Enter the name of the system where the output database resides" 
+                                        VerticalContentAlignment="Center" 
+                                        VerticalScrollBarVisibility="Auto" 
+                                        LostKeyboardFocus="OutputSystemLineLostFocus" 
+                                        GotFocus="OutputSystemLineGotFocus" 
+                                     />
+                        </StackPanel>
+                        <!-- Security System Database -->
+                        <StackPanel Orientation="Horizontal"  
+                            Name="DbSecurityMasterOutputDatabaseStackPanel">
+                            <Label Name="DbSecurityMasterOutputDatabaseLabel" 
+                                   Grid.Row="3" 
+                                   Margin="10" 
+                                   Padding="3" 
+                                   FontSize="11" 
+                                   MinHeight="25" 
+                                   MinWidth="90" 
+                                   HorizontalContentAlignment="Right" 
+                                   VerticalContentAlignment="Center" 
+                                   ClipToBounds="False" 
+                                   Focusable="False"
+                                   MaxWidth="90">Output Database</Label>
+                            <TextBox Name="DbSecurityMasterOutputDatabaseLine" 
+                                    Grid.Row="3" 
+                                    Margin="10" 
+                                    Padding="3" 
+                                    FontSize="12" 
+                                    MinHeight="25" 
+                                    MinWidth="200"
+                                     MaxLength="512" 
+                                    MaxLines="3" 
+                                    TextAlignment="Left" 
+ToolTip="Enter the output Database that the process will use.  Normal an ADO or ODBC datased found in the control panerl." 
+                                    TextWrapping="WrapWithOverflow" 
+                                    Cursor="IBeam" 
+                                    VerticalAlignment="Center" 
+                                    VerticalContentAlignment="Center" 
+                                    ClipToBounds="False" 
+                                    VerticalScrollBarVisibility="Auto" 
+                                    AcceptsReturn="False" 
+                                    GotFocus="OutputDatabaseLineGotFocus" 
+                                    LostFocus="OutputDatabaseLineLostFocus" 
+                                     />
+                        </StackPanel>
+                        <!-- Security System File -->
+                        <StackPanel Orientation="Horizontal"  
+                            Name="DbSecurityMasterOutputFileNameStackPanel">
+                            <Label Name="DbSecurityMasterOutputFileNameLabel" 
+                                   Grid.Row="4" 
+                                   Margin="10" 
+                                   Padding="3" 
+                                   FontSize="12" 
+                                   MinHeight="25" 
+                                   MinWidth="90" 
+                                   HorizontalContentAlignment="Right" 
+                                   VerticalAlignment="Center" 
+                                   VerticalContentAlignment="Center" 
+                                   ClipToBounds="False" 
+                                   Focusable="False"
+                                   MaxWidth="90">Output File</Label>
+                            <TextBox Name="DbSecurityMasterOutputFileLine" 
+                                Grid.Row="4" 
+                                Margin="10" 
+                                Padding="3" 
+                                FontSize="12" 
+                                MinHeight="25" 
+                                MinWidth="200"
+                                     MaxLength="512" 
+                                MaxLines="3" 
+ToolTip="Enter the output file name to use in this database." 
+                                VerticalContentAlignment="Center" 
+                                ForceCursor="False" 
+                                UndoLimit="5" 
+                                ClipToBounds="False" 
+                                VerticalScrollBarVisibility="Auto" 
+                                TextWrapping="WrapWithOverflow" 
+                                GotFocus="OutputFileLineGotFocus" 
+                                LostFocus="OutputFileLineLostFocus" 
+                                HorizontalScrollBarVisibility="Auto" 
+                                HorizontalContentAlignment="Stretch" 
+                                     />
+                        </StackPanel>
+                    </StackPanel>
+                </TabItem>
+            </TabControl>
+            <!-- End of Tab Control -->
+            <!-- Start and Cancel Area -->
+            <!-- Database Page2 buttons -->
+            <!-- Start/Cancel buttons -->
+            <Button Name="OkButtonPressed" 
+                    Margin="5" 
+                    Padding="5" 
+                    HorizontalContentAlignment="Center" 
+                    ClipToBounds="False" 
+                    Click="ConfirmFileImportOk" 
+                    FontSize="12" 
+                    HorizontalAlignment="Center" 
+                    VerticalAlignment="Center" 
+                    MinWidth="60" 
+                    MinHeight="20" 
+                    GotFocus="OkButtonPressedGotFocus" 
+                    LostFocus="OkButtonPressedLostFocus"
+                    Grid.Row="8"
+                    Grid.Column="3"
+                    FontStretch="Condensed">OK</Button>
+            <Button Name="CancelButtonPressed" 
+                    Margin="5"
+                    Padding="5" 
+                    Click="CancelFileImport" 
+                    FontSize="12" 
+                    HorizontalAlignment="Center" 
+                    VerticalAlignment="Center" 
+                    MinWidth="60" 
+                    MinHeight="20" 
+                    LostFocus="CancelButtonPressedLostFocus" 
+                    GotFocus="CancelButtonPressedGotFocus"
+                    Grid.Column="4"
+                    Grid.Row="8"
+                    FontStretch="Condensed">Cancel</Button>
+            <!-- Console Command Optional Input -->
+            <Label Name="ConsoleCommandlabel" Grid.Row="9" Margin="5,5,5,0" HorizontalContentAlignment="Right"
+                    VerticalAlignment="Top" Padding="3" 
+                   ToolTip="" Height="27.28">Console Command</Label>
+            <TextBox Name="ConsoleCommandText" Grid.ColumnSpan="5" Grid.Row="9" Margin="5" VerticalContentAlignment="Top" Grid.Column="1" MinHeight="25" MinWidth="120" ForceCursor="False" VerticalScrollBarVisibility="Auto" TextWrapping="NoWrap" TextChanged="ConsoleCommandTextTextChanged" 
+                     ToolTip="" HorizontalScrollBarVisibility="Auto" MaxLength="6000000" MaxLines="2500" AcceptsReturn="True" AcceptsTab="True" MaxHeight="250" />
+            <!-- Process Status Messages -->
+            <TextBox Name="StatusLine1" Grid.Row="10" Grid.Column="1" Grid.ColumnSpan="5" Focusable="False" Margin="5" MinHeight="25" MinWidth="120" VerticalScrollBarVisibility="Auto" TextWrapping="WrapWithOverflow" 
+                     ToolTip="" MaxHeight="150" />
+            <TextBox Name="StatusLine2" Grid.Column="1" Grid.ColumnSpan="5" Grid.Row="11" Margin="5" Focusable="False" MinHeight="25" MinWidth="120" VerticalScrollBarVisibility="Auto" TextWrapping="WrapWithOverflow" 
+                     ToolTip="" MaxHeight="100" />
+        </Grid>
+    </ScrollViewer>
+</PageFunction>

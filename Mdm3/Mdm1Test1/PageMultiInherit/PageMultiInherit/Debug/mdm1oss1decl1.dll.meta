@@ -1,0 +1,754 @@
+Assembly Mdm1Oss1Decl1, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=SHA1, flags=None
+Assembly WindowsBase, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35: 
+	hash=SHA1, flags=None
+Assembly System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=SHA1, flags=None
+Assembly PresentationFramework, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35: 
+	hash=SHA1, flags=None
+Assembly System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=SHA1, flags=None
+Class Mdm.Oss.Mobj.MickString1: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    Int32 FieldActionLast : Public, Static
+    System.String sFieldResultLast : Public, Static
+    Int32 FieldId : Public, Static
+    Int32 FieldSm : Public, Static
+    Int32 FieldAm : Public, Static
+    Int32 FieldVm : Public, Static
+    Int32 FieldSvm : Public, Static
+    Int32 FieldLvm : Public, Static
+    Int32 FieldLsvm : Public, Static
+    Int32 FieldLcsvm : Public, Static
+    Int32 FieldEndCharacterIndex : Public, Static
+    Int32 FieldAttributeIndex : Public, Static
+    Int32 FieldLength : Public, Static
+    Int32 FieldLocStart : Public, Static
+    Int32 FieldLocEnd : Public, Static
+  Methods:
+    GetFieldId(String): PrivateScope, Public, Static, HideBySig
+    GetFieldSm(String): PrivateScope, Public, Static, HideBySig
+    GetFieldAm(String): PrivateScope, Public, Static, HideBySig
+    GetFieldVm(String): PrivateScope, Public, Static, HideBySig
+    GetFieldSvm(String): PrivateScope, Public, Static, HideBySig
+    GetFieldLsvm(String): PrivateScope, Public, Static, HideBySig
+    GetFieldLcsvm(String): PrivateScope, Public, Static, HideBySig
+    GetFieldLvm(String): PrivateScope, Public, Static, HideBySig
+    GetFieldEndCharacterIndex(String): PrivateScope, Public, Static, HideBySig
+    GetFieldAttributeIndex(String): PrivateScope, Public, Static, HideBySig
+    GetFieldLength(String): PrivateScope, Public, Static, HideBySig
+    GetFieldLocStart(String): PrivateScope, Public, Static, HideBySig
+    GetFieldLocEnd(String): PrivateScope, Public, Static, HideBySig
+    GetStatistics(String): PrivateScope, Public, Static, HideBySig
+    GetAll(String): PrivateScope, Public, Static, HideBySig
+    ActionTheField(String, String, Int32, Int32): PrivateScope, Public, Static, HideBySig
+    ActionTheField(String, Int32, Int32, Int32, Int32, Int32, Int32, Int32): PrivateScope, Public, Static, HideBySig
+    GetField(String, Int32, Int32, Int32, Int32, Int32, Int32, Int32): PrivateScope, Public, Static, HideBySig
+    GetField(String, Int32, Int32, Int32, Int32, Int32, Int32): PrivateScope, Public, Static, HideBySig
+    GetField(String, Int32, Int32, Int32, Int32, Int32): PrivateScope, Public, Static, HideBySig
+    GetField(String, Int32, Int32, Int32, Int32): PrivateScope, Public, Static, HideBySig
+    GetField(String, Int32, Int32, Int32): PrivateScope, Public, Static, HideBySig
+    GetField(String, Int32): PrivateScope, Public, Static, HideBySig
+    DeleteField(String, Int32): PrivateScope, Public, Static, HideBySig
+    InsertField(String, Int32): PrivateScope, Public, Static, HideBySig
+Class Mdm.Oss.Decl.DefStd: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Mdm.Oss.Decl.DefStdBase: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Mdm.Oss.Decl.DefStd
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Boolean LocalStarted : Public
+    Boolean LocalRunning : Public
+  Properties:
+    Int32 InternalId 'get set' : 
+    System.String InternalName 'get set' : 
+    System.String InternalTitle 'get set' : 
+    Int32 InternalNumber 'get set' : 
+    Int32 InternalStatus 'get set' : 
+    System.String InternalStatusText 'get set' : 
+    Int32 InternalIntResult 'get set' : 
+    Boolean InternalBoolResult 'get set' : 
+    Int32 ExternalId 'get set' : 
+    System.String ExternalName 'get set' : 
+    System.String ExternalTitle 'get set' : 
+    Int32 ExternalNumber 'get set' : 
+    Int32 ExternalStatus 'get set' : 
+    System.String ExternalStatusText 'get set' : 
+    Int32 ExternalIntResult 'get set' : 
+    Boolean ExternalBoolResult 'get set' : 
+    System.String LocalProcessName 'get set' : 
+    System.String LocalClassName 'get set' : 
+    System.String LocalPatternName 'get set' : 
+    System.String LocalAreaName 'get set' : 
+    System.String LocalMethodName 'get set' : 
+    Int32 LocalIntResult 'get set' : 
+    Int64 LocalLongResult 'get set' : 
+    System.String LocalStringResult 'get set' : 
+    Boolean LocalBoolResult 'get set' : 
+    System.Object LocalObjectResult 'get set' : 
+    Boolean LocalObjectDoesExist 'get set' : 
+    System.String StatusLineMdmText1 'get set' : 
+    System.String StatusLineMdmText2 'get set' : 
+    System.String StatusLineMdmText3 'get set' : 
+    System.String StatusLineMdmText4 'get set' : 
+  Methods:
+    get_InternalId(): PrivateScope, Public, HideBySig, SpecialName
+    set_InternalId(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_InternalName(): PrivateScope, Public, HideBySig, SpecialName
+    set_InternalName(String): PrivateScope, Public, HideBySig, SpecialName
+    get_InternalTitle(): PrivateScope, Public, HideBySig, SpecialName
+    set_InternalTitle(String): PrivateScope, Public, HideBySig, SpecialName
+    get_InternalNumber(): PrivateScope, Public, HideBySig, SpecialName
+    set_InternalNumber(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_InternalStatus(): PrivateScope, Public, HideBySig, SpecialName
+    set_InternalStatus(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_InternalStatusText(): PrivateScope, Public, HideBySig, SpecialName
+    set_InternalStatusText(String): PrivateScope, Public, HideBySig, SpecialName
+    get_InternalIntResult(): PrivateScope, Public, HideBySig, SpecialName
+    set_InternalIntResult(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_InternalBoolResult(): PrivateScope, Public, HideBySig, SpecialName
+    set_InternalBoolResult(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_ExternalId(): PrivateScope, Public, HideBySig, SpecialName
+    set_ExternalId(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_ExternalName(): PrivateScope, Public, HideBySig, SpecialName
+    set_ExternalName(String): PrivateScope, Public, HideBySig, SpecialName
+    get_ExternalTitle(): PrivateScope, Public, HideBySig, SpecialName
+    set_ExternalTitle(String): PrivateScope, Public, HideBySig, SpecialName
+    get_ExternalNumber(): PrivateScope, Public, HideBySig, SpecialName
+    set_ExternalNumber(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_ExternalStatus(): PrivateScope, Public, HideBySig, SpecialName
+    set_ExternalStatus(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_ExternalStatusText(): PrivateScope, Public, HideBySig, SpecialName
+    set_ExternalStatusText(String): PrivateScope, Public, HideBySig, SpecialName
+    get_ExternalIntResult(): PrivateScope, Public, HideBySig, SpecialName
+    set_ExternalIntResult(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_ExternalBoolResult(): PrivateScope, Public, HideBySig, SpecialName
+    set_ExternalBoolResult(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_LocalProcessName(): PrivateScope, Public, HideBySig, SpecialName
+    set_LocalProcessName(String): PrivateScope, Public, HideBySig, SpecialName
+    get_LocalClassName(): PrivateScope, Public, HideBySig, SpecialName
+    set_LocalClassName(String): PrivateScope, Public, HideBySig, SpecialName
+    get_LocalPatternName(): PrivateScope, Public, HideBySig, SpecialName
+    set_LocalPatternName(String): PrivateScope, Public, HideBySig, SpecialName
+    get_LocalAreaName(): PrivateScope, Public, HideBySig, SpecialName
+    set_LocalAreaName(String): PrivateScope, Public, HideBySig, SpecialName
+    get_LocalMethodName(): PrivateScope, Public, HideBySig, SpecialName
+    set_LocalMethodName(String): PrivateScope, Public, HideBySig, SpecialName
+    get_LocalIntResult(): PrivateScope, Public, HideBySig, SpecialName
+    set_LocalIntResult(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_LocalLongResult(): PrivateScope, Public, HideBySig, SpecialName
+    set_LocalLongResult(Int64): PrivateScope, Public, HideBySig, SpecialName
+    get_LocalStringResult(): PrivateScope, Public, HideBySig, SpecialName
+    set_LocalStringResult(String): PrivateScope, Public, HideBySig, SpecialName
+    get_LocalBoolResult(): PrivateScope, Public, HideBySig, SpecialName
+    set_LocalBoolResult(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_LocalObjectResult(): PrivateScope, Public, HideBySig, SpecialName
+    set_LocalObjectResult(Object): PrivateScope, Public, HideBySig, SpecialName
+    get_LocalObjectDoesExist(): PrivateScope, Public, HideBySig, SpecialName
+    set_LocalObjectDoesExist(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_StatusLineMdmText1(): PrivateScope, Public, HideBySig, SpecialName
+    set_StatusLineMdmText1(String): PrivateScope, Public, HideBySig, SpecialName
+    get_StatusLineMdmText2(): PrivateScope, Public, HideBySig, SpecialName
+    set_StatusLineMdmText2(String): PrivateScope, Public, HideBySig, SpecialName
+    get_StatusLineMdmText3(): PrivateScope, Public, HideBySig, SpecialName
+    set_StatusLineMdmText3(String): PrivateScope, Public, HideBySig, SpecialName
+    get_StatusLineMdmText4(): PrivateScope, Public, HideBySig, SpecialName
+    set_StatusLineMdmText4(String): PrivateScope, Public, HideBySig, SpecialName
+Struct Mdm.Oss.Decl.DefStdBase+MethodStateIs: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int64 value__ : Public, SpecialName, RTSpecialName
+    MethodStateIs None = 0 : Public, Static, Literal, HasDefault
+    MethodStateIs ObjectDoesExist = 1 : Public, Static, Literal, HasDefault
+    MethodStateIs ObjectDoesNotExist = 2 : Public, Static, Literal, HasDefault
+    MethodStateIs ObjectShouldNotExist = 4 : Public, Static, Literal, HasDefault
+    MethodStateIs ObjectPointerNotMatched = 8 : Public, Static, Literal, HasDefault
+    MethodStateIs NormalEnd = 16 : Public, Static, Literal, HasDefault
+    MethodStateIs AbnormalEnd = 32 : Public, Static, Literal, HasDefault
+    MethodStateIs ValidResult = 256 : Public, Static, Literal, HasDefault
+    MethodStateIs InvalidResult = 512 : Public, Static, Literal, HasDefault
+    MethodStateIs ObjectOK = 4096 : Public, Static, Literal, HasDefault
+    MethodStateIs MdmObjectCreationFailed = 8192 : Public, Static, Literal, HasDefault
+    MethodStateIs Start = 65536 : Public, Static, Literal, HasDefault
+    MethodStateIs Failed = 131072 : Public, Static, Literal, HasDefault
+    MethodStateIs InProgress = 262144 : Public, Static, Literal, HasDefault
+    MethodStateIs OnHold = 1048576 : Public, Static, Literal, HasDefault
+    MethodStateIs Cancelled = 2097152 : Public, Static, Literal, HasDefault
+    MethodStateIs Finshed = 4194304 : Public, Static, Literal, HasDefault
+    MethodStateIs FunctionAbnormalEnd = 16777216 : Public, Static, Literal, HasDefault
+    MethodStateIs FunctionAttributeOutOfRange = 33554432 : Public, Static, Literal, HasDefault
+    MethodStateIs NameOK = 268435456 : Public, Static, Literal, HasDefault
+    MethodStateIs NameDoesExist = 536870912 : Public, Static, Literal, HasDefault
+    MethodStateIs NameDoesNotExist = 805306368 : Public, Static, Literal, HasDefault
+    MethodStateIs NameShouldNotExist = 1073741824 : Public, Static, Literal, HasDefault
+    MethodStateIs MdmNameCreationFailed = 4294967296 : Public, Static, Literal, HasDefault
+    MethodStateIs NameIsEmpty = 68719476736 : Public, Static, Literal, HasDefault
+Class Mdm.Oss.Decl.DefStdBaseRun: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Mdm.Oss.Decl.DefStdBase
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String sMessageStatusTarget : Public
+    Double dProcessStatusTarget : Public
+    Int32 iProcessStatusTarget : Public
+    Int32 iMessageStatusSubTarget : Public
+    Double dProcessStatusSubTarget : Public
+    Int32 iProcessStatusSubTarget : Public
+    Int32 iProcessStatusTargetState : Public
+    Double dProgressBarMdm1Property : Public
+    Double dMessageProperty2 : Public
+    Boolean ConsoleOn : Public
+    Boolean ConsoleToDisc : Public
+    Boolean ConsoleTextOn : Public
+    Boolean ConsoleText0On : Public
+    Boolean ConsoleText1On : Public
+    Boolean ConsoleText2On : Public
+    Boolean ConsoleText3On : Public
+    Boolean ConsoleText4On : Public
+    Boolean ConsoleText5On : Public
+    Int32 ConsoleVerbosity : Public
+    Boolean ConsolePickConsoleOn : Public
+    Boolean ConsolePickConsoleBasicOn : Public
+    Boolean ConsolePickConsoleToDisc : Public
+    System.String ConsoleOutput : Public
+    System.String ConsoleOutputLog : Public
+    System.String ConsolePickConsoleOutput : Public
+    System.String ConsolePickConsoleOutputLog : Public
+    System.String ConsolePickConsoleTextBlock : Public
+    Int32 ConsolePickConsoleTextPositionX : Public
+    Int32 ConsolePickConsoleTextPositionY : Public
+    Int32 ConsolePickConsoleTextPositionZ : Public
+    System.Windows.Point zConsolePickConsoleTextPositionOrigin : Public
+    System.String sMessageText : Public
+    System.String sMessageText0 : Public
+    System.String sMessageText1 : Public
+    System.String sMessageText2 : Public
+    System.String sMessageText3 : Public
+    System.String sMessageText4 : Public
+    System.String sMessageText5 : Public
+    System.String sMessageStatusAction : Public
+    System.String sProcessStatusAction : Public
+    System.String ConsolePickConsoleCommand : Public
+    System.String CommandLineRequest : Public
+    Int32 CommandLineRequestResult : Public
+    System.String ConsoleCommand : Public
+    WorkerProgressChangedDel RunProgressChangedCallback : Public
+    RunCancelAsyncDel RunCancelAsync : Public
+    Int32 MdmTraceCounterLevel1 : Public
+    Int32 MdmTraceCounterLevel2 : Public
+    MdmTraceCounterGetDel MdmTraceCounterLevel1Get : Public
+    MdmTraceCounterGetDel MdmTraceCounterLevel2Get : Public
+    Int32 RunTense : Public
+    Int32 RunTense_Off : Public
+    Int32 RunTense_Do : Public
+    Int32 RunTenseOn : Public
+    Int32 RunTense_DoNot : Public
+    Int32 RunTense_Doing : Public
+    Int32 RunTense_Did : Public
+    Int32 RunTense_Done : Public
+    Int32 RunTense_DidNot : Public
+    Int32 RunMetric : Public
+    Int32 RunState : Public
+    Int32 RunState_Last_Update : Public
+    Int32 RunDoLast_Count : Public
+    Int32 RunDoCount : Public
+    Int32 RunDoSkip_Count : Public
+    Int32 RunDoError_Count : Public
+    Int32 RunDoWarning_Count : Public
+    Int32 RunDoRetry_Count : Public
+    Int32[,] iaRunActionState : Public
+    System.ComponentModel.ProgressChangedEventArgs ePceaRunActionState : Public
+    Int32 RunAction : Public
+    Int32 RunActionRequest : Public
+    Int32 RunCancel : Public
+    Int32 RunPause : Public
+    Int32 RunStart : Public
+    Int32 RunNoOp4 : Public
+    Int32 RunNoOp5 : Public
+    Int32 RunInitialize : Public
+    Int32 RunRunDo : Public
+    Int32 RunUserInput : Public
+    Int32 RunOpen : Public
+    Int32 RunMain_Do : Public
+    Int32 RunMain_DoSelect : Public
+    Int32 RunMain_DoLock_Add : Public
+    Int32 RunMain_DoRead : Public
+    Int32 RunMain_DoValidate : Public
+    Int32 RunMain_DoAccept : Public
+    Int32 RunMain_DoReport : Public
+    Int32 RunMain_DoProcess : Public
+    Int32 RunMain_DoUpdate : Public
+    Int32 RunMain_DoWrite : Public
+    Int32 RunMain_DoLock_Remove : Public
+    Int32 RunClose : Public
+    Int32 RunFinish : Public
+    Int32 RunAbort : Public
+    Int32 RunReloop : Public
+    Int32 RunFirst : Public
+    Int32 RunOptionX : Public
+    Int32 RunOptionY : Public
+    Int32 RunOptionZ : Public
+    Int32 RunOption1 : Public
+    Int32 RunOption2 : Public
+    System.String[] sRunActionVerb : Public
+    System.String[] sRunActionDoing : Public
+    System.String[] sRunActionDid : Public
+    System.String spRunOptions : Public
+    Int32 ipRunStatus : Public
+    System.String FileActionRequest : Public
+    Int64 FileActionResult : Public
+    System.String PickFileActionRequest : Public
+    Int64 PickFileActionResult : Public
+    Int32 RunCount : Public
+    Int32 RunDebugCount : Public
+    Boolean RunReloopIsOn : Public
+    Boolean RunFirstIsOn : Public
+    Boolean RunStartPending : Public
+    Boolean RunPausePending : Public
+    Boolean RunCancelPending : Public
+    System.String sRunActionRequest : Public
+    System.String UserState : Public
+    System.String UserCommandPrefix : Public
+    System.String UserCommand : Public
+    Boolean RunAbortIsOn : Public
+    Boolean RunErrorDidOccur : Public
+    Boolean RunErrorDidOccurOnce : Public
+    System.String sLocalErrorMessage : Public
+    Int32 RunErrorNumber : Public
+    Int32 RunGlobalErrorNumber : Public
+    Int32 RunThrowException : Public
+    Int32 RunShellErrorNumber : Public
+    Int32 RunErrorCount : Public
+    Int32 iIterationCount : Public
+    Int32 iIterationRemaider : Public
+    Int32 iIterationDebugCount : Public
+    Boolean IterationAbort : Public
+    Boolean IterationReloop : Public
+    Boolean IterationFirst : Public
+    Int32 iIterationLoopCounter : Public
+    Boolean MethodIterationAbort : Public
+    Boolean MethodIterationReloop : Public
+    Boolean MethodIterationFirst : Public
+    Int32 MethodIterationLoopCounter : Public
+    Int32 iAppActionWaitMilliIncrement : Public
+    Int32 iAppActionWaitMilliIncrementMax : Public
+    Boolean bAppActionWaitContinue : Public
+    Int32 iAppActionWaitCounter : Public
+    Double opLocalProgressBar_Minimum : Public
+    Double opLocalProgressBar_Maximum : Public
+    Double opLocalProgressBar_Value : Public
+    Int32 opLocalProgressBar_Display : Public
+    System.ComponentModel.ProgressChangedEventArgs eaOpcLocalRunProgressChanged : Public
+    System.Windows.RoutedPropertyChangedEventArgs`1[System.Double] eadRpcLocalRunProgressChanged : Public
+    System.ComponentModel.RunWorkerCompletedEventArgs eaRwcLocalRunCompleted : Public
+    Double eadRpcLocalOldValue : Public
+    Double eadRpcLocalNewValue : Public
+    Boolean LocalStarted : Public
+    Boolean LocalRunning : Public
+    Int64 iAppObjectCheck : Public
+    Int64 iAppCoreObjectGet : Public
+    Int64 iAppCoreObjectSet : Public
+    System.String MethodObjectType : Public
+    System.Type odstMethodObjectType : Public
+    Int32 MethodObjectHashCode : Public
+    System.String MethodObjectToString : Public
+    Boolean MethodObjectEquality : Public
+    Boolean MethodObjectTypeValid : Public
+    Boolean MethodObjectExternalExistance : Public
+    Boolean MethodObjectInternalExistance : Public
+    Int32 iaRunActionState_Max : Public, Static
+  Properties:
+    Int32 MdmSystemId 'get set' : 
+    System.String MdmSystemName 'get set' : 
+    System.String MdmSystemTitle 'get set' : 
+    Int32 MdmSystemNumber 'get set' : 
+    Int32 MdmSystemIntStatus 'get set' : 
+    System.String MdmSystemStatusText 'get set' : 
+    Int32 MdmSystemIntResult 'get set' : 
+    Boolean MdmSystemResult 'get set' : 
+    Int32 MdmProcessId 'get set' : 
+    System.String MdmProcessName 'get set' : 
+    System.String MdmProcessTitle 'get set' : 
+    Int32 MdmProcessNumber 'get set' : 
+    Int32 iStatusLine 'get set' : 
+    System.String StatusLineMdmText 'get set' : 
+    Int32 MdmProcessIntResult 'get set' : 
+    Boolean MdmProcessBoolResult 'get set' : 
+    Int32 MdmClassId 'get set' : 
+    System.String MdmClassName 'get set' : 
+    System.String MdmClassTitle 'get set' : 
+    Int32 MdmClassNumber 'get set' : 
+    Int32 MdmClassIntStatus 'get set' : 
+    System.String MdmClassStatusText 'get set' : 
+    Int64 MdmClassResult 'get set' : 
+    Boolean MdmClassBoolResult 'get set' : 
+    Int32 MdmMethodId 'get set' : 
+    System.String MdmMethodName 'get set' : 
+    System.String MdmMethodTitle 'get set' : 
+    Int32 MdmMethodNumber 'get set' : 
+    Int32 MdmMethodStatus 'get set' : 
+    System.String MdmMethodStatusText 'get set' : 
+    Int64 MdmMethodResult 'get set' : 
+    Boolean MdmMethodBoolResult 'get set' : 
+    Int32 MdmAttributeId 'get set' : 
+    System.String MdmAttributeName 'get set' : 
+    System.String MdmAttributeTitle 'get set' : 
+    Int32 MdmAttributeNumber 'get set' : 
+    Int32 MdmAttributeStatus 'get set' : 
+    System.String MdmAttributeStatusText 'get set' : 
+    Int32 MdmAttributeIntResult 'get set' : 
+    Boolean MdmAttributeBoolResult 'get set' : 
+    Int32 MdmAuthorParameterId 'get set' : 
+    System.String MdmParameterName 'get set' : 
+    Int32 MdmParameterNumber 'get set' : 
+    System.String MdmParameterTitle 'get set' : 
+    Int32 MdmParameterStatus 'get set' : 
+    System.String MdmParameterStatusText 'get set' : 
+    Int32 MdmParameterIntResult 'get set' : 
+    Boolean MdmParameterBoolResult 'get set' : 
+    Int32 MdmAuthorPropertyId 'get set' : 
+    System.String MdmPropertyName 'get set' : 
+    Int32 MdmPropertyNumber 'get set' : 
+    System.String MdmPropertyTitle 'get set' : 
+    Int32 MdmPropertyStatus 'get set' : 
+    System.String MdmPropertyStatusText 'get set' : 
+    Int32 MdmPropertyIntResult 'get set' : 
+    Boolean MdmPropertyBoolResult 'get set' : 
+    Int32 ConsoleMdmId 'get set' : 
+    System.String ConsoleMdmName 'get set' : 
+    System.String ConsoleMdmTitle 'get set' : 
+    Int32 ConsoleMdmNumber 'get set' : 
+    Int32 ConsoleMdmStatus 'get set' : 
+    System.String ConsoleMdmStatusText 'get set' : 
+    Int32 ConsoleMdmIntResult 'get set' : 
+    Boolean ConsoleMdmBoolResult 'get set' : 
+    System.String RunOptions 'get set' : 
+    Int32 RunStatus 'get set' : 
+    System.String LocalProcessName 'get set' : 
+    System.String LocalClassName 'get set' : 
+    System.String LocalPatternName 'get set' : 
+    System.String LocalAreaName 'get set' : 
+    System.String LocalMethodName 'get set' : 
+    Boolean LocalBoolResult 'get set' : 
+    System.String LocalStringResult 'get set' : 
+    Int64 LocalLongResult 'get set' : 
+    Int32 LocalIntResult 'get set' : 
+    System.Object LocalObjectResult 'get set' : 
+    Boolean LocalObjectDoesExist 'get set' : 
+  Methods:
+    set_MdmParameterNumber(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_MdmParameterTitle(): PrivateScope, Public, HideBySig, SpecialName
+    set_MdmParameterTitle(String): PrivateScope, Public, HideBySig, SpecialName
+    get_MdmParameterStatus(): PrivateScope, Public, HideBySig, SpecialName
+    set_MdmParameterStatus(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_MdmParameterStatusText(): PrivateScope, Public, HideBySig, SpecialName
+    set_MdmParameterStatusText(String): PrivateScope, Public, HideBySig, SpecialName
+    get_MdmParameterIntResult(): PrivateScope, Public, HideBySig, SpecialName
+    set_MdmParameterIntResult(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_MdmParameterBoolResult(): PrivateScope, Public, HideBySig, SpecialName
+    set_MdmParameterBoolResult(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_MdmAuthorPropertyId(): PrivateScope, Public, HideBySig, SpecialName
+    set_MdmAuthorPropertyId(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_MdmPropertyName(): PrivateScope, Public, HideBySig, SpecialName
+    set_MdmPropertyName(String): PrivateScope, Public, HideBySig, SpecialName
+    get_MdmPropertyNumber(): PrivateScope, Public, HideBySig, SpecialName
+    set_MdmPropertyNumber(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_MdmPropertyTitle(): PrivateScope, Public, HideBySig, SpecialName
+    set_MdmPropertyTitle(String): PrivateScope, Public, HideBySig, SpecialName
+    get_MdmPropertyStatus(): PrivateScope, Public, HideBySig, SpecialName
+    set_MdmPropertyStatus(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_MdmPropertyStatusText(): PrivateScope, Public, HideBySig, SpecialName
+    set_MdmPropertyStatusText(String): PrivateScope, Public, HideBySig, SpecialName
+    get_MdmPropertyIntResult(): PrivateScope, Public, HideBySig, SpecialName
+    set_MdmPropertyIntResult(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_MdmPropertyBoolResult(): PrivateScope, Public, HideBySig, SpecialName
+    set_MdmPropertyBoolResult(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_ConsoleMdmId(): PrivateScope, Public, HideBySig, SpecialName
+    set_ConsoleMdmId(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_ConsoleMdmName(): PrivateScope, Public, HideBySig, SpecialName
+    set_ConsoleMdmName(String): PrivateScope, Public, HideBySig, SpecialName
+    get_ConsoleMdmTitle(): PrivateScope, Public, HideBySig, SpecialName
+    set_ConsoleMdmTitle(String): PrivateScope, Public, HideBySig, SpecialName
+    get_ConsoleMdmNumber(): PrivateScope, Public, HideBySig, SpecialName
+    set_ConsoleMdmNumber(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_ConsoleMdmStatus(): PrivateScope, Public, HideBySig, SpecialName
+    set_ConsoleMdmStatus(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_ConsoleMdmStatusText(): PrivateScope, Public, HideBySig, SpecialName
+    set_ConsoleMdmStatusText(String): PrivateScope, Public, HideBySig, SpecialName
+    get_ConsoleMdmIntResult(): PrivateScope, Public, HideBySig, SpecialName
+    set_ConsoleMdmIntResult(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_ConsoleMdmBoolResult(): PrivateScope, Public, HideBySig, SpecialName
+    set_ConsoleMdmBoolResult(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_RunOptions(): PrivateScope, Public, HideBySig, SpecialName
+    set_RunOptions(String): PrivateScope, Public, HideBySig, SpecialName
+    get_RunStatus(): PrivateScope, Public, HideBySig, SpecialName
+    set_RunStatus(Int32): PrivateScope, Public, HideBySig, SpecialName
+    AppRunActionEvaluate(Object, ProgressChangedEventArgs, DefStdBaseRun): PrivateScope, Public, HideBySig
+    get_LocalProcessName(): PrivateScope, Public, HideBySig, SpecialName
+    set_LocalProcessName(String): PrivateScope, Public, HideBySig, SpecialName
+    get_LocalClassName(): PrivateScope, Public, HideBySig, SpecialName
+    set_LocalClassName(String): PrivateScope, Public, HideBySig, SpecialName
+    get_LocalPatternName(): PrivateScope, Public, HideBySig, SpecialName
+    set_LocalPatternName(String): PrivateScope, Public, HideBySig, SpecialName
+    get_LocalAreaName(): PrivateScope, Public, HideBySig, SpecialName
+    set_LocalAreaName(String): PrivateScope, Public, HideBySig, SpecialName
+    get_LocalMethodName(): PrivateScope, Public, HideBySig, SpecialName
+    set_LocalMethodName(String): PrivateScope, Public, HideBySig, SpecialName
+    get_LocalBoolResult(): PrivateScope, Public, HideBySig, SpecialName
+    set_LocalBoolResult(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_LocalStringResult(): PrivateScope, Public, HideBySig, SpecialName
+    set_LocalStringResult(String): PrivateScope, Public, HideBySig, SpecialName
+    get_LocalLongResult(): PrivateScope, Public, HideBySig, SpecialName
+    set_LocalLongResult(Int64): PrivateScope, Public, HideBySig, SpecialName
+    get_LocalIntResult(): PrivateScope, Public, HideBySig, SpecialName
+    set_LocalIntResult(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_LocalObjectResult(): PrivateScope, Public, HideBySig, SpecialName
+    set_LocalObjectResult(Object): PrivateScope, Public, HideBySig, SpecialName
+    get_LocalObjectDoesExist(): PrivateScope, Public, HideBySig, SpecialName
+    set_LocalObjectDoesExist(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    AppCoreObjectCheck(Object, Object, String): PrivateScope, Public, HideBySig
+    get_MdmSystemId(): PrivateScope, Public, HideBySig, SpecialName
+    set_MdmSystemId(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_MdmSystemName(): PrivateScope, Public, HideBySig, SpecialName
+    set_MdmSystemName(String): PrivateScope, Public, HideBySig, SpecialName
+    get_MdmSystemTitle(): PrivateScope, Public, HideBySig, SpecialName
+    set_MdmSystemTitle(String): PrivateScope, Public, HideBySig, SpecialName
+    get_MdmSystemNumber(): PrivateScope, Public, HideBySig, SpecialName
+    set_MdmSystemNumber(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_MdmSystemIntStatus(): PrivateScope, Public, HideBySig, SpecialName
+    set_MdmSystemIntStatus(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_MdmSystemStatusText(): PrivateScope, Public, HideBySig, SpecialName
+    set_MdmSystemStatusText(String): PrivateScope, Public, HideBySig, SpecialName
+    get_MdmSystemIntResult(): PrivateScope, Public, HideBySig, SpecialName
+    set_MdmSystemIntResult(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_MdmSystemResult(): PrivateScope, Public, HideBySig, SpecialName
+    set_MdmSystemResult(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_MdmProcessId(): PrivateScope, Public, HideBySig, SpecialName
+    set_MdmProcessId(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_MdmProcessName(): PrivateScope, Public, HideBySig, SpecialName
+    set_MdmProcessName(String): PrivateScope, Public, HideBySig, SpecialName
+    get_MdmProcessTitle(): PrivateScope, Public, HideBySig, SpecialName
+    set_MdmProcessTitle(String): PrivateScope, Public, HideBySig, SpecialName
+    get_MdmProcessNumber(): PrivateScope, Public, HideBySig, SpecialName
+    set_MdmProcessNumber(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_iStatusLine(): PrivateScope, Public, HideBySig, SpecialName
+    set_iStatusLine(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_StatusLineMdmText(): PrivateScope, Public, HideBySig, SpecialName
+    set_StatusLineMdmText(String): PrivateScope, Public, HideBySig, SpecialName
+    get_MdmProcessIntResult(): PrivateScope, Public, HideBySig, SpecialName
+    set_MdmProcessIntResult(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_MdmProcessBoolResult(): PrivateScope, Public, HideBySig, SpecialName
+    set_MdmProcessBoolResult(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_MdmClassId(): PrivateScope, Public, HideBySig, SpecialName
+    set_MdmClassId(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_MdmClassName(): PrivateScope, Public, HideBySig, SpecialName
+    set_MdmClassName(String): PrivateScope, Public, HideBySig, SpecialName
+    get_MdmClassTitle(): PrivateScope, Public, HideBySig, SpecialName
+    set_MdmClassTitle(String): PrivateScope, Public, HideBySig, SpecialName
+    get_MdmClassNumber(): PrivateScope, Public, HideBySig, SpecialName
+    set_MdmClassNumber(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_MdmClassIntStatus(): PrivateScope, Public, HideBySig, SpecialName
+    set_MdmClassIntStatus(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_MdmClassStatusText(): PrivateScope, Public, HideBySig, SpecialName
+    set_MdmClassStatusText(String): PrivateScope, Public, HideBySig, SpecialName
+    get_MdmClassResult(): PrivateScope, Public, HideBySig, SpecialName
+    set_MdmClassResult(Int64): PrivateScope, Public, HideBySig, SpecialName
+    get_MdmClassBoolResult(): PrivateScope, Public, HideBySig, SpecialName
+    set_MdmClassBoolResult(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_MdmMethodId(): PrivateScope, Public, HideBySig, SpecialName
+    set_MdmMethodId(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_MdmMethodName(): PrivateScope, Public, HideBySig, SpecialName
+    set_MdmMethodName(String): PrivateScope, Public, HideBySig, SpecialName
+    get_MdmMethodTitle(): PrivateScope, Public, HideBySig, SpecialName
+    set_MdmMethodTitle(String): PrivateScope, Public, HideBySig, SpecialName
+    get_MdmMethodNumber(): PrivateScope, Public, HideBySig, SpecialName
+    set_MdmMethodNumber(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_MdmMethodStatus(): PrivateScope, Public, HideBySig, SpecialName
+    set_MdmMethodStatus(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_MdmMethodStatusText(): PrivateScope, Public, HideBySig, SpecialName
+    set_MdmMethodStatusText(String): PrivateScope, Public, HideBySig, SpecialName
+    get_MdmMethodResult(): PrivateScope, Public, HideBySig, SpecialName
+    set_MdmMethodResult(Int64): PrivateScope, Public, HideBySig, SpecialName
+    get_MdmMethodBoolResult(): PrivateScope, Public, HideBySig, SpecialName
+    set_MdmMethodBoolResult(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_MdmAttributeId(): PrivateScope, Public, HideBySig, SpecialName
+    set_MdmAttributeId(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_MdmAttributeName(): PrivateScope, Public, HideBySig, SpecialName
+    set_MdmAttributeName(String): PrivateScope, Public, HideBySig, SpecialName
+    get_MdmAttributeTitle(): PrivateScope, Public, HideBySig, SpecialName
+    set_MdmAttributeTitle(String): PrivateScope, Public, HideBySig, SpecialName
+    get_MdmAttributeNumber(): PrivateScope, Public, HideBySig, SpecialName
+    set_MdmAttributeNumber(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_MdmAttributeStatus(): PrivateScope, Public, HideBySig, SpecialName
+    set_MdmAttributeStatus(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_MdmAttributeStatusText(): PrivateScope, Public, HideBySig, SpecialName
+    set_MdmAttributeStatusText(String): PrivateScope, Public, HideBySig, SpecialName
+    get_MdmAttributeIntResult(): PrivateScope, Public, HideBySig, SpecialName
+    set_MdmAttributeIntResult(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_MdmAttributeBoolResult(): PrivateScope, Public, HideBySig, SpecialName
+    set_MdmAttributeBoolResult(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_MdmAuthorParameterId(): PrivateScope, Public, HideBySig, SpecialName
+    set_MdmAuthorParameterId(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_MdmParameterName(): PrivateScope, Public, HideBySig, SpecialName
+    set_MdmParameterName(String): PrivateScope, Public, HideBySig, SpecialName
+    get_MdmParameterNumber(): PrivateScope, Public, HideBySig, SpecialName
+Struct Mdm.Oss.Decl.DefStdBaseRun+dMessageBoxPadding: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+    Void .ctor(Double, Double, Double, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Mdm.Oss.Decl.DefStdBaseRun+WorkerProgressChangedDel: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, ProgressChangedEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, ProgressChangedEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Mdm.Oss.Decl.DefStdBaseRun+RunCancelAsyncDel: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Mdm.Oss.Decl.DefStdBaseRun+MdmTraceCounterGetDel: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Mdm.Oss.Decl.DefStdBaseRunFile: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Mdm.Oss.Decl.DefStdBaseRun
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Struct Mdm.Oss.Decl.DefStdBaseRunFile+FileTypeIs: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int64 value__ : Public, SpecialName, RTSpecialName
+    FileTypeIs None = 0 : Public, Static, Literal, HasDefault
+    FileTypeIs FileTypeDictData = 1 : Public, Static, Literal, HasDefault
+    FileTypeIs FileTypeData = 2 : Public, Static, Literal, HasDefault
+    FileTypeIs FileTypeTEXT = 258 : Public, Static, Literal, HasDefault
+    FileTypeIs FileTypeSQL = 16777730 : Public, Static, Literal, HasDefault
+    FileTypeIs FileTypeDB2 = 66050 : Public, Static, Literal, HasDefault
+    FileTypeIs FileTypeORACLE = 131586 : Public, Static, Literal, HasDefault
+    FileTypeIs FileTypeXML = 1026 : Public, Static, Literal, HasDefault
+    FileTypeIs FileTypePICK = 4096 : Public, Static, Literal, HasDefault
+    FileTypeIs FileTypeOther = 8194 : Public, Static, Literal, HasDefault
+    FileTypeIs FileTypeUNKNOWN = 268435456 : Public, Static, Literal, HasDefault
+Struct Mdm.Oss.Decl.DefStdBaseRunFile+FileSubTypeIs: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int64 value__ : Public, SpecialName, RTSpecialName
+    FileSubTypeIs None = 0 : Public, Static, Literal, HasDefault
+    FileSubTypeIs FileSubTypeTEXT = 268435457 : Public, Static, Literal, HasDefault
+    FileSubTypeIs FileSubTypeASC = 268435458 : Public, Static, Literal, HasDefault
+    FileSubTypeIs FileSubTypeFIX = 268435460 : Public, Static, Literal, HasDefault
+    FileSubTypeIs FileSubTypeDAT = 268435472 : Public, Static, Literal, HasDefault
+    FileSubTypeIs FileSubTypeCSV = 268435488 : Public, Static, Literal, HasDefault
+    FileSubTypeIs FileSubTypeSQL = 536870913 : Public, Static, Literal, HasDefault
+    FileSubTypeIs FileSubTypeMS = 536870914 : Public, Static, Literal, HasDefault
+    FileSubTypeIs FileSubTypeMY = 536870916 : Public, Static, Literal, HasDefault
+    FileSubTypeIs FileSubTypeDB2 = 1073741825 : Public, Static, Literal, HasDefault
+    FileSubTypeIs FileSubTypeORACLE = 16777217 : Public, Static, Literal, HasDefault
+    FileSubTypeIs FileSubTypeXML = 33554433 : Public, Static, Literal, HasDefault
+    FileSubTypeIs FileSubTypeTILDE = 67108881 : Public, Static, Literal, HasDefault
+    FileSubTypeIs FileSubTypeTILDE_CSV = 67108897 : Public, Static, Literal, HasDefault
+    FileSubTypeIs FileSubTypeTILDE_ROW = 67108929 : Public, Static, Literal, HasDefault
+    FileSubTypeIs FileSubTypeTILDE_Other = 67109121 : Public, Static, Literal, HasDefault
+    FileSubTypeIs FileSubTypeTILDE_NATIVE = 67178497 : Public, Static, Literal, HasDefault
+    FileSubTypeIs FileSubTypeTILDE_NATIVE_ONE = 67244033 : Public, Static, Literal, HasDefault
+    FileSubTypeIs FileSubTypeUNKNOWN = 1048577 : Public, Static, Literal, HasDefault
+    FileSubTypeIs FileTypeUndefined = 1048578 : Public, Static, Literal, HasDefault
+    FileSubTypeIs FileSubTypeUndefined = 1048580 : Public, Static, Literal, HasDefault
+Struct Mdm.Oss.Decl.DefStdBaseRunFile+DatabaseControl: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    DatabaseControl UseErDefault = 0 : Public, Static, Literal, HasDefault
+    DatabaseControl UseErSingleResult = 1 : Public, Static, Literal, HasDefault
+    DatabaseControl UseErSchemaOnly = 2 : Public, Static, Literal, HasDefault
+    DatabaseControl UseErKeyINFO = 4 : Public, Static, Literal, HasDefault
+    DatabaseControl UseErSingleROW = 8 : Public, Static, Literal, HasDefault
+    DatabaseControl UseErSequentialAccess = 16 : Public, Static, Literal, HasDefault
+    DatabaseControl UseErCloseConnection = 32 : Public, Static, Literal, HasDefault
+    DatabaseControl UseExecuteNoQuery = 64 : Public, Static, Literal, HasDefault
+    DatabaseControl UseExecuteScalar = 128 : Public, Static, Literal, HasDefault
+    DatabaseControl ofdcSqlDbCommandTimeout = 15 : Public, Static, Literal, HasDefault
+    DatabaseControl FileDictData = 1 : Public, Static, Literal, HasDefault
+    DatabaseControl FileData = 2 : Public, Static, Literal, HasDefault
+    DatabaseControl FileIoOpenOK = 0 : Public, Static, Literal, HasDefault
+    DatabaseControl FileIoOpenTryFirst = -3 : Public, Static, Literal, HasDefault
+    DatabaseControl FileIoOpenTryAgain = -2 : Public, Static, Literal, HasDefault
+    DatabaseControl FileIoOpenTryEntered = 1 : Public, Static, Literal, HasDefault
+    DatabaseControl FileIoOpenTryDefault = 2 : Public, Static, Literal, HasDefault
+    DatabaseControl FileIoOpenTryOriginal = 3 : Public, Static, Literal, HasDefault
+    DatabaseControl FileIoOpenTryAll = 3 : Public, Static, Literal, HasDefault
+    DatabaseControl ObjectOK = 0 : Public, Static, Literal, HasDefault
+    DatabaseControl ObjectFILEDATA = 1000 : Public, Static, Literal, HasDefault
+    DatabaseControl ObjectFILEDICT = 2000 : Public, Static, Literal, HasDefault
+    DatabaseControl ObjectDATABASE = 3000 : Public, Static, Literal, HasDefault
+    DatabaseControl ObjectSERVICE = 4000 : Public, Static, Literal, HasDefault
+    DatabaseControl ObjectSERVER = 5000 : Public, Static, Literal, HasDefault
+    DatabaseControl ObjectSYSTEM = 6000 : Public, Static, Literal, HasDefault
+    DatabaseControl ObjectNETWORK = 7000 : Public, Static, Literal, HasDefault
+    DatabaseControl ObjectSECURITY = 8000 : Public, Static, Literal, HasDefault
+    DatabaseControl ObjectUSER = 9000 : Public, Static, Literal, HasDefault
+    DatabaseControl ObjectUndefined = 90000 : Public, Static, Literal, HasDefault
+    DatabaseControl ActionOK = 0 : Public, Static, Literal, HasDefault
+    DatabaseControl ActionOPEN = 100 : Public, Static, Literal, HasDefault
+    DatabaseControl ActionCLOSE = 200 : Public, Static, Literal, HasDefault
+    DatabaseControl ActionCREATE = 300 : Public, Static, Literal, HasDefault
+    DatabaseControl ActionDELETE = 400 : Public, Static, Literal, HasDefault
+    DatabaseControl ActionREAD = 500 : Public, Static, Literal, HasDefault
+    DatabaseControl ActionWRITE = 600 : Public, Static, Literal, HasDefault
+    DatabaseControl ActionCONNECT = 700 : Public, Static, Literal, HasDefault
+    DatabaseControl ActionUndefined = 90000 : Public, Static, Literal, HasDefault
+    DatabaseControl ResultOK = 0 : Public, Static, Literal, HasDefault
+    DatabaseControl ResultStarted = 1 : Public, Static, Literal, HasDefault
+    DatabaseControl ResultFailed = 2 : Public, Static, Literal, HasDefault
+    DatabaseControl ResultAtEnd = 3 : Public, Static, Literal, HasDefault
+    DatabaseControl ResultCancelled = 4 : Public, Static, Literal, HasDefault
+    DatabaseControl ResultTimedOut = 5 : Public, Static, Literal, HasDefault
+    DatabaseControl ResultUnknownFailure = 6 : Public, Static, Literal, HasDefault
+    DatabaseControl ResultOsError = 7 : Public, Static, Literal, HasDefault
+    DatabaseControl ResultDatabaseError = 8 : Public, Static, Literal, HasDefault
+    DatabaseControl ResultOperationInProgress = 41 : Public, Static, Literal, HasDefault
+    DatabaseControl ResultMissingName = 21 : Public, Static, Literal, HasDefault
+    DatabaseControl ResultUndefined = 90000 : Public, Static, Literal, HasDefault
+    DatabaseControl ResultShouldNotExist = 53 : Public, Static, Literal, HasDefault
+    DatabaseControl ResultShouldExist = 54 : Public, Static, Literal, HasDefault
+    DatabaseControl ResultDoesExist = 52 : Public, Static, Literal, HasDefault
+    DatabaseControl ResultDoesNotExist = 51 : Public, Static, Literal, HasDefault
+    DatabaseControl DBResultDoesNotExist = 55 : Public, Static, Literal, HasDefault
+    DatabaseControl ReadModeNotSet = 0 : Public, Static, Literal, HasDefault
+    DatabaseControl ReadModeBLOCK = 1 : Public, Static, Literal, HasDefault
+    DatabaseControl ReadModeLINE = 2 : Public, Static, Literal, HasDefault
+    DatabaseControl ReadModeAll = 3 : Public, Static, Literal, HasDefault
+    DatabaseControl ReadModeSQL = 4 : Public, Static, Literal, HasDefault
+    DatabaseControl ReadModeError = 5 : Public, Static, Literal, HasDefault
+    DatabaseControl ReadModeUndefined = -99999 : Public, Static, Literal, HasDefault
+    DatabaseControl ReadModeBINARY = 25 : Public, Static, Literal, HasDefault
+    DatabaseControl ReadModeSEEK = 28 : Public, Static, Literal, HasDefault
+    DatabaseControl CloseModeNotSet = 0 : Public, Static, Literal, HasDefault
+    DatabaseControl CloseModeBLOCK = 101 : Public, Static, Literal, HasDefault
+    DatabaseControl CloseModeLINE = 102 : Public, Static, Literal, HasDefault
+    DatabaseControl CloseModeAll = 103 : Public, Static, Literal, HasDefault
+    DatabaseControl CloseModeSQL = 104 : Public, Static, Literal, HasDefault
+    DatabaseControl CloseModeError = 105 : Public, Static, Literal, HasDefault
+    DatabaseControl CloseModeUndefined = -99999 : Public, Static, Literal, HasDefault
+    DatabaseControl CloseModeBINARY = 125 : Public, Static, Literal, HasDefault
+    DatabaseControl CloseModeSEEK = 128 : Public, Static, Literal, HasDefault
+    DatabaseControl FileIoDiskFull = 8001 : Public, Static, Literal, HasDefault
+    DatabaseControl FileIoDiskError = 8002 : Public, Static, Literal, HasDefault
+    DatabaseControl FileIoNetworkError = 8003 : Public, Static, Literal, HasDefault
+    DatabaseControl FileIoInternetError = 8004 : Public, Static, Literal, HasDefault
+    DatabaseControl FileIoAccessNotSet = 0 : Public, Static, Literal, HasDefault
+    DatabaseControl FileIoAccessReadOnly = 21 : Public, Static, Literal, HasDefault
+    DatabaseControl FileIoAccessAppendOnly = 22 : Public, Static, Literal, HasDefault
+    DatabaseControl FileIoAccessError = 5 : Public, Static, Literal, HasDefault
+    DatabaseControl FileIoCreateIfMISSING = 23 : Public, Static, Literal, HasDefault
+    DatabaseControl FileIoCreateOnly = 24 : Public, Static, Literal, HasDefault
+    DatabaseControl FileIoNoRowId = 99 : Public, Static, Literal, HasDefault
+    DatabaseControl FileIoRowIdShouldNotExist = 33 : Public, Static, Literal, HasDefault
+    DatabaseControl FileIoRowIdDoesExist = 32 : Public, Static, Literal, HasDefault
+    DatabaseControl FileIoRowIdDoesNotExist = 31 : Public, Static, Literal, HasDefault

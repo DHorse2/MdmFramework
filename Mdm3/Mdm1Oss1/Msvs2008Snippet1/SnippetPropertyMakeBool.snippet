@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>PropMakeBool</Title>
+			<Shortcut>bp</Shortcut>
+			<Description>Code snippet Property Bool GPub SPriv Create</Description>
+			<Author>Microsoft Corporation</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+				<SnippetType>SurroundsWith</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>propertygetaccess</ID>
+					<ID>propertysetaccess</ID>
+					<ID>type</ID>
+					<ID>prefixpolish</ID>
+					<ToolTip>Bool Property to create</ToolTip>
+					<Default>X</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="csharp"><![CDATA[
+// property $type$ $selected$
+private $type$ $prefixpolish$p$selected$ = false;
+public $type$ $prefixpolish$$selected$ {
+$propertygetaccess$ get { return $prefixpolish$p$selected$; }
+$propertysetaccess$ set { $prefixpolish$p$selected$ = value; }
+}
+
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

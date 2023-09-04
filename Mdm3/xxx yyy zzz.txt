@@ -1,0 +1,125 @@
+namespace Mdm1Srt1ImportTld1
+{
+    /// <summary>
+    /// Mdm1 Srt1 OpSys Bootstrap Mdm1Srt1ImportTld1 - MimportTld1App1 - MimportTld1
+    /// </summary>
+    public class MimportTld1 : IProcessFile1
+    {
+        /// <summary>
+        /// class Mdm1 Oss properties
+        /// </summary>
+        private string MdmAuthorCompanyName = "MacroDm";
+        private string MdmAuthorName = "David G. Horsman";
+        private string MdmProjectName = "MdmSrtVs5_0";
+        private string MdmTaskName = "Task8";
+        private string MdmTaskStepName = "Step1";
+        private string MdmCodeSolutionName = "Mdm1Srt1ImportTld1";
+        private string MdmCodeProjectName = "Mdm1Srt1ImportTld1";
+        private string MdmNamespaceName = "Mdm1Srt1ImportTld1";
+        private bool MdmSystemIntResult = false;
+        private string MdmSystemName = "MdmPc";
+        private int MdmSystemNumber = 99999;
+        private string MdmProcessName = "MimportTld1MainPage1";
+        private int MdmProcessIntStatus = 99999;
+        private int MdmProcessIntResult = 99999;
+        private string MdmProcessIntStatusText1 = "99999";
+        private string MdmProcessIntStatusText2 = "99999";
+        private string MdmClassIntStatusText = "99999";
+        private int MdmClassIntStatus = 99999;
+        private int MdmMethodIntResult = 99999;
+        private int MdmMethodStatus = 99999;
+        /// <summary>
+        /// class external properties
+        /// </summary>
+        /// 
+
+
+        /// <summary>
+        /// class internal properties
+        /// </summary>
+        ///
+
+        /// <summary>
+        /// class properties
+        /// </summary>
+        /// 
+
+
+=============================================
+
+        int LocalIntResult;
+        bool LocalBoolResult;
+        protected Mobject1 LocalMob;
+        public MimportTld1 MdmActionTld;
+        protected string ImpFileName;
+        //        protected Mfile1 ImportTldImpFile;
+        protected string OutFileName;
+        //        protected Mfile1 ImportTldOutFile;
+        protected string OutFileItemIdName;
+        protected string OutFileOptions;
+        ///
+        
+
+        public int AppPage1Loaded()
+        {
+            
+            LocalMob = new Mobject1();
+            LocalMob.MdmProcessIntStatusText2 = "initialised";
+            MdmActionTld = new MimportTld1();
+            ImpFileName = "";
+            //        protected Mfile1 ImportTldImpFile;
+            OutFileName = "";
+            //        protected Mfile1 ImportTldOutFile;
+            OutFileItemIdName = "";
+            OutFileOptions = "";
+
+            return 0;
+        }
+
+        public int AppDoProcessing()
+        {
+            LocalMob.MdmMethodIntResult = MdmActionTld.ProcessFile("Import", ImpFileName, OutFileName, OutFileItemIdName, OutFileOptions);
+            return 0;
+        }
+
+        public int AppCancelProcessing()
+        {
+
+            return 0;
+        }
+
+        public int InputFileCheck(string ImpPassedName)
+        {
+            ImpFileName = ImpPassedName;
+            LocalMob.MdmProcessIntStatusText2 = "initialised";
+            LocalMob.MdmMethodIntResult = MdmActionTld.CheckFileExists(ImpFileName);
+            if (LocalMob.MdmSystemBoolResult == true)
+                LocalMob.MdmMethodIntResult = 0;
+            else
+                LocalMob.MdmMethodIntResult = 1;
+
+            return LocalMob.MdmMethodIntResult;
+        }
+        public int OutputFileCheck(string OutPassedName)
+        {
+            OutFileName = OutPassedName;
+            LocalMob.MdmMethodIntResult = MdmActionTld.CheckFileExists(OutFileName);
+
+            if (LocalMob.MdmSystemBoolResult == false)
+                LocalMob.MdmMethodIntResult = 0;
+            else
+                LocalMob.MdmMethodIntResult = 1;
+            return LocalMob.MdmMethodIntResult;
+        }
+        public int OutputFileItemIdCheck(string OutPassedIdName)
+        {
+            OutFileItemIdName = OutPassedIdName;
+            LocalMob.MdmMethodIntResult = MdmActionTld.CheckFileExists(OutFileName);
+
+            if (LocalMob.MdmSystemBoolResult == false)
+                LocalMob.MdmMethodIntResult = 0;
+            else
+                LocalMob.MdmMethodIntResult = 1;
+            return LocalMob.MdmMethodIntResult;
+        }
+

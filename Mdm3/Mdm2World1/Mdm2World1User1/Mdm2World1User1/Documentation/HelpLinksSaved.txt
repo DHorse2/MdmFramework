@@ -1,0 +1,1266 @@
+C# Keywords
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_csref/html/e929b0f2-4b92-4d37-8060-23d323b098ad.htm
+
+C# Reference
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_csref/html/06de3167-c16c-4e1a-b3c5-c27841d4569a.htm
+
+C# Programming Guide
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_csref/html/ac0f23a2-6bf3-4077-be99-538ae5fd3bc5.htm
+
+( Default Namespace ) Namespace
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_namespaces/html/96f28dfd-2c23-c332-ac2f-6930f1f93bf9.htm
+
+Visual Studio and .NET Framework Glossary
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_fxnetstart/html/6529d7c6-7e25-4426-a120-d57b239ca4eb.htm
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxx ToDo xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxx ToDo Reading xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Asymmetric Accessor Accessibility (C# Programming Guide)
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_csref/html/6e655798-e112-4301-a680-6310a6e012e1.htm
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxx ToDo Download xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Event-based Asynchronous Pattern Technology Sample
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_fxsamples/html/0bfa6d51-5751-4084-8534-866f3ebc6150.htm
+
+Workflow Threading Sample 
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/wcf_wf_samples/html/5b650be7-09fa-47db-a2f6-523dc8ea5ee9.htm
+
+Binding the Properties of UI Elements Sample
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/wpf_samples/html/858c31b5-9026-4626-8f44-beaeb0a8e650.htm
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxx ToDo  xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Need complete copy of performance counters from MS site
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxx TYPES xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxx TYPES Collections xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Collections and Data Structures
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_fxfund/html/60cc581f-1db5-445b-ba04-a173396bf872.htm
+
+System.Collections.ObjectModel Namespace
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_namespaces/html/1a58dbf2-0c54-8437-bbdd-f1661f3c1f97.htm
+
+System.Collections.Generic Namespace
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_namespaces/html/27f39504-fd63-6cd0-0006-7f4478eda8e6.htm
+
+SortedList<(Of <(TKey, TValue>)>) Generic Class
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_system/html/610567de-2e69-204a-753c-6cf539daacfd.htm
+
+SynchronizedKeyedCollection<(Of <(K, T>)>) Generic Classms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_system.servicemodel/html/6f856156-5953-488c-a099-3045e4034f96.htm
+
+SynchronizedCollection<(Of <(T>)>) Generic Class
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_system.servicemodel/html/2039637d-cf5e-aee5-d0b6-94ba616feb8c.htm
+
+LinkedList<(Of <(T>)>) Generic Classms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_system/html/7b6c5adf-606b-4fda-94cd-90bd3b40fc09.htm
+
+Enum Class ** see get names **
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_mscorlib/html/10927236-17e3-05a8-1e27-cbadd3d0adb5.htm#exampleToggle
+
+xxxxxxxxxxxxxxxxxxxxx TYPES Collections Generic xxxxxxxxxxxxxxxxxxx
+System.Collections.Generic Namespace
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_namespaces/html/27f39504-fd63-6cd0-0006-7f4478eda8e6.htm
+
+System.Collections Namespace
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_namespaces/html/e874655c-0d14-d5c4-2c6a-42435dcd71dc.htm
+
+List<(Of <(T>)>)..::.AddRange Method 
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_mscorlib/html/50d869e5-6aa6-7117-914e-cc4338ae6f14.htm
+List<(Of <(T>)>)..::.InsertRange Method 
+List<(Of <(T>)>)..::.RemoveRange Method 
+List<(Of <(T>)>)..::.GetRange Method
+
+Collections and Synchronization (Thread Safety)
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_fxfund/html/86a4e40a-9952-4be5-8e9a-3ce6333b2e17.htm
+
+
+xxxxxxxxxxxxxxxxx TYPES General xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Types (C# Programming Guide)
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_csref/html/f782d7cc-035e-4500-b1b1-36a9881130ad.htm
+Data Types Compared in Different Languages
+
+Windows Data Types
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/winprog/winprog/windows_data_types.htm
+
+Types Reference Tables (C# Reference)
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_csref/html/1d2b6a9b-31fd-4fa6-a7b2-bfd9c806ac8a.htm
+
+Integral Types Table (C# Reference)
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_csref/html/62e86126-46ff-40b0-9028-e61d7558268c.htm
+
+Formatting Numeric Results Table (C# Reference)
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_csref/html/120ba537-4448-4c62-8676-7a8fdd98f496.htm
+
+
+xxxxxxxxxxxxxxxxx TYPES Marshaling xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Marshaling Data with Platform Invoke
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_fxinterop/html/dc5c76cf-7b12-406f-b79c-d1a023ec245d.htm
+
+Platform Invoke Data Types
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_fxinterop/html/16014d9f-d6bd-481e-83f0-df11377c550f.htm
+
+Windows Data Types
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/winprog/winprog/windows_data_types.htm
+
+Type Class
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_mscorlib/html/abee003d-eb9f-f380-7902-6af6cb34a622.htm#seeAlsoToggle
+
+typeof (C# Reference)
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_csref/html/0c08d880-515e-46bb-8cd2-48b8dd62c08d.htm
+Object..::.GetType Method 
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_mscorlib/html/22eb734d-ef5a-618a-6cf4-16e6aac5363c.htm
+
+IDisposable..::.Dispose Method 
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_mscorlib/html/d2fe234e-d59b-fa98-3f28-f6f3f75757e3.htm#exampleToggle
+
+
+xxxxxxxxxxxxxxxxx Formatting and Convert xxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxx Formatting and Convert xxxxxxxxxxxxxxxxxxxxxxxxxxx
+Formatting Overview
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_fxfund/html/0d1364da-5b30-4d42-8e6b-03378343343f.htm
+
+Convert Members
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_mscorlib/html/904e489d-6552-e859-950f-260f7000d151.htm
+Convert..::.ToBase64String Method 
+and
+IFormatProvider Interfacems-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_mscorlib/html/5d31bf0d-aa83-cad6-ff08-d7ea947d0c14.htm
+and
+ICustomFormatter Interface
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_mscorlib/html/250be0ad-3cb3-a914-7d54-9c0735c5dead.htm
+IFormattable..::.ToString Method 
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_mscorlib/html/a6b6f186-5e3f-5a1a-8d59-0fca3a0b582d.htm
+and
+Array..::.ConvertAll<(Of <(TInput, TOutput>)>) Generic Method
+
+Converting Overview
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_fxfund/html/ba36154f-064c-47d3-9f05-72f93a7ca96d.htm
+
+Convert Class
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_mscorlib/html/d10b99fc-5d27-d643-7920-25e0f1127b02.htm
+
+String..::.Split Method (array< Char >[]()[])
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_mscorlib/html/c79d4a1c-a38b-9989-92a1-ddb344214eb8.htm
+
+Operator Overloading
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_vclang/html/56ad4c4f-dd0c-45e0-adaa-08fe98cb1f8e.htm
+
+System.ComponentModel Namespace
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_namespaces/html/0de82105-8f0d-3514-72ed-11d749ecebe4.htm
+
+List<(Of <(T>)>)..::.ConvertAll<(Of <(TOutput>)>) Generic Method 
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_mscorlib/html/668accdb-8288-dbc0-2059-e07397d41f5c.htm#exampleToggle
+
+How to: Implement a Type Converter
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_fxdeveloping/html/90373a3f-d8c8-492d-841c-945d62393c56.htm
+
+Strings Members
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_microsoft.visualbasic/html/0ae1cbd8-716b-61f6-7b07-29a7fdef41b6.htm
+
+xxxxxxxxxxxxxxxxxxxxxx Application Domains xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Programming with Application Domains
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_fxintro/html/bd36055b-56bd-43eb-b4d8-820c37172131.htm
+
+Multifile Assemblies
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_fxfund/html/13509e73-db77-4645-8165-aad8dfaedff6.htm
+
+Module Class
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_mscorlib/html/59e1fbb6-0965-0b0f-bd97-bb64b855f58f.htm
+
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxx Interop xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxx Reflection  xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Walkthrough: Calling Windows APIs
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_vbalr/html/9280ca96-7a93-47a3-8d01-6d01be0657cb.htm
+
+Creating Prototypes in Managed Code
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_fxinterop/html/ecdcf25d-cae3-4f07-a2b6-8397ac6dc42d.htm
+
+Reflection Overview
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_fxadvance/html/d1a58e7f-fb39-4d50-bf84-e3b8f9bf9775.htm
+
+System.Reflection Namespace
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_namespaces/html/3ab486cc-fe31-1c1d-2711-62118c2afbf2.htm
+MethodBase Members
+MemberInfo Class
+TypeDelegator Members
+Reflection Emit Abstractions
+TypeBuilder Class
+FieldBuilder Class
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_mscorlib/html/6fc99b92-3200-62e2-b3ca-9f5e8c58e070.htm
+
+MethodAttributes Enumeration
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_mscorlib/html/e1548c82-c8ea-105d-5e9a-8d38b7d39a53.htm
+
+System.Reflection.Emit Namespace
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_namespaces/html/856b29fb-6787-f31e-6475-6e05865ae18e.htm
+
+Reflection Emit Abstractions
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_fxadvance/html/feb20cbd-7570-49e3-9636-825abb42a05b.htm
+
+FieldBuilder Class
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_mscorlib/html/6fc99b92-3200-62e2-b3ca-9f5e8c58e070.htm
+
+TypeBuilder..::.CreateType Method 
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_mscorlib/html/92a2fb53-8d53-9327-e954-44c1f548f71b.htm
+
+Process Class
+
+Type Members
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_mscorlib/html/e2ef1b2c-e9f4-9428-42b1-6ce526a9f7b3.htm#propertyTableToggle
+
+Type..::.InvokeMember Method (String, BindingFlags, Binder, Object, array< Object >[]()[])
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_mscorlib/html/2b549cd9-bd5b-6f08-ba2f-7d1ef7eb02b7.htm
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxx Win32 xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Functions by Category
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/winprog/winprog/functions_by_category.htm
+
+Functions in Alphabetical Order
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/winprog/winprog/functions_in_alphabetical_order.htm
+
+xxxxxxxxxxxxx Menus 
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/winui/winui/windowsuserinterface/resources/menus.htm
+WM_COMMAND Notification
+WM_CONTEXTMENU Notification
+
+
+xxxxxxxxxxxxx User Input 
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/winui/winui/windowsuserinterface/userinput.htm
+
+Keyboard Accelerators 
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/winui/winui/windowsuserinterface/userinput/keyboardaccelerators.htm
+WM_SYSCOMMAND Notification
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/winui/winui/windowsuserinterface/userinput/keyboardaccelerators/keyboardacceleratorreference/keyboardacceleratormessages/wm_syscommand.htm
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxx EXCEPTIONS xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+SqlErrorCollection Class
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_system.data/html/ea14753b-1146-647a-0ef9-883dd66c3b44.htm
+
+Exception Class
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_mscorlib/html/2bfb92f0-3a89-6201-aea9-447602be9fde.htm
+
+StackTrace Class
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_mscorlib/html/7f6255ab-2811-e064-0ad3-ba166e5e5ea7.htm
+
+StackTrace..::.GetFrame Method 
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_mscorlib/html/c6a96824-bef6-243d-b9fa-8eaae897b710.htm
+
+Strategies for Handling Errors in COM+ 
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/cossdk/html/1ae5875b-8085-44f2-9071-c2a5d7543ac1.htm
+
+
+
+xxxxxxxxxxxxxxxxxxxxxxx Cross-cutting OSS xxxxxxxxxxxxxxxxxxxxxxxxxxx
+System Namespace
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_namespaces/html/7bae3666-6d20-26f2-6798-b8095e51d913.htm
+
+TimeSpan Structure
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_mscorlib/html/b8f75e86-419f-32b6-ee52-a2892e6ca168.htm
+
+Waitable Timer Objects
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/dllproc/base/waitable_timer_objects.htm
+
+Environment Members
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_mscorlib/html/4ff5597e-92a6-a514-f70a-046b7c6c8df7.htm
+Math Class
+
+Microsoft.Win32 Namespace
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_namespaces/html/a5507020-3cda-8f62-0599-2f5f17962318.htm
+SystemEvents Members
+System.CodeDom Namespace
+System.IO Namespace
+System.Resources Namespace
+System.Security Namespace
+
+Advanced COM Interoperability
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_fxinterop/html/3ada36e5-2390-4d70-b490-6ad8de92f2fb.htm
+
+#if (C# Reference)
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_csref/html/48cabbff-ca82-491f-a56a-eeccd528c7c2.htm
+
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxx Reliability xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+SQL Server Programming and Host Protection Attributes
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_fxadvance/html/7dfa36b4-e773-4c75-a3ff-ff1af3ce4c4f.htm
+
+Reliability Best Practices
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_fxadvance/html/cf624c1f-c160-46a1-bb2b-213587688da7.htm
+
+
+
+xxxxxxxxxxxxxxxxxxxxx DLLs, Processes, and Threads xxxxxxxxxxxxxxxx
+DLLs, Processes, and Threads
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/dllproc/base/dlls_processes_and_threads.htm
+
+Processes and Threads
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/dllproc/base/processes_and_threads.htm
+
+Fibers
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/dllproc/base/fibers.htm
+
+Priority Boosts
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/dllproc/base/priority_boosts.htm
+
+Creating Windows in Threads
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/dllproc/base/creating_windows_in_threads.htm
+
+Wait Functions
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/dllproc/base/wait_functions.htm
+
+
+xxxxxxxxxxxxxxxxx Extension Methods xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Extension Methods (C# Programming Guide)
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_csref/html/175ce3ff-9bbf-4e64-8421-faeb81a0bb51.htm
+
+IExpando Members
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_mscorlib/html/1452a04e-efb0-ab87-8ada-5229a617313e.htm
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxx LINQ xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+LINQ Query Expressions (C# Programming Guide)
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_csref/html/40638f19-fb46-4d26-a2d9-a383b48f5ed4.htm
+
+Enumerable Class
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_system.core/html/c8327057-1e81-d320-5cb0-618715493870.htm
+IEnumerable<(Of <(T>)>) Generic Interface
+IEnumerable Interface
+Queryable Class
+IQueryable<(Of <(T>)>) Generic Interface
+
+
+ExpressionType Enumeration
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_system.core/html/fce9722b-33cb-b268-b8bf-acd16347e0f1.htm
+
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxx Indexers  xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Using Indexers (C# Programming Guide)
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_csref/html/df70e1a2-3ce3-4aba-ad80-4b2f3538699f.htm
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxx Component xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+System.ComponentModel Namespace
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_namespaces/html/0de82105-8f0d-3514-72ed-11d749ecebe4.htm
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxx Controls xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+CurrencyManager Class
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_system.windows.forms/html/cc85e807-cc1b-f315-d1b0-7afc843caffd.htm
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxx Window xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+System.Windows Namespace
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_namespaces/html/6fe01f63-722d-4244-4293-42f7c54365e1.htm
+Window Class
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_presentationframework/html/91dc38e4-0a64-158d-4eda-da8076de010a.htm
+
+
+xxxxxxxxxxxxxxxxxxxx Forms 
+System.Windows.Forms Namespace
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_namespaces/html/3ac86d7a-2052-dff5-5f58-e9d600294d2a.htm
+Form Class
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_system.windows.forms/html/6569d671-0a28-7b3f-dbb8-90c3d272b6e2.htm
+Form Members
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_system.windows.forms/html/f79e398b-cccd-f473-d1c2-fa7fe720718c.htm
+
+FormBorderStyle Enumeration
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_system.windows.forms/html/80e5721b-f35b-d5f0-0a5d-1a0624276545.htm
+
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxx NotifyIcon xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+NotifyIcon Members
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_system.windows.forms/html/82aade25-dce3-0407-33ce-8bfa66693890.htm
+
+Show
+	Control^ control, 
+	Point pos, 
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxx ContextMenu xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ContextMenu Members
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_system.windows.forms/html/a1537773-db76-c5b1-23b9-a5d9ed02ecc6.htm
+
+LeftRightAlignment Enumeration
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_system.windows.forms/html/fef1a7d9-6b9d-37ad-8a58-fca1b4f09b8e.htm
+
+UpDownBase..::.UpDownAlign Property 
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_system.windows.forms/html/b34ba8db-1cd4-f704-1a06-ec363c2aba1a.htm
+
+
+xxxxxxxxxxxxxxxxxxxx Clipboard and DataObject xxxxxxxxxxxxxxxxxxxxxxxxx
+Clipboard 
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/winui/winui/windowsuserinterface/dataexchange/clipboard.htm
+
+About the Clipboard 
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/winui/winui/windowsuserinterface/dataexchange/clipboard/abouttheclipboard.htm
+
+Clipboard Class
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_presentationcore/html/99b514bb-7f50-fceb-51fe-c9a09e86bdee.htm
+
+RegisterClipboardFormat Function
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/winui/winui/windowsuserinterface/dataexchange/clipboard/clipboardreference/clipboardfunctions/registerclipboardformat.htm
+
+GetClipboardSequenceNumber Function
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/winui/winui/windowsuserinterface/dataexchange/clipboard/clipboardreference/clipboardfunctions/getclipboardsequencenumber.htm
+
+CF_OWNERDISPLAY 
+
+
+xxxxxxxxxxxxx DataObject 
+DataObject Class
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_presentationcore/html/f1fd1be6-95a0-9fbc-fcf0-a351671d2d95.htm
+
+IDataObject Interface
+IDataObject Members
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_presentationcore/html/618013ee-c4a8-539d-dbfc-3970bbb92923.htm
+
+DataFormats Class
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_presentationcore/html/817a694a-28da-7784-1bfe-9ea75eaefbc2.htm
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxx Events xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+MouseEventArgs Class
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_system.windows.forms/html/9bec0c7f-dc8a-1b7a-941e-43f8b22b9c29.htm
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxx DataGridView xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+DataGridView Class
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_system.windows.forms/html/a4e2c42c-e62b-3cfd-7f2b-853d716a676c.htm
+
+DataGridView..::.DataSource Property 
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_system.windows.forms/html/066e80bf-a7bc-8ad8-dede-608c78418fe5.htm
+
+Walkthrough: Creating a Master/Detail Form Using Two Windows Forms DataGridView Controls
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_fxmclictl/html/c5fa29e8-47f7-4691-829b-0e697a691f36.htm
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxx ADO xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Overview of ADO.NET
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/wd_adonet/html/ee3bc1d8-11db-4be4-89eb-c708cf04117d.htm
+
+ADO.NET Architecture
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/wd_adonet/html/fcd45b99-ae8f-45ab-8b97-d887beda734e.htm
+
+DataSets (ADO.NET)
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/wd_adonet/html/82b641bb-6001-4512-bf1a-2830acdd92ab.htm
+DataSet Class
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_system.data/html/de5c6694-02a3-75b6-7643-4a4560f94e73.htm
+
+DataAdapter Class
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_system.data/html/f4dc4de3-e62b-53b6-fd0d-cac79261a99b.htm
+If you are connecting to a SQL Server database, you can increase overall performance by using the SqlDataAdapter along with its associated SqlCommand and SqlConnection objects. For OLE DB-supported data sources, use the DataAdapter with its associated OleDbCommand and OleDbConnection objects. For ODBC-supported data sources, use the DataAdapter with its associated OdbcCommand and OdbcConnection objects. For Oracle databases, use the DataAdapter with its associated OracleCommand and OracleConnection objects.
+
+DbConnectionStringBuilder Class
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_system.data/html/e39b97cb-ad54-d840-9140-89fbb78e5134.htm
+
+DataRelationCollection Class
+DataTableCollection Class
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_system.data/html/1a5177ab-0929-b68f-4365-c62638ebf772.htm
+
+DataTable Class
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_system.data/html/8a73ab8a-b5d2-531b-d030-ba555015a054.htm
+
+DataTable..::.Columns Property 
+DataColumn Class
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_system.data/html/e59afc49-4972-84e4-cb3e-d58ed7954071.htm
+
+DataTable..::.Rows Property 
+DataRow Class
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_system.data/html/1a75122b-5578-2d83-4e5f-4c0868dbacf1.htm
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxx TimeSpan  xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+TimeSpan Structure
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_mscorlib/html/b8f75e86-419f-32b6-ee52-a2892e6ca168.htm
+
+DateTimeKind Enumeration
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_mscorlib/html/70fdc50f-15e6-434b-6ad7-ec4a393d9e79.htm
+
+How to: Access the Predefined UTC and Local Time Zone Objects
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_fxfund/html/961fb70b-83f0-4dab-a042-cb5fcd817cf5.htm
+
+Choosing Between DateTime, DateTimeOffset, and TimeZoneInfo
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_fxfund/html/07f17aad-3571-4014-9ef3-b695a86f3800.htm
+
+DateTime Structure
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_mscorlib/html/ba1e6bdf-6174-3b81-0419-a7c98ebf1383.htm
+
+DateTimeOffset Structure
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_mscorlib/html/83bbb468-8dce-311c-1e01-4a32ba901cfd.htm
+
+Timer Class (Forms)
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_system.windows.forms/html/5c54e921-31fe-7d88-1431-dcf6f88cabd4.htm
+
+Timer Class
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_system/html/f2837689-ab7f-82a0-3dfd-279fd03db871.htm
+
+
+xxxxxxxxxxxxxxxxxxxxx System Information xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+System Information Functions
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/sysinfo/base/system_information_functions.htm
+GetUserName Function
+GetComputerNameEx Function
+ExpandEnvironmentStrings Function
+
+Process Class
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_system/html/04e6b2f8-f1d6-04fe-13d5-8e6d09909d50.htm
+
+Enumerating All Processes
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/dllproc/base/enumerating_all_processes.htm
+
+System.Diagnostics Namespace
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_namespaces/html/ef3b933d-2e9d-7a96-67d9-c295b0050d69.htm
+
+
+xxxxxxxxxxxx Performance Monitoring 
+Performance Monitoring for Win32 and COMms-help://MS.LHSMSSDK.1033/TopLevel/html/6c1484b2-6b8f-4e96-8be4-c059ac4b21cc.htm
+
+PerformanceCounterType Enumeration
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_system/html/6ec6fadb-ef4b-0237-1d49-720d3f1fe630.htm
+
+Performance Data Format
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/perfctrs/perf/performance_data_format.htm
+
+
+xxxxxxxxxxxx SystemMonitor 
+SystemMonitor Object
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/sysmon/sysmon/systemmonitor.htm
+
+SYSMON Classes
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/sysmon/sysmon/sysmon_classes.htm
+
+
+xxxxxxxxxxxx Counter Names 
+Retrieving Counter Names and Help Text
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/perfctrs/perf/retrieving_counter_names_and_explanations.htm
+
+Specifying a Counter Path
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/perfctrs/perf/specifying_a_counter_path.htm
+Add Method of the Counters Object
+Counters Collection
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxx Messages xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+About Messages and Message Queues 
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/winui/winui/windowsuserinterface/windowing/messagesandmessagequeues/aboutmessagesandmessagequeues.htm
+
+Messages and Message Queues 
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/winui/winui/windowsuserinterface/windowing/messagesandmessagequeues.htm
+
+GetMessage
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/winui/winui/windowsuserinterface/windowing/messagesandmessagequeues/messagesandmessagequeuesreference/messagesandmessagequeuesfunctions/getmessage.htm
+
+Using Messages and Message Queues 
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/winui/winui/windowsuserinterface/windowing/messagesandmessagequeues/usingmessagesandmessagequeues.htm
+
+Shell Messages and Notifications
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/shell/shell/reference/messages/messages.htm
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxx Shell xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Shell Objects for C++
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/shell/shell/reference/objects/objects_cpp.htm
+
+Introduction to the Shell Namespace
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/shell/shell/programmersguide/extensibilty/providersandextending/namespaceintro.htm
+
+Extending Shortcut Menus
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/shell/shell/programmersguide/extensibilty/extendingexplorers/context.htm
+
+Creating Custom Explorer Bars, Tool Bands, and Desk Bands
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/shell/shell/programmersguide/extensibilty/extendingexplorers/bands.htm
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxx Hooks xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Hooks 
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/winui/winui/windowsuserinterface/windowing/hooks.htm
+
+About Hooks 
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/winui/winui/windowsuserinterface/windowing/hooks/abouthooks.htm
+WH_SHELL Hook
+
+ShellProc Function
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/winui/winui/windowsuserinterface/windowing/hooks/hookreference/hookfunctions/shellproc.htm
+
+SetWindowsHookEx Function
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/winui/winui/windowsuserinterface/windowing/hooks/hookreference/hookfunctions/setwindowshookex.htm
+
+WM_APPCOMMAND Notification
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/winui/winui/windowsuserinterface/userinput/keyboardinput/keyboardinputreference/keyboardinputmessages/wm_appcommand.htm
+
+WM_COMMAND Notification
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/winui/winui/windowsuserinterface/resources/menus/menureference/menumessages/wm_command.htm
+
+Menus 
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/winui/winui/windowsuserinterface/resources/menus.htm
+
+WM_MENUCOMMAND Notification
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/winui/winui/windowsuserinterface/resources/menus/menureference/menumessages/wm_menucommand.htm
+
+Mouse Input 
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/winui/winui/windowsuserinterface/userinput/mouseinput.htm
+
+Keyboard Input 
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/winui/winui/windowsuserinterface/userinput/keyboardinput.htm
+
+GET_KEYSTATE_LPARAM Macro
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/winui/winui/windowsuserinterface/userinput/mouseinput/mouseinputreference/mouseinputmacros/get_keystate_lparam.htm
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxx WinEvents xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+WinEvents
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/msaa/msaaccgd_3mgj.htm
+
+Out-of-Context Hook Functions
+
+Event Constants
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/msaa/msaaccrf_7jlf.htm
+
+Appendix A: Supported User Interface Elements Reference
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/msaa/msaapndx_6qlh.htm
+
+Window
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/msaa/msaapndx_5k53.htm
+
+Active Accessibility Basics
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/msaa/msaaovrw_7rqr.htm
+
+IAccessible::accNavigate
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/msaa/msaaccrf_3of9.htm
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxx Idle Indicators xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Performance Counters Reference
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/perfctrs/perf/performance_counters_reference.htm
+
+Specifying a Counter Path
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/perfctrs/perf/specifying_a_counter_path.htm
+
+Browsing Counters
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/perfctrs/perf/browsing_counters.htm
+
+LASTINPUTINFO Structure
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/winui/winui/windowsuserinterface/userinput/keyboardinput/keyboardinputreference/keyboardinputstructures/lastinputinfo.htm
+
+
+xxxxxxxxxxxxxxxxxx Windows messages FMEVENT xxxxxxxxxxxxxxxxxxxx
+MessageQueue Class
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_system.messaging/html/8e4dd4cb-a56b-49d6-40bc-4cb4bf16ea43.htm
+
+FMEVENT_SELCHANGE Message
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/shell/shell/reference/messages/fmevent_selchange.htm
+
+xxx FVM - FOLDER VIEW MODE
+xxx FM - File Manager
+xxx FLVM - FOLDER LOGICAL VIEW MODE
+
+SFVM_INVOKECOMMAND Notification
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/shell/shell/reference/messages/sfvm_invokecommand.htm
+
+Control..::.WndProc Method ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_system.windows.forms/html/a4e257fa-bdf7-4c43-aeef-d5c0c13f6ca1.htm
+
+Message Structure
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_system.windows.forms/html/4e5035df-ed05-1ec3-d6ba-de4d73982496.htm
+
+Message Members
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_system.windows.forms/html/d9df38b5-f22e-305b-b43a-47d6df1cffde.htm
+Message..::.LParam Property 
+Message..::.WParam Property 
+
+IntPtr Structure
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_mscorlib/html/adf69bd9-9749-0990-7f2d-1b7fcf08aca5.htm
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxx COM xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+COM Data Types
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_fxinterop/html/f93ae35d-a416-4218-8700-c8218cc90061.htm
+
+Default Marshaling Behavior
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_fxinterop/html/c0a9bcdf-3df8-4db3-b1b6-abbdb2af809a.htm
+
+Default Marshaling for Value Types
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_fxinterop/html/4d9a876c-e05a-40ba-bd85-bd22877f984a.htm
+
+Default Marshaling for Strings
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_fxinterop/html/9baea3ce-27b3-4b4f-af98-9ad0f9467e6f.htm
+
+Default Marshaling for Arrays
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_fxinterop/html/8a3cca8b-dd94-4e3d-ad9a-9ee7590654bc.htm
+
+Default Marshaling for Delegates
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_fxinterop/html/d176ee76-f982-494b-b03d-92e4118896e2.htm
+
+MarshalAsAttribute Class
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_mscorlib/html/e4e977bf-0644-c5e7-d70b-359996cdc30d.htm
+
+UnmanagedType Enumeration
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_mscorlib/html/abbea630-4755-f7ca-0136-9251c5976514.htm
+[MarshalAs(UnmanagedType.FunctionPtr)] Delegate lpfn,
+
+StructLayoutAttribute Class
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_mscorlib/html/ec274271-5348-ef7e-b8e2-a07867e2401f.htm
+	
+xxxxxxxxxxxxxx COM Marshaling 
+Design Considerations for Interoperationms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_fxinterop/html/b59637f6-fe35-40d6-ae72-901e7a707689.htm
+
+Building COM Components for Interoperation
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_fxinterop/html/7a2c657a-cfef-40f0-bed3-7c2c0ac4abdf.htm
+
+How to: Map HRESULTs and Exceptionsms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_fxinterop/html/610b364b-2761-429d-9c4a-afbc3e66f1b9.htm
+
+Default Marshaling for Value Types
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_fxinterop/html/4d9a876c-e05a-40ba-bd85-bd22877f984a.htm
+
+Blittable and Non-Blittable Types
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_fxinterop/html/d03b050e-2916-49a0-99ba-f19316e5c1b3.htm
+
+Interoperating Using Generic Types
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_fxinterop/html/26b88e03-085b-4b53-94ba-a5a9c709ce58.htm
+
+System.Runtime.InteropServices Namespace
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_namespaces/html/631b2c0f-028f-0651-fc58-388b10162272.htm
+
+Platform Invoke Data Types
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_fxinterop/html/16014d9f-d6bd-481e-83f0-df11377c550f.htm
+
+VarEnum Enumeration
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_mscorlib/html/af6dca77-73b9-b32b-9599-7a753f73437b.htm
+
+UnmanagedType Enumeration
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_mscorlib/html/abbea630-4755-f7ca-0136-9251c5976514.htm
+
+Windows Data Types
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/winprog/winprog/windows_data_types.htm
+
+Nullable Types (C# Programming Guide)
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_csref/html/e473cb01-28ca-42be-9cea-f717055d72c6.htm
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxx IE8 HTML xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+HTML and DHTML Reference
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/dhtml/workshop/author/dhtml/reference/dhtml_reference_entry.htm
+and
+DHTML Objects
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/dhtml/workshop/author/dhtml/reference/objects.htm
+DHTML Methods
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/dhtml/workshop/author/dhtml/reference/methods.htm
+and
+HTML Elements
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/dhtml/workshop/author/html/reference/elements.htm
+and
+Internet Development Glossary
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/css/workshop/glossary.htm
+
+Command Identifiers
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/dhtml/workshop/author/dhtml/reference/commandids.htm
+
+Understanding Properties That Measure Element Dimension and Location
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/css/workshop/author/om/measuring.htm
+
+Building High Performance HTML Pages
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/dhtml/workshop/author/perf/perftips.htm
+
+
+xxxxxxxxxxxxxxxxxxx DHTML Working with Windows, Frames, and Dialog Boxes
+Working with Windows, Frames, and Dialog Boxes
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/dhtml/workshop/author/om/windows_frames_dialogs.htm
+
+Understanding CSS Selectors
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/dhtml/workshop/author/css/overview/css_selectors_ovw.htm
+CSS Selectors
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/css/workshop/author/css/reference/css_ref_selectors_entry.htm
+
+How To Create a Mouse Capture Drop-down Menu
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/dhtml/workshop/author/dhtml/howto/mousecaptureddm.htm
+
+How to Add a Shortcut Icon to a Web Page
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/dhtml/workshop/author/dhtml/howto/shortcuticon.htm
+
+select Method
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/dhtml/workshop/author/dhtml/reference/methods/select_1.htm
+
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxx BHO xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+IDeskBand Interface
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/shell/shell/reference/ifaces/ideskband/ideskband.htm
+
+Browser Extensions
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/IEEXT/workshop/browser/ext/extensions.htm
+
+Adding Explorer Bars
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/IEEXT/workshop/browser/ext/tutorials/explorer.htm
+
+
+xxxxxxxxxxxxx Explorer Bars, Tool Bands, and Desk Bands xxxxxxxxxxxxxxxx
+Verbs and File Associations
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/shell/shell/programmersguide/app_shell_integration/contextmenu/fa_verbs.htm
+
+Creating Custom Explorer Bars, Tool Bands, and Desk Bands
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/shell/shell/reference/objects/shell/shellspecialfolderconstants.htm
+
+Extending Shortcut Menus
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/shell/shell/programmersguide/extensibilty/extendingexplorers/context.htm
+
+Launching Applications
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/shell/shell/programmersguide/appsupport/launch.htm
+
+Explore Method
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/shell/shell/reference/objects/shell/explore.htm
+
+Creating Context Menu Handlers
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/shell/shell/programmersguide/app_shell_integration/contextmenu/contextmenuhandlers.htm
+
+
+xxxxxxxxxxxxxxxxxxxxxxx Shell Developer's xxxxxxxxxxxxxxxxxxxxxxxxxxx
+Shell Classes
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/shell/shell/reference/classes/classes.htm
+
+Shell Interfaces
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/shell/shell/reference/ifaces/interfaces.htm
+
+Shell Messages and Notifications
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/shell/shell/reference/messages/messages.htm
+
+xxxxxxxxxxxxxxxxxxx Shell Developer's Guide
+Shell Developer's Guide
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/shell/shell/programmersguide/shell_intro.htm
+
+ShellSpecialFolderConstants Enumerated Type
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/shell/shell/reference/objects/shell/shellspecialfolderconstants.htm
+
+Shell Links
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/shell/shell/programmersguide/appsupport/shortcut.htm
+
+Implementing the Basic Folder Object Interfaces
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/shell/shell/programmersguide/extensibilty/providersandextending/nse_impl.htm
+
+IExplorerBrowser Interface
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/shell/shell/reference/ifaces/iexplorerbrowser/iexplorerbrowser.htm
+
+IExplorerBrowserEvents Interface
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/shell/shell/reference/ifaces/iexplorerbrowserevents/iexplorerbrowserevents.htm
+
+xxxxxxxxxxxxxxxxxxx Shell ChangeNotify
+SHChangeNotifyRegister Function
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/shell/shell/reference/functions/shchangenotifyregister.htm
+
+SHChangeNotify Function
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/shell/shell/reference/functions/shchangenotify.htm
+
+
+xxxxxxxxxxxxxxxxxxx Shell Extension 
+Extending Shortcut Menus
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/shell/shell/programmersguide/extensibilty/extendingexplorers/context.htm#anyfiletype
+
+Creating Shell Extension Handlers
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/shell/shell/programmersguide/extensibilty/shell_ext.htm
+
+Introduction to File Associations
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/shell/shell/programmersguide/app_shell_integration/fa_intro.htm
+
+File Types
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/shell/shell/programmersguide/app_shell_integration/fileassociations/howassocswork/fa_file_types.htm
+
+Programmatic Identifiers
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/shell/shell/programmersguide/app_shell_integration/fileassociations/howassocswork/fa_progids.htm
+
+Registering Programs with Client Types
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/shell/shell/programmersguide/app_shell_integration/registeringapps.htm
+
+Internet Explorer Client Registry Layout
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/IEEXT/workshop/browser/configuration/clientreg/clientregistrylayout.htm
+
+
+xxxxxxxxxxxxxxxxxxxxxxx Threading xxxxxxxxxxxxxxxxxxxxxxxxxxx
+System.Threading Namespace
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_namespaces/html/5a7eb80e-d6d1-5d50-dd63-14472aec3e5d.htm
+System..::.Object
+  System..::.MarshalByRefObject
+    System.Threading..::.WaitHandle
+      System.Threading..::.EventWaitHandle
+      System.Threading..::.Mutex
+      System.Threading..::.Semaphore
+
+
+xxxxxxxxxxxxx Threading Asynchronous Programming
+Asynchronous Programming Design Patterns
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_fxadvance/html/c6baed9f-2a25-4728-9a9a-53b7b14840cf.htm
+
+Asynchronous File I/O
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_fxfund/html/dbdd55e7-d6b9-4f9e-8abb-ab0edd4457f7.htm
+
+Calling Synchronous Methods Asynchronously
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_fxadvance/html/41972034-92ed-450a-9664-ab93fcc6f1fb.htm
+
+Asynchronous Programming Using Delegates
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_fxadvance/html/38a345ca-6963-4436-9608-5c9defef9c64.htm
+
+Event-based Asynchronous Pattern Overviewms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_fxadvance/html/792aa8da-918b-458e-b154-9836b97735f3.htm
+
+Event-based Asynchronous Pattern Overview
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_fxadvance/html/792aa8da-918b-458e-b154-9836b97735f3.htm
+
+ThreadState Enumeration
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_mscorlib/html/4d22a28e-e983-0d0f-ec51-5ae3209beb41.htm
+
+
+xxxxxxxxxxxxxxxxxxx AsyncOperation 
+AsyncOperationManager Class
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_system/html/8c2f51e5-022b-79d0-fa98-16e89b6018a2.htm
+
+AsyncOperation Class
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_system/html/e278f3e6-258a-117e-677e-d1f60c9ad0a1.htm
+
+AsyncOperation..::.UserSuppliedState Property 
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_system/html/b15b7873-89aa-abb9-016f-a94a5ed7c145.htm
+
+AsyncOperation..::.SynchronizationContext Property 
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_system/html/ecdae1e2-f630-ac77-509d-a447adf3e405.htm
+
+Walkthrough: Implementing a Component That Supports the Event-based Asynchronous Pattern
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_fxadvance/html/61f676b5-936f-40f6-83ce-f22805ec9c2f.htm
+
+How to: Implement a Component That Supports the Event-based Asynchronous Pattern
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_fxadvance/html/3c1aa4d4-da87-4a03-b812-3d167b8c57cf.htm
+
+WindowsFormsSynchronizationContext Class
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_system.windows.forms/html/62b6dfc7-d6bb-7d22-b12b-774894d3c30d.htm
+
+SynchronizationContext Members
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_mscorlib/html/f1bf3085-928c-a63d-e422-9504a6a53fc1.htm
+
+AsyncOperation..::.Post Method 
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_system/html/4335282d-29d6-73a3-0fac-3c6d48563177.htm
+
+
+
+xxxxxxxxxxxxxxxxxxx BackgroundWorker 
+BackgroundWorker Class
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_system/html/0d0bd685-a893-fa26-f9b6-0d4d7e2af8c6.htm
+ProgressChangedEventArgs Members
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_system/html/04084fe4-b8ed-4b01-2d03-c13f126fd9dd.htm
+BackgroundWorker..::.ReportProgress Method (Int32, Object)
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_system/html/6cc9ad41-a746-da8d-a1cd-d04a69ebbc61.htm
+RunWorkerCompletedEventArgs Members
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_system/html/8c84f7af-8e49-d41c-acc5-350c05834802.htm
+
+ProgressChangedEventArgs..::.UserState Property
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_system/html/395129c7-50fe-f459-903a-7b69f526eac2.htm
+ProgressChangedEventArgs Members
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_system/html/04084fe4-b8ed-4b01-2d03-c13f126fd9dd.htm
+
+
+xxxxxxxxxxxxxxxxxxxxxxx Managed Threading
+Managed Threading
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_fxadvance/html/7b46a7d9-c6f1-46d1-a947-ae97471bba87.htm
+
+Threading Objects and Features
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_fxadvance/html/239b2e8d-581b-4ca3-992b-0e8525b9321c.htm
+
+Managed Threading Best Practices
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_fxadvance/html/e51988e7-7f4b-4646-a06d-1416cee8d557.htm
+
+Overview of Synchronization Primitives
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_fxadvance/html/b782bcb8-da6a-4c6a-805f-2eb46d504309.htm
+
+Exceptions in Managed Threads
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_fxadvance/html/11294769-2e89-43cb-890e-ad4ad79cfbee.htm
+
+Thread Pool API
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/dllproc/base/thread_pool_api.htm
+
+Process and Thread Functions
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/dllproc/base/process_and_thread_functions.htm
+
+Synchronization Functions
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/dllproc/base/synchronization_functions.htm
+
+Creating Threads and Passing Data at Start Time
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_fxadvance/html/52b32222-e185-4f42-91a7-eaca65c0ab6d.htm
+
+CriticalFinalizerObject Class
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_mscorlib/html/5f476798-99b2-ce47-3353-33ce225b9a51.htm
+
+xxxxxxxxxxxxxxxxxxx ThreadPool 
+The Managed Thread Pool
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_fxadvance/html/2be05b06-a42e-4c9d-a739-96c21d673927.htm
+
+ThreadPool Class
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_mscorlib/html/bfb44984-11ef-a3bf-42d8-e47f02015aae.htm#exampleToggle
+
+Thread Class
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_mscorlib/html/12e08039-e8ba-962e-89d0-d7a8fcffed2c.htm
+
+Thread States
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_vbalr/html/bf7edf69-af1a-41e6-b07f-1cc8c8a7b12b.htm
+
+xxxxxxxxxxxxxxxxxxx Semaphore 
+Semaphore Class
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_system/html/73ec2993-56e0-7040-3e95-8e7cdec0d5cd.htm
+
+SemaphoreRights Enumeration
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_system/html/1171f131-2caf-8022-4b74-528cd43624dd.htm
+
+SemaphoreSecurity Class
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_system/html/20845427-6394-ccd3-858f-01cca898a6a4.htm
+
+SemaphoreAuditRule Class
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_system/html/8234c372-07a3-6f6a-46d5-e4cc625ead2b.htm
+
+xxxxxxxxxxxxxxxxxxx Mutexes
+Mutexes
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_fxadvance/html/9dd06e25-12c0-4a9e-855a-452dc83803e2.htm
+
+xxxxxxxxxxxxxxxxxxx Locks
+Reader-Writer Locks
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_fxadvance/html/8c71acf2-2c18-4f4d-8cdb-0728639265fd.htm
+
+Monitors
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_fxadvance/html/33fe4aef-b44b-42fd-9e72-c908e39e75db.htm
+
+EventWaitHandle, AutoResetEvent, and ManualResetEventms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_fxadvance/html/cd94fc34-ac15-427f-b723-a1240a4fab7d.htm
+
+xxxxxxxxxxxxxxxxxxx System.IO 
+FileOptions Enumeration
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_mscorlib/html/749b434d-a169-68b4-1230-f931cba7e17e.htm
+
+System.IO Namespace
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_namespaces/html/f28c429c-c9a0-192a-6217-39690f4f7227.htm
+
+Asynchronous File I/O
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_fxfund/html/dbdd55e7-d6b9-4f9e-8abb-ab0edd4457f7.htm
+AsyncOperation Class
+AsyncOperationManager Class
+
+MessageQueue Class (Win32)
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_system.messaging/html/8e4dd4cb-a56b-49d6-40bc-4cb4bf16ea43.htm
+
+Design and Configuration for Performance
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_vwdcon/html/8de9efb1-a27f-4802-8dcd-bd3dc78c8cdb.htm
+
+Event-based Asynchronous Pattern Technology Sample
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_fxsamples/html/0bfa6d51-5751-4084-8534-866f3ebc6150.htm
+
+IAsyncResult Interface
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_mscorlib/html/b2dea371-37ea-06ce-da65-a07866f9cae1.htm
+
+
+xxxxxxxxxxxxxxxxxxx Managed Thread States
+Managed Thread States
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_fxadvance/html/63890d5e-6025-4a7c-aaf0-d8bfd54b455f.htm
+
+Walkthrough: Creating an Asynchronous HTTP Handler
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_vwdcon/html/1b5c4a27-599b-44d0-8a06-72edc6765aa9.htm
+
+Synchronizing Data for Multithreading
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_fxadvance/html/b980eb4c-71d5-4860-864a-6dfe3692430a.htm
+
+Collections and Synchronization (Thread Safety)
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_fxfund/html/86a4e40a-9952-4be5-8e9a-3ce6333b2e17.htm
+
+Foreground and Background Threads
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_fxadvance/html/cfe0d632-dd35-47e0-91ad-f742a444005e.htm
+
+How to: Make Thread-Safe Calls to Windows Forms Controls
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_fxmclictl/html/138f38b6-1099-4fd5-910c-390b41cbad35.htm
+
+BackgroundWorker Class
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_system/html/0d0bd685-a893-fa26-f9b6-0d4d7e2af8c6.htm
+
+
+xxxxxxxxxxxxxxxxxxx Thread Local Storage
+Thread Local Storage: Thread-Relative Static Fields and Data Slots
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_fxadvance/html/c633a4dc-a790-4ed1-96b5-f72bd968b284.htm
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxx Work Queues and Collections xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Work Queues 
+ms-help://MS.LHSMSSDK.1033/MS.LHSWinSDK.1033/medfound/html/f886d096-b1f5-42e4-8888-501b58bffd50.htm
+
+WorkflowQueue Members
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_system.workflow.runtime/html/bacf626e-5bd1-fb33-0f26-3574136ade1a.htm
+
+Workflow Threading Sample 
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/wcf_wf_samples/html/5b650be7-09fa-47db-a2f6-523dc8ea5ee9.htm
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxx WorkerProcessCollection
+WorkerProcessCollection Class
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_microsoft.web.administration/html/22447608-0f9a-93e9-4062-de3e0e966336.htm
+
+WorkerProcess Class
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_microsoft.web.administration/html/a08f9237-29ab-ad60-ff3d-803112a87e58.htm
+
+WorkerProcess Members
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_microsoft.web.administration/html/a27eae6a-7a8f-d6d9-f75c-15102a783daa.htm
+
+ConfigurationElement Class
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_microsoft.web.administration/html/3f5ce111-0025-a443-4ef5-7bb14a094f52.htm
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxx MethodHandle xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+RuntimeMethodHandle Structure
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_mscorlib/html/594e49a6-c3af-04e5-014f-deb4f8b74a83.htm
+
+Pointer-to-Member Conversions
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_vclang/html/6229f1a2-5b3c-4660-8a62-ac1467e010b9.htm
+
+Marshal Class
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_mscorlib/html/c8619a48-6841-19b1-38ab-fc051f8232df.htm
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxx MenuStrip xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+MenuStrip Class
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_system.windows.forms/html/6f15a38e-a134-6715-6645-d0314946909b.htm
+
+ContextMenuStrip Class
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_system.windows.forms/html/2594d669-e7b5-d326-693b-da988734cc93.htm
+
+ToolStripMenuItem Members
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_system.windows.forms/html/59de3676-9ca8-c820-7e57-7863081c9f38.htm#propertyTableToggle
+
+ToolStripDropDownItem..::.DropDownItems Property 
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_system.windows.forms/html/6079403b-b906-21a0-5eab-e1527ba22f10.htm
+
+ToolStripItem Class
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_system.windows.forms/html/920110e6-d5a8-6f88-f7eb-14a2b3bdcdba.htm
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxx Secutiry xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Key Security Concepts
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_fxsecurity/html/3cfced4f-ea02-4e66-ae98-d69286363e98.htm
+
+Role-Based Security
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_fxsecurity/html/239442e3-5be4-4203-b7fd-793baffea803.htm
+
+System.Security.Principal Namespace
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_namespaces/html/5a1dc8e3-97fe-0f6b-536b-e3936b8b3321.htm
+
+SecurityIdentifier Class
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_mscorlib/html/1266ec12-4868-412e-f048-a7e09f7683b1.htm
+
+IdentityReference Class
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_mscorlib/html/91093a4f-a8b4-57ba-e1b2-6197a4637cb6.htm
+
+SecurityAction Enumeration
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_mscorlib/html/e5d5104c-2357-2280-2983-d5f9ad3b7390.htm
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxx ComponentModel xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Containers, Sites, and Components
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_fxmclicc/html/075d666a-d322-4ef5-a700-d8c76dde87b9.htm
+
+System.ComponentModel Namespace
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_namespaces/html/0de82105-8f0d-3514-72ed-11d749ecebe4.htm
+
+How to: Implement a Client of the Event-based Asynchronous Pattern
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_fxadvance/html/21a858c1-3c99-4904-86ee-0d17b49804fa.htm
+
+How to: Implement a Component That Supports the Event-based Asynchronous Pattern
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_fxadvance/html/3c1aa4d4-da87-4a03-b812-3d167b8c57cf.htm
+
+Container Class
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_system/html/2fed0375-8bb0-8157-869a-64ba853d0092.htm
+
+Component Class
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_system/html/8c989b94-9469-e22e-6415-af76f0c4f763.htm
+
+Communication Between Containers and Components 
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_fxmclicc/html/833b3173-e9c3-42e6-b1d2-3a486c5f12f1.htm
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxx Design-Time xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Design-Time Architecture
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_fxdeveloping/html/4881917b-628f-4689-b872-472e4f8a4e3a.htm
+
+How to: Access Design-Time Services
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/dv_fxdeveloping/html/c186c4b6-076c-438d-9ed3-f13da29c8c1f.htm
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxx Shapes xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+UIElement..::.Clip Property 
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_presentationcore/html/3e380439-cdf1-757b-ef58-3adb902c2ef1.htm
+
+Geometry Class
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_presentationcore/html/af37ca22-990d-397a-b1e9-2d011890897e.htm
+
+System.Windows.Shapes Namespace
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_namespaces/html/512aaaec-2c72-7e1b-ca66-f91c5ab17987.htm
+
+Rectangle Class
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_presentationframework/html/5beabe11-e2bd-1a5b-5f54-1789fe2479e7.htm
+
+WPF Shapes Gallery Sample
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/wpf_samples/html/e0a7a5a6-568b-46c2-8db1-669fd30ca30f.htm
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxx WPF xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxx WPF - XAML BINDING
+Markup Extensions and XAML
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/wpf_conceptual/html/618dc745-8b14-4886-833f-486d2254bb78.htm
+
+Data Binding Overview
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/wpf_conceptual/html/c707c95f-7811-401d-956e-2fffd019a211.htm
+
+How to: Specify the Binding Source
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/wpf_conceptual/html/55d47757-2648-4a52-987f-b767953f168c.htm
+
+Binding Class
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_presentationframework/html/138a062e-bdb9-28d2-4514-f8f43746d433.htm
+
+Binding Markup Extension ****
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/wpf_conceptual/html/83d6e2a4-1b0c-4fc8-bd96-b5e98800ab63.htm
+
+How to: Specify the Binding Source
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/wpf_conceptual/html/55d47757-2648-4a52-987f-b767953f168c.htm
+
+Binding..::.Source Property 
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_presentationframework/html/daf9d2c2-fc2d-3253-6a9e-30ad0dd9896f.htm
+
+x:Name Attribute
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/wpf_conceptual/html/b7e61222-e8cf-48d2-acd0-6df3b7685d48.htm
+
+Binding Sources Overview
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/wpf_conceptual/html/2df2cd11-6aac-4bdf-ab7b-ea5f464cd5ca.htm
+
+How to: Bind the Properties of Two Controls
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/wpf_conceptual/html/06318fac-6afd-4c7d-a277-6d7ef50f47bc.htm
+
+Data Binding How-to Topics
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/wpf_conceptual/html/a3b2563e-d879-41a7-9dfd-ac56b27fdcad.htm
+
+FrameworkElement..::.DataContext Property 
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_presentationframework/html/75caaae4-9114-7361-2408-4e80e95a36f9.htm
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxx WPF - Controls
+TextBox
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/wpf_conceptual/html/2512a277-e9d8-4de8-a12f-2bd95e8e7b60.htm
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxx ComboBox xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ComboBox Class
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_presentationframework/html/68dda92b-4138-6a6d-1793-f5ce310e63fb.htm
+
+ComboBox ControlTemplate Example
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/wpf_conceptual/html/b0662fa1-16d7-4320-b26b-c1804e565a44.htm
+
+ItemsControl Class
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_presentationframework/html/983ce3de-dcc4-f2f3-95ba-906d2c28716b.htm
+
+ItemsControl..::.ItemsSource Property 
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_presentationframework/html/5ecbb53b-1ee0-d2e8-5ec2-d62c2d92260b.htm
+
+ObservableCollection<(Of <(T>)>) Generic Class
+ms-help://MS.LHSMSSDK.1033/MS.LHSNETFX30SDK.1033/fxref_windowsbase/html/60a23ef6-5e1f-bbdb-2958-0a741bf1c10b.htm
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxx LINQ xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxx LINQ xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxx LINQ xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+

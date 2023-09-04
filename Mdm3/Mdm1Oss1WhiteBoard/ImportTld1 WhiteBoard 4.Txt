@@ -1,0 +1,137 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace Mdm_File_ClassLibrary1
+{
+    interface Mdm_File_Class_Interface1
+    {
+            int MdmFileClassMain();
+            int ProcessTextFile(String FileName);
+            /* ================================================================== */
+            /*            Action Being Performed    */
+            /* ================================================================== */
+
+            /* Source File Name Line */
+            String File_Name_Line { get; set; }
+
+            /* Source File Action */
+            String File_Action { get; set; }
+
+            /* Source File Action Name */
+            String File_Action_Name { get; set; }
+            /*
+             *
+             *  0    - Null
+             *  1    - Exists
+             *  2    - Create
+             *  4    - Open
+             *  8    - Close
+             *  16   - Delete
+             *  32   - Empty (Delete All)
+             *  64   - Shrink
+             *  128  - Expand
+             *  256  - Lock
+             *  512  - Unlock
+             *  1024 - Defragment
+             *  2048 - Read Only
+             *  4096 - Rebuild
+             *  8192 - Rebuild Statistics
+             *  16384 - x
+             *  32768 - x
+             *  65536 - x
+             * 
+             */
+
+            /* ================================================================== */
+
+
+            /* ================================================================== */
+
+            /* Source File Name */
+            String File_Name { get; set; }
+            String File_Name_Alias { get; set; }
+            int File_Id { get; set; }
+            String File_Short_Name { get; set; }
+            String File_Short_83Name { get; set; }
+
+            Guid File_Name_Guid { get; set; }
+
+
+            /* ================================================================== */
+
+            /* Root Domain Information */
+
+            /* ================================================================== */
+
+            /* Xml Xpath Information */
+
+            /* ================================================================== */
+
+            /* Ip Domain Information */
+
+            /* ================================================================== */
+
+            /* Root Owner Entity Information */
+            /* Root Owner Path Patern Information */
+            /* Root Owner Clustering Information */
+            /* Root Owner Replication Information */
+
+
+            /* ================================================================== */
+
+            /* Source System Information */
+
+
+            /* ================================================================== */
+
+            /* Source Database Information */
+
+
+            /* ================================================================== */
+
+            /* Source Database FileGroup Information */
+
+
+            /* ================================================================== */
+
+            /* Source Database FileName Information */
+
+
+            /* ================================================================== */
+
+            /* Source Drive Name */
+            String File_Drive_Name { get; set; }
+            String File_Drive_Letter { get; set; }
+            String File_Drive_Letter_Alias { get; set; }
+            int File_Drive_System_Id { get; set; }
+            String File_Drive_Short_Name { get; set; }
+
+            /* ================================================================== */
+
+            /* Source Path Name */
+            String Path_Name { get; set; }
+            String Path_Name_Alias { get; set; }
+            int Path_Id { get; set; }
+            String Path_Short_Name { get; set; }
+
+            /* ================================================================== */
+
+            /* Source Parent Name */
+            String Parent_Name { get; set; }
+            String Parent_Name_Alias { get; set; }
+            int Parent_Id { get; set; }
+            String Parent_Short_Name { get; set; }
+
+            /* ================================================================== */
+
+            /* Source Consolodation_Parent Name */
+            String Consolodation_Parent_Name { get; set; }
+            String Consolodation_Parent_Name_Alias { get; set; }
+            int Consolodation_Parent_Id { get; set; }
+            String Consolodation_Parent_Short_Name { get; set; }
+
+
+        }
+}

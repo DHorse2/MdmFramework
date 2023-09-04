@@ -1,0 +1,15 @@
+                                // LENGTH INCLUDES EOF <CTRL>+<Z>
+                                // NEED cbEofCharacterQty OR cbLengthAdjusted
+                                // Adjust for eof separator
+                                // string tempchar = oMitCcs.ofIfo.sFileBuffer.Substring(iFileBufferCharMaxIndex, 1);
+                                // string tempchar1 = oMitCcs.ofIfo.sFileBuffer.Substring(iFileBufferCharMaxIndex + 1, 1);
+                                // string tempchar2 = oMitCcs.ofIfo.sFileBuffer.Substring(iFileBufferCharMaxIndex + 2, 1);
+
+                                // Adjusted Check for cbCr + cbLf + cbEof
+                                if (oMitCcs.ofIfo.iFileBufferCharMaxIndex == oMitCcs.ofIfo.sFileBuffer.Length - 2 && oMitCcs.ofIfo.sFileBuffer.Substring(iFileBufferCharMaxIndex + 1, 1) == cbLf.ToString()) {
+                                    oMitCcs.ofIfo.bFileBufferFileItemIsAtEnd = true;
+                                }
+                                // No end of character location
+                                if (oMitCcs.ofIfo.iFileBufferCharMaxIndex <= 0 && !oMitCcs.ofIfo.bFileBufferFileItemIsAtEnd) {
+                                    oMitCcs.ofIfo.bFileBufferFileItemIsAtEnd = false;
+                                }

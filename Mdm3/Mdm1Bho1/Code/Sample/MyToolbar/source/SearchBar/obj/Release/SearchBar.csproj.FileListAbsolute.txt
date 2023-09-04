@@ -1,0 +1,11 @@
+C:\Srt Project\Mdm\Mdm1\Mdm1Bho1\MyToolbar\source\SearchBar\bin\Release\SearchBar.dll.config
+C:\Srt Project\Mdm\Mdm1\Mdm1Bho1\MyToolbar\source\SearchBar\bin\Release\SearchBar.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Bho1\MyToolbar\source\SearchBar\bin\Release\BandObjectLib.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Bho1\MyToolbar\source\SearchBar\bin\Release\Interop.SHDocVw.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Bho1\MyToolbar\source\SearchBar\bin\Release\log4net.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Bho1\MyToolbar\source\SearchBar\obj\Release\ResolveAssemblyReference.cache
+C:\Srt Project\Mdm\Mdm1\Mdm1Bho1\MyToolbar\source\SearchBar\obj\Release\SearchBar.InstallerClass.resources
+C:\Srt Project\Mdm\Mdm1\Mdm1Bho1\MyToolbar\source\SearchBar\obj\Release\SearchBar.Toolbar.resources
+C:\Srt Project\Mdm\Mdm1\Mdm1Bho1\MyToolbar\source\SearchBar\obj\Release\SearchBar.Properties.Resources.resources
+C:\Srt Project\Mdm\Mdm1\Mdm1Bho1\MyToolbar\source\SearchBar\obj\Release\SearchBar.csproj.GenerateResource.Cache
+C:\Srt Project\Mdm\Mdm1\Mdm1Bho1\MyToolbar\source\SearchBar\obj\Release\SearchBar.dll

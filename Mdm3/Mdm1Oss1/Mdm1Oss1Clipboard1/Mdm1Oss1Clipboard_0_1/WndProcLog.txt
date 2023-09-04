@@ -1,0 +1,2465 @@
+Step into: Stepping over non-user code 'Mdm1Srt1ImportTld1.App.App'
+Step into: Stepping over non-user code 'Mdm1Srt1ImportTld1.App.InitializeComponent'
+Step into: Stepping over non-user code 'System.Runtime.Hosting.ApplicationActivator.CreateInstance'
+Step into: Stepping over non-user code 'System.Windows.Interop.PresentationApplicationActivator.CreateInstance'
+Step into: Stepping over non-user code 'System.AppDomain.InternalRemotelySetupRemoteDomainHelper'
+Step into: Stepping over non-user code 'System.Runtime.Hosting.ApplicationActivator.CreateInstanceHelper'
+Step into: Stepping over non-user code 'System.Windows.Interop.PresentationApplicationActivator.CreateInstance'
+Step into: Stepping over non-user code 'System.Windows.Interop.ApplicationLauncherXappDebug.Initialize'
+Step into: Stepping over non-user code 'System.Windows.Interop.DocObjHost.MS.Internal.AppModel.IBrowserHostServices.Run'
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:36 Hex:3336
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:129 Hex:313239
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:131 Hex:313331
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:1 Hex:31
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:12 Hex:3132
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:128 Hex:313238
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:128 Hex:313238
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:127 Hex:313237
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:70 Hex:3730
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:131 Hex:313331
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:148 Hex:313438
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:148 Hex:313438
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:71 Hex:3731
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:3 Hex:33
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:14 Hex:3134
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:13 Hex:3133
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:5 Hex:35
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:131 Hex:313331
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:70 Hex:3730
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:131 Hex:313331
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:71 Hex:3731
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:14 Hex:3134
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:13 Hex:3133
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:14 Hex:3134
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:13 Hex:3133
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:124 Hex:313234
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:125 Hex:313235
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:124 Hex:313234
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:125 Hex:313235
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:70 Hex:3730
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:131 Hex:313331
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:71 Hex:3731
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:24 Hex:3234
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:14 Hex:3134
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:13 Hex:3133
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:14 Hex:3134
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:13 Hex:3133
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:528 Hex:353238
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:14 Hex:3134
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:13 Hex:3133
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:776 Hex:373736
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:14 Hex:3134
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:13 Hex:3133
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:70 Hex:3730
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:136 Hex:313336
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:127 Hex:313237
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:127 Hex:313237
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:127 Hex:313237
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:70 Hex:3730
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:71 Hex:3731
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:134 Hex:313334
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:145 Hex:313435
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:146 Hex:313436
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:146 Hex:313436
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:6 Hex:36
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:28 Hex:3238
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:134 Hex:313334
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:145 Hex:313435
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:146 Hex:313436
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:146 Hex:313436
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:6 Hex:36
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:71 Hex:3731
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:5 Hex:35
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:3 Hex:33
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:28 Hex:3238
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:70 Hex:3730
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:131 Hex:313331
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:133 Hex:313333
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:145 Hex:313435
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:146 Hex:313436
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:146 Hex:313436
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:71 Hex:3731
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:5 Hex:35
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:49887 Hex:3439383837
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:28 Hex:3238
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:136 Hex:313336
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:133 Hex:313333
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:145 Hex:313435
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:146 Hex:313436
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:146 Hex:313436
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:20 Hex:3230
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:14 Hex:3134
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:13 Hex:3133
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:127 Hex:313237
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:28 Hex:3238
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:28 Hex:3238
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:28 Hex:3238
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:15 Hex:3135
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:14 Hex:3134
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:13 Hex:3133
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:28 Hex:3238
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:70 Hex:3730
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:133 Hex:313333
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:145 Hex:313435
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:146 Hex:313436
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:146 Hex:313436
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:20 Hex:3230
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:14 Hex:3134
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:13 Hex:3133
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:71 Hex:3731
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:134 Hex:313334
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:145 Hex:313435
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:146 Hex:313436
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:146 Hex:313436
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:6 Hex:36
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:641 Hex:363431
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:642 Hex:363432
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:642 Hex:363432
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:642 Hex:363432
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:7 Hex:37
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:8 Hex:38
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:641 Hex:363431
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:273 Hex:323733
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:15 Hex:3135
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:14 Hex:3134
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:13 Hex:3133
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:273 Hex:323733
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:174 Hex:313734
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:674 Hex:363734
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:134 Hex:313334
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:145 Hex:313435
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:146 Hex:313436
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:146 Hex:313436
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:6 Hex:36
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:28 Hex:3238
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:273 Hex:323733
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:49753 Hex:3439373533
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:49753 Hex:3439373533
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:70 Hex:3730
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:133 Hex:313333
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:145 Hex:313435
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:146 Hex:313436
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:146 Hex:313436
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:20 Hex:3230
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:14 Hex:3134
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:13 Hex:3133
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:71 Hex:3731
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:28 Hex:3238
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:134 Hex:313334
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:145 Hex:313435
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:146 Hex:313436
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:146 Hex:313436
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:6 Hex:36
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:273 Hex:323733
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:15 Hex:3135
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:14 Hex:3134
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:13 Hex:3133
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:273 Hex:323733
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:674 Hex:363734
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:161 Hex:313631
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:533 Hex:353333
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:274 Hex:323734
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:273 Hex:323733
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:70 Hex:3730
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:36 Hex:3336
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:131 Hex:313331
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:71 Hex:3731
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:174 Hex:313734
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:174 Hex:313734
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:174 Hex:313734
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:3 Hex:33
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:14 Hex:3134
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:13 Hex:3133
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:24 Hex:3234
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:70 Hex:3730
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:71 Hex:3731
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:131 Hex:313331
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:134 Hex:313334
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:6 Hex:36
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:28 Hex:3238
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:5 Hex:35
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:674 Hex:363734
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:776 Hex:373736
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:776 Hex:373736
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:776 Hex:373736
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:776 Hex:373736
+Step into: Stepping over non-user code 'Mdm1Srt1ImportTld1.App.App'
+Step into: Stepping over non-user code 'Mdm1Srt1ImportTld1.App.InitializeComponent'
+Step into: Stepping over non-user code 'System.Runtime.Hosting.ApplicationActivator.CreateInstance'
+Step into: Stepping over non-user code 'System.Windows.Interop.PresentationApplicationActivator.CreateInstance'
+Step into: Stepping over non-user code 'System.AppDomain.InternalRemotelySetupRemoteDomainHelper'
+Step into: Stepping over non-user code 'System.Runtime.Hosting.ApplicationActivator.CreateInstanceHelper'
+Step into: Stepping over non-user code 'System.Windows.Interop.PresentationApplicationActivator.CreateInstance'
+Step into: Stepping over non-user code 'System.Windows.Interop.ApplicationLauncherXappDebug.Initialize'
+Step into: Stepping over non-user code 'System.Windows.Interop.DocObjHost.MS.Internal.AppModel.IBrowserHostServices.Run'
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:36 Hex:3336
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:129 Hex:313239
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:131 Hex:313331
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:1 Hex:31
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:12 Hex:3132
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:128 Hex:313238
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:128 Hex:313238
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:127 Hex:313237
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:70 Hex:3730
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:131 Hex:313331
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:148 Hex:313438
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:148 Hex:313438
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:71 Hex:3731
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:3 Hex:33
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:14 Hex:3134
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:13 Hex:3133
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:5 Hex:35
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:131 Hex:313331
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:70 Hex:3730
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:131 Hex:313331
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:71 Hex:3731
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:14 Hex:3134
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:13 Hex:3133
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:14 Hex:3134
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:13 Hex:3133
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:124 Hex:313234
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:125 Hex:313235
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:124 Hex:313234
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:125 Hex:313235
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:70 Hex:3730
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:131 Hex:313331
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:71 Hex:3731
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:24 Hex:3234
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:14 Hex:3134
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:13 Hex:3133
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:14 Hex:3134
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:13 Hex:3133
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:528 Hex:353238
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:14 Hex:3134
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:13 Hex:3133
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:776 Hex:373736
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:14 Hex:3134
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:13 Hex:3133
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:70 Hex:3730
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:127 Hex:313237
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:127 Hex:313237
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:127 Hex:313237
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:136 Hex:313336
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:70 Hex:3730
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:71 Hex:3731
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:28 Hex:3238
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:134 Hex:313334
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:145 Hex:313435
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:146 Hex:313436
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:146 Hex:313436
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:6 Hex:36
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:273 Hex:323733
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:71 Hex:3731
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:5 Hex:35
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:3 Hex:33
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:134 Hex:313334
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:145 Hex:313435
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:146 Hex:313436
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:146 Hex:313436
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:6 Hex:36
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:273 Hex:323733
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:70 Hex:3730
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:131 Hex:313331
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:133 Hex:313333
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:145 Hex:313435
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:146 Hex:313436
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:146 Hex:313436
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:71 Hex:3731
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:5 Hex:35
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:49887 Hex:3439383837
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:28 Hex:3238
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:127 Hex:313237
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:136 Hex:313336
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:133 Hex:313333
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:145 Hex:313435
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:146 Hex:313436
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:146 Hex:313436
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:20 Hex:3230
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:14 Hex:3134
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:13 Hex:3133
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:28 Hex:3238
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:15 Hex:3135
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:14 Hex:3134
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:13 Hex:3133
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:28 Hex:3238
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:70 Hex:3730
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:133 Hex:313333
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:145 Hex:313435
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:146 Hex:313436
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:146 Hex:313436
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:20 Hex:3230
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:14 Hex:3134
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:13 Hex:3133
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:71 Hex:3731
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:28 Hex:3238
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:134 Hex:313334
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:145 Hex:313435
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:146 Hex:313436
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:146 Hex:313436
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:6 Hex:36
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:273 Hex:323733
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:15 Hex:3135
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:14 Hex:3134
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:13 Hex:3133
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:273 Hex:323733
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:174 Hex:313734
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:674 Hex:363734
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:161 Hex:313631
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:533 Hex:353333
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:274 Hex:323734
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:273 Hex:323733
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:70 Hex:3730
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:36 Hex:3336
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:131 Hex:313331
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:71 Hex:3731
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:174 Hex:313734
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:174 Hex:313734
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:174 Hex:313734
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:3 Hex:33
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:14 Hex:3134
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:13 Hex:3133
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:24 Hex:3234
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:70 Hex:3730
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:71 Hex:3731
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:131 Hex:313331
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:134 Hex:313334
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:6 Hex:36
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:28 Hex:3238
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:5 Hex:35
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:674 Hex:363734
+Step into: Stepping over non-user code 'Mdm1Srt1ImportTld1.App.App'
+Step into: Stepping over non-user code 'Mdm1Srt1ImportTld1.App.InitializeComponent'
+Step into: Stepping over non-user code 'System.Runtime.Hosting.ApplicationActivator.CreateInstance'
+Step into: Stepping over non-user code 'System.Windows.Interop.PresentationApplicationActivator.CreateInstance'
+Step into: Stepping over non-user code 'System.AppDomain.InternalRemotelySetupRemoteDomainHelper'
+Step into: Stepping over non-user code 'System.Runtime.Hosting.ApplicationActivator.CreateInstanceHelper'
+Step into: Stepping over non-user code 'System.Windows.Interop.PresentationApplicationActivator.CreateInstance'
+Step into: Stepping over non-user code 'System.Windows.Interop.ApplicationLauncherXappDebug.Initialize'
+Step into: Stepping over non-user code 'System.Windows.Interop.DocObjHost.MS.Internal.AppModel.IBrowserHostServices.Run'
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:36 Hex:3336
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:129 Hex:313239
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:131 Hex:313331
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:1 Hex:31
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:12 Hex:3132
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:128 Hex:313238
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:128 Hex:313238
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:127 Hex:313237
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:70 Hex:3730
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:131 Hex:313331
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:148 Hex:313438
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:148 Hex:313438
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:71 Hex:3731
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:3 Hex:33
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:14 Hex:3134
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:13 Hex:3133
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:5 Hex:35
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:131 Hex:313331
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:70 Hex:3730
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:131 Hex:313331
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:71 Hex:3731
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:14 Hex:3134
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:13 Hex:3133
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:14 Hex:3134
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:13 Hex:3133
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:124 Hex:313234
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:125 Hex:313235
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:124 Hex:313234
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:125 Hex:313235
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:70 Hex:3730
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:131 Hex:313331
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:71 Hex:3731
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:24 Hex:3234
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:14 Hex:3134
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:13 Hex:3133
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:14 Hex:3134
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:13 Hex:3133
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:528 Hex:353238
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:14 Hex:3134
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:13 Hex:3133
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:776 Hex:373736
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:14 Hex:3134
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:13 Hex:3133
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:70 Hex:3730
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:127 Hex:313237
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:127 Hex:313237
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:127 Hex:313237
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:70 Hex:3730
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:28 Hex:3238
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:134 Hex:313334
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:145 Hex:313435
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:146 Hex:313436
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:146 Hex:313436
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:6 Hex:36
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:273 Hex:323733
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:133 Hex:313333
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:145 Hex:313435
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:146 Hex:313436
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:146 Hex:313436
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:20 Hex:3230
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:14 Hex:3134
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:13 Hex:3133
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:71 Hex:3731
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:5 Hex:35
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:3 Hex:33
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:134 Hex:313334
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:145 Hex:313435
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:146 Hex:313436
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:146 Hex:313436
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:6 Hex:36
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:273 Hex:323733
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:70 Hex:3730
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:131 Hex:313331
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:133 Hex:313333
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:145 Hex:313435
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:146 Hex:313436
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:146 Hex:313436
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:71 Hex:3731
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:5 Hex:35
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:49887 Hex:3439383837
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:134 Hex:313334
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:145 Hex:313435
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:146 Hex:313436
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:146 Hex:313436
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:6 Hex:36
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:273 Hex:323733
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:134 Hex:313334
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:145 Hex:313435
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:146 Hex:313436
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:146 Hex:313436
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:6 Hex:36
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:28 Hex:3238
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:273 Hex:323733
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:127 Hex:313237
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:136 Hex:313336
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:133 Hex:313333
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:145 Hex:313435
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:146 Hex:313436
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:146 Hex:313436
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:20 Hex:3230
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:14 Hex:3134
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:13 Hex:3133
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:15 Hex:3135
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:14 Hex:3134
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:13 Hex:3133
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:28 Hex:3238
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:28 Hex:3238
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:70 Hex:3730
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:133 Hex:313333
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:145 Hex:313435
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:146 Hex:313436
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:146 Hex:313436
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:20 Hex:3230
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:14 Hex:3134
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:13 Hex:3133
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:71 Hex:3731
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:28 Hex:3238
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:134 Hex:313334
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:145 Hex:313435
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:146 Hex:313436
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:146 Hex:313436
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:6 Hex:36
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:273 Hex:323733
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:15 Hex:3135
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:14 Hex:3134
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:13 Hex:3133
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:273 Hex:323733
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:174 Hex:313734
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:674 Hex:363734
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:78 Hex:3738
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:674 Hex:363734
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:134 Hex:313334
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:145 Hex:313435
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:146 Hex:313436
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:146 Hex:313436
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:6 Hex:36
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:28 Hex:3238
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:273 Hex:323733
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:49753 Hex:3439373533
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:49753 Hex:3439373533
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:70 Hex:3730
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:133 Hex:313333
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:145 Hex:313435
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:146 Hex:313436
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:146 Hex:313436
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:20 Hex:3230
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:14 Hex:3134
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:13 Hex:3133
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:71 Hex:3731
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:28 Hex:3238
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:134 Hex:313334
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:145 Hex:313435
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:146 Hex:313436
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:146 Hex:313436
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:6 Hex:36
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:273 Hex:323733
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:15 Hex:3135
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:14 Hex:3134
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:13 Hex:3133
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:273 Hex:323733
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:134 Hex:313334
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:145 Hex:313435
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:146 Hex:313436
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:146 Hex:313436
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:6 Hex:36
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:28 Hex:3238
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:273 Hex:323733
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:70 Hex:3730
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:133 Hex:313333
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:145 Hex:313435
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:146 Hex:313436
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:146 Hex:313436
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:20 Hex:3230
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:14 Hex:3134
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:13 Hex:3133
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:71 Hex:3731
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:28 Hex:3238
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:134 Hex:313334
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:145 Hex:313435
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:146 Hex:313436
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:146 Hex:313436
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:6 Hex:36
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:273 Hex:323733
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:15 Hex:3135
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:14 Hex:3134
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:13 Hex:3133
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:273 Hex:323733
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:134 Hex:313334
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:145 Hex:313435
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:146 Hex:313436
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:146 Hex:313436
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:6 Hex:36
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:28 Hex:3238
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:273 Hex:323733
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:70 Hex:3730
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:133 Hex:313333
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:145 Hex:313435
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:146 Hex:313436
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:146 Hex:313436
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:20 Hex:3230
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:14 Hex:3134
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:13 Hex:3133
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:71 Hex:3731
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:28 Hex:3238
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:134 Hex:313334
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:147 Hex:313437
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:145 Hex:313435
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:146 Hex:313436
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:146 Hex:313436
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:6 Hex:36
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:273 Hex:323733
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:15 Hex:3135
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:14 Hex:3134
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:13 Hex:3133
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:273 Hex:323733
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:674 Hex:363734
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:160 Hex:313630
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:132 Hex:313332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:32 Hex:3332
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:161 Hex:313631
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:533 Hex:353333
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:274 Hex:323734
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:273 Hex:323733
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:70 Hex:3730
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:36 Hex:3336
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:131 Hex:313331
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:71 Hex:3731
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:174 Hex:313734
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:174 Hex:313734
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:174 Hex:313734
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:3 Hex:33
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:14 Hex:3134
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:13 Hex:3133
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:24 Hex:3234
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:70 Hex:3730
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:71 Hex:3731
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:131 Hex:313331
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:134 Hex:313334
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:6 Hex:36
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:28 Hex:3238
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:5 Hex:35
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:674 Hex:363734
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:49753 Hex:3439373533
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:49753 Hex:3439373533
+A first chance exception of type 'System.ArgumentException' occurred in mscorlib.dll
+Mclipboard1 Form1 WndProc: WindowProc: Int:776 Hex:373736

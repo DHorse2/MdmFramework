@@ -1,0 +1,316 @@
+~STANDARD.FUNCTIONS~
+*CODE.SEGMENT: STANDARD.FUNCTIONS.SUBR
+
+* WARNING: STANDARD.FUNCTIONS is to be INCLUDED in programs only.
+*          Subroutines INCLUDE the code segment STANDARD.FUNCTIONS.SUBR
+*          Device Control Subroutines INCLUDE STANDARD.FUNCTIONS.DVC
+*
+*          The .DVC routine was designed for communications
+*           and printer sub-routine calls.
+*
+*          The .SUBR extension is now used in all called sub-routines.
+*
+*          One difference between the three code segments
+*           being .DVC and .SUBR do not output screen escape
+*           sequences. They also expect system controls and
+*           screen escape sequences to be passed unchanged
+*           either in the CALL or thru COMMON area.
+*
+*          It is especially important to use the .DVC version when
+*          working with programs in Axion's K-bil Sub-Applications such as
+*             - Counter Cash
+*             - Addressable Interface
+*             - Work Order Printing
+*             - EFT Communication Programs
+*             - Genie (by its open structure)
+*
+*          And Utility Routines such as
+*              -Communications
+*              -Auxilary Port Handling/Printing
+*              -Menus
+*              -Screen Handling
+*              -Functions like Unpack Number, Lock.Item, MOD11.DIGIT
+*
+*
+*
+! Standard characters
+*
+*%%MDD%%=**
+EMPTY = ""; ZERO = 0; ONE = 1; TWO = 2
+FALSE = ""; TRUE = 1; STAT = ""
+BELL = CHAR(7); LF = CHAR(10); FF = CHAR(12); CR = CHAR(13)
+SVM = CHAR(252); VM = CHAR(253); AM = CHAR(254); ESC = CHAR(27)
+*
+! Screen Escape Sequences
+*
+RVB = EMPTY; RVE = EMPTY; RVH = EMPTY
+CLL = EMPTY; CLS = EMPTY; CLB = EMPTY
+AUX.ON = EMPTY; AUX.OFF = EMPTY
+COL.ON = EMPTY; COL.OFF = EMPTY
+CLB0 = EMPTY; CLB1 = EMPTY; CLB2 = EMPTY; CLB3 = EMPTY; * 20,21,22,23
+*
+! System Information
+*
+WHO = ""
+*%%MDD%%=WHO = ICONV(0,"U50BB"); * MDD ONLY
+*%%ULT%%=WHO = ICONV(0,"U50BB"); * ULT ONLY
+*%%PCK%%=WHO = ICONV(0,"U50BB"); * PCK ONLY
+*%%REV%%=WHO = @USER0; * REV ONLY
+*
+PORT = (FIELD(WHO," ",ONE)+1000)[TWO,3]; ACCT = FIELD(WHO," ",TWO)
+*
+OPSYS = ""
+*%%ULT%%=OPSYS = "U"; * ULT ONLY
+*%%PCK%%=OPSYS = "P"; * PCK ONLY
+*%%MDD%%=OPSYS = "M"; * MDD ONLY
+*%%REV%%=OPSYS = "R"; * REV ONLY
+*
+TT = ""
+*%%ULT%%=TT = SYSTEM(7); * INST SUPP; * ULT ONLY
+*%%PCK%%=TT = SYSTEM(7); * INST SUPP; * ULT ONLY
+*%%REV%%=TT = EMPTY; * INST SUPP; * REV ONLY
+*
+PT = EMPTY; AT = EMPTY
+*
+! Software Control
+*
+RSP = EMPTY; RSPBUF = EMPTY; * SUBR
+*
+GENERIC = ""
+*%%ULT%%=GENERIC = FALSE; * ULT ONLY
+*%%REV%%=GENERIC = FIELD(@USER0," ",3); * REV ONLY
+*%%MDD%%=GENERIC = FALSE; * MDD ONLY
+*%%PCK%%=GENERIC = FALSE; * PCK ONLY
+*
+TYPE.RUN = "S"; AUTO.RUN = EMPTY; PHAN.RUN = EMPTY; * SUBR
+DISP.ONLY = EMPTY; REDISP = EMPTY; * SUBR
+TRC = EMPTY; TM.MAX = 0; * SUBR
+PROCBUF = EMPTY; RSPLOG = EMPTY; * SUBR
+*
+! Screen Attributes
+*
+CLS = @(-3); CLL = @(-4); PROMPT CHAR(0)
+IF GENERIC THEN
+CLB = @(ZERO,23); CLB0 = @(ZERO,20); CLB1 = @(ZERO,21); CLB2 = @(ZERO,22); CLB3 = @(ZERO,23)
+END ELSE
+CLB = @(ZERO,23):CLL; CLB0 = @(ZERO,20):CLL; CLB1 = @(ZERO,21):CLL; CLB2 = @(ZERO,22):CLL; CLB3 = @(ZERO,23):CLL
+END
+*
+BEGIN CASE
+*
+CASE OPSYS EQ "R"
+RVB = CHAR(27):"00"; RVE = CHAR(27):"0A"; RVH = CHAR(27):"01"
+AUX.ON = EMPTY; AUX.OFF = EMPTY
+*
+CASE TT EQ "D"; RVB = CHAR(27):"[7m"; RVE = CHAR(27):"[0m"; RVH = CHAR(27):"[1;7m"; AUX.ON = CHAR(27):"[5i"; AUX.OFF = CHAR(27):"[4i"
+*
+CASE TT EQ "R" AND OPSYS EQ "M"
+RVB = CHAR(27):"0P":CHAR(0):CHAR(14); RVE = CHAR(15); RVH = RVB; AUX.ON = CHAR(18):CHAR(27):"3"; AUX.OFF = CHAR(20):CHAR(27):"4"
+CLL = CHAR(27):"K"; CLS = CHAR(27):"k"
+*
+CASE TT EQ "R"
+RVB = CHAR(14); RVE = CHAR(15); RVH = RVB; AUX.ON = CHAR(0):CHAR(0):CHAR(0):CHAR(0):CHAR(18):CHAR(0):CHAR(0):CHAR(0):CHAR(0):CHAR(27):3; AUX.OFF = CHAR(0):CHAR(0):CHAR(0):CHAR(0):CHAR(20):CHAR(0):CHAR(0):CHAR(0):CHAR(0):CHAR(27):4
+* SUBR
+* IF NOT(SYSTEM(1)) THEN PRINT CHAR(27):"0Q":; * ULT ONLY
+*
+CASE TT EQ "U"; RVB = CHAR(14); RVE = CHAR(15); RVH = RVB; AUX.ON = EMPTY; AUX.OFF = EMPTY
+*
+CASE TT EQ "P"; RVB = CHAR(133); RVE = CHAR(128); RVH = CHAR(133); AUX.ON = CHAR(27):"R"; AUX.OFF = CHAR(27):"T"
+CLL = CHAR(27):"K"; CLS = CHAR(27):"J"
+*
+CASE TT EQ "p"; RVB = CHAR(0); RVE = CHAR(0); RVH = CHAR(0); AUX.ON = CHAR(27):"R"; AUX.OFF = CHAR(27):"T"
+CLL = CHAR(27):"K"; CLS = CHAR(27):"J"
+*
+CASE TT EQ "E"
+RVB = CHAR(27):"4":CHAR(14); RVE = CHAR(15); RVH = RVB; AUX.ON = CHAR(18):CHAR(27):"3"; AUX.OFF = CHAR(20):CHAR(27):"4"
+CLL = CHAR(27):"K"; CLS = CHAR(27):"k"
+*
+CASE TT EQ "H"
+RVB = CHAR(27):CHAR(48):"P"; RVE = CHAR(27):CHAR(48):"@"; RVH = CHAR(27):CHAR(48):"Q"
+AUX.ON = CHAR(27):CHAR(42):CHAR(0); AUX.OFF = CHAR(27):CHAR(63):CHAR(0)
+CLL = CHAR(15); CLS = CHAR(23)
+*
+CASE TRUE; RVB = EMPTY; RVE = EMPTY; RVH = EMPTY; AUX.ON = EMPTY; AUX.OFF = EMPTY
+END CASE
+*
+! Software Location Information
+*
+SYS.SYST = EMPTY; SYS.APPL = EMPTY; SYS.APPL.SUB = EMPTY
+* SYS.PROG = EMPTY; SYS.LOCT = EMPTY; SYS.LOCT.SUB = EMPTY
+SYS.ID = EMPTY ; REL.ID = EMPTY ; VER.ID = EMPTY
+*
+! SUBROUTINE INPUT.DATA.SG1(
+*
+* FILE.NAME = EMPTY; ITEM.NAME = EMPTY; ITEM = EMPTY
+* CL = EMPTY; LN = EMPTY; LH = EMPTY; LHM = EMPTY
+* LOCN = EMPTY; CONV = EMPTY; EDITS = EMPTY; EDIT.FILE = EMPTY
+* SEC.USER.ID = EMPTY; CURSOR.KEYS = EMPTY
+* NUMC = EMPTY; FIXED = EMPTY; DEF.SUPP = EMPTY; TC.FUNC = EMPTY
+* RSP.CL = EMPTY; RSP.LN = EMPTY; TC.FILL = EMPTY
+* STD.SUBR.NAME = EMPTY
+* )
+*
+! Temporary & Other
+*
+* PG = EMPTY; LINE = EMPTY; TEXT = EMPTY; TMP = EMPTY
+* DT = EMPTY; TM = EMPTY
+* CN = EMPTY; LOC = EMPTY
+* MAX = EMPTY
+*
+~STANDARD.FUNCTIONS.SUBR~
+*CODE.SEGMENT: STANDARD.FUNCTIONS.SUBR
+
+* WARNING: STANDARD.FUNCTIONS is to be INCLUDED in programs only.
+*          Subroutines INCLUDE the code segment STANDARD.FUNCTIONS.SUBR
+*          Device Control Subroutines INCLUDE STANDARD.FUNCTIONS.DVC
+*
+*          The .DVC routine was designed for communications
+*           and printer sub-routine calls.
+*
+*          The .SUBR extension is now used in all called sub-routines.
+*
+*          One difference between the three code segments
+*           being .DVC and .SUBR do not output screen escape
+*           sequences. They also expect system controls and
+*           screen escape sequences to be passed unchanged
+*           either in the CALL or thru COMMON area.
+*
+*          It is especially important to use the .DVC version when
+*          working with programs in Axion's K-bil Sub-Applications such as
+*             - Counter Cash
+*             - Addressable Interface
+*             - Work Order Printing
+*             - EFT Communication Programs
+*             - Genie (by its open structure)
+*
+*          And Utility Routines such as
+*              -Communications
+*              -Auxilary Port Handling/Printing
+*              -Menus
+*              -Screen Handling
+*              -Functions like Unpack Number, Lock.Item, MOD11.DIGIT
+*
+*
+*
+! Standard characters
+*
+*%%MDD%%=**
+EMPTY = ""; ZERO = 0; ONE = 1; TWO = 2
+FALSE = ""; TRUE = 1; STAT = ""
+BELL = CHAR(7); LF = CHAR(10); FF = CHAR(12); CR = CHAR(13)
+SVM = CHAR(252); VM = CHAR(253); AM = CHAR(254); ESC = CHAR(27)
+*
+! Screen Escape Sequences
+*
+RVB = EMPTY; RVE = EMPTY; RVH = EMPTY
+CLL = EMPTY; CLS = EMPTY; CLB = EMPTY
+AUX.ON = EMPTY; AUX.OFF = EMPTY
+COL.ON = EMPTY; COL.OFF = EMPTY
+CLB0 = EMPTY; CLB1 = EMPTY; CLB2 = EMPTY; CLB3 = EMPTY; * 20,21,22,23
+*
+! System Information
+*
+WHO = ""
+*%%ULT%%=WHO = ICONV(0,"U50BB"); * ULT ONLY
+*%%PCK%%=WHO = ICONV(0,"U50BB"); * PCK ONLY
+*%%MDD%%=WHO = ICONV(0,"U50BB"); * MDD ONLY
+*%%REV%%=WHO = @USER0; * REV ONLY
+*
+PORT = (FIELD(WHO," ",ONE)+1000)[TWO,3]; ACCT = FIELD(WHO," ",TWO)
+*
+OPSYS = "?"
+*%%ULT%%=OPSYS = "U"; * ULT ONLY
+*%%PCK%%=OPSYS = "P"; * PCK ONLY
+*%%REV%%=OPSYS = "R"; * REV ONLY
+*%%MDD%%=OPSYS = "M"; * MDD ONLY
+*
+TT = ""
+*%%REV%%=TT = SYSTEM(7); * INST SUPP; * ULT ONLY
+*%%PCK%%=TT = SYSTEM(7); * INST SUPP; * PCK ONLY
+*%%MDD%%=TT = SYSTEM(7); * INST SUPP; * MDD ONLY
+*%%REV%%=TT = EMPTY; * REV ONLY
+*
+PT = EMPTY; AT = EMPTY
+*
+! Software Control
+*
+* RSP = EMPTY; RSPBUF = EMPTY; * SUBR
+* SUBR
+GENERIC = FALSE; * ULT ONLY
+* SUBR
+* *%%REV%%=GENERIC = FIELD(@USER0," ",3); * REV ONLY
+* TYPE.RUN = "S"; AUTO.RUN = EMPTY; PHAN.RUN = EMPTY; * SUBR
+* DISP.ONLY = EMPTY; REDISP = EMPTY; * SUBR
+* TRC = EMPTY; TM.MAX = 0; * SUBR
+* PROCBUF = EMPTY; RSPLOG = EMPTY; * SUBR
+*
+! Screen Attributes
+*
+CLS = @(-3); CLL = @(-4); PROMPT CHAR(0)
+IF GENERIC THEN
+CLB = @(ZERO,23); CLB0 = @(ZERO,20); CLB1 = @(ZERO,21); CLB2 = @(ZERO,22); CLB3 = @(ZERO,23)
+END ELSE
+CLB = @(ZERO,23):CLL; CLB0 = @(ZERO,20):CLL; CLB1 = @(ZERO,21):CLL; CLB2 = @(ZERO,22):CLL; CLB3 = @(ZERO,23):CLL
+END
+*
+BEGIN CASE
+*
+CASE OPSYS EQ "R"
+RVB = CHAR(27):"00"; RVE = CHAR(27):"0A"; RVH = CHAR(27):"01"
+AUX.ON = EMPTY; AUX.OFF = EMPTY
+*
+CASE TT EQ "D"; RVB = CHAR(27):"[7m"; RVE = CHAR(27):"[0m"; RVH = CHAR(27):"[1;7m"; AUX.ON = CHAR(27):"[5i"; AUX.OFF = CHAR(27):"[4i"
+*
+CASE TT EQ "R" AND OPSYS EQ "M"
+RVB = CHAR(27):"0P":CHAR(0):CHAR(14); RVE = CHAR(15); RVH = RVB; AUX.ON = CHAR(18):CHAR(27):"3"; AUX.OFF = CHAR(20):CHAR(27):"4"
+CLL = CHAR(27):"K"; CLS = CHAR(27):"k"
+*
+CASE TT EQ "R"
+RVB = CHAR(14); RVE = CHAR(15); RVH = RVB; AUX.ON = CHAR(0):CHAR(0):CHAR(0):CHAR(0):CHAR(18):CHAR(0):CHAR(0):CHAR(0):CHAR(0):CHAR(27):3; AUX.OFF = CHAR(0):CHAR(0):CHAR(0):CHAR(0):CHAR(20):CHAR(0):CHAR(0):CHAR(0):CHAR(0):CHAR(27):4
+* SUBR
+* IF NOT(SYSTEM(1)) THEN PRINT CHAR(27):"0Q":; * ULT ONLY
+*
+CASE TT EQ "U"; RVB = CHAR(14); RVE = CHAR(15); RVH = RVB; AUX.ON = EMPTY; AUX.OFF = EMPTY
+*
+CASE TT EQ "P"; RVB = CHAR(133); RVE = CHAR(128); RVH = CHAR(133); AUX.ON = CHAR(27):"R"; AUX.OFF = CHAR(27):"T"
+CLL = CHAR(27):"K"; CLS = CHAR(27):"J"
+*
+CASE TT EQ "p"; RVB = CHAR(0); RVE = CHAR(0); RVH = CHAR(0); AUX.ON = CHAR(27):"R"; AUX.OFF = CHAR(27):"T"
+CLL = CHAR(27):"K"; CLS = CHAR(27):"J"
+*
+CASE TT EQ "E"
+RVB = CHAR(27):"4":CHAR(14); RVE = CHAR(15); RVH = RVB; AUX.ON = CHAR(18):CHAR(27):"3"; AUX.OFF = CHAR(20):CHAR(27):"4"
+CLL = CHAR(27):"K"; CLS = CHAR(27):"k"
+*
+CASE TT EQ "H"
+RVB = CHAR(27):CHAR(48):"P"; RVE = CHAR(27):CHAR(48):"@"; RVH = CHAR(27):CHAR(48):"Q"
+AUX.ON = CHAR(27):CHAR(42):CHAR(0); AUX.OFF = CHAR(27):CHAR(63):CHAR(0)
+CLL = CHAR(15); CLS = CHAR(23)
+*
+CASE TRUE; RVB = EMPTY; RVE = EMPTY; RVH = EMPTY; AUX.ON = EMPTY; AUX.OFF = EMPTY
+END CASE
+*
+! Software Location Information
+*
+SYS.SYST = EMPTY; SYS.APPL = EMPTY; SYS.APPL.SUB = EMPTY
+* SYS.PROG = EMPTY; SYS.LOCT = EMPTY; SYS.LOCT.SUB = EMPTY
+SYS.ID = EMPTY ; REL.ID = EMPTY ; VER.ID = EMPTY
+*
+! SUBROUTINE INPUT.DATA.SG1(
+*
+* FILE.NAME = EMPTY; ITEM.NAME = EMPTY; ITEM = EMPTY
+* CL = EMPTY; LN = EMPTY; LH = EMPTY; LHM = EMPTY
+* LOCN = EMPTY; CONV = EMPTY; EDITS = EMPTY; EDIT.FILE = EMPTY
+* SEC.USER.ID = EMPTY; CURSOR.KEYS = EMPTY
+* NUMC = EMPTY; FIXED = EMPTY; DEF.SUPP = EMPTY; TC.FUNC = EMPTY
+* RSP.CL = EMPTY; RSP.LN = EMPTY; TC.FILL = EMPTY
+* STD.SUBR.NAME = EMPTY
+* )
+*
+! Temporary & Other
+*
+* PG = EMPTY; LINE = EMPTY; TEXT = EMPTY; TMP = EMPTY
+* DT = EMPTY; TM = EMPTY
+* CN = EMPTY; LOC = EMPTY
+* MAX = EMPTY
+*

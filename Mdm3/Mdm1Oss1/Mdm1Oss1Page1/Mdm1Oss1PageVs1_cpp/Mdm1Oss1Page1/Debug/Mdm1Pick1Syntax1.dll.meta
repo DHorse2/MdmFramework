@@ -1,0 +1,149 @@
+Assembly Mdm1Pick1Syntax1, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly Mdm1Oss1Decl1, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=None
+Assembly mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=SHA1, flags=None
+Assembly System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=SHA1, flags=None
+Class Mdm.Pick.PickSyntax: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Mdm.Oss.Decl.DefStdBaseRunFile
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int64 PickAttrCountGetResult : Public
+    System.String sPickFileActionRequest : Public
+    Int32 PickAttrCountResult : Public
+    Int64 PickBufferMoveToItemDataResult : Public
+    Int64 PickBufferMoveStringResult : Public
+    Int32 PickItemDataCounterResult : Public
+    Int64 PickConsoleDisplayResult : Public
+    Int64 PickConvertStringResult : Public
+    Int64 PickConvertTypeTwoResult : Public
+    Int64 PickIConvResult : Public
+    Int64 PickIConvStringResult : Public
+    Int64 PickOconvIntResult : Public
+    Int64 PickOconvStringPassedStringResult : Public
+    Int64 PickOconvStringPassedResult : Public
+    Int64 PickDelResult : Public
+    Int64 PickDelItemResult : Public
+    Int64 PickDelAttributeResult : Public
+    Int64 PickDelValueResult : Public
+    Int64 PickDelSubValueResult : Public
+    Int64 PickDelCharValueResult : Public
+    Int64 PickDelCharSubValueResult : Public
+    Int64 PickDataResetResult : Public
+    Int64 PickDictResetResult : Public
+    Int64 PickDataClearCurrentResult : Public
+    Int64 PickDictClearCurrentResult : Public
+    Int64 PickFieldResult : Public
+    Int64 PickIdChangedResult : Public
+    Int64 PickIdCheckResult : Public
+    Int64 PickIdCheckOptionsResult : Public
+    Int64 PickIdCheckDoesExistResult : Public
+    Int64 PickIdGetResult : Public
+    Int64 PickIdGetStringResult : Public
+    Int64 PickIdGetFileStringResult : Public
+    Int64 PickIndexResult : Public
+    Int64 PickInputBoolResult : Public
+    Int64 PickInputCharResult : Public
+    Int64 PickInputCurrencyResult : Public
+    Int64 PickInputIntResult : Public
+    Int64 PickInputBigIntResult : Public
+    Int64 PickInputTinyIntResult : Public
+    Int64 PickInputFloatResult : Public
+    Int64 PickInputStringResult : Public
+    Int64 PickInputStringUResult : Public
+    Int64 PickInputVarCharResult : Public
+    Int64 PickInputVarCharUResult : Public
+    Int64 PickInputActionResult : Public
+    Int64 PickInputConfirmResult : Public
+    Int64 PickInputOkResult : Public
+    Int64 PickInputYesNoResult : Public
+    Int64 PickInsResult : Public
+    Int64 PickInsStringResult : Public
+    Int64 PickInItemResult : Public
+    Int64 PickInsAttributeResult : Public
+    Int64 PickInsValueResult : Public
+    Int64 PickInsSubValueResult : Public
+    Int64 PickInsCharValueResult : Public
+    Int64 PickInsCharSubValueResult : Public
+    Int64 PickLenResult : Public
+    Int64 PickPositionAtRowResult : Public
+    Int64 PickPositionAtColumnResult : Public
+    Int64 PickPrintResult : Public
+    Int64 PickPrintNewLineResult : Public
+    Int64 PickPrintNewLineOnlyResult : Public
+    Int64 PickSpaceFillResult : Public
+    Int64 PickStringFillResult : Public
+    Int64 PickReadLineFileCloseResult : Public
+    Int64 PickStopResult : Public
+    Int64 PickSystemCallResult : Public
+    Int64 PickSystemCallStringResult : Public
+    Int64 PickTclReadResult : Public
+    Int64 PickTrimResult : Public
+    Int64 PickTrimConversionResult : Public
+    Int64 PickWriteResult : Public
+    System.String ItemSeparator : Public
+    System.String RowSeparator : Public
+    System.String ColumnSeparator : Public
+    System.String ColumnSeparatorInput : Public
+    System.String ColumnSeparatorOutput : Public
+    Boolean LfRemoveItFlag : Public
+    Boolean TldEscaped : Public
+    System.String sPickPrintTarget : Public
+    System.String sPickPrintTargetString : Public
+    Int32 PickPrintTargetBox : Public
+    System.String sPickPrintTargetText : Public
+  Methods:
+    PickTclRead(): PrivateScope, Public, HideBySig
+    PickSystemCallString(Int32): PrivateScope, Public, HideBySig
+    PickSystemCall(Int32): PrivateScope, Public, HideBySig
+    PickTrim(String, String): PrivateScope, Public, HideBySig
+    PickTrim(String): PrivateScope, Public, HideBySig
+    PickIndex(String, String, Int32): PrivateScope, Public, HideBySig
+    PickOconv(String, String): PrivateScope, Public, HideBySig
+    PickOconv(Int32, String): PrivateScope, Public, HideBySig
+    PickIConv(String, String): PrivateScope, Public, HideBySig
+    PickIConv(Int32, String): PrivateScope, Public, HideBySig
+    PickField(String, String, Int32): PrivateScope, Public, HideBySig
+    PickStop(): PrivateScope, Public, HideBySig
+    PickAttrCountGet(String, String): PrivateScope, Public, HideBySig
+    PickInput(Int32, Boolean, Int32, Int32, String, String): PrivateScope, Public, HideBySig
+    PickInput(Int32, String, String): PrivateScope, Public, HideBySig
+    PickConvert(String, String, String): PrivateScope, Public, HideBySig
+    PickConvertTypeTwo(String, String, String): PrivateScope, Public, HideBySig
+    PickSpaceFill(Int32): PrivateScope, Public, HideBySig
+    PickStringFill(String, Int32): PrivateScope, Public, HideBySig
+    PickLen(String): PrivateScope, Public, HideBySig
+    PickDel(String): PrivateScope, Public, HideBySig
+    PickDel(String, Int32): PrivateScope, Public, HideBySig
+    PickIns(String): PrivateScope, Public, HideBySig
+    PickIns(String, Int32): PrivateScope, Public, HideBySig
+Class Mdm.Pick.PickSyntax+TraceMdmPointDel: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int64, Boolean, Int32, Int32, Boolean, Int32, String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Int64, Boolean, Int32, Int32, Boolean, Int32, String, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Mdm.Pick.PickSyntax+PrintOutputMdm_PickPositionDel: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32, Boolean, Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Int32, Boolean, Int32, Int32, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Mdm.Pick.PickSyntax+ConsoleMdmStd_IoWriteDel: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(String, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Mdm.Pick.PickSyntax+ConsoleMdmPickDisplayDel: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(String, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask

@@ -1,0 +1,11 @@
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Page1\Mdm1Oss1Page1\obj\Debug\ResolveAssemblyReference.cache
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Page1\Mdm1Oss1Page1\bin\Debug\Mdm1Oss1Page1.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Page1\Mdm1Oss1Page1\bin\Debug\Mdm1Oss1Page1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Page1\Mdm1Oss1Page1\bin\Debug\Mdm1Oss1Decl1.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Page1\Mdm1Oss1Page1\bin\Debug\Mdm1Oss1DefBase1.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Page1\Mdm1Oss1Page1\bin\Debug\Mdm1Pick1Syntax1.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Page1\Mdm1Oss1Page1\bin\Debug\Mdm1Oss1DefBase1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Page1\Mdm1Oss1Page1\bin\Debug\Mdm1Pick1Syntax1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Page1\Mdm1Oss1Page1\bin\Debug\Mdm1Oss1Decl1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Page1\Mdm1Oss1Page1\obj\Debug\Mdm1Oss1Page1.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Page1\Mdm1Oss1Page1\obj\Debug\Mdm1Oss1Page1.pdb

@@ -1,0 +1,56 @@
+C:\Srt Project1\Mdm\Mdm3\Mdm2World1\Mdm2World1Base1\Mdm2World1Base1\bin\Debug\Mdm2World1Base1.dll
+C:\Srt Project1\Mdm\Mdm3\Mdm2World1\Mdm2World1Base1\Mdm2World1Base1\bin\Debug\Mdm2World1Base1.pdb
+C:\Srt Project1\Mdm\Mdm3\Mdm2World1\Mdm2World1Base1\Mdm2World1Base1\bin\Debug\Mdm1Oss1Decl1.dll
+C:\Srt Project1\Mdm\Mdm3\Mdm2World1\Mdm2World1Base1\Mdm2World1Base1\bin\Debug\Mdm1Oss1Decl1.pdb
+C:\Srt Project1\Mdm\Mdm3\Mdm2World1\Mdm2World1Base1\Mdm2World1Base1\obj\Debug\Mdm3World1Base1.csprojResolveAssemblyReference.cache
+C:\Srt Project1\Mdm\Mdm3\Mdm2World1\Mdm2World1Base1\Mdm2World1Base1\obj\Debug\Interop.IWshRuntimeLibrary.dll
+C:\Srt Project1\Mdm\Mdm3\Mdm2World1\Mdm2World1Base1\Mdm2World1Base1\obj\Debug\Interop.Shell32.dll
+C:\Srt Project1\Mdm\Mdm3\Mdm2World1\Mdm2World1Base1\Mdm2World1Base1\obj\Debug\Mdm3World1Base1.csproj.ResolveComReference.cache
+C:\Srt Project1\Mdm\Mdm3\Mdm2World1\Mdm2World1Base1\Mdm2World1Base1\obj\Debug\Mdm2World1Base1.dll
+C:\Srt Project1\Mdm\Mdm3\Mdm2World1\Mdm2World1Base1\Mdm2World1Base1\obj\Debug\Mdm2World1Base1.pdb
+F:\Dev\Mdm3ShortcutUtilsPhase2\Mdm2World1\Mdm2World1Base1\Mdm2World1Base1\obj\Debug\Mdm3World1Base1.csprojAssemblyReference.cache
+F:\Dev\Mdm3ShortcutUtilsPhase2\Mdm2World1\Mdm2World1Base1\Mdm2World1Base1\bin\Debug\Mdm2World1Base1.dll
+F:\Dev\Mdm3ShortcutUtilsPhase2\Mdm2World1\Mdm2World1Base1\Mdm2World1Base1\bin\Debug\Mdm2World1Base1.pdb
+F:\Dev\Mdm3ShortcutUtilsPhase2\Mdm2World1\Mdm2World1Base1\Mdm2World1Base1\bin\Debug\Mdm1Oss1Decl1.dll
+F:\Dev\Mdm3ShortcutUtilsPhase2\Mdm2World1\Mdm2World1Base1\Mdm2World1Base1\bin\Debug\Mdm1Oss1DefBase1.dll
+F:\Dev\Mdm3ShortcutUtilsPhase2\Mdm2World1\Mdm2World1Base1\Mdm2World1Base1\bin\Debug\Mdm1Pick1Syntax1.dll
+F:\Dev\Mdm3ShortcutUtilsPhase2\Mdm2World1\Mdm2World1Base1\Mdm2World1Base1\bin\Debug\Mdm1Oss1Decl1.pdb
+F:\Dev\Mdm3ShortcutUtilsPhase2\Mdm2World1\Mdm2World1Base1\Mdm2World1Base1\bin\Debug\Mdm1Oss1DefBase1.pdb
+F:\Dev\Mdm3ShortcutUtilsPhase2\Mdm2World1\Mdm2World1Base1\Mdm2World1Base1\bin\Debug\Mdm1Pick1Syntax1.pdb
+F:\Dev\Mdm3ShortcutUtilsPhase2\Mdm2World1\Mdm2World1Base1\Mdm2World1Base1\bin\Debug\Interop.IWshRuntimeLibrary.dll
+F:\Dev\Mdm3ShortcutUtilsPhase2\Mdm2World1\Mdm2World1Base1\Mdm2World1Base1\bin\Debug\Interop.Shell32.dll
+F:\Dev\Mdm3ShortcutUtilsPhase2\Mdm2World1\Mdm2World1Base1\Mdm2World1Base1\obj\Debug\Interop.IWshRuntimeLibrary.dll
+F:\Dev\Mdm3ShortcutUtilsPhase2\Mdm2World1\Mdm2World1Base1\Mdm2World1Base1\obj\Debug\Interop.Shell32.dll
+F:\Dev\Mdm3ShortcutUtilsPhase2\Mdm2World1\Mdm2World1Base1\Mdm2World1Base1\obj\Debug\Mdm3World1Base1.csproj.ResolveComReference.cache
+F:\Dev\Mdm3ShortcutUtilsPhase2\Mdm2World1\Mdm2World1Base1\Mdm2World1Base1\obj\Debug\Mdm3World1Base1.csproj.CoreCompileInputs.cache
+F:\Dev\Mdm3ShortcutUtilsPhase2\Mdm2World1\Mdm2World1Base1\Mdm2World1Base1\obj\Debug\Mdm3World1Base1.csproj.CopyComplete
+F:\Dev\Mdm3ShortcutUtilsPhase2\Mdm2World1\Mdm2World1Base1\Mdm2World1Base1\obj\Debug\Mdm2World1Base1.dll
+F:\Dev\Mdm3ShortcutUtilsPhase2\Mdm2World1\Mdm2World1Base1\Mdm2World1Base1\obj\Debug\Mdm2World1Base1.pdb
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm2World1\Mdm2World1Base1\Mdm2World1Base1\obj\Debug\Mdm3World1Base1.csprojAssemblyReference.cache
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm2World1\Mdm2World1Base1\Mdm2World1Base1\obj\Debug\Interop.IWshRuntimeLibrary.dll
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm2World1\Mdm2World1Base1\Mdm2World1Base1\obj\Debug\Interop.Shell32.dll
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm2World1\Mdm2World1Base1\Mdm2World1Base1\obj\Debug\Mdm3World1Base1.csproj.ResolveComReference.cache
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm2World1\Mdm2World1Base1\Mdm2World1Base1\obj\Debug\Mdm3World1Base1.csproj.CoreCompileInputs.cache
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm2World1\Mdm2World1Base1\Mdm2World1Base1\obj\Debug\Mdm2World1Base1.dll
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm2World1\Mdm2World1Base1\Mdm2World1Base1\obj\Debug\Mdm2World1Base1.pdb
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm2World1\Mdm2World1Base1\Mdm2World1Base1\bin\Debug\Mdm2World1Base1.dll
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm2World1\Mdm2World1Base1\Mdm2World1Base1\bin\Debug\Mdm2World1Base1.pdb
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm2World1\Mdm2World1Base1\Mdm2World1Base1\bin\Debug\Mdm1Oss1Decl1.dll
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm2World1\Mdm2World1Base1\Mdm2World1Base1\bin\Debug\Mdm1Oss1DefBase1.dll
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm2World1\Mdm2World1Base1\Mdm2World1Base1\bin\Debug\Mdm1Pick1Syntax1.dll
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm2World1\Mdm2World1Base1\Mdm2World1Base1\bin\Debug\Mdm1Oss1Decl1.pdb
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm2World1\Mdm2World1Base1\Mdm2World1Base1\bin\Debug\Mdm1Oss1DefBase1.pdb
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm2World1\Mdm2World1Base1\Mdm2World1Base1\bin\Debug\Mdm1Pick1Syntax1.pdb
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm2World1\Mdm2World1Base1\Mdm2World1Base1\bin\Debug\Interop.IWshRuntimeLibrary.dll
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm2World1\Mdm2World1Base1\Mdm2World1Base1\bin\Debug\Interop.Shell32.dll
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm2World1\Mdm2World1Base1\Mdm2World1Base1\obj\Debug\Mdm3World1Base1.csproj.CopyComplete
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm2World1\Mdm2World1Base1\Mdm2World1Base1\bin\Debug\Resource\IconError.ico
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm2World1\Mdm2World1Base1\Mdm2World1Base1\bin\Debug\Resource\Root.ico
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm2World1\Mdm2World1Base1\Mdm2World1Base1\bin\Debug\Resource\COPYRIGHTS.MD
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm2World1\Mdm2World1Base1\Mdm2World1Base1\bin\Debug\Resource\Console_All.ico
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm2World1\Mdm2World1Base1\Mdm2World1Base1\bin\Debug\Resource\Console_Database.ico
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm2World1\Mdm2World1Base1\Mdm2World1Base1\bin\Debug\Resource\Console_Debug.ico
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm2World1\Mdm2World1Base1\Mdm2World1Base1\bin\Debug\Resource\Console_Error.ico
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm2World1\Mdm2World1Base1\Mdm2World1Base1\bin\Debug\Resource\Console_User.ico
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm2World1\Mdm2World1Base1\Mdm2World1Base1\bin\Debug\Resource\AppRoot.ico
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm2World1\Mdm2World1Base1\Mdm2World1Base1\bin\Debug\Resource\Consoles.ico

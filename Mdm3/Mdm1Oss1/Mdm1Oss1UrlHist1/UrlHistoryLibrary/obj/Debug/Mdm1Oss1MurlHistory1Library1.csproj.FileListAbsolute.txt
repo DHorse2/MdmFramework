@@ -1,0 +1,5 @@
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1UrlHist1\UrlHistoryLibrary\bin\Debug\Mdm1Oss1UrlUtil1Hist1.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1UrlHist1\UrlHistoryLibrary\bin\Debug\Mdm1Oss1UrlUtil1Hist1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1UrlHist1\UrlHistoryLibrary\obj\Debug\ResolveAssemblyReference.cache
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1UrlHist1\UrlHistoryLibrary\obj\Debug\Mdm1Oss1UrlUtil1Hist1.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1UrlHist1\UrlHistoryLibrary\obj\Debug\Mdm1Oss1UrlUtil1Hist1.pdb

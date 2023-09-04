@@ -1,0 +1,639 @@
+// Mdm Standard Object Prefixes
+		// ________________________________________________________
+		// ________________________________________________________
+		// ________________________________________________________
+		//				Real Number System Types
+		// ________________________________________________________
+		//
+		// bi - 		binary
+		// bia -		binary array
+		//
+		// ________________________________________________________
+		//	MsSql Syntax: 
+		//
+		//				binary and varbinary
+		//
+		//	Binary data types of either 
+		// 									fixed-length (binary) or 
+		//									variable-length (varbinary).
+		//				binary [ ( n ) ] 
+		//
+		//	Fixed-length binary data of n bytes. 
+		//	n must be a value from 1 through 8,000. 
+		//	Storage size is n+4 bytes. 
+		//
+		//				varbinary [ ( n ) ] 
+		//
+		//	Variable-length binary data of n bytes. 
+		//	n must be a value from 1 through 8,000. 
+		//	Storage size is the 
+		//	actual length of the data entered + 4 bytes, not n bytes. 
+		//	The data entered can be 0 bytes in length. 
+		//	The SQL-92 synonym for varbinary is binary varying.
+		//
+		// ________________________________________________________
+		//
+		// bb - 		byte
+		// bba -	byte array
+		//
+		// ________________________________________________________
+		// ________________________________________________________
+		// ________________________________________________________
+		//				Char Type - xxx determination and clarification
+		//				? Strings vs binaries vs unicode ?
+		// ________________________________________________________
+		//
+		// bc - 		char
+		// bca - 	char array
+		//
+		// ________________________________________________________
+		// ________________________________________________________
+		// ________________________________________________________
+		//				Real Number System Types
+		// ________________________________________________________
+		//
+		// fde -		decimal
+		//
+		// ________________________________________________________
+		//
+		// fd - 		double
+		//
+		// ________________________________________________________
+		//
+		// f - 			float 					(f8) 		( ±1.5 × 10^-45 to ±3.4 × 10^38 )
+		//														( float x = 3.5F )
+		//														( 7 digits )
+		// fa - 		float array
+		// F -		Float
+		// ________________________________________________________
+		//	MsSql Syntax: 
+		//
+		//				float [ ( n ) ]
+		//
+		//	Is a floating point number data with the following valid values: 
+		//				- 1.79E + 308 			through 	-2.23E - 308, 
+		// 				0 and 2.23E -308 		through 	1.79E + 308. 
+		// 	n is the number of bits used to store the 
+		// 	mantissa of the float number in scientific notation 
+		// 	and thus dictates the precision and storage size. 
+		//	n must be a value from 1 through 53. The default value of n is 53.
+		//	n is Precision Storage size 
+		//				1-24 			07 digits 			4 bytes 
+		//				25-53 			15 digits 			8 bytes 
+		//	
+		//	The Microsoft® SQL Server™ float[(n)] data type 
+		// 	conforms to the SQL-92 standard 
+		//	for all values of n from 1 to 53. 
+		//	The synonym for double precision is float(53).
+		//	
+		// ________________________________________________________
+		//	MsSql Syntax: 
+		//
+		//				real
+		//
+		//	Is a floating point number data with the following valid values: 
+		//				–3.40E + 38 			through 	-1.18E - 38, 
+		//				0 and 1.18E - 38 	through 	3.40E + 38. 
+		//
+		//	Storage size is 4 bytes. 
+		//	In SQL Server, the synonym for 
+		//
+		//				real 						is float(24).
+		//	
+		//	Note  Microsoft® SQL Server™ 2000 
+		//	treats n as one of two possible values. 
+		//
+		//	If 			1<=n<=24,  		n is treated as 24. 
+		//	If 			25<=n<=53, 		n is treated as 53.
+		//	
+		// ________________________________________________________
+		//
+		// 	fd - 		double 				(f64) 	( ±5.0 × 10^-324 to ±1.7 × 10^308 )
+		//														( double x = 9D )
+		//														( 15-16 digits )
+		// 	fda -		double array
+		//
+		// ________________________________________________________
+		//
+		// 	fde - 	decimal 				(f128) 	( -7.9 x 10^28 to 7.9 x 10^28 ) / (10^{0 to 28})
+		//														( decimal x = 999.9m;) 
+		//														( 28-29 significant digits )
+		// 	fdea - 	decimal array
+		//
+		// ________________________________________________________
+		//
+		// 	id - 		double
+		//
+		// ________________________________________________________
+		// ________________________________________________________
+		// ________________________________________________________
+		//				Integer Whole and Natural Number System Types
+		// ________________________________________________________
+		//
+		// 	b - 		bool 					(b1) 		( 0 to 1 )
+		// 	ba - 		bool array
+		//				bit						(MySql)	Integer data type 
+		//															( 1, 0, or NULL)
+		//	
+		//  If there are 8 or fewer bit columns in a table, 
+		//	the columns are stored as 1 byte. 
+		//	If there are from 9 through 16 bit columns, 
+		//	they are stored as 2 bytes, and so on.
+		//
+		// ________________________________________________________
+		//
+		// 	bs - 		sbyte					(i8) 			( -128 to 127 ) 
+		//															( Signed 8-bit integer ) 
+		//	bsa -		sbyte array
+		//
+		// 	bb - 		byte 					(i8) 			( 0 to 255 )
+		//															( Unsigned 8-bit integer ) 
+		//				tinyint					(MySql)	Integer data from 
+		//															0 through 255. 
+		//															Storage size is 1 byte.
+		//
+		// 	bba - 	byte array
+		//
+		// ________________________________________________________
+		//
+		// 	is -		short 					(int16)		( -32,768 to 32,767 )
+		//															( Signed 16-bit integer )
+		//				smallint				(MsSql)	Integer data from 
+		//															-2^15 (-32,768) through 
+		//															2^15 - 1 (32,767). 
+		//															Storage size is 2 bytes.
+		// 	isa - 		short array
+		//
+		// 	isu - 		ushort					(int16) ( 0 to 65,535 )
+		//															( Unsigned 16-bit integer )
+		// ________________________________________________________
+		//
+		// 	i -			int		 				(int32)		( -2,147,483,648 to 2,147,483,647 )
+																	( Signed 32-bit integer )
+		//				int						(MsSql)	Integer (whole number) data from 
+		// 															-2^31 (-2,147,483,648) through 
+		// 															2^31 - 1 (2,147,483,647). 
+		//															Storage size is 4 bytes. 
+		//															The SQL-92 synonym for int is integer.
+		// 	ia - 		int array
+		//
+		// 	iu - 		uint						(int32) 	( 0 to 4,294,967,295 )
+		//															( Unsigned 32-bit integer )
+		//															( Not CLS compliant, do not use )
+		// ________________________________________________________
+		//
+ 		// 	il -		long 					(int64) 	( 9,223,372,036,854,775,808 to 9,223,372,036,854,775,807 )
+		//															( Signed 64-bit integer )
+		// 				bigint					(MsSql)	Integer (whole number) data from 
+		// 															-2^63 (-9,223,372,036,854,775,808) through 
+		//															2^63-1 (9,223,372,036,854,775,807). 
+		//															Storage size is 8 bytes.
+		// 	ila -		long array
+		//
+		// 	ilu -		ulong					(int64)		( 0 to 18,446,744,073,709,551,615 )
+		//															( Unsigned 64-bit integer )
+		//
+		// (MsSql) 	The bigint data type is supported where integer values are supported. However, bigint is intended for special cases where the integer values may exceed the range supported by the int data type. The int data type remains the primary integer data type in SQL Server.
+		//
+		//				bigint 					fits between 
+		//											smallmoney and int 
+		//											in the data type precedence chart. 
+		//	
+		//  										Functions will return bigint only if 
+		//											the parameter expression is a bigint data type. 
+		//				SQL Server will not automatically 
+		//											promote other integer data types 
+		//											(tinyint, smallint, and int) to bigint. 
+		//
+		//
+		// ________________________________________________________
+		// ________________________________________________________
+		// ________________________________________________________
+		//				String and Character Types
+		// ________________________________________________________
+		//
+		// bc - 		char 					(b16) 		( U+0000 to U+ffff )
+		// bca - 	char array
+		//
+		// ________________________________________________________
+		//
+ 		// s - 		string (extendable)
+		// sa - 		string array
+		//
+		// ________________________________________________________
+		//
+		// sb - 		string builder string
+		// sms - 	string - memory stream
+		//
+		// ________________________________________________________
+		//
+		//	char[(n)]
+		//
+		//	Fixed-length non-Unicode character data with 
+		//		length of n bytes. 
+		//	n must be a value from 1 through 8,000. 
+		//	Storage size is n bytes. 
+		//	The SQL-92 synonym for char is character.
+		//
+		//	varchar[(n)]
+		//
+		//	Variable-length non-Unicode character data with 
+		//		length of n bytes. 
+		//	n must be a value from 1 through 8,000. 
+		//	Storage size is the 
+		//		actual length in bytes of the data entered, not n bytes. 
+		//	The data entered can be 0 characters in length. 
+		//	The SQL-92 synonyms for varchar are 
+		//		char varying or character varying.
+		//
+
+
+		// ________________________________________________________
+		//
+		// 	a - 		array
+		//
+		// 	al - 		ArrayList
+		//
+		// ________________________________________________________
+		//
+		// 	lc - 			collection
+		//
+		// ________________________________________________________
+		//	BIG STUFF 	- as in big binary, big image, big binary, big char.
+		//							- not binary large object (blob)
+		//							- non-standard naming convention (change it) xxx XXX
+		//
+		// 	bi - 			binary				( not a native type, used as a data type )
+		//											( don't know about this one )
+		//
+		// 	bii  - 		image???		( not a native type, used as a data type 
+		//											( an image large object )
+		//
+		// 	bib - 		blob ?				( not a native type, used as a data type )
+		//											( a binary large object )
+		//
+		// 	bic -			clob ?				( not a native type, used as a data type )
+		//											( a character large object )
+		//
+		// ________________________________________________________
+		//
+		// 	c - 			class
+		//
+		//
+		//	====================================================
+		// ________________________________________________________
+		//
+		// cs - 			struct
+		//
+		//
+		//	====================================================
+		// ________________________________________________________
+		//
+		// 	e - 			exception
+		//
+		//
+		//	====================================================
+		// ________________________________________________________
+		//
+		// 	l - 			list
+		//
+		// 	lc - 			collection
+		//
+		// 	ln - 			enumeration
+		//
+		// 	la - 			list array
+		//
+		//
+		//	====================================================
+		// ________________________________________________________
+		//
+		// 	cs - 			struct
+		//					(	 	constructors, 
+		//							constants, 
+		//							fields, 
+		//							methods, 
+		//							properties, 
+		//							indexers, 
+		//							operators, 
+		//							events, 
+		//							and nested types )
+		//
+		//	====================================================
+		// ________________________________________________________
+		//
+		// 	v - 			event
+		//
+		//	====================================================
+		// ________________________________________________________
+		// ________________________________________________________
+		//
+		//		OBJECTS
+		// 	a - 			Application
+		// 	al - 			ArrayList
+		// 	c - 			Class
+		// 	cd - 			Delegate
+		// 	cs - 			Struct
+		// 	cs - 			Struct
+		// 	cv - 			Event
+		// 	l - 			List
+		// 	m - 			Method
+		// 	n - 			Namespace (NOT USED)
+		//
+		// ________________________________________________________
+		// ________________________________________________________
+		// ________________________________________________________
+		// 					OBJECT INSTANCES		
+		// ________________________________________________________
+		//
+		// 	oa - 			Object - 							Application
+		// 	oal - 		Object - 							ArrayList
+		// 	oc - 			Class Instance
+		// 	ocs - 		Struct Instance
+		// 	om - 		Method Instance 			(NOT USED)
+		//
+		// ________________________________________________________
+		// Console Object
+		//
+		//  ocot  - 	Object - 							Console Output TextWrtier
+		// 	ocos - 	Object - 							Console Output StreamWrtier
+		// 	oci  - 		Object - 							Console Input
+		// 	ocet - 		Object - 							Console Error TextWriter
+		// 	ocee - 	Object - 							Console Error Exception
+		//
+		// ________________________________________________________
+		// DotNet Object
+		//
+		// 	od  - 		Object - 		DotNet
+		// 	ocd - 		Object - 		DotNet - 		DELEGATE
+		//
+		// ________________________________________________________
+		// DotNet Object - Namespaces
+		//
+		// 	odxx - 		Object - 		Namespace -			DontNet Namespace
+		// 	ods  - 		Object - 		Namespace -			System Namespace
+		// 	odst - 		Object - 		Namespace -			System.Type
+		//
+		// ________________________________________________________
+		// DotNet Object - Types
+		//
+		// 	tt				Type - 		Type 						Type
+		// 	tdt			Type - 		DateTime				DateTime
+		// tdto			Type - 		DateTime				DateTimeOffset
+		// tdts			Type - 		DateTime				DateTimeSpan
+		//
+		// tcb			Type - 		DateTime				CommandBehavior
+		//																		(SqlDataReader)
+		// tg				Type - 		Guid						Guid
+		// tfdt			Type - 		DataTable 				DataTable
+		//
+		// ________________________________________________________
+		// Generic Object
+		//
+		// oo    	Object - Object Type not specified
+        // oe    	Object - Exception
+		// ocd  	Object - Delegate
+		// ocv  	Object - Event
+		//
+		// ________________________________________________________
+		// Mdm Objects - Generice
+		//
+        // omo  - Object - Mdm  - Mobject - Mdm framework object object
+		//
+		// Mdm Objects - Namespaces
+		// omm - Object - Mdm - Mapplication - Mdm framework application object
+		//
+        // oma  - Object - Mdm - Mdm Application - the application
+		//
+        // omh  - Object - Mdm - Mdm Handler - application control
+		//
+		// omp  - Object - Mdm - Main Page - for this app
+		//
+		// omv  - 		Object - Mdm - Mdm Verb - process that performs the action
+		// ________________________________________________________
+		//  Mdm Object Validation
+		//
+		// omvv - 		Object - Mdm - Mdm Verb - Event
+		// omvva - 	Object - Mdm - Mdm Verb - Validation
+		// omvvae - 	Object - Mdm - Mdm Verb - Validation- Exception
+		// omvOf  -	Object - Mdm - Mdm File Action
+		//
+		// ________________________________________________________
+		//
+		//
+        // of - 		Object - File
+        // ofb - 	Object - File - Buffer
+		// ofcd - 	Object - File - Delegate
+		// ofcv - 	Object - File - Event
+        // ofe  - 	Object - File - Exception
+		//
+		// ________________________________________________________
+		//
+		//
+        // ofs  - 		Object - File - File Stream
+        // ofsr - 		Object - File - File Stream Reader
+		// ofsrcd - 	Object - File - File Stream Reader - Delegate
+		//
+		// ________________________________________________________
+		// Database Connection
+		//
+        // ofd  - 		Object - File - Database Connection
+        // ofde - 		Object - File - Database Connection - Error
+		// ofdcd - 	Object - File - Database Connection - Delegate
+        // ofdcv - 	Object - File - Database Connection - Event
+		//
+		// ________________________________________________________
+		// Database Sql Data Reader
+		//
+		// ofddr - 		Object - File - Database Connection - DataReader
+        // ofddre - 	Object - File - Database Connection - DataReader- Error
+		// ofddrcd - 	Object - File - Database Connection - DataReader- Delegate
+        // ofddrcv - 	Object - File - Database Connection - DataReader- Event
+		//
+		// ________________________________________________________
+		// Database Sql Text Reader
+		//
+		// ofdtr - 		Object - File - Database Connection - TextReader
+        // ofdtre - 	Object - File - Database Connection - TextReader- Error
+		// ofdtrcd - 	Object - File - Database Connection - TextReader- Delegate
+        // ofdtrcv - 	Object - File - Database Connection - TextReader- Event
+		//
+		// ________________________________________________________
+		//
+		// oh - 		Object - HashTable
+		// ol - 		Object - List 
+		// op - 		Object - Page
+        // os - 		Object - Structure
+		//
+		// ________________________________________________________
+		//	====================================================
+		// ________________________________________________________
+		//	
+		//	var (C# Reference)
+		//	Beginning in Visual C# 3.0, variables that are declared at method scope can have an implicit type var. 
+		//	An implicitly typed local variable 
+		//		is strongly typed just as if you had declared the type yourself, 
+		//		but the compiler determines the type. 
+		//	The following two declarations of i are functionally equivalent: 
+		//			var i = 10; 		// implicitly typed
+		//			int i = 10; 		//explicitly typed
+		//	
+		// ________________________________________________________
+		//	====================================================
+		// ________________________________________________________
+// Class Hierarchy
+// Note: 
+Please note that the 
+mismatches in abstraction 
+between
+C#, Win32 and Linq compared to
+and
+Mdm infrastructure 
+are deliberate.
+
+		// ________________________________________________________
+Level 0
+// Hardware Classes
+		// ________________________________________________________
+Level 1
+// Clipboard
+// Other Os / Win32 Functionality
+		// ________________________________________________________
+Level 2
+// Mdm Support Layer
+// Mdm Standards Functions
+		// ________________________________________________________
+Level 3
+// Networking Layers
+		// ________________________________________________________
+Level 5
+// Mdm Code
+		// ________________________________________________________
+Level 10
+// Mdm Application Layer
+		// ________________________________________________________
+Level 16
+// Mdm Object
+		// ________________________________________________________
+Level 5
+// Mdm Protocol
+		// ________________________________________________________
+Level 8
+// Mdm File Io
+// Mdm Printer Io
+// Mdm DCom, Corba, Soap, etc.
+		// ________________________________________________________
+Level 11
+// Mdm Document
+		// ________________________________________________________
+// Level 21
+// Mdm C# Application
+
+
+
+// Reserved Constants
+
+null - Never Used
+0 - Normal Start
+0 - Normal End
+1 - 
+
+==============================================
+
+        const int FILE_DICT_DATA = 1;
+        const int FILE_DATA = 2;
+        // <Area Id = "FileExistanceConstants">
+        // protected int FileExistanceStatus = 0;
+        const int FILE_IO_FILE_SHOULD_NOT_EXIST = 3;
+        const int FILE_IO_FILE_DOES_EXIST = 2;
+        const int FILE_IO_FILE_DOES_NOT_EXIST = 1;
+        // <Area Id = "GeneralStatusConditionConstants">
+        const int FILE_IO_OK = 0;
+        const int FILE_IO_NO_STATUS_SET = 99999;
+        // <Area Id = "FileOpenConstants">
+        // protected int FileOpenStatus = 0;
+        const int FILE_IO_OPEN_TRY_FIRST = -3;
+        const int FILE_IO_OPEN_TRY_AGAIN = -2;
+        const int FILE_IO_OPEN_TRY_DEFAULT = 2;
+        const int FILE_IO_OPEN_TRY_ORIGINAL = 3;
+        const int FILE_IO_OPEN_TRY_ALL = 3;
+        const int FILE_IO_OPEN_FAILED = 121;
+        const int FILE_IO_CLOSE_FAILED = 122;
+        const int FILE_IO_NO_FILE_OPEN = 128;
+        const int FILE_IO_NO_FILE_NAME = 129;
+        // <Area Id = "FileIOTypeConstants">
+        // protected int FileIOType = 0;
+        const int DATABASE_IO_OK = 0;
+        const int DATABASE_IO_OPEN_FAILED = 131;
+        const int DATABASE_IO_CLOSE_FAILED = 132;
+        const int DATABASE_IO_NO_FILE_OPEN = 138;
+        const int DATABASE_IO_NO_FILE_NAME = 139;
+        const int STREAM_IO_OK = 0;
+        const int STREAM_IO_OPEN_FAILED = 141;
+        const int STREAM_IO_CLOSE_FAILED = 142;
+        const int STREAM_IO_NO_FILE_OPEN = 148;
+        const int STREAM_IO_NO_FILE_NAME = 149;
+        const int BINARY_IO_OK = 0;
+        const int BINARY_IO_OPEN_FAILED = 151;
+        const int BINARY_IO_CLOSE_FAILED = 152;
+        const int BINARY_IO_NO_FILE_OPEN = 158;
+        const int BINARY_IO_NO_FILE_NAME = 159;
+        // <Area Id = "FileReadModeConstants">
+        protected int iFileReadMode = 0;
+        const int IMPORT_FILE_READ_NOT_SET_MODE = 0;
+        const int IMPORT_FILE_READ_BUFFER_MODE = 1;
+        const int IMPORT_FILE_READ_LINE_MODE = 2;
+        const int IMPORT_FILE_READ_ALL_MODE = 3;
+        const int IMPORT_FILE_READ_SQL_MODE = 4;
+        const int IMPORT_FILE_READ_MODE_ERROR = 5;
+        // <Area Id = "AsciiOpenOptions">
+        // protected int AsciiOpenOptions = 0;
+        const int FILE_IO_READ_ONLY = 21;
+        const int FILE_IO_BINARY_MODE = 25;
+        const int FILE_IO_SEEK_MODE = 28;
+        const int FILE_IO_APPEND_ONLY = 22;
+        const int FILE_IO_CREATE_IF_MISSING = 23;
+        const int FILE_IO_CREATE_ONLY = 24;
+        // <Area Id = "FileReadErrors">
+        // FileReadAscii
+        const int FILE_IO_READ_OK = 0;
+        const int FILE_IO_READ_END_OF_FILE = 123;
+        const int FILE_IO_READ_FAILED = 125;
+        // FileReadDatabase
+        const int DATABASE_IO_READ_END_OF_FILE = 133;
+        const int DATABASE_IO_READ_OK = 0;
+        const int DATABASE_IO_READ_FAILED = 135;
+        // FileReadStream
+        const int STREAM_IO_READ_END_OF_FILE = 143;
+        const int STREAM_IO_READ_OK = 0;
+        const int STREAM_IO_READ_FAILED = 145;
+        // FileReadBinary
+        const int BINARY_IO_READ_END_OF_FILE = 153;
+        const int BINARY_IO_READ_OK = 0;
+        const int BINARY_IO_READ_FAILED = 155;
+        // <Area Id = "FileWriteErrorsConstants">
+        // FileWrite
+        // FileWriteAscii
+        const int FILE_IO_WRITE_OK = 0;
+        const int FILE_IO_WRITE_FAILED = 126;
+        // FileWriteDatabase
+        const int DATABASE_IO_WRITE_OK = 0;
+        const int DATABASE_IO_WRITE_FAILED = 136;
+        // FileWriteBinary
+        const int BINARY_IO_WRITE_OK = 0;
+        const int BINARY_IO_WRITE_FAILED = 156;
+        // FileWriteStream
+        const int STREAM_IO_WRITE_OK = 0;
+        const int STREAM_IO_WRITE_FAILED = 146;
+        // FileNull
+        // FileField
+        // FileTable
+        // FileTableRow
+        // FileTableColumn
+        // <Area Id = "FileNullErrorsConstants">
+        // <Area Id = "FileFileIdErrorsConstants">
+        // <Area Id = "FileTableErrorsConstants">
+        // <Area Id = "FileTableRowErrorsConstants">
+        const int FILE_IO_NO_ROW_ID = 99;
+        const int FILE_IO_ROW_ID_SHOULD_NOT_EXIST = 33;
+        const int FILE_IO_ROW_ID_DOES_EXIST = 32;
+        const int FILE_IO_ROW_ID_DOES_NOT_EXIST = 31;

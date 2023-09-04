@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual C# Express 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mdm1Oss1Mobject1", "Mdm1Oss1Mobject1.csproj", "{92E29D47-C9C5-45F7-9252-576B999FE902}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mdm1Oss1Mapplication1", "..\Mdm1Oss1Mapplication1\Mdm1Oss1Mapplication1.csproj", "{7C123CF9-90D5-4395-B1A7-5F21732CED50}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{92E29D47-C9C5-45F7-9252-576B999FE902}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92E29D47-C9C5-45F7-9252-576B999FE902}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92E29D47-C9C5-45F7-9252-576B999FE902}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92E29D47-C9C5-45F7-9252-576B999FE902}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C123CF9-90D5-4395-B1A7-5F21732CED50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C123CF9-90D5-4395-B1A7-5F21732CED50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C123CF9-90D5-4395-B1A7-5F21732CED50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C123CF9-90D5-4395-B1A7-5F21732CED50}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,1919 @@
+~.L~
+PQN
+HCOPY TCL-STACK DGH (T
+P
+X
+~.P~
+PQN
+H!FF
+P
+HCOPY TCL-STACK DGH (P
+P
+H!FF
+P
+X
+~EXPORT.TLD~
+*PROGRAM: EXPORT.TLD
+*
+!
+* EXPORT PICK item(s) to MS-DOS Tilde Files
+*
+* Control
+equ CR to char(13)
+equ LF to char(10)
+equ EOF to char(26)
+equ AM to char(254)
+prompt ''
+include dm,bp,dos, fcntl.h
+include dm,bp,dos, errno.h
+REC.SZ = 1024
+OFS.SZ = (rec.sz * 32) -1
+*
+* tcl
+*
+tclread tcl
+tcl=trim(tcl) ;list=0 ;item.sep=am
+options = field(tcl,'(',2)
+t.from='';t.to=''
+options = field(options,')',1)
+options = trim(oconv(options,'mcu'))
+*
+* options
+*
+c.flg = index(options,'c',1)
+s.flg = index(options,'s',1)
+n.flg = index(options,'n',1)
+e.flg = index(options,'e',1)
+t.flg = index(options,'t',1)
+o.flg = index(options,'o',1)
+i.flg = index(options,'i',1)
+k.flg = index(options,'k',1)
+u.flg = index(options,'u',1)
+*
+* Command including items (Main Line with out TO & options)
+*
+info.main=trim(oconv(tcl,'g0(1'))
+*
+* TO "dname"
+*
+dname = ''
+if u.flg then
+spc.u = index(info.main,' TO "',1); tc = '"'
+if not(spc.u) then spc.u = index(info.main,' to "',1); tc = '"'
+if not(spc.u) then spc.u = index(info.main," TO '",1); tc = "'"
+if not(spc.u) then spc.u = index(info.main," to '",1); tc = "'"
+if spc.u then
+info = info.main[1,spc.u]
+tmp = info.main[spc.u,9999]
+dname = field(tmp,tc,2)
+dname = trim(dname)
+end else
+info = info.main
+dname = fname:".TLD"
+end
+end else info = info.main
+*
+* Items
+*
+spc.i=index(info,' ',2)
+id = ''
+*
+* Pick File
+*
+fname = field(tcl,' ',2)
+fname = trim(fname)
+*
+* Abort Help
+*
+if fname = '' then
+  1 errm='Syntax - EXPORT PickFileName ItemName {TO "DosName"} {(options}'
+  print;print errm 
+  print 'options : c - concatenate pick items into one dos file'
+  print '          e - append item delimeter to each pick item'
+  print '          i - include item ids'
+  print '          n - Sort items'
+  print '          o - overwrite dos files'
+  print '          p - output to spooler'
+  print '          s - use pick ids as dos file names'
+  print '          t - translate specific characters'
+  print "          u - enclose item ids' in Tildes"
+  print;stop
+end
+*
+!
+* START
+*
+id = field(tcl,' ',3)
+id = trim(id)
+*
+* Open Pick File
+*
+open fname to f.file else
+  print;print "ABORT: Unable to open '":fname:"'.";stop
+end
+*
+!
+*
+print 'Preparing item to export, please wait ...'
+*
+* list already present
+*
+if system(11) then
+  gosub 11
+end else
+*
+* no list
+*
+* sort n.flg
+*
+  if n.flg then
+    execute 'sselect ':fname
+    gosub 11
+  end else
+*
+* all items '*'
+*
+    if field(tcl,' ',3)='*' then
+      execute 'select ':fname
+      gosub 11
+    end else
+*
+* id entered
+*
+      id=field(tcl,' ',3)
+    end
+  end
+end
+*
+!
+*
+* do a list
+*
+if list then
+  select itemsl to s.list
+  list=dcount(itemsl,am)
+end else
+*
+* process multiple items on one line (before TO "dname" (???))
+*
+  itemsl=info[spc.i+1,len(info)]
+  if count(itemsl,' ') then
+    convert ' ' to am in itemsl
+    select itemsl to s.list
+    list = dcount(itemsl,am)
+  end
+end
+*
+!
+*
+start.export :
+*
+*
+if c.flg then item='';gosub 200
+if t.flg then ni=1;gosub 300
+if t.from='' then t.flg=0
+*
+*********** load next item id *****************
+*
+if list and c.flg=0 then
+  readnext id from s.list else stop
+end
+*
+* set dos file name
+*
+* 'u' -  tilde option set & name entered ( TO "dname")
+*
+if u.flg and dname ne '' then
+  dos.file = dname
+*
+* Use id as DosName (if not over-riden by Concatenate optons 'c')
+* 's' & 'c'
+*
+end else if s.flg and c.flg=0 then
+  dos.file=id
+end else
+*
+* display a default DosName and prompt the user
+*
+  if c.flg then p1="Selected pick item :" else p1="Pick item :"
+  print p1:id:" to Dos File Name : ":id "cu":str(@(-9),len(id)):
+  input dos.file
+  dos.file=trim(dos.file)
+  if dos.file='' then dos.file=id "cu"
+end
+*
+!
+*
+**** Open the Dos File ****
+*
+gosub opendosfile
+*
+*
+***** Process the next Pick Item *****
+*
+if c.flg = 0 then
+  read item from f.file, id then
+    print 'read ':fname:' ':id
+  end else
+    print;print "ABORT: Unable to read '":id:"' from '":fname:"'.";stop
+  end
+***  if i.flg then item=id:am:item
+  if i.flg or u.flg then
+    if u.flg then
+      item='~':id:'~':am:item
+    end else
+      item = id:am:item
+    end
+  end
+end
+*
+*
+*------ export pick item to dos item -------------------
+*
+*
+lamc=dcount(item,char(254))
+*
+ if lamc > 500 then
+*
+*    call export sub-routine
+*
+    call export.dos1(item,t.to,t.from,dfh,dos.file,options)
+*
+   goto getout
+ end
+*
+!
+*
+*  Process the item in line
+*
+dim ditem(500)
+bc=0
+*
+for k=1 to 10
+  bc=bc+len(item<k>)
+next k
+*
+av.bc=int(bc/10)
+if av.bc < 50 then av.bc=50
+nr =int(60000/av.bc)
+if nr < 250 then nr=250
+nr1=nr-1
+dim wditem(nr)
+ditem=item
+nn=int(lamc/nr)
+if rem(lamc,nr) = 0 else nn=nn+1
+ofs = 0
+*
+* process blocks of the item
+*
+for jjj = 1 to nn
+*
+  start1=1+(nr*(jjj-1))
+  end1 = start1 + nr1
+  if jjj=nn then end1=lamc;nsize=end1-start1+1 else nsize=nr
+*
+  matbuild witem from ditem,start1,end1 using char(254)
+*
+*
+  if t.flg=0 then
+    if k.flg=0 then
+      wditem = witem
+      for j = 1 to nsize
+        wditem(j)=wditem(j):cr
+      next j
+      witem = wditem
+      convert am to char(10) in witem
+    end
+*
+  end else
+*
+    cc=len(t.from)
+    for ik=1 to cc
+      t1=t.from[ik,1];t2=t.to[ik,1]
+      if t1=t2 then t2=''
+      convert t1 to t2 in witem
+    next ik
+  end
+*
+!
+*
+  if jjj=1 then ofs=0
+  if jjj=1 then print 'Copying data to DOS, please wait ...'
+  ofs1=0
+*
+  loop
+*
+    ofs.m = int(ofs/OFS.SZ)
+    ofs.r = mod(ofs,OFS.SZ)
+    rc = %dos_seek(dfh,ofs.m,ofs.r,SEEK$SET);
+    if rc < 0 then
+      print
+      print "ABORT: Error [":system(0):"] - Unable to seek MS-DOS file '":dos.file:"' to offset '":ofs:"'."
+      goto getout
+    end
+*
+    buf = witem[ofs1 + 1,REC.SZ]
+    buf.sz = len(buf)
+*
+  while buf.sz # 0 do
+*
+    rc = %dos_write(dfh,buf,buf.sz);
+    print ofs+rc "r#8":' bytes copied':char(13):
+    if rc < 0 then
+      print
+      print "ABORT: Error [":system(0):"] - Unable to write MS-DOS file '":dos.file:"'."
+      goto getout
+    end
+    if rc < buf.sz then
+      print
+      print 'ABORT: Out of MS-DOS disk space.'
+      goto getout
+    end
+    ofs = ofs + rc
+    ofs1 = ofs1 + rc
+*
+  repeat
+*
+*
+next jjj
+*
+*
+print
+print "MS-DOS file '":dos.file:"' created."
+*
+!
+*
+getout:
+*
+rc = %dos_close(dfh)
+*
+if rc < 0 then
+  print
+  print "ABORT: Error [":system(0):"] - Unable to close MS-DOS file '":dos.file:"'."
+  stop
+end
+*
+if c.flg then stop
+if list = 0 then stop
+*
+goto start.export
+*
+!
+*
+opendosfile :
+*
+dfh = %dos_open(dos.file,O$RDWR,0);
+if dfh >= 0 then
+  if not(o.flg) then
+    print
+    print "ABORT: MS-DOS file '":dos.file:"' already exists."
+    rc = %dos_close(dfh);stop
+  end else
+    rc = %dos_close(dfh);
+    if rc < 0 then
+      print
+      print "ABORT: Error [":system(0):"] - Unable to close MS-DOS file '":dos.file:"'."
+      stop
+    end
+    dfh = %dos_open(dos.file,O$TRUNC+O$RDWR,S$IREAD+S$IWRITE);
+    if dfh < 0 then
+      print
+      print "ABORT: Error [":system(0):"] - Unable to open MS-DOS file '":dos.file:"'."
+      rc = %dos_close(dfh);stop
+    end
+  end
+end else
+  dfh = %dos_open(dos.file,O$CREAT+O$RDWR,S$IREAD+S$IWRITE);
+  if dfh < 0 then
+    print
+    print "ABORT: Error [":system(0):"] - Unable to create MS-DOS file '":dos.file:"'."
+    stop
+  end
+end
+*
+return
+*
+!
+*
+11 itemsl=''
+*
+list.val: readnext id then
+  itemsl<-1>=id;goto list.val
+end
+list=1
+*
+return
+*
+!
+*
+200 item='';item.sep=am
+*
+if e.flg then
+  crt "Enter DOS record separator in hex :":
+  input item.sep
+  if xtd(item.sep) > 254 then print char(7):;goto 200
+  item.sep=char(xtd(item.sep))
+end
+*
+!
+*
+202 readnext id from s.list then
+  read trec from f.file,id then
+***  if i.flg then trec=id:am:trec
+    if i.flg or u.flg then
+      if u.flg then
+        trec='~':id:'~':am:trec
+        print fname:' ':id
+      end else
+        trec = id:am:trec
+      end
+    end
+    item=item:trec:item.sep
+    goto 202
+  end
+  print "Pick item :":id:" not on file - ABORT !"
+  stop
+end
+*
+return
+*
+!
+*
+300 crt "Replace :":;input ans
+*
+if ans='' then return
+if xtd(ans) > 254 then goto 300
+t.from[ni,1]=char(xtd(ans))
+310 crt "With    :":;input ans1
+if ans1='' then ans1=ans
+if xtd(ans1) > 254 then goto 310
+t.to[ni,1]=char(xtd(ans1))
+ni=ni+1
+*
+goto 300
+*
+*
+~IMPORT.TLD~
+*PROGRAM: IMPORT.TLD
+*
+!
+* IMPORT MS-DOS TLD file to PICK items
+*
+* Copyright 1990, 1991 PICK Systems
+*
+kk=1
+lbuf=''
+citem=''
+nitem=''
+item=''
+crlf=char(13):char(10)
+equ CR to char(13)
+equ LF to char(10)
+equ EOF to char(26)
+equ AM to char(254)
+equ TLD to '~'
+prompt ''
+include dm,bp,dos, fcntl.h
+include dm,bp,dos, errno.h
+REC.SZ = 1024
+OFS.SZ = (1024 * 32) -1
+tclread tcl
+*
+options = field(tcl,'(',2)
+options = field(options,')',1)
+options = trim(oconv(options,'mcu'))
+c.flg = index(options,'c',1)
+*
+dos.file = field(tcl,' ',2) 
+dos.file = field(dos.file,'(',1)
+dos.file = trim(oconv(dos.file,'mcu'))
+if dos.file eq '' then
+1 errm="Syntax - IMPORT DosFileName PickFileName ItemName {(options}"
+  print;print errm
+  stop
+end
+*
+dat=''
+pickf=field(tcl,' ',3)
+if pickf ne '' then
+  if index(pickf,'(',1) else
+    itemf=field(tcl,' ',4)
+    if itemf ne '' then
+      if index(itemf,'(',1) then
+        itemf = 'DUMMY'
+      end
+    end else itemf = 'DUMMY'
+    dat = pickf:' ':itemf
+  end
+end
+if dat eq '' then
+  print 'to:(':
+  input dat
+end
+dat = trim(oconv(dat,'mcu'))
+fname = field(dat,' ',1)
+if fname eq '' then goto 1
+id = field(dat,' ',2)
+if id eq '' or id eq 'DUMMY' then
+  dc = dcount(dos.file,'\')
+  id = field(dos.file,'\',dc)
+  dc = index(id,':',1)
+  id = id[dc+1,9999]
+end
+*
+! Open DOS file
+*
+dfh = %open(dos.file,O$RDONLY,0);
+if dfh lt 0 then
+  print
+  print "ABORT: Error [":system(0):"] - Unable to open MS-DOS file '":dos.file:"'."
+  stop
+end
+*
+!
+*
+ofs = 0
+item.am.cn = 0
+item.dsp.cn = 0
+ print 'Copying data to PICK, please wait ...'
+origname = fname
+defname  = 'tld.import'
+*
+! Open PICK file
+*
+gosub pick.open
+gosub id.check
+*
+! Loop to process DOS item
+*
+loop
+  print; print @(4):ofs "r#8":' bytes':char(13):
+  ofs.m = int(ofs/OFS.SZ)
+  ofs.r = mod(ofs,OFS.SZ)
+  rc = %lseek(dfh,ofs.m,ofs.r,SEEK$SET);
+  if rc lt 0 then
+    print
+    print "ABORT: Error [":errno:"] - Unable to seek MS-DOS file '":dos.file:"' to offset '":ofs:"'."
+    goto getout
+  end
+  buf=space(rec.sz)
+  rc = %read(dfh,buf,REC.SZ);
+  if c.flg ne 0 then
+    if rc eq rec.sz then
+      citem=citem:buf;goto 2
+    end else
+      citem=citem:buf[1,rc];goto 3
+    end
+  end
+*
+** while rc = REC.SZ do
+*
+if rc gt 0 then
+*
+** dim item(kk)
+ if c.flg eq 0 then
+   amc=dcount(buf,cr)-1
+   l=index(buf,cr,amc)
+   wbuf=buf[l+1,999]
+   buf=lbuf:buf[1,l-1]
+   lbuf=wbuf
+   convert char(13) to char(254) in buf;convert char(10) to "" in buf
+ end
+*
+ am.cn.max = dcount(buf,AM)
+ am.cn = 1
+  print @(30):"b":am.cn.max "l#3":
+ loop while am.cn le am.cn.max do
+   print @(0):"s":am.cn:
+   if item.dsp.cn le 10 then
+     item.dsp.cn = item.dsp.cn + 1
+     print @(5):item.dsp.cn "R#2":" ":buf<am.cn> "L#70"
+   end
+*
+   if buf<am.cn>[1,1] eq TLD then
+     if buf<am.cn>[len(buf<am.cn>),1] eq TLD then
+       print; print @(5):am.cn "R#2":" ":buf<am.cn> "L#70"
+*
+*
+       if am.cn-1 gt 0 then
+         tmp = index(buf,AM,am.cn-1)
+         if not(tmp) and am.cn-1 then tmp = len(buf)
+         if len(item) then item = item:am
+         item = item:buf[1,tmp-1]
+         buf = buf[tmp+1,99999]
+       **am.cn.max = dcount(buf,AM)
+       **am.cn = 0
+       end
+       if len(item) then
+         gosub pickwrite
+         item = ''
+       end
+*
+       item.am.cn = 0
+       item.dsp.cn = 0
+       dat = buf<1>
+       del buf<1>
+       dat = dat[2,99999]
+       dat = dat[1,len(dat)-1]
+       dat = trim(dat)
+       tmp3 = field(dat,' ',2)
+       if tmp3 ne '' then
+         if tmp3 ne fname then
+           fname = tmp3
+           gosub pick.open
+         end
+       end
+       id = field(dat,' ',1)
+       gosub id.check
+*
+       am.cn.max = dcount(buf,AM)
+       am.cn = 0
+*
+     *****
+     end
+   end
+   am.cn = am.cn + 1
+ repeat
+*
+**  item(kk)=buf ; kk=kk+1
+  if len(item) then item = item:am
+  item = item:buf
+  item.am.cn = item.am.cn + am.cn.max
+  print @(25):"i":item.am.cn "l#3":
+*
+end; * of rc gt 0
+*
+!
+*
+2 ofs = ofs + rc
+*
+** repeat
+while rc eq REC.SZ do repeat
+*
+!
+*
+if rc lt 0 then
+  print
+  print "ABORT: Error [":system(0):"] - Unable to read MS-DOS file '":dos.file:"'."
+  goto getout
+end
+*
+** buf = buf[1,rc]
+** ** dim item(kk)
+**  if c.flg eq 0 then
+**    amc=dcount(buf,cr)-1
+**    l=index(buf,cr,amc)
+**    wbuf=buf[l+1,999]
+**    buf=lbuf:buf[1,l-1]
+**    lbuf=wbuf
+**    convert char(13) to char(254) in buf;convert char(10) to "" in buf
+**  end
+** **item(kk)=buf
+** if len(item) then item = item:am
+** item = item:buf
+*
+!
+*
+3 ofs = ofs + rc
+  print @(4):ofs "r#8":' bytes':char(13):
+*
+!
+*
+getout: *
+*
+wrt.flg = 1
+gosub pickwrite
+*
+!
+*
+finish: *
+*
+rc = %close(dfh);
+if rc lt 0 then
+  print
+  print "ABORT: Error [":system(0):"] - Unable to close MS-DOS file '":dos.file:"'."
+  stop
+end
+*
+stop
+*
+! Open PICK file
+*
+pick.open: *
+*
+open fname to f.file else
+  print;print "ERROR: Unable to open '":fname:"'."
+  print "Will try '":origname:"'."
+  open origname to f.file then
+    fname = origname
+  end else
+    print;print "ERROR: Unable to open '":origname:"'."
+    print "Will try '":defname:"'."
+    open defname to f.file then
+      fname = defname
+    end else
+      print;print "ABORT: Unable to open '":defname:"'."
+      goto finish
+    end
+  end
+end
+*
+return
+*
+!
+*
+id.check: *
+*
+read ritem from f.file, id then
+  if index(options,'o',1) eq 0 then
+    print;print "ABORT: Item '":id:"' already exists in '":fname:"'."
+    goto finish
+  end
+end
+*
+return
+*
+!
+*
+pickwrite: *
+*
+if c.flg eq 0 then
+*
+**  matwrite item on f.file,id
+  am.cn.max = dcount(item,AM)
+  item.len = len(item)
+  print;print id 'l#30':" is ":am.cn.max 'r#4':" lines, ":item.len 'r#5':" characters in ":fname
+*
+  tmp = index(item," VERSION:",1)
+  if tmp then
+    tmp1 = dcount(item[1,tmp],AM)
+    tmp2 = item<tmp1>
+    if tmp2[1,1] eq "*" then
+      tmp2 = tmp2[2,99999]
+      loop while tmp2[1,1] eq ' ' do tmp2 = tmp2[2,99999] repeat
+      tmp3 = trim(tmp3)
+      tmp3 = field(tmp2,' ',2)
+      if tmp3 ne '' then
+        version.dt = tmp3
+        version = field(tmp2,' ',3)
+        print "Version: ":version:"   date: ":version.dt
+      end
+    end
+  end
+*
+  tmp = index(item," FILE:",1)
+  if tmp then
+    tmp1 = dcount(item[1,tmp],AM)
+    tmp2 = item<tmp1>
+    if tmp2[1,1] eq "*" then
+      tmp2 = tmp2[2,99999]
+      loop while tmp2[1,1] eq ' ' do tmp2 = tmp2[2,99999] repeat
+      tmp2 = trim(tmp2)
+      tmp3 = field(tmp2,' ',2)
+      if tmp3 ne '' then
+        if tmp3 ne fname then
+          fname = tmp3
+          gosub pick.open
+          gosub id.check
+        end
+      end
+    end
+  end
+*
+  write item on f.file,id
+*
+end else
+*
+  write citem on f.file,id
+*
+end
+*
+*
+print
+* print "Item '":id:"' created in '":fname:"'."
+wrt.flg = 0
+*
+return
+*
+end
+~MAKE-LIST~
+PQN
+C
+100 C     CREATE LIST FOR FILE
+C
+RO
+S0
+IF A3 GO 120
+C
+110 C
+C
+HSSELECT
+H 
+A\2
+CIF A3 H 
+IF A3 H USING MD WITH *A1 EQ "[
+IF A3 A\3
+IF A3 H]"
+H 
+STON
+GO 150
+C
+120 CCCC
+C
+HGET-LIST
+H 
+A\2
+STON
+HSELECT
+H 
+A\2
+IF A3 H USING MD NE "BU.]" WITH *A1 EQ "[
+IF A3 A\3
+IF A3 H]"
+H 
+H<
+GO 150
+C
+C
+150 CCCCC
+C
+HSAVE-LIST
+H 
+A\2
+IF A3 H.
+IF A3 A\3
+H<
+C  P
+PD
+C
+200 C      MOVE LIST TO LISTS
+C
+HCOPY-LIST
+H 
+A\2
+IF A3 H.
+IF A3 A\3
+H (O
+STON
+H(LISTS
+H 
+A\2
+IF A3 H.
+IF A3 A\3
+C  P
+PD
+C
+300 CCCCC Delete from SYS file
+C
+HDELETE SYS
+H 
+A\2
+IF A3 H.
+IF A3 A\3
+C IF A3 GO 31
+H.LIST
+C 31 C
+C  P
+PD
+C
+C
+X
+CRTN
+~MAKE-LIST-CODE~
+PQN
+C
+C     CREATE LIST FOR FILE
+C
+RO
+S0
+HMAKE-LIST
+H 
+A/2
+D0
+[MD MAKE-LIST]
+O
+O  PROGs
+O
+RO
+S0
+HMAKE-LIST
+H 
+A/2
+IH PROG
+D0
+[MD MAKE-LIST]
+O
+O  SUBRs
+O
+RO
+S0
+HMAKE-LIST
+H 
+A/2
+IH SUBR
+D0
+[MD MAKE-LIST]
+O
+O  CODEs
+O
+RO
+S0
+HMAKE-LIST
+H 
+A/2
+IH CODE
+D0
+[MD MAKE-LIST]
+O
+O  PQNs
+O
+RO
+S0
+HMAKE-LIST
+H 
+A/2
+IH PQN
+D0
+[MD MAKE-LIST]
+O
+O Done making lists
+O
+X
+~SYS.DH.CRE~
+PQN
+O@
+O@
+O@@@@@@@@@@@@2@@@ CREATE UTILITY FILES
+O@
+O@ ALL.DICT
+HCREATE-FILE ALL.DICT 11,1 101,1
+P
+O@
+O@ SYS
+HCREATE-FILE SYS 11,1 31,1
+P
+O@
+O@ PAR
+HCREATE-FILE PAR 11,1 31,1
+P
+O@
+O@ CNT
+HCREATE-FILE CNT 11,1 31,1
+P
+O@
+O@ DVC
+HCREATE-FILE DVC 11,1 31,1
+P
+O@
+O@
+O@ LST
+HCREATE-FILE LST 11,1 31,1
+P
+O
+O@
+O@
+O@@@@@@@@@@@@@@@ DH MAIN
+O@
+O@
+O@ BP.DH
+HCREATE-FILE BP.DH 11,1 31,1
+P
+O@
+O@ OUT.BP.DH
+HCREATE-FILE OUT.BP.DH 11,1 31,1
+P
+O@
+O@@@@@@@@@@@@@ DH UTIL
+O@
+O@ BP.DH.UTL
+HCREATE-FILE BP.DH.UTL 11,1 31,1
+P
+O@
+O@ OUT.BP.DH.UTL
+HCREATE-FILE OUT.BP.DH.UTL 11,1 31,1
+P
+O@
+O@ BP.INST
+HCREATE-FILE BP.INST 11,1 31,1
+P
+O@
+O@ OUT.BP.INST
+HCREATE-FILE OUT.BP.INST 11,1 31,1
+P
+O@
+O@ BP.SG
+HCREATE-FILE BP.SG 11,1 31,1
+P
+O@
+O@ OUT.BP.SG
+HCREATE-FILE OUT.BP.SG 11,1 31,1
+P
+O@
+O@ BP.LST
+HCREATE-FILE BP.LST 11,1 31,1
+P
+O@
+O@ OUT.BP.LST
+HCREATE-FILE OUT.BP.LST 11,1 31,1
+P
+O@
+O@@@@@@@@@ DH IBP
+O@
+O@
+O@ IBP.DH
+HCREATE-FILE IBP.DH 11,1 31,1
+P
+O@
+O@ OUT.IBP.DH
+HCREATE-FILE OUT.IBP.DH 11,1 31,1
+P
+O@
+O@@@@@@@@@ DH   PL
+O@
+O@
+O@ PL.DH
+HCREATE-FILE PL.DH 11,1 31,1
+P
+O@
+O@ OUT.PL.DH
+HCREATE-FILE OUT.PL.DH 11,1 31,1
+P
+O@
+O@@@@@@@@@@@@@ DH   DONE!!!
+O@
+O@
+~SYS.FILE.CRE~
+PQN
+O@
+O@
+O@@@@@@@@@@@@2@@@ CREATE SYSTEM FILES
+O@
+O@ COM
+HCREATE-FILE COM 11,1 31,1
+P
+O@
+O@ SYS
+HCREATE-FILE SYS 11,1 31,1
+P
+O@
+O@ PAR
+HCREATE-FILE PAR 11,1 31,1
+P
+O@
+O@ CNT
+HCREATE-FILE CNT 11,1 31,1
+P
+O@
+O@
+O@ LST
+HCREATE-FILE LST 11,1 31,1
+P
+O@
+O@ BP
+HCREATE-FILE BP 11,1 31,1
+P
+O@
+O@ OUT.BP
+HCREATE-FILE OUT.BP 11,1 31,1
+P
+O@
+O@ IBP
+HCREATE-FILE IBP 11,1 31,1
+P
+O@
+O@ PL
+HCREATE-FILE PL 11,1 31,1
+P
+O@
+O@ OUT.PL
+HCREATE-FILE OUT.PL 11,1 31,1
+P
+O@
+O@@@@@@@@@@@@@@@ DONE
+X
+~SYS.KBIL.DEV.CRE~
+PQN
+O@
+O@
+O@@@@@@@@@@@@2@@@ CREATE SYSTEM FILES
+O@
+O@ COM
+HCREATE-FILE COM 11,1 31,1
+P
+O@
+O@ SYS
+HCREATE-FILE SYS 11,1 31,1
+P
+O@
+O@ PAR
+HCREATE-FILE PAR 11,1 31,1
+P
+O@
+O@ CNT
+HCREATE-FILE CNT 11,1 31,1
+P
+O@
+O@
+O@ LST
+HCREATE-FILE LST 11,1 31,1
+P
+O@
+O@ BP
+HCREATE-FILE BP 11,1 31,1
+P
+O@
+O@ OUT.BP
+HCREATE-FILE OUT.BP 11,1 31,1
+P
+O@
+O@ IBP
+HCREATE-FILE IBP 11,1 31,1
+P
+O@
+O@ PL
+HCREATE-FILE PL 11,1 31,1
+P
+O@
+O@ OUT.PL
+HCREATE-FILE OUT.PL 11,1 31,1
+P
+O@
+O@
+O@@@@@@@@@@@@@@@  SUB APPLICATION CODE FILES
+O@
+O@
+O@ BP.AI
+HCREATE-FILE BP.AI 11,1 31,1
+P
+O@
+O@ OUT.BP.AI
+HCREATE-FILE OUT.BP.AI 11,1 31,1
+P
+O@
+O@ BP.CASH
+HCREATE-FILE BP.CASH 11,1 31,1
+P
+O@
+O@ OUT.BP.CASH
+HCREATE-FILE OUT.BP.CASH 11,1 31,1
+P
+O@
+O@ BP.WKO
+HCREATE-FILE BP.WKO 11,1 31,1
+P
+O@
+O@ OUT.BP.WKO
+HCREATE-FILE OUT.BP.WKO 11,1 31,1
+P
+O@
+O@ BP.CONV
+HCREATE-FILE BP.CONV 11,1 31,1
+P
+O@
+O@ OUT.BP.CONV
+HCREATE-FILE OUT.BP.CONV 11,1 31,1
+P
+O@
+O@ BP.FIX
+HCREATE-FILE BP.FIX 11,1 31,1
+P
+O@
+O@ OUT.BP.FIX
+HCREATE-FILE OUT.BP.FIX 11,1 31,1
+P
+O@
+O@@@@@@@@@@@@@@@ DONE
+X
+~SYS.MD.INST~
+*PROGRAM: SYS.MD.INST
+*
+* Put proc pointer in md (to file and item specified).
+*
+* AUTHOR: DAVID G. HORSMAN
+* COMPANY: AXION COMPUTER SYSTEMS
+* COMPANY: MACROSCOPE DESIGN MATRIX
+*
+* COPYRIGHT: (C) 1995 MACROSCOPE DESIGN MATRIX
+*            ALL RIGHTS RESERVED
+*
+$INCLUDE IBP STANDARD.FUNCTIONS
+*
+*
+OPEN "LST" TO LISTS.FILE ELSE STOP
+OPEN "SYS" TO SYS.FILE ELSE STOP
+OPEN "MD" TO MD.FILE ELSE STOP
+*
+READ TERM.DISP FROM SYS.FILE,"TERMINAL.DISPLAY" ELSE TERM.DISP = TRUE
+*
+PROC.FL = TRUE
+* PROCREAD PROC.BUFFER ELSE PROC.FL = FALSE; PROC.BUFFER = EMPTY
+PROC.FL = FALSE; PROC.BUFFER = EMPTY
+*
+PRINT
+PRINT "Enter Auto.Run: ":
+INPUT AUTO.RUN:
+PRINT
+PRINT "Enter Type.Run: ":
+INPUT TYPE.RUN:
+* 0 - READNEXT OR INPUT
+* 1 - READNEXT ONLY
+* 2 - INPUT ONLY
+* 3 - INPUT ONE ITEM ONLY
+PRINT
+PRINT "Enter Opsys.Type: ":
+INPUT OPSYS.TYPE:
+PRINT
+PRINT "Enter Input File Name: ":
+INPUT ITM.FILE.NAME:
+PRINT
+PRINT "Enter Output File Name: ":
+INPUT OUT.FILE.NAME:
+*
+OPEN ITM.FILE.NAME TO ITM.FILE ELSE
+PRINT
+PRINT ITM.FILE.NAME:" file is missing!!!":BELL:
+PRINT
+STOP
+END
+*
+OPEN OUT.FILE.NAME TO OUT.FILE ELSE
+PRINT
+PRINT OUT.FILE.NAME:" file is missing!!!":BELL:
+PRINT
+STOP
+END
+*
+*
+!
+! MAIN LOOP
+*
+CONT = TRUE; PROC.CONT = TRUE
+OPSYS.TYPE = EMPTY
+PRINT
+*
+! Loop to input operating system type
+*
+IF OPSYS.TYPE EQ EMPTY THEN
+*
+READ OPSYS.TYPE FROM SYS.FILE,"OPSYS" ELSE
+*
+IF NOT(PROC.FL) THEN
+PRINT "Enter the operating system code (xxx): ":
+END
+*
+LOOP
+*
+INPUT OPSYS.TYPE:
+IF OPSYS.TYPE EQ "KILL" THEN STOP
+IF OPSYS.TYPE EQ EMPTY THEN CONT = FALSE; OPSYS.TYPE = "@@@"
+*
+BEGIN CASE
+*
+CASE OPSYS.TYPE EQ "STD"; CONT = FALSE; * Standard Code Version
+CASE OPSYS.TYPE EQ "ULT"; CONT = FALSE; * Ultimate 1000/2000
+CASE OPSYS.TYPE EQ "MDD"; CONT = FALSE; * McDonnel Douglas / Novadine
+CASE OPSYS.TYPE EQ "REV"; CONT = FALSE; * Revelation G2B
+CASE OPSYS.TYPE EQ "PCK"; CONT = FALSE; * Advanced PICK for DOS
+CASE OPSYS.TYPE EQ "ARV"; CONT = FALSE; * Advanced Revelation
+CASE OPSYS.TYPE EQ "UNX"; CONT = FALSE; * Unix
+CASE OPSYS.TYPE EQ "VMK"; CONT = FALSE; * VMark Unix
+CASE OPSYS.TYPE EQ "SCO"; CONT = FALSE; * SCO Unix
+CASE OPSYS.TYPE EQ "NAT"; CONT = FALSE; * PICK Native
+CASE OPSYS.TYPE EQ "REA"; CONT = FALSE; * Old MDD Reality systems
+*
+END CASE
+*
+WHILE CONT DO
+PRINT; PRINT "Invalid type, please re-enter: ":
+REPEAT
+*
+*
+IF OPSYS.TYPE NE "@@@" THEN
+*
+READ TMP FROM SYS.FILE,"OPSYS.TYPE.OLD" ELSE
+WRITE OPSYS.TYPE ON SYS.FILE,"OPSYS.TYPE.OLD"
+END
+*
+WRITE OPSYS.TYPE ON SYS.FILE,"OPSYS.TYPE"
+*
+END; * of @@@
+*
+END; * of read opsys.type
+*
+END; * of opsys.type empty
+*
+*
+! Apply operating system to file item(s)
+*
+CONT = TRUE; FIRST = TRUE; LST.OK = TRUE
+IF TYPE.RUN GE TWO THEN LST.OK = FALSE
+STR.LEN = 3 + LEN(OPSYS.TYPE) + 3
+*
+LOOP
+*
+IF FIRST OR TYPE.RUN LT 3 THEN
+*
+IF LST.OK THEN
+**READNEXT ITM.ID FROM ITM.FILE ELSE ITM.ID = "@@@"; LST.OK = FALSE
+READNEXT ITM.ID ELSE ITM.ID = "@@@"; LST.OK = FALSE
+END ELSE ITM.ID = "@@@"
+*
+IF ITM.ID EQ "@@@" AND TYPE.RUN NE 1 THEN
+PRINT
+PRINT "Enter Item ID: ":
+INPUT ITM.ID:
+IF ITM.ID EQ "KILL" THEN STOP
+IF ITM.ID EQ EMPTY THEN ITM.ID = "@@@"
+END
+*
+END ELSE ITM.ID = "@@@"
+*
+IF ITM.ID EQ "@@@" THEN CONT = FALSE
+*
+WHILE CONT DO
+*
+!
+*
+FIRST = FALSE
+FOUND = FALSE
+********************
+*
+READ ITM FROM ITM.FILE,ITM.ID ELSE GOTO NEXT.ITEM
+PRINT
+PRINT STR("@",40)
+PRINT ITM.FILE.NAME:" ":ITM.ID
+PRINT
+*
+LINE1 = ITM<1>
+*IF LINE1[1,9] EQ "* PROGRAM" THEN
+*LINE1 = "*":LINE1[3,999]
+*ITM<1> = LINE1
+*END
+*
+!
+*
+**LOOP
+**OPSYS.LOCN = INDEX(ITM,"*%%":OPSYS.TYPE:"%%=",1)
+**WHILE OPSYS.LOCN DO
+***
+**TMP = DCOUNT(ITM[1,OPSYS.LOCN],AM)
+**PRINT TMP "R#4":" ":ITM<TMP> "L#74"
+***
+**ITM = ITM[1,OPSYS.LOCN-1]:ITM[OPSYS.LOCN+STR.LEN,99999]
+**FOUND = TRUE
+**PRINT TMP "R#4":" ":ITM<TMP> "L#74"
+***
+**REPEAT
+*
+MD.ITM = "PQN":AM:"O":AM:"OOOOO   ":ITM.FILE.NAME:" ":ITM.ID
+MD.ITM = MD.ITM:AM:"[":OUT.FILE.NAME:" ":ITM.ID:"]"
+MD.ITM = MD.ITM:AM:"X"
+*
+*
+* IF FOUND THEN
+WRITE MD.ITM ON MD.FILE,ITM.ID
+* END
+*
+NEXT.ITEM: ****
+*
+********************
+*
+*
+REPEAT
+STOP
+*
+*
+END
+~SYS.NATIVE.INST~
+PQN
+O
+D0
+O
+O OPSYS.INST
+HSYS.OPSYS.INST
+STON
+H0<
+H3<
+H<
+A\2
+H<
+HOUT.
+A\2
+H<
+A\3
+H<
+P
+C
+CCCCCCC
+O
+HSELECT OUT.
+A\2
+H "
+A\3
+H"
+STON
+HSELECT OUT.
+A\2
+H USING MD WITH *A1 EQ "*PROG]" "SUBR]"<
+O COMPILE +
+HCOMPILE
+H OUT.
+A\2
+H 
+A\3
+H<
+P
+C
+CCCCCCCCC
+O
+HSELECT OUT.
+A\2
+H "
+A\3
+H"
+STON
+HSELECT OUT.
+A\2
+H USING MD WITH *A1 EQ "*PROG]" "SUBR]"<
+O CATALOG +
+HCATALOG
+H OUT.
+A\2
+H 
+A\3
+H<
+P
+C
+CCCCCCCCC
+O
+HSELECT OUT.
+A\2
+H "
+A\3
+H"
+STON
+HSELECT OUT.
+A\2
+H USING MD WITH *A1 EQ "PQN"<
+O INSTALL IN MD +
+HSYS.MD.INST<
+H0<
+H3<
+H<
+A\2
+H<
+H OUT.
+A\2
+H<
+A\3
+H<
+P
+X
+~SYS.NATIVE.INST.FILE~
+PQN
+O
+D0
+O
+O
+O@@@@@@@@@@@@@@ Make list for +
+D2+
+O . . .
+CRI
+RO
+S0
+HMAKE-LIST-CODE
+H 
+A\2
+H 
+CP
+D0
+O@@@@@@@@@
+[MD MAKE-LIST-CODE]
+O
+O
+O@@@@@@@@@@@@@@ OPSYS.INST
+O
+RO
+S0
+HGET-LIST 
+A\2
+STON
+HSELECT 
+A\2
+H NE "BU.]"<
+HSELECT 
+A\2
+H USING MD WITH *A1 EQ "PQN" "*PROG]" "SUBR]" "*CODE]"<
+HSYS.OPSYS.INST<
+H0<
+H1<
+HPCK<
+A\2
+H<
+HOUT.
+A\2
+H<
+PW
+C
+CCCCCCC
+O
+O@@@@@@@@@@@@@@@ COMPILE PROGs
+O
+RO
+S0
+HGET-LIST
+H 
+A\2
+H.PROG
+STON
+O COMPILE + 
+HCOMPILE
+H OUT.
+A\2
+H<
+PW
+C
+O@@@@@@@ CATALOG PROGs
+O
+HGET-LIST
+H 
+A\2
+H.PROG
+STON
+O CATALOG + 
+HCATALOG
+H OUT.
+A\2
+H<
+PW
+C
+CCCCCCC
+O
+O@@@@@@@@@@@@@@@ COMPILE SUBRs
+O
+HGET-LIST
+H 
+A\2
+H.SUBR
+STON
+O COMPILE + 
+HCOMPILE
+H OUT.
+A\2
+H<
+PW
+C
+O@@@@@@@ CATALOG SUBRs
+O
+HGET-LIST
+H 
+A\2
+H.SUBR
+STON
+O CATALOG + 
+HCATALOG
+H OUT.
+A\2
+H<
+PW
+C
+C
+CCCCCCCCC
+O
+O@@@@@@@@@@@@ Install PROCS in MD
+O
+HGET-LIST 
+H 
+A\2
+H.PQN
+STON
+O INSTALL IN MD + 
+HSYS.MD.INST<
+H0<
+H1<
+H<
+A\2
+H<
+H OUT.
+A\2
+H<
+PW
+O
+O Done Install File Routine FOR +
+D2+
+O . . . 
+X
+~SYS.OPSYS.INST~
+*PROGRAM: OPSYS.INST
+*
+* Removes *%%???%%= labels based on the operting system parameter entered.
+*
+* AUTHOR: DAVID G. HORSMAN
+* COMPANY: AXION COMPUTER SYSTEMS
+* COMPANY: MACROSCOPE DESIGN MATRIX
+*
+* COPYRIGHT: (C) 1995 MACROSCOPE DESIGN MATRIX
+*            ALL RIGHTS RESERVED
+*
+$INCLUDE IBP STANDARD.FUNCTIONS
+*
+*
+OPEN "LST" TO LISTS.FILE ELSE STOP
+OPEN "SYS" TO SYS.FILE ELSE STOP
+*
+READ TERM.DISP FROM SYS.FILE,"TERMINAL.DISPLAY" ELSE TERM.DISP = TRUE
+*
+PROC.FL = TRUE
+* PROCREAD PROC.BUFFER ELSE PROC.FL = FALSE; PROC.BUFFER = EMPTY
+PROC.FL = FALSE; PROC.BUFFER = EMPTY
+*
+PRINT
+PRINT "Enter Autorun Flag: ":
+INPUT AUTO.RUN:
+PRINT
+PRINT "Auto.run: ":AUTO.RUN
+*
+PRINT
+PRINT "Enter Run Type: ":
+INPUT TYPE.RUN:
+PRINT
+PRINT "Type.run: ":TYPE.RUN
+*
+PRINT
+* 0 - READNEXT OR INPUT
+* 1 - READNEXT ONLY
+* 2 - INPUT ONLY
+* 3 - INPUT ONE ITEM ONLY
+*
+PRINT "Enter Operating System Type: ":
+INPUT OPSYS.TYPE:
+PRINT
+PRINT "Opsys.Type: ":OPSYS.TYPE
+*
+PRINT
+PRINT "Enter Input File Name: ":
+INPUT ITM.FILE.NAME:
+PRINT
+PRINT "Itm.File.Name: ":ITM.FILE.NAME
+*
+PRINT
+PRINT "Enter Output File Name: ":
+INPUT OUT.FILE.NAME:
+PRINT
+PRINT "Out.File.Name: ":OUT.FILE.NAME
+*
+PRINT
+*
+OPEN ITM.FILE.NAME TO ITM.FILE ELSE
+PRINT
+PRINT ITM.FILE.NAME:" file is missing!!!":BELL:
+PRINT
+STOP
+END
+*
+OPEN OUT.FILE.NAME TO OUT.FILE ELSE
+PRINT
+PRINT OUT.FILE.NAME:" file is missing!!!":BELL:
+PRINT
+STOP
+END
+*
+*
+!
+! MAIN LOOP
+*
+CONT = TRUE; PROC.CONT = TRUE
+OPSYS.TYPE = EMPTY
+PRINT
+*
+! Loop to input operating system type
+*
+IF OPSYS.TYPE EQ EMPTY THEN
+*
+READ OPSYS.TYPE FROM SYS.FILE,"OPSYS" ELSE
+*
+IF NOT(PROC.FL) THEN
+PRINT "Enter the operating system code (xxx): ":
+END
+*
+LOOP
+*
+INPUT OPSYS.TYPE:
+IF OPSYS.TYPE EQ "KILL" THEN STOP
+IF OPSYS.TYPE EQ EMPTY THEN CONT = FALSE; OPSYS.TYPE = "@@@"
+*
+BEGIN CASE
+*
+CASE OPSYS.TYPE EQ "STD"; CONT = FALSE; * Standard Code Version
+CASE OPSYS.TYPE EQ "ULT"; CONT = FALSE; * Ultimate 1000/2000
+CASE OPSYS.TYPE EQ "MDD"; CONT = FALSE; * McDonnel Douglas / Novadine
+CASE OPSYS.TYPE EQ "REV"; CONT = FALSE; * Revelation G2B
+CASE OPSYS.TYPE EQ "PCK"; CONT = FALSE; * Advanced PICK for DOS
+CASE OPSYS.TYPE EQ "ARV"; CONT = FALSE; * Advanced Revelation
+CASE OPSYS.TYPE EQ "UNX"; CONT = FALSE; * Unix
+CASE OPSYS.TYPE EQ "VMK"; CONT = FALSE; * VMark Unix
+CASE OPSYS.TYPE EQ "SCO"; CONT = FALSE; * SCO Unix
+CASE OPSYS.TYPE EQ "NAT"; CONT = FALSE; * PICK Native
+CASE OPSYS.TYPE EQ "REA"; CONT = FALSE; * Old MDD Reality systems
+*
+END CASE
+*
+WHILE CONT DO
+PRINT; PRINT "Invalid type, please re-enter: ":
+REPEAT
+*
+*
+IF OPSYS.TYPE NE "@@@" THEN
+*
+READ TMP FROM SYS.FILE,"OPSYS.TYPE.OLD" ELSE
+WRITE OPSYS.TYPE ON SYS.FILE,"OPSYS.TYPE.OLD"
+END
+*
+WRITE OPSYS.TYPE ON SYS.FILE,"OPSYS.TYPE"
+*
+END; * of @@@
+*
+END; * of read opsys.type
+*
+END; * of opsys.type empty
+*
+*
+! Apply operating system to file item(s)
+*
+CONT = TRUE; FIRST = TRUE; LST.OK = TRUE
+IF TYPE.RUN GE TWO THEN LST.OK = FALSE
+STR.LEN = 3 + LEN(OPSYS.TYPE) + 3
+*
+LOOP
+*
+IF FIRST OR TYPE.RUN LT 3 THEN
+*
+IF LST.OK THEN
+**READNEXT ITM.ID FROM ITM.FILE ELSE ITM.ID = "@@@"; LST.OK = FALSE
+READNEXT ITM.ID ELSE ITM.ID = "@@@"; LST.OK = FALSE
+END ELSE ITM.ID = "@@@"
+*
+IF ITM.ID EQ "@@@" AND TYPE.RUN NE 1 THEN
+PRINT
+PRINT "Enter Item ID: ":
+INPUT ITM.ID:
+IF ITM.ID EQ "KILL" THEN STOP
+IF ITM.ID EQ EMPTY THEN ITM.ID = "@@@"
+END
+*
+END ELSE ITM.ID = "@@@"
+*
+IF ITM.ID EQ "@@@" THEN CONT = FALSE
+*
+WHILE CONT DO
+*
+!
+*
+FIRST = FALSE
+FOUND = FALSE
+********************
+*
+READ ITM FROM ITM.FILE,ITM.ID ELSE GOTO NEXT.ITEM
+PRINT
+PRINT STR("*",40)
+PRINT ITM.FILE.NAME:" ":ITM.ID
+PRINT
+*
+LINE1 = ITM<1>
+IF LINE1[1,9] EQ "* PROGRAM" THEN
+LINE1 = "*":LINE1[3,999]
+ITM<1> = LINE1
+END
+*
+!
+*
+LOOP
+OPSYS.LOCN = INDEX(ITM,"*%%":OPSYS.TYPE:"%%",1)
+WHILE OPSYS.LOCN DO
+*
+TMP = DCOUNT(ITM[1,OPSYS.LOCN],AM)
+PRINT TMP "R#4":" ":ITM<TMP> "L#74"
+*
+ITM = ITM[1,OPSYS.LOCN-1]:ITM[OPSYS.LOCN+STR.LEN,99999]
+FOUND = TRUE
+PRINT TMP "R#4":" ":ITM<TMP> "L#74"
+*
+REPEAT
+*
+*
+* IF FOUND THEN
+WRITE ITM ON OUT.FILE,ITM.ID
+* END
+*
+NEXT.ITEM: ****
+*
+********************
+*
+*
+REPEAT
+STOP
+*
+*
+END
+~SYS.UTIL.CRE~
+PQN
+O@
+O@
+O@@@@@@@@@@@@2@@@ CREATE UTILITY FILES
+O@
+O@ ALL.DICT
+HCREATE-FILE ALL.DICT 11,1 101,1
+P
+O@
+O@ SYS
+HCREATE-FILE SYS 11,1 31,1
+P
+O@
+O@ PAR
+HCREATE-FILE PAR 11,1 31,1
+P
+O@
+O@ CNT
+HCREATE-FILE CNT 11,1 31,1
+P
+O@
+O@ DVC
+HCREATE-FILE DVC 11,1 31,1
+P
+O@
+O@
+O@ LST
+HCREATE-FILE LST 11,1 31,1
+P
+O
+O@
+O@
+O@@@@@@@@@@@@@@@ KBIL
+O@
+O@
+O@ BP
+HCREATE-FILE BP 11,1 31,1
+P
+O@
+O@ OUT.BP
+HCREATE-FILE OUT.BP 11,1 31,1
+P
+O@
+O@@@@@@@@@@@@@ UTIL
+O@
+O@ BP.UTL
+HCREATE-FILE BP.UTL 11,1 31,1
+P
+O@
+O@ OUT.BP.UTL
+HCREATE-FILE OUT.BP.UTL 11,1 31,1
+P
+O@
+O@ IBP
+HCREATE-FILE IBP 11,1 31,1
+P
+O@
+O@ PL
+HCREATE-FILE PL 11,1 31,1
+P
+O@
+O@ OUT.PL
+HCREATE-FILE OUT.PL 11,1 31,1
+P
+O@
+O
+O@
+O@@@@@@@@@@ DH @@@@@
+O@
+O@
+O@ PL.DH
+HCREATE-FILE PL.DH 11,1 31,1
+P
+O@
+O@ OUT.PL.DH
+HCREATE-FILE OUT.PL.DH 11,1 31,1
+P
+O@
+O@ BP.DH
+HCREATE-FILE BP.DH 11,1 31,1
+P
+O@
+O@ OUT.BP.DH
+HCREATE-FILE OUT.BP.DH 11,1 31,1
+P
+O@
+O@ BP.DH.UTL
+HCREATE-FILE BP.DH.UTL 11,1 31,1
+P
+O@
+O@ OUT.BP.DH.UTL
+HCREATE-FILE OUT.BP.DH.UTL 11,1 31,1
+P
+O@
+O@@@@@@@@@@@@@@@ DONE
+X
+~LISTS~
+Q
+DEV
+LST
+

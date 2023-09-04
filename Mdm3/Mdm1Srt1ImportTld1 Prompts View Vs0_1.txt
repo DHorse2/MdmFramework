@@ -1,0 +1,63 @@
+<Page x:Class="Mdm1Srt1ImportTld1.Page1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="MacroDm Tilde File Import Utility" FontSize="12" ToolTip="You may use this utility to import single or multiple items from a text file." WindowTitle="MacroDm Tilde File Multi-Item Import Utility" VerticalAlignment="Top" HorizontalAlignment="Left" AllowDrop="True" Loaded="PageLoaded">
+
+<ScrollViewer HorizontalScrollBarVisibility="Auto">
+    <StackPanel VerticalAlignment="Top" HorizontalAlignment="Left">
+      <TextBlock TextWrapping="Wrap" Margin="0,0,0,20">Scrolling is enabled when it is necessary. 
+      Resize the window, making it larger and smaller.</TextBlock>
+      <Rectangle Fill="Red" Width="500" Height="500"></Rectangle>
+    </StackPanel>
+  </ScrollViewer>
+
+
+
+
+
+<Grid ShowGridLines="False" ToolTip="Check off any options you want to use on this import." VerticalAlignment="Top" HorizontalAlignment="Left" AllowDrop="True">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="90*" MinHeight="60" />
+            <RowDefinition Height="60*" MinHeight="45" MaxHeight="180" />
+            <RowDefinition Height="60*" MinHeight="45" MaxHeight="180" />
+            <RowDefinition Height="60*" MinHeight="45" MaxHeight="180" />
+            <RowDefinition Height="40*" MinHeight="20" SharedSizeGroup="TldOptionRows" />
+            <RowDefinition Height="40*" MinHeight="20" SharedSizeGroup="TldOptionRows"/>
+            <RowDefinition Height="40*" MinHeight="20" SharedSizeGroup="TldOptionRows"/>
+            <RowDefinition Height="50*" MinHeight="50" />
+            <RowDefinition Height="60*" MinHeight="45" />
+            <RowDefinition Height="60*" MinHeight="45" />
+            <RowDefinition Height="60*" MinHeight="45" MaxHeight="180" />
+            <RowDefinition Height="20*" MinHeight="5" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150" />
+            <ColumnDefinition Width="45" />
+            <ColumnDefinition Width="100" />
+            <ColumnDefinition Width="100" />
+            <ColumnDefinition Width="100" />
+            <ColumnDefinition Width="100" />
+            <ColumnDefinition Width="25" />
+        </Grid.ColumnDefinitions>
+        <Label Name="ApplicationHeading1" Grid.ColumnSpan="6" Margin="0" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">MacroDm Import File Processing</Label>
+        <Label Name="InputFileNameLabel" ClipToBounds="False" Grid.Row="1" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Margin="57.11,0,5.074,0" FontSize="12" Padding="3" VerticalAlignment="Center" Focusable="False" Grid.ColumnSpan="2" Height="21.96">Input File Name</Label>
+        <TextBox Name="InputFileLine" TextAlignment="Left" FontSize="12" MinWidth="120" Grid.Row="1" ToolTip="Enter the file that will be processed.  Normal a text file with optional TLD format row / records names (i.e. ~me~) when there are multiple records in the file." Grid.Column="2" Grid.IsSharedSizeScope="False" Margin="10" MinHeight="25" TextWrapping="WrapWithOverflow" Cursor="IBeam" Grid.ColumnSpan="5" Padding="3" VerticalContentAlignment="Center" ClipToBounds="False" MaxLines="3" VerticalScrollBarVisibility="Auto" AcceptsReturn="False" MaxLength="512" LostKeyboardFocus="InputFileLineLostFocus" GotFocus="InputFileLineGotFocus" />
+        <Label Name="OutputFileNameLabel" Grid.Row="2" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Margin="67.11,0,5.074,0" FontSize="12" Padding="3" VerticalAlignment="Center" ClipToBounds="False" Focusable="False" Grid.ColumnSpan="2" Height="21.96">Output File Name</Label>
+        <TextBox Name="OutputFileLine" TextAlignment="Left" FontSize="12" MinWidth="120" Grid.Row="2" ToolTip="Enter the output file that the process will use.  Normal a text file with optional TLD format row / records names (i.e. ~me~) when there are multiple records in the file." Grid.Column="2" Grid.IsSharedSizeScope="False" MinHeight="25" TextWrapping="WrapWithOverflow" Cursor="IBeam" Grid.ColumnSpan="5" Padding="3" VerticalAlignment="Center" VerticalContentAlignment="Center" ClipToBounds="False" MaxLines="3" VerticalScrollBarVisibility="Auto" AcceptsReturn="False" Margin="10" MaxLength="512" GotFocus="OutputFileLineGotFocus" LostFocus="OutputFileLineLostFocus" />
+        <Label Name="OutputIdLabel" Grid.Row="3" FontSize="12" HorizontalContentAlignment="Right" VerticalAlignment="Center" Padding="3" VerticalContentAlignment="Center" ClipToBounds="False" Focusable="False" Grid.Column="0" Height="21.96" Grid.ColumnSpan="2">Output Id</Label>
+        <TextBox Name="OutputFileItemId" Grid.Column="2" Grid.Row="3" Margin="10" FontSize="12" MinWidth="120" ToolTip="Enter the Id , Row identifier or (unique) key for the Output File.  Not required for TLD formated text files or where multiple items are imported from a single file." Grid.ColumnSpan="5" Padding="0" VerticalContentAlignment="Center" ForceCursor="False" UndoLimit="5" ClipToBounds="False" MaxLength="512" MinHeight="25" MaxLines="3" VerticalScrollBarVisibility="Auto" TextWrapping="WrapWithOverflow" GotFocus="OutputFileItemIdGotFocus" LostFocus="OutputFileItemIdLostFocus" />
+        <Label Name="OptionsLabel" Grid.Row="4" HorizontalContentAlignment="Right" VerticalAlignment="Center" VerticalContentAlignment="Center" Padding="3" ClipToBounds="False" Focusable="False" Grid.Column="0" Height="21.96" Grid.ColumnSpan="2">Options</Label>
+        <CheckBox Name="OptionToOverwriteExistingItem" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Grid.Column="2" Grid.Row="4" Grid.IsSharedSizeScope="False" OverridesDefaultStyle="False" Padding="0" ClipToBounds="False" Grid.ColumnSpan="2" Grid.RowSpan="1" VerticalAlignment="Center" HorizontalAlignment="Left">Overwrite Existing Item</CheckBox>
+        <CheckBox Name="OptionToCheckItemIds" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Grid.Column="2" Grid.Row="5" Grid.IsSharedSizeScope="False" OverridesDefaultStyle="False" VerticalAlignment="Center" Padding="0" ClipToBounds="False" Grid.ColumnSpan="2" HorizontalAlignment="Left">Check Item Ids</CheckBox>
+        <CheckBox Name="OptionToEnterEachItemId" Grid.Column="2" Grid.Row="6" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Grid.IsSharedSizeScope="False" OverridesDefaultStyle="False" Padding="0" ClipToBounds="False" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Left">Enter Each Item Id</CheckBox>
+        <CheckBox Name="OptionToLogActivity" HorizontalContentAlignment="Left" OverridesDefaultStyle="False" Padding="0" VerticalContentAlignment="Center" Grid.Column="4" Grid.Row="4" VerticalAlignment="Center" ClipToBounds="False" HorizontalAlignment="Left">Log Activity</CheckBox>
+        <CheckBox Name="OptionToProceedAutomatically" HorizontalContentAlignment="Left" OverridesDefaultStyle="False" Padding="0" VerticalContentAlignment="Center" Grid.Column="4" Grid.Row="5" VerticalAlignment="Center" ClipToBounds="False" Grid.ColumnSpan="3" HorizontalAlignment="Left">Proceed Automatically</CheckBox>
+        <CheckBox Name="OptionToAddAnotherOption" HorizontalContentAlignment="Left" OverridesDefaultStyle="False" Padding="0" VerticalContentAlignment="Center" Grid.Column="4" Grid.Row="6" VerticalAlignment="Center" ClipToBounds="False" Grid.ColumnSpan="3" HorizontalAlignment="Left">Add Another Option</CheckBox>
+        <Button Name="StartButtonPressed" Grid.Column="3" Grid.Row="7" Margin="10" HorizontalContentAlignment="Center" ClipToBounds="False" Padding="5" Click="StartFileImport" FontSize="10" Grid.ColumnSpan="1" HorizontalAlignment="Center" VerticalAlignment="Center" MinWidth="60" MinHeight="20">Start</Button>
+        <Button Name="CancelButtonPressed" Grid.Column="5" Grid.Row="7" Margin="10" ClipToBounds="False" Click="CancelFileImport" FontSize="10" Padding="5" MinWidth="60" HorizontalAlignment="Center" VerticalAlignment="Center" MinHeight="20">Cancel</Button>
+        <Label Name="ConsoleCommandlabel" Grid.Row="8" Margin="10" HorizontalContentAlignment="Right" Grid.ColumnSpan="1" VerticalAlignment="Top" Padding="3">Console Command</Label>
+        <TextBox Name="ConsoleCommandText" Grid.ColumnSpan="6" Grid.Row="8" Margin="10" VerticalContentAlignment="Center" Grid.Column="1" MinHeight="25" MinWidth="120" ForceCursor="False" VerticalScrollBarVisibility="Auto" TextWrapping="WrapWithOverflow" MaxLines="20" TextChanged="ConsoleCommandText_TextChanged" />
+        <TextBox Name="StatusLine1" Grid.Row="9" Grid.Column="1" Grid.ColumnSpan="6" Focusable="False" Margin="10" MinHeight="25" MinWidth="120" VerticalScrollBarVisibility="Auto" TextWrapping="WrapWithOverflow" />
+        <TextBox Name="StatusLine2" Grid.Column="1" Grid.ColumnSpan="6" Grid.Row="10" Margin="10" Focusable="False" MinHeight="25" MinWidth="125" VerticalScrollBarVisibility="Auto" TextWrapping="WrapWithOverflow" />
+    </Grid>
+</Page>

@@ -1,0 +1,112 @@
+// include dm,bp,dos, fcntl.h;
+// include dm,bp,dos, errno.h;
+
+""$@""
+/n$;/n
+!$// !
+**$*
+*$// *
+[Declaration]=<Scope><Space><InstanceOjbectType><Space><InstanceOjbectName>
+
+<FirstInstance>=[InstanceOjbectType]" "
+equate$equ
+equ$const
+const $const char cb
+<Example>
+<Find[char(]>
+<Contains[char(X)]>=
+;<Extract]"char("|")"
+;<Build><Extract[1]><Extracted[1]><Extract[2]>
+</Example>
+<Statement>
+<Contains]char(
+<Extract>"char("|")"
+<Output>"(char)"<Extracted[1]><Extracted[Remainder]> ....or....
+crlf$CrLf<const>
+)13)$)13
+)10)$)10
+)26)$)26
+)252)$)252
+)253)$)253
+)254)$)254
+ to (char)$ = (char)
+ [Srt]
+ <Find[:]>
+<Not<InString[ThisChar]>>
+<Trim<Right<Whitespace[ThisStatement]>>>
+<Not<EndsWith[ThisChar]>>
+<Extract>[ThisFind]
+<Remove[ThisStatement]>          
+<Build><Extracted[1]>"+"<Extracted[Remainder]>
+</Srt>
+cbCRLF$cbCrLf<string>
+cbCR$cbCr<const>
+cbLF$cbLf<const>
+cbTLD$cbTld<const>
+cbEOF$cbEof<const>
+cbAM$cbAm<const>
+cbVM$cbVm<const>
+cbSVM$cbSvm<const>
+prompt$sPromptChar =<string>
+REC.SZ$RecordSize<int>
+OFS.SZ$OffsetSize<int>
+tclread<function>
+tclread$tclread(); //
+options$sRunOptions
+field<function>
+c.flg$bItemConvertFlag<bool>
+"'$"\"
+'"$\""
+'$"
+dos.file$DosAsciiFile
+if $if (
+ then$) {
+ {;${
+ eq $ == 
+ ne $ <> 
+ <> $ || 
+  and $ && 
+  lt $ < 
+  gt $ >
+  le $ <= 
+  ge $ >=
+print$PickPrint
+dat$sTempData
+errm=sLocalErrorMessage
+<NumericStatementLabels>
+stop$PickStop()
+pickf$sPickOutputFileName
+PickPrint;$PickPrint("/n");
+<extracted change>
+PickPrint $PickPrint (
+<needs works: ending an if>
+ else;$) { } else {
+<int to bool errors>$ == 0
+end;$}
+:)$)
+itemf$PickOutputFileItemId
+end else$} else {
+<needs work: (end of else line)<};$;};> missing ;
+<extracted change>
+input $PickInput(
+id.check:$private int MdmPickIdCheck() {
+pickwrite:$private int MdmPickWrite() {
+pick.open: $private int MdmPickOpen() {
+id.check$MdmPickIdCheck()
+return;$ return 0; }
+end else;$ } else {
+dc$AttributeCounter
+am.cn$AttributePointer
+iAttributePointer.Max$iAttributeCounterMaximum
+tcl$PickConsoleCommand
+dcount$PickAttributeCount
+[ ] $ substring $$$$$$$$$$$$$$$4
+"\"$"\\"
+item$
+nitem$
+citem$
+.len$.Length
+gosub $ LocalIntResult = 
+loop $ Do {
+int($Math.Int(
+mod($Math.Mod(

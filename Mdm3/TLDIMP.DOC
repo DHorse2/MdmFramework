@@ -1,0 +1,342 @@
+*PROGRAM: IMPORT.TLD
+*
+!
+* IMPORT MS-DOS TLD file to PICK items
+*
+* Copyright 1990, 1991 PICK Systems
+*
+kk=1
+lbuf=''
+citem=''
+nitem=''
+item=''
+crlf=char(13):char(10)
+equ CR to char(13)
+equ LF to char(10)
+equ EOF to char(26)
+equ AM to char(254)
+equ TLD to '~'
+prompt ''
+include dm,bp,dos, fcntl.h
+include dm,bp,dos, errno.h
+REC.SZ = 1024
+OFS.SZ = (1024 * 32) -1
+tclread tcl
+*
+options = field(tcl,'(',2)
+options = field(options,')',1)
+options = trim(oconv(options,'mcu'))
+c.flg = index(options,'c',1)
+*
+dos.file = field(tcl,' ',2) 
+dos.file = field(dos.file,'(',1)
+dos.file = trim(oconv(dos.file,'mcu'))
+if dos.file eq '' then
+1 errm="Syntax - IMPORT DosFileName PickFileName ItemName {(options}"
+  print;print errm
+  stop
+end
+*
+dat=''
+pickf=field(tcl,' ',3)
+if pickf ne '' then
+  if index(pickf,'(',1) else
+    itemf=field(tcl,' ',4)
+    if itemf ne '' then
+      if index(itemf,'(',1) then
+        itemf = 'DUMMY'
+      end
+    end else itemf = 'DUMMY'
+    dat = pickf:' ':itemf
+  end
+end
+if dat eq '' then
+  print 'to:(':
+  input dat
+end
+dat = trim(oconv(dat,'mcu'))
+fname = field(dat,' ',1)
+if fname eq '' then goto 1
+id = field(dat,' ',2)
+if id eq '' or id eq 'DUMMY' then
+  dc = dcount(dos.file,'\')
+  id = field(dos.file,'\',dc)
+  dc = index(id,':',1)
+  id = id[dc+1,9999]
+end
+*
+! Open DOS file
+*
+dfh = %open(dos.file,O$RDONLY,0);
+if dfh lt 0 then
+  print
+  print "ABORT: Error [":system(0):"] - Unable to open MS-DOS file '":dos.file:"'."
+  stop
+end
+*
+!
+*
+ofs = 0
+item.am.cn = 0
+item.dsp.cn = 0
+ print 'Copying data to PICK, please wait ...'
+origname = fname
+defname  = 'tld.import'
+*
+! Open PICK file
+*
+gosub pick.open
+gosub id.check
+*
+! Loop to process DOS item
+*
+loop
+  print; print @(4):ofs "r#8":' bytes':char(13):
+  ofs.m = int(ofs/OFS.SZ)
+  ofs.r = mod(ofs,OFS.SZ)
+  rc = %lseek(dfh,ofs.m,ofs.r,SEEK$SET);
+  if rc lt 0 then
+    print
+    print "ABORT: Error [":errno:"] - Unable to seek MS-DOS file '":dos.file:"' to offset '":ofs:"'."
+    goto getout
+  end
+  buf=space(rec.sz)
+  rc = %read(dfh,buf,REC.SZ);
+  if c.flg ne 0 then
+    if rc eq rec.sz then
+      citem=citem:buf;goto 2
+    end else
+      citem=citem:buf[1,rc];goto 3
+    end
+  end
+*
+** while rc = REC.SZ do
+*
+if rc gt 0 then
+*
+** dim item(kk)
+ if c.flg eq 0 then
+   amc=dcount(buf,cr)-1
+   l=index(buf,cr,amc)
+   wbuf=buf[l+1,999]
+   buf=lbuf:buf[1,l-1]
+   lbuf=wbuf
+   convert char(13) to char(254) in buf;convert char(10) to "" in buf
+ end
+*
+ am.cn.max = dcount(buf,AM)
+ am.cn = 1
+  print @(30):"b":am.cn.max "l#3":
+ loop while am.cn le am.cn.max do
+   print @(0):"s":am.cn:
+   if item.dsp.cn le 10 then
+     item.dsp.cn = item.dsp.cn + 1
+     print @(5):item.dsp.cn "R#2":" ":buf<am.cn> "L#70"
+   end
+*
+   if buf<am.cn>[1,1] eq TLD then
+     if buf<am.cn>[len(buf<am.cn>),1] eq TLD then
+       print; print @(5):am.cn "R#2":" ":buf<am.cn> "L#70"
+*
+*
+       if am.cn-1 gt 0 then
+         tmp = index(buf,AM,am.cn-1)
+         if not(tmp) and am.cn-1 then tmp = len(buf)
+         if len(item) then item = item:am
+         item = item:buf[1,tmp-1]
+         buf = buf[tmp+1,99999]
+       **am.cn.max = dcount(buf,AM)
+       **am.cn = 0
+       end
+       if len(item) then
+         gosub pickwrite
+         item = ''
+       end
+*
+       item.am.cn = 0
+       item.dsp.cn = 0
+       dat = buf<1>
+       del buf<1>
+       dat = dat[2,99999]
+       dat = dat[1,len(dat)-1]
+       dat = trim(dat)
+       tmp3 = field(dat,' ',2)
+       if tmp3 ne '' then
+         if tmp3 ne fname then
+           fname = tmp3
+           gosub pick.open
+         end
+       end
+       id = field(dat,' ',1)
+       gosub id.check
+*
+       am.cn.max = dcount(buf,AM)
+       am.cn = 0
+*
+     *****
+     end
+   end
+   am.cn = am.cn + 1
+ repeat
+*
+**  item(kk)=buf ; kk=kk+1
+  if len(item) then item = item:am
+  item = item:buf
+  item.am.cn = item.am.cn + am.cn.max
+  print @(25):"i":item.am.cn "l#3":
+*
+end; * of rc gt 0
+*
+!
+*
+2 ofs = ofs + rc
+*
+** repeat
+while rc eq REC.SZ do repeat
+*
+!
+*
+if rc lt 0 then
+  print
+  print "ABORT: Error [":system(0):"] - Unable to read MS-DOS file '":dos.file:"'."
+  goto getout
+end
+*
+** buf = buf[1,rc]
+** ** dim item(kk)
+**  if c.flg eq 0 then
+**    amc=dcount(buf,cr)-1
+**    l=index(buf,cr,amc)
+**    wbuf=buf[l+1,999]
+**    buf=lbuf:buf[1,l-1]
+**    lbuf=wbuf
+**    convert char(13) to char(254) in buf;convert char(10) to "" in buf
+**  end
+** **item(kk)=buf
+** if len(item) then item = item:am
+** item = item:buf
+*
+!
+*
+3 ofs = ofs + rc
+  print @(4):ofs "r#8":' bytes':char(13):
+*
+!
+*
+getout: *
+*
+wrt.flg = 1
+gosub pickwrite
+*
+!
+*
+finish: *
+*
+rc = %close(dfh);
+if rc lt 0 then
+  print
+  print "ABORT: Error [":system(0):"] - Unable to close MS-DOS file '":dos.file:"'."
+  stop
+end
+*
+stop
+*
+! Open PICK file
+*
+pick.open: *
+*
+open fname to f.file else
+  print;print "ERROR: Unable to open '":fname:"'."
+  print "Will try '":origname:"'."
+  open origname to f.file then
+    fname = origname
+  end else
+    print;print "ERROR: Unable to open '":origname:"'."
+    print "Will try '":defname:"'."
+    open defname to f.file then
+      fname = defname
+    end else
+      print;print "ABORT: Unable to open '":defname:"'."
+      goto finish
+    end
+  end
+end
+*
+return
+*
+!
+*
+id.check: *
+*
+read ritem from f.file, id then
+  if index(options,'o',1) eq 0 then
+    print;print "ABORT: Item '":id:"' already exists in '":fname:"'."
+    goto finish
+  end
+end
+*
+return
+*
+!
+*
+pickwrite: *
+*
+if c.flg eq 0 then
+*
+**  matwrite item on f.file,id
+  am.cn.max = dcount(item,AM)
+  item.len = len(item)
+  print;print id 'l#30':" is ":am.cn.max 'r#4':" lines, ":item.len 'r#5':" characters in ":fname
+*
+  tmp = index(item," VERSION:",1)
+  if tmp then
+    tmp1 = dcount(item[1,tmp],AM)
+    tmp2 = item<tmp1>
+    if tmp2[1,1] eq "*" then
+      tmp2 = tmp2[2,99999]
+      loop while tmp2[1,1] eq ' ' do tmp2 = tmp2[2,99999] repeat
+      tmp3 = trim(tmp3)
+      tmp3 = field(tmp2,' ',2)
+      if tmp3 ne '' then
+        version.dt = tmp3
+        version = field(tmp2,' ',3)
+        print "Version: ":version:"   date: ":version.dt
+      end
+    end
+  end
+*
+  tmp = index(item," FILE:",1)
+  if tmp then
+    tmp1 = dcount(item[1,tmp],AM)
+    tmp2 = item<tmp1>
+    if tmp2[1,1] eq "*" then
+      tmp2 = tmp2[2,99999]
+      loop while tmp2[1,1] eq ' ' do tmp2 = tmp2[2,99999] repeat
+      tmp2 = trim(tmp2)
+      tmp3 = field(tmp2,' ',2)
+      if tmp3 ne '' then
+        if tmp3 ne fname then
+          fname = tmp3
+          gosub pick.open
+          gosub id.check
+        end
+      end
+    end
+  end
+*
+  write item on f.file,id
+*
+end else
+*
+  write citem on f.file,id
+*
+end
+*
+*
+print
+* print "Item '":id:"' created in '":fname:"'."
+wrt.flg = 0
+*
+return
+*
+end

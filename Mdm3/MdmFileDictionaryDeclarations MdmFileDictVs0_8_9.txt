@@ -1,0 +1,104 @@
+        #region MdmFileDictionaryDeclarations
+        // <Section Summary>
+        // <Section Role="Declarations">
+        // <Section Id = "MdmFileDictionaryDeclarations">
+        // <Section Vs="MdmFileDictVs0_8_9">
+        // MdmFileDictionaryDeclarations MdmFileDictVs0_8_9
+        public string[] saFileDictItem = new string[100];
+        public struct osPickDict {
+            public string sItemId;
+            public int iItemId;
+            public bool bItemIdIsNumeric;
+            public int iDictAttributePointer;  //  Field being examined in this Dicctionary Item
+            //
+            public int iDictAttributeCount;  // Number of fields making up this Dictionary Item
+            public int[] iaDictItemAttributeCount;
+            public int[] iaDictItemLength;
+            //
+            public int iAttributeType;
+            public string sAttributeType;
+            public string sType;
+            public string sSubType;
+            //
+            public string sAttributeNumber;
+            public bool bAttributeIsNumeric;
+            public bool bAttributeIsData;
+            // Array Index
+            public int iDictColumnPointer; // Dictionary Column Number
+            public int iColumnDataPoints;
+            public int iColumnType;
+            public int iColumnInvalid;
+
+            public string sHeading;
+            public string sDependancy;
+            public string sFive;
+
+            public string sInputConversion;
+            public string sInputConvType;
+            public string sInputConvSubType;
+
+            public string sOutputConversion;
+            public string sOutputConvType;
+            public string sOutputConvSubType;
+
+            public string sCorrelative;
+            public string sCorrType;
+            public string sCorrSubType;
+
+            public string sJustify;
+            public string sJustification;
+            public string sJustifyType;
+            
+            public string sLength;
+            public int iLength;
+            public bool bLengthIsNumeric;
+
+            public string sHeadingLong;
+            public string sHelpShort;
+            public string sRevColumnName;
+
+            public int iColumnNumericPoints;
+            public int iColumnDecimals;
+            public int iColumnCurrencyPoints;
+            public int iColumnDateFormat;
+            public int iColumnFunctionPoints;
+            public bool bColumnSubFile;
+
+            public int[] iaDictColumnTouched;
+            public bool[] baDictColumnIdDone;
+            public int[] iaDictColumnLength;
+            public bool[] baDictColumnLengthChange;
+            public bool[] baDictColumnDefinitionFound;
+
+            public string sColumnTypeWord;
+            public bool bColumnUseParenthesis;
+        }
+        public osPickDict osPd;
+        #region DictionaryItem
+        const int ITEM_ISNOTSET = 0;
+        const int ITEM_ISATTRIBUTE = 10;
+        const int ITEM_ISFILE = 20;
+        const int ITEM_ISFILEALIAS = 30;
+        const int ITEM_ISSATTRIBUTE = 40;
+        const int ITEM_ISFUNCTION = 50;
+        const int ITEM_ISUNKNOWN = 60;
+        const int ITEM_ISDATA = 70;
+        const int ITEM_TYPEERROR = 90;
+        #endregion
+        #region DictionaryColumn
+        const int COLUMN_ISNOTSET = 0;
+        const int COLUMN_ISNUMERIC = 11;
+        const int COLUMN_ISINTEGER = 22;
+        const int COLUMN_ISDATE = 31;
+        const int COLUMN_ISDATETIME = 32;
+        const int COLUMN_ISCHAR = 12;
+        const int COLUMN_ISVARCHAR = 13;
+        const int COLUMN_ISCHARU = 14;
+        const int COLUMN_ISVARCHARU = 15;
+        const int COLUMN_ISFLOAT = 41;
+        const int COLUMN_ISCURRENCY = 42;
+        const int COLUMN_ISFUNCTION = 50;
+        const int COLUMN_ISUNKNOWN = 80;
+        const int COLUMN_TYPEERROR = 90;
+        #endregion
+        #endregion

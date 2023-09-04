@@ -1,0 +1,230 @@
+~BOOTDEV~
+PQN
+O@
+O@@@@@@@@@@@@   BOOTSTRAP
+O@
+O@
+O@@@@@@@@@@@@   Load the operating system type for this system   @@@
+O@
+S0
+RO
+cHIMPORT.DOS C:\TLD\IN\DEV\OPSYS.DAT SYS OPSYS
+HIMPORT.DOS OPSYS.DAT SYS OPSYS
+P
+O@
+O@@@@@@@@@@@@   Create Operating System routines file   @@@
+O@
+S0
+RO
+O@  COM
+HCREATE-FILE COM 11,1 101,1
+P
+O@
+O@  SYS
+HCREATE-FILE SYS 11,1 101,1
+P
+O@
+O@  LST
+HCREATE-FILE LST 11,1 301,1
+P
+O@
+O@  BP.OPS (IN)
+HCREATE-FILE BP.OPS 3,1 31,1
+P
+O@
+O@         (OUT)
+HCREATE-FILE OUT.BP.OPS 3,1 31,1
+P
+O@
+O@
+O@@@@@@@@@@@@    Load the Operating Install Routine   @@@
+O@
+S0
+RO
+cHIMPORT.DOS C:\TLD\IN\DEV\OPSINS.DOC BP.OPS SYS.OPSYS.INST
+HIMPORT.DOS OPSINS.DOC BP.OPS SYS.OPSYS.INST
+P
+S0
+RO
+O@
+O@  Install it 
+HCOPY BP.OPS SYS.OPSYS.INST (O
+STON
+H(OUT.BP.OPS<
+P
+O@
+O@  Compile it
+HCOMPILE OUT.BP.OPS SYS.OPSYS.INST
+P
+O@
+O@  Put it in the md
+HCATALOG OUT.BP.OPS SYS.OPSYS.INST
+P
+O@
+O@
+O@@@@@@@@@@@@    Load the Tilde (multi-item) Import routine   @@@
+O@
+S0
+RO
+CHIMPORT.DOS C:\TLD\IN\DEV\TLDIMP.DOC BP.OPS IMPORT.TLD
+HIMPORT.DOS TLDIMP.DOC BP.OPS IMPORT.TLD
+P
+S0
+RO
+O@
+O@  Install it 
+HSYS.OPSYS.INST
+STON
+H0<
+H3<
+HPCK<
+HBP.OPS<
+HOUT.BP.OPS<
+HIMPORT.TLD<
+P
+S0
+RO
+O@ 
+O@  Compile it
+HCOMPILE OUT.BP.OPS IMPORT.TLD
+P
+O@
+O@  Put it in the md
+HCATALOG OUT.BP.OPS IMPORT.TLD
+P
+O@ 
+O@@@@@@@@@@@@     Load the required routines (BP.OPS.BOOT)   @@@
+O@ 
+O@
+O@@@@@@@@@@@@@ LISTS  @@@
+O@
+S0
+RO
+O@
+O@  Import file
+CHIMPORT.TLD C:\TLD\IN\DEV\BP_OPS.TLD BP.OPS
+HIMPORT.TLD BP_OPS.TLD BP.OPS
+P
+O@
+O@  Create list BP.OPS.BOOT
+HSSELECT BP.OPS
+STON
+HSAVE-LIST BP.OPS.BOOT
+P
+O@
+O@  Create list BP.OPS.BOOT.CODE
+HGET-LIST BP.OPS.BOOT
+STON
+HSELECT BP.OPS USING MD WITH *A1 NE "PQ]"<
+HSAVE-LIST BP.OPS.BOOT.CODE<
+P
+O@
+O@  Create list BP.OPS.BOOT.PROC
+HGET-LIST BP.OPS.BOOT
+STON
+HSELECT BP.OPS USING MD WITH *A1 EQ "PQ]"<
+HSAVE-LIST BP.OPS.BOOT.PROC<
+P
+S0
+RO
+O@
+O@@@@@@@@@@@@@@  Install them @@@
+HGET-LIST BP.OPS.BOOT
+STON
+HSYS.OPSYS.INST<
+H0<
+H1<
+HPCK<
+HBP.OPS<
+HOUT.BP.OPS<
+CH?<
+P
+O@ 
+O@  Compile it
+HGET-LIST BP.OPS.BOOT.CODE
+STON
+HCOMPILE OUT.BP.OPS<
+P
+O@
+O@  Put it in the md
+HGET-LIST BP.OPS.BOOT.CODE
+STON
+HCATALOG OUT.BP.OPS<
+P
+O@
+O@
+S0
+RO
+O@
+O@@@@@@@@@@@@  Install procs in md
+HGET-LIST BP.OPS.BOOT.PROC
+STON
+HSYS.MD.INST<
+H0<
+H1<
+HPCK<
+HBP.OPS<
+HOUT.BP.OPS<
+CH?<
+P
+O@
+O
+O@
+O@@@@@@@@@@@@ FILE CREATION 
+O@
+O@
+O@
+O@@@@@@@@@@@@  Create System Files
+O@
+[MD SYS.FILE.CRE]
+O
+O@
+O@
+O@
+O@@@@@@@@@@@@  Create Utility Files
+O@
+[MD SYS.UTIL.CRE]
+O@
+O@@@@@@@@@@@@  Create Kbil Code Files
+O@
+[MD SYS.KBIL.DEV.CRE]
+O@
+O@@@@@@@@@@@@  Create MacroScope Code Files
+O@
+[MD SYS.DH.CRE]
+O@
+O@@@@@@@@@@@@@@@@@@@@@@@@@@@ Install MacroScope Install Files @@@
+O@
+O@
+C  RO
+C  RO
+C  O@
+C  O@
+C  O@@@@@@@@@@@ IMPORT IBP.DH
+C  CHIMPORT.TLD C:\TLD\IN\DEV\IBP_DH.TLD IBP.DH
+C  HIMPORT.TLD IBP_DH.TLD IBP.DH
+C  PW
+S0
+RO
+IHSYS.NATIVE.INST.FILE IBP.DH
+D0
+[MD SYS.NATIVE.INST.FILE]
+O@
+S0
+RO
+O@
+O@
+O@@@@@@@@@@@ IMPORT BP.INST
+CHIMPORT.TLD C:\TLD\IN\DEV\BP_INST.TLD BP.INST
+HIMPORT.TLD BP_INST.TLD BP.INST
+P
+S0
+RO
+RI
+IHSYS.OPSYS.INST.FILE BP.INST
+D0
+[MD SYS.NATIVE.INST.FILE]
+O@
+O@
+O Done
+

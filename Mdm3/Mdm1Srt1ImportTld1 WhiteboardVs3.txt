@@ -1,0 +1,368 @@
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+        #region File Input Item
+        // Strings
+        protected string sImportFileNameDefault = "";
+        protected string sImportFileNameOriginal = "";
+        protected string sImportItemVersion = "";
+        protected string sImportItemVersionDate = "";
+        // Integers
+        protected int iImportItemArrayPointer = 1;
+        protected int iAttributePointer = 0;
+        protected int iAttributeMaxPointer = 0;
+        protected int iAttributeCounter = 0;
+        protected int iImportItemAttributePointer = 0;
+        #endregion
+        #region File Output Item
+        protected string sPickOutputFileName = "";
+        protected Mfile1 oPickOutputFileObject; // MFILE1 OBJECT
+        protected string sPickOutputFileItemId = "";
+        protected bool bPickOutputItemWriteFlag = false;
+        #endregion
+
+        int     iPassedImportFileItemLen, 
+        string sPassedImportItemVersion, 
+        string sPassedImportItemVersionDate, 
+        // Integers
+        int iPassedImportItemArrayPointer, 
+        int iPassedAttributePointer, 
+        int iPassedAttributeMaxPointer, 
+        int iPassedAttributeCounter, 
+        int iPassedImportItemAttributePointer, 
+        Mfile1 oPassedPickOutputFileObject,
+        bool bPassedPickOutputItemWriteFlag
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+        #region FileImportItemClassFields
+        // Source and Destination Objects
+        #region FileImportItem
+        // Import File
+        protected string sImportFileName;
+        protected Mfile1 oImportFileObject;
+        protected string sImportFileOptions = "";
+        #endregion
+        #region FileOutputItem
+        // Output System
+        protected string sOutputSystemName = "unknown";
+        protected object oOutputSystemObject = null;
+        // Output Database
+        protected string sOutputDatabaseName = "unknown";
+        protected SqlConnection OutputDatabaseObject = null;
+        // Output File
+        protected string sOutputFileName;
+        protected Mfile1 oOutputFileObject;
+        protected string sOutputFileOptions = "";
+        // Output File Item Id
+        protected string sOutputFileItemId;
+        // the follow id would be found in the 
+        // input (import) file
+        // this id may be compared to the
+        // (entered) sOutputFileItemId that was
+        // supplied by the user.
+        // (Currently) the user can only
+        // enter one id.  The idea is for them
+        // to enter a matched list that would
+        // be presented as a paired list for
+        // comparison (verification) by the user.
+        protected string sImportFileItemId;
+        #endregion
+        #endregion
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+                #region FileImportItem
+        // Import File
+        protected string sImportFileName;
+        protected Mfile1 oImportFileObject;
+        protected string sImportFileOptions = "";
+        // Output System
+        protected string sOutputSystemName = "unknown";
+        protected object oOutputSystemObject = null;
+        // Output Database
+        protected string sOutputDatabaseName = "unknown";
+        protected SqlConnection OutputDatabaseObject = null;
+        // Output File
+        protected string sOutputFileName;
+        protected Mfile1 oOutputFileObject;
+        protected string sOutputFileOptions = "";
+        // Output File Item Id
+        protected string sOutputFileItemId;
+                #endregion
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+        // public sealed class HttpResponse;
+
+
+        // public HttpResponse hPage2;
+        // public TextWriter wPage2;
+        // public Page2 pPage2;
+
+
+
+            // System.IO.TextWriter();
+            // wPage2 = new System.IO.TextWriter();
+            // wPage2 = new TextWriter;
+
+            // HttpResponse hPage2 = new HttpResponse(wPage2);
+            // HttpResponse hPage2 = new HttpResponse(wPage2);
+            // HttpResponse hPage2 = new HttpResponse();
+
+        /*
+        public sealed class HttpResponse
+        {
+
+        }
+         */
+
+
+
+            //System.Windows.??
+            //System.Web.UI.Page.Server.Transer("");
+
+            //xxxxxxxxxxxxxxxxx/ 
+            // <%@ Page Language="C#" %>
+            // <script runat="server">
+            //
+            // private void Page_Load(object sender, EventArgs e)
+            // {
+            // Check whether the browser remains
+            // connected to the server.
+            // System.Web.UI.Page.
+            /*
+        if (Response.IsClientConnected)
+        {
+            // If still connected, redirect
+            // to another page. 
+            Response.Redirect("Page2CS.aspx", false);
+        }
+        else
+        {
+            // If the browser is not connected
+            // stop all response processing.
+            Response.End();
+        }
+Redirects a client to a new URL and specifies the new URL.
+
+[Visual Basic] Overloads Public Sub Redirect(String)
+[C#] public void Redirect(string);
+[C++] public: void Redirect(String*);
+[JScript] public function Redirect(String);
+Redirects a client to a new URL. Specifies the new URL and whether execution of the current page should terminate.
+
+[Visual Basic] Overloads Public Sub Redirect(String, Boolean)
+[C#] public void Redirect(string, bool);
+[C++] public: void Redirect(String*, bool);
+[JScript] public function Redirect(String, Boolean);
+             * 
+             */
+            /*
+            Server.Transfer("Page2.aspx");
+            this.NavigationService.Content
+            this = App.LoadComponent(Page2, "Page2.aspx");
+            App.LoadComponent("Page2.aspx");
+            this = App.LoadComponent(Page2, "Page2.aspx");
+            pPage2 = App.LoadComponent("Page2.aspx");
+            Object pPage2 = new Page2();
+            pPage2 = App.LoadComponent("Page2.aspx");
+            
+            HttpResponse hTemp = new HttpResponse(wPage2);
+            wPage2 = new TextWriter(); 
+
+            HttpResponse hPage2 = new HttpResponse(wPage2);
+
+            TextWriter wPage2 = new TextWriter();
+
+            HttpResponse hPage2 = new HttpResponse(wPage2);
+
+
+            if (hPage2.IsClientConnected)
+            {
+                // If still connected, redirect
+                // 
+
+                // hPage2 = new System.Web.HttpResponse(wPage2);
+                // hPage2.Redirect("Page2.aspx");
+
+                // to another page. 
+                // Page1.Redirect("Page2.aspx", false);
+                // hTemp.Redirect("Page2.aspx", false);
+                // System.Web.UI.w
+                // HttpResponse.(
+            }
+            else
+            {
+                // If the browser is not connected
+                // stop all response processing.
+                hTemp.End();
+            } */
+            /*
+            </script>
+            <html>
+            <head>
+            </head>
+            <body>
+                <form runat="server">
+                </form>
+            </body>
+            </html>
+            */
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+
+G:\Rec\ACTDICT.TXT
+
+G:\Rec\ACTDICT.TXT
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+<pos=1> C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\Mdm1Srt1ImportTld1 Whiteboard.ses
+<pos=2> C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\Mdm1Srt1ImportTld1 WhiteboardVs1.txt
+<pos=3> C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\Mdm1Srt1ImportTld1 WhiteboardVs2.txt
+<pos=-4> C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\Mdm1Srt1ImportTld1 WhiteboardVs3.txt
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+OutOptionToOverwriteExistingItem
+OutOptionToCheckItemIds
+OutOptionToCheckFileExistsCurrent
+OutOptionToEnterEachItemId
+OutOptionToLogActivity
+OutOptionToProceedAutomatically
+OutOptionToAddAnotherOption
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+namespace Mdm1Srt1ImportTld1
+{
+    /// <summary>
+    /// Mdm1 Srt1 OpSys Bootstrap Mdm1Srt1ImportTld1 - MimportTld1App1 - MimportTld1
+    /// </summary>
+    public class MimportTld1 : IProcessFile1
+    {
+        /// <summary>
+        /// class Mdm1 Oss properties
+        /// </summary>
+        private string MdmAuthorCompanyName = "MacroDm";
+        private string MdmAuthorName = "David G. Horsman";
+        private string MdmProjectName = "MdmSrtVs5_0";
+        private string MdmTaskName = "Task8";
+        private string MdmTaskStepName = "Step1";
+        private string MdmCodeSolutionName = "Mdm1Srt1ImportTld1";
+        private string MdmCodeProjectName = "Mdm1Srt1ImportTld1";
+        private string MdmNamespaceName = "Mdm1Srt1ImportTld1";
+        private bool MdmSystemIntResult = false;
+        private string MdmSystemName = "MdmPc";
+        private int MdmSystemNumber = 99999;
+        private string MdmProcessName = "MimportTld1MainPage1";
+        private int MdmProcessIntStatus = 99999;
+        private int MdmProcessIntResult = 99999;
+        private string MdmProcessIntStatusText1 = "99999";
+        private string MdmProcessIntStatusText2 = "99999";
+        private string MdmClassIntStatusText = "99999";
+        private int MdmClassIntStatus = 99999;
+        private int MdmMethodIntResult = 99999;
+        private int MdmMethodStatus = 99999;
+        /// <summary>
+        /// class external properties
+        /// </summary>
+        /// 
+
+
+        /// <summary>
+        /// class internal properties
+        /// </summary>
+        ///
+
+        /// <summary>
+        /// class properties
+        /// </summary>
+        /// 
+
+
+=============================================
+
+        int LocalIntResult;
+        bool LocalBoolResult;
+        protected Mobject1 LocalMob;
+        public MimportTld1 MdmAction;
+        protected string ImpFileName;
+        //        protected Mfile1 ImportTldImpFile;
+        protected string OutFileName;
+        //        protected Mfile1 ImportTldOutFile;
+        protected string OutFileItemIdName;
+        protected string OutFileOptions;
+        ///
+        
+
+        public int AppPage1Loaded()
+        {
+            
+            LocalMob = new Mobject1();
+            LocalMob.MdmProcessIntStatusText2 = "initialised";
+            MdmAction = new MimportTld1();
+            ImpFileName = "";
+            //        protected Mfile1 ImportTldImpFile;
+            OutFileName = "";
+            //        protected Mfile1 ImportTldOutFile;
+            OutFileItemIdName = "";
+            OutFileOptions = "";
+
+            return 0;
+        }
+
+        public int AppDoProcessing()
+        {
+            LocalMob.MdmMethodIntResult = MdmAction.ProcessFile("Import", ImpFileName, OutFileName, OutFileItemIdName, OutFileOptions);
+            return 0;
+        }
+
+        public int AppCancelProcessing()
+        {
+
+            return 0;
+        }
+
+        public int InputFileCheck(string ImpPassedName)
+        {
+            ImpFileName = ImpPassedName;
+            LocalMob.MdmProcessIntStatusText2 = "initialised";
+            LocalMob.MdmMethodIntResult = MdmAction.CheckFileExists(ImpFileName);
+            if (LocalMob.MdmSystemBoolResult == true)
+                LocalMob.MdmMethodIntResult = 0;
+            else
+                LocalMob.MdmMethodIntResult = 1;
+
+            return LocalMob.MdmMethodIntResult;
+        }
+        public int OutputFileCheck(string OutPassedName)
+        {
+            OutFileName = OutPassedName;
+            LocalMob.MdmMethodIntResult = MdmAction.CheckFileExists(OutFileName);
+
+            if (LocalMob.MdmSystemBoolResult == false)
+                LocalMob.MdmMethodIntResult = 0;
+            else
+                LocalMob.MdmMethodIntResult = 1;
+            return LocalMob.MdmMethodIntResult;
+        }
+        public int OutputFileItemIdCheck(string OutPassedIdName)
+        {
+            OutFileItemIdName = OutPassedIdName;
+            LocalMob.MdmMethodIntResult = MdmAction.CheckFileExists(OutFileName);
+
+            if (LocalMob.MdmSystemBoolResult == false)
+                LocalMob.MdmMethodIntResult = 0;
+            else
+                LocalMob.MdmMethodIntResult = 1;
+            return LocalMob.MdmMethodIntResult;
+        }
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+

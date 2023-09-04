@@ -1,0 +1,49 @@
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Code1\bin\Debug\Mdm1Oss1Code1.exe.manifest
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Code1\bin\Debug\Mdm1Oss1Code1.xbap
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Code1\bin\Debug\Mdm1Oss1Code1.exe
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Code1\bin\Debug\Mdm1Oss1Code1.pdb
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Code1\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Code1\obj\Debug\Mdm1Oss1Code1Page1.baml
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Code1\obj\Debug\Mdm1Oss1Code1Page1.g.cs
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Code1\obj\Debug\Mdm1Oss1Code1App1.g.cs
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Code1\obj\Debug\Mdm1Oss1Code1_MarkupCompile.cache
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Code1\obj\Debug\Mdm1Oss1Code1.g.resources
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Code1\obj\Debug\Mdm1Oss1Code1.Properties.Resources.resources
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Code1\obj\Debug\Mdm1Oss1Code1.csproj.GenerateResource.Cache
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Code1\obj\Debug\Mdm1Oss1Code1.TrustInfo.xml
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Code1\obj\Debug\Mdm1Oss1Code1.exe.manifest
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Code1\obj\Debug\Mdm1Oss1Code1.xbap
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Code1\obj\Debug\Mdm1Oss1Code1.exe
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Code1\obj\Debug\Mdm1Oss1Code1.pdb
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Code1\bin\Debug\Mdm1Oss1Support1.exe
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Code1\bin\Debug\Mdm1Oss1Support1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Code1\bin\Debug\Mdm1Oss1Code1.exe.manifest
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Code1\bin\Debug\Mdm1Oss1Code1.xbap
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Code1\bin\Debug\Mdm1Oss1Code1.exe
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Code1\bin\Debug\Mdm1Oss1Code1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Code1\obj\Debug\ResolveAssemblyReference.cache
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Code1\obj\Debug\Mdm1Oss1Code1Page1.baml
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Code1\obj\Debug\Mdm1Oss1Code1Page1.g.cs
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Code1\obj\Debug\Mdm1Oss1Code1App1.g.cs
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Code1\obj\Debug\Mdm1Oss1Code1_MarkupCompile.cache
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Code1\obj\Debug\Mdm1Oss1Code1.g.resources
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Code1\obj\Debug\Mdm.Oss.CodeUtil.Properties.Resources.resources
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Code1\obj\Debug\Mdm1Oss1Code1.csproj.GenerateResource.Cache
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Code1\obj\Debug\Mdm1Oss1Code1.TrustInfo.xml
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Code1\obj\Debug\Mdm1Oss1Code1.exe.manifest
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Code1\obj\Debug\Mdm1Oss1Code1.xbap
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Code1\obj\Debug\Mdm1Oss1Code1.exe
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Code1\obj\Debug\Mdm1Oss1Code1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Code1\obj\Debug\Mdm1Oss1Code1_Content.g.cs
+C:\Srt Project1\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Code1\obj\Debug\Mdm1Oss1Code1.csprojResolveAssemblyReference.cache
+C:\Srt Project1\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Code1\obj\Debug\Mdm1Oss1Code1Page1.baml
+C:\Srt Project1\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Code1\obj\Debug\Mdm1Oss1Code1Page1.g.cs
+C:\Srt Project1\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Code1\obj\Debug\Mdm1Oss1Code1App1.g.cs
+C:\Srt Project1\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Code1\obj\Debug\Mdm1Oss1Code1_Content.g.cs
+C:\Srt Project1\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Code1\obj\Debug\Mdm1Oss1Code1_MarkupCompile.cache
+C:\Srt Project1\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Code1\obj\Debug\Mdm1Oss1Code1.g.resources
+C:\Srt Project1\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Code1\obj\Debug\Mdm.Oss.CodeUtil.Properties.Resources.resources
+C:\Srt Project1\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Code1\obj\Debug\Mdm1Oss1Code1.csproj.GenerateResource.Cache
+C:\Srt Project1\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Code1\obj\Debug\Mdm1Oss1Code1.TrustInfo.xml
+C:\Srt Project1\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Code1\obj\Debug\Mdm1Oss1Code1.exe
+C:\Srt Project1\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Code1\obj\Debug\Mdm1Oss1Code1.pdb

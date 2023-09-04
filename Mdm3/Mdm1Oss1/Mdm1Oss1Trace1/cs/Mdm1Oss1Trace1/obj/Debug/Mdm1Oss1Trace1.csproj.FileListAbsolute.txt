@@ -1,0 +1,17 @@
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Trace1\Mdm1Oss1Trace1\bin\Debug\Mdm1Oss1Trace1.exe.manifest
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Trace1\Mdm1Oss1Trace1\bin\Debug\Mdm1Oss1Trace1.xbap
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Trace1\Mdm1Oss1Trace1\bin\Debug\Mdm1Oss1Trace1.exe
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Trace1\Mdm1Oss1Trace1\bin\Debug\Mdm1Oss1Trace1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Trace1\Mdm1Oss1Trace1\obj\Debug\ResolveAssemblyReference.cache
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Trace1\Mdm1Oss1Trace1\obj\Debug\Page1.baml
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Trace1\Mdm1Oss1Trace1\obj\Debug\Page1.g.cs
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Trace1\Mdm1Oss1Trace1\obj\Debug\App.g.cs
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Trace1\Mdm1Oss1Trace1\obj\Debug\Mdm1Oss1Trace1_MarkupCompile.cache
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Trace1\Mdm1Oss1Trace1\obj\Debug\Mdm1Oss1Trace1.g.resources
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Trace1\Mdm1Oss1Trace1\obj\Debug\WpfBrowserApplication1.Properties.Resources.resources
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Trace1\Mdm1Oss1Trace1\obj\Debug\Mdm1Oss1Trace1.csproj.GenerateResource.Cache
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Trace1\Mdm1Oss1Trace1\obj\Debug\Mdm1Oss1Trace1.TrustInfo.xml
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Trace1\Mdm1Oss1Trace1\obj\Debug\Mdm1Oss1Trace1.exe.manifest
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Trace1\Mdm1Oss1Trace1\obj\Debug\Mdm1Oss1Trace1.xbap
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Trace1\Mdm1Oss1Trace1\obj\Debug\Mdm1Oss1Trace1.exe
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Trace1\Mdm1Oss1Trace1\obj\Debug\Mdm1Oss1Trace1.pdb

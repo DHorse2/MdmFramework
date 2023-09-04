@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{933A2699-0E05-42C6-8FD4-E7855FC676E7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mdm.Oss.File</RootNamespace>
+    <AssemblyName>Mdm1Oss1File1</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\Mdm1Oss1File1.XML</DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
+    <NoWarn>CS0162, CS0168, CS0169, CS0219, CS0414, CS0649, CS1572, CS1587, CS1591, IDE1006, IDE1051, IDE1059;</NoWarn>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="Interop.IWshRuntimeLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\Mdm1Oss1Definitions1\Mdm1Oss1DefBase1\Interop.IWshRuntimeLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Shell32, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\Mdm1Oss1Definitions1\Mdm1Oss1DefBase1\Interop.Shell32.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="mFileDbData\DbListView\DbListViewControlDef.cs" />
+    <Compile Include="mFileDbData\DbListView\DbListViewDef.cs" />
+    <Compile Include="mFileDbData\iDbTask.cs" />
+    <Compile Include="mFileDb\FileDb.cs" />
+    <Compile Include="mFileDb\FileDbSyntax.cs" />
+    <Compile Include="mFileState\mFileState.cs" />
+    <Compile Include="mFileTransform\mFileTransform.cs" />
+    <Compile Include="mFileTypeBinary\Binary.cs" />
+    <Compile Include="mFileTypeDelim\DelimDataDef.cs" />
+    <Compile Include="mFileTypeSql\mFileSqlConnectionThread.cs" />
+    <Compile Include="mFile\FileIoDef.cs" />
+    <Compile Include="mFile\mFileCore.cs" />
+    <Compile Include="mRunFileConsole\AppStdFunctions.cs" />
+    <Compile Include="mRunFileConsole\Control.cs" />
+    <Compile Include="mFileDbData\DbDataDef.cs" />
+    <Compile Include="mFileDbData\DbDataEventArgs.cs" />
+    <Compile Include="mFileDbData\DbTaskDef.cs" />
+    <Compile Include="mFileDbData\DbListView\DbListViewStateGridsDef.cs" />
+    <Compile Include="mFileDbData\DbThreadDef.cs" />
+    <Compile Include="mFileTypeSql\iDbData.cs" />
+    <Compile Include="mFileTable\iFileCrudEx.cs" />
+    <Compile Include="mRunFileConsole\iAppStdStateView.cs" />
+    <Compile Include="mRunFileConsole\iDbRunData.cs" />
+    <Compile Include="mFile\mFile.cs" />
+    <Compile Include="mRunFileConsole\mFileAction.cs" />
+    <Compile Include="mRunFileConsole\mFileCommand.cs" />
+    <Compile Include="mFileTable\mFileCrud.cs" />
+    <Compile Include="mFile\mFileIDisposable.cs" />
+    <Compile Include="mFile\mFileInitialize.cs" />
+    <Compile Include="mFile\mFileInterface.cs" />
+    <Compile Include="mFile\mFileMainDef.cs" />
+    <Compile Include="mFile\mfileObjects.cs" />
+    <Compile Include="mFileTypeSql\mFileSql.cs" />
+    <Compile Include="mFileTypeSql\mFileSqlConnection.cs" />
+    <Compile Include="mFileTypeSql\mFileSqlConnectionIDisposable.cs" />
+    <Compile Include="mFileTypeSql\mFileSqlCoreLists.cs" />
+    <Compile Include="mFileTypeSql\mFileSqlIDisposable.cs" />
+    <Compile Include="mFileTypeSql\mFileSqlImFileType.cs" />
+    <Compile Include="mFileTable\mFileTable.cs" />
+    <Compile Include="mFileTypeAscii\mFileTypeAscii.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="mFileTable\Row.cs" />
+    <Compile Include="mFileDb\Schema.cs" />
+    <Compile Include="mFileTypeScript\ScriptDataDef.cs" />
+    <Compile Include="mFileTypeScript\ScriptDataEventArgs.cs" />
+    <Compile Include="mFileTypeScript\ScriptTaskDef.cs" />
+    <Compile Include="mFileTypeSql\SqlData.cs" />
+    <Compile Include="mFileTypeSql\SqlTaskDef.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Mdm1Pick1\Mdm1Pick1Console1\Mdm3Oss1Console1.csproj">
+      <Project>{42818566-f9a1-4330-ac46-b2ae909f9862}</Project>
+      <Name>Mdm3Oss1Console1</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Mdm1Srt1\Mdm1Srt1Transform1\Mdm3Srt1Transform1.csproj">
+      <Project>{3c8c2b76-c126-4e0a-9664-43291cd2a301}</Project>
+      <Name>Mdm3Srt1Transform1</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Mdm1Srt1\Mdm3Srt1Core1\Mdm3Oss1Core1\Mdm3Srt1Core1.csproj">
+      <Project>{c8291e86-8070-4221-bce5-1a6ffe7a9aa2}</Project>
+      <Name>Mdm3Srt1Core1</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Mdm2World1\Mdm2World1Base1\Mdm2World1Base1\Mdm3World1Base1.csproj">
+      <Project>{849bf227-e6a3-44b0-9c3f-489ef0e28895}</Project>
+      <Name>Mdm3World1Base1</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mdm1Oss1Definitions1\Mdm1Oss1Decl1\Mdm3Oss1Decl1.csproj">
+      <Project>{2c73982e-0566-475d-9f0f-50e1f0b465f5}</Project>
+      <Name>Mdm3Oss1Decl1</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mdm1Oss1Definitions1\Mdm1Oss1DefBase1\Mdm3Oss1DefBase1.csproj">
+      <Project>{1531984c-8114-4a1c-a3f6-f8148ae329f8}</Project>
+      <Name>Mdm3Oss1DefBase1</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mdm1Oss1Mobject1\Mdm1Oss1Mobject1\Mdm3Oss1Mobject1.csproj">
+      <Project>{c9e462b1-a939-4fbf-843a-8e640062dac2}</Project>
+      <Name>Mdm3Oss1Mobject1</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="mFile\mFileDocumentation.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="mControls\" />
+    <Folder Include="mFileTypePickSyntax\" />
+    <Folder Include="mFileType\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

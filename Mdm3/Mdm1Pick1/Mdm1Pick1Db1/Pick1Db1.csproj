@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{25047308-59B4-4B66-BEEC-FEA8DF99F8F8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Pick1Db1</RootNamespace>
+    <AssemblyName>Pick1Db1</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="PickDb.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Mdm1Oss1\Mdm1Oss1Definitions1\Mdm1Oss1Decl1\Mdm3Oss1Decl1.csproj">
+      <Project>{2c73982e-0566-475d-9f0f-50e1f0b465f5}</Project>
+      <Name>Mdm3Oss1Decl1</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Mdm1Oss1\Mdm1Oss1Definitions1\Mdm1Oss1DefBase1\Mdm3Oss1DefBase1.csproj">
+      <Project>{1531984c-8114-4a1c-a3f6-f8148ae329f8}</Project>
+      <Name>Mdm3Oss1DefBase1</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Mdm1Oss1\Mdm1Oss1File1\Mdm3Oss1File1.csproj">
+      <Project>{933a2699-0e05-42c6-8fd4-e7855fc676e7}</Project>
+      <Name>Mdm3Oss1File1</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Mdm1Oss1\Mdm1Oss1Mobject1\Mdm1Oss1Mobject1\Mdm3Oss1Mobject1.csproj">
+      <Project>{c9e462b1-a939-4fbf-843a-8e640062dac2}</Project>
+      <Name>Mdm3Oss1Mobject1</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Mdm1Oss1\Mdm1Oss1Shell1\Mdm1Oss1Shell1Base1\Mdm3Oss1Shell1Base1.csproj">
+      <Project>{ac94e8a8-74bf-40d5-9e86-2fa87c4c9774}</Project>
+      <Name>Mdm3Oss1Shell1Base1</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Mdm1Srt1\Mdm1Srt1Transform1\Mdm3Srt1Transform1.csproj">
+      <Project>{3c8c2b76-c126-4e0a-9664-43291cd2a301}</Project>
+      <Name>Mdm3Srt1Transform1</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Mdm1Srt1\Mdm3Srt1Core1\Mdm3Oss1Core1\Mdm3Srt1Core1.csproj">
+      <Project>{c8291e86-8070-4221-bce5-1a6ffe7a9aa2}</Project>
+      <Name>Mdm3Srt1Core1</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Mdm2World1\Mdm2World1Base1\Mdm2World1Base1\Mdm3World1Base1.csproj">
+      <Project>{849bf227-e6a3-44b0-9c3f-489ef0e28895}</Project>
+      <Name>Mdm3World1Base1</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mdm1Pick1Console1\Mdm3Oss1Console1.csproj">
+      <Project>{42818566-f9a1-4330-ac46-b2ae909f9862}</Project>
+      <Name>Mdm3Oss1Console1</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

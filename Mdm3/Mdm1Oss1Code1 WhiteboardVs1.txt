@@ -1,0 +1,351 @@
+======================================================
+======================================================
+======================================================
+======================================================
+<TabControl TabStripPlacement="Left" Margin="0, 0, 0, 10">
+  <TabItem Name="fontweight" Header="FontWeight">
+    <TabItem.Content>
+      <TextBlock TextWrapping="WrapWithOverflow">
+        FontWeight property information goes here.
+      </TextBlock>
+    </TabItem.Content>
+  </TabItem>
+
+  <TabItem Name="fontsize" Header="FontSize">
+    <TabItem.Content>
+      <TextBlock TextWrapping="WrapWithOverflow">
+        FontSize property information goes here.
+      </TextBlock>
+    </TabItem.Content>
+  </TabItem>
+</TabControl>
+======================================================
+using System;
+using System.Collections.Generic;
+
+public abstract class Item {
+  public Item Parent { get; private set; }
+  public abstract class Container : Item {
+    private HashSet<Item> items = new HashSet<Item>();
+    public void Add(Item item) {
+      if (item.Parent != null)
+        throw new Exception("Item has inconsistent containment.");
+      item.Parent = this;
+      items.Add(item);
+    }
+    public void Remove(Item item) {
+      if (!Contains(item))
+        throw new Exception("Container does not contain that item.");
+      items.Remove(item);
+      item.Parent = null;
+    }
+    public bool Contains(Item item) {
+      return items.Contains(item);
+    }
+    public IEnumerable<Item> Items {
+      // Do not just return items. Then the caller could cast it
+      // to HashSet<Item> and then make modifications to your
+      // internal state! Return a read-only sequence:
+      get {
+        foreach(Item item in items) yield return item;
+      }
+    }
+  }
+} 
+
+// These can be in third-party assemblies:
+
+public class Bag : Item.Container { }
+public class Box : Item.Container { }
+public class Torch : Item { }
+public class TreasureMap : Item { }
+
+public class Program {
+  public static void Main() {
+    var map = new TreasureMap();
+    var box = new Box();
+    box.Add(map);
+    var bag = new Bag();
+    bag.Add(box);
+    foreach(Item item in bag.Items) 
+      Console.WriteLine(item);
+  }
+}
+======================================================
+//Dialog Engine Stuff Init place at the top of your class to make it global
+    Texture DialogBox;
+    int DialogEngineState = 0;
+    int DialogEngineNpc = 0;
+    int DialogEnginePage = 0;
+    int DialogEnginePageCount = 0;
+    int DialogEngineMaxChars = 55;
+    int DialogEngineMaxLines = 5;
+    string DialogEngineDialogText;
+    int DialogEngineLineCount = 0;
+    int DialogEngineFontHeight = 20;
+    int DialogEngineFontWidth = 20;
+    int DialogEngineSpaceOffset = 0;
+    int DialogEngineAtEnd = 0;
+    int[] DialogEnginePageCharCount = new int[255];
+
+// function to handle the keyboard stuff just to give you an example change it 
+// to fit your game 
+void ReadDialogStateKeys()
+    {
+        KeyboardState keys = keyb.GetCurrentKeyboardState();
+        if (keys[Key.Escape])
+        {
+            DialogEngineState = 100;
+            Thread.Sleep(250);
+        }
+        if (keys[Key.Space])
+        {
+            if (DialogEngineAtEnd == 1)
+            {
+                DialogEngineState = 100;
+            }
+            else
+            {
+                DialogEngineState = 2;
+                if (DialogEnginePage < DialogEnginePageCount)
+                    DialogEnginePage++;
+            }
+            Thread.Sleep(250);
+        }
+    }
+//in my main keyboard processing loop this is the interact key that starts the 
+// dialog engine
+ 
+//Interact key 
+        if (keys[Key.Return])
+        {
+            //First use talk to npc 
+            // check to see if there is an npc in front of you 
+
+            DialogEngineNpc = CheckNpcTalk(); 
+            //you will see this is just used 
+            //to get the specific dialog text for that npc add your code here
+            if (DialogEngineNpc != 1000000)
+            {
+                // yes there is an npc to talk to.
+                if (DialogEngineState == 0) DialogEngineState = 1;
+                else DialogEngineState = 0;
+                Thread.Sleep(250);
+            }
+        }
+
+
+// this is the meat and potatoes here 
+// the eksprite thing is for drawing a box to go around the text 
+// once again insert your code there 
+// and the drawtext function is whatever you use to draw your text
+
+ void DialogEngine()
+    {
+        if (DialogEngineState == 1)
+        {
+            // Step one Get Npc and Dialog
+            // Npc already set from the enter key check 
+            DialogEngineDialogText = Npcs[DialogEngineNpc].Dialog;
+            double lines = (float)DialogEngineDialogText.Length / (float)DialogEngineMaxChars;
+            lines = Math.Ceiling(lines);
+            DialogEngineLineCount = (int)lines;
+            DialogEnginePage = 0;
+            DialogEnginePageCount = (int)Math.Ceiling((double)DialogEngineLineCount / (double)DialogEngineMaxLines);
+            DialogEngineState = 2;
+        }
+        if(DialogEngineState == 2)
+        {
+            EKSprite.Begin(SpriteFlags.AlphaBlend | SpriteFlags.SortDepthBackToFront);
+            EKSprite.Draw(DialogBox, new Vector3(0, 0, 0), new Vector3(58, 561, .5f), Color.White.ToArgb());
+            // Display LineMax Number of lines based on PageCount
+            // Draw the NpcCount Name first
+            DrawText2(Npcs[DialogEngineNpc].Name , 79, 556, Color.Yellow);
+            int offset = 0;
+            if (DialogEnginePage > 0)
+            {
+                DialogEnginePageCharCount[DialogEnginePage] = DialogEnginePageCharCount[DialogEnginePage - 1];
+                offset = DialogEnginePageCharCount[DialogEnginePage - 1];
+            }
+            
+            int Counter = 0;
+          
+            DialogEnginePageCharCount[DialogEnginePage] = offset;
+            for( int i = (DialogEnginePage*4); i<=(DialogEnginePage*4)+DialogEngineMaxLines-1; i++)
+            {
+                int TotalLength = DialogEngineDialogText.Length;
+                int CutLength = DialogEngineMaxChars;
+                int PositionOffset = (DialogEngineMaxChars * i)-offset;
+                
+                int StartPos = PositionOffset - DialogEngineSpaceOffset;
+                int CheckSpace = 0;
+                string TempString;
+
+                if (PositionOffset + CutLength > TotalLength)
+                {
+                    CutLength = TotalLength - PositionOffset;
+                    DialogEngineAtEnd = 1;
+                }
+                if (CutLength < 0) break;
+              
+                if (StartPos < 0) StartPos = 0;
+                            
+                TempString = DialogEngineDialogText.Substring(StartPos, CutLength);
+
+               
+                //Check for Cut off Words 
+                CheckSpace = TempString.LastIndexOf(" ");
+                if (CheckSpace < TempString.Length && DialogEngineAtEnd != 1)
+                {
+                    // there is not a space at the end of the line so there must be a word split
+                    // but are we at the end of the dialog 
+                    int SliceLength = TempString.Length - CheckSpace ;
+                    TempString = TempString.Substring(0, CheckSpace);
+                    DialogEngineSpaceOffset += SliceLength;
+                    DialogEnginePageCharCount[DialogEnginePage] += SliceLength;
+                }
+
+                
+                //DialogEnginePageCharCount[DialogEnginePage] += TempString.Length;
+                
+                TempString = TempString.TrimStart(' ');
+
+                DrawText2(TempString, 70, 571 + DialogEngineFontHeight + (Counter * DialogEngineFontHeight), Color.White);
+                Counter++;
+            }
+                           DrawText2("Press Spacebar to continue", 40 + (((DialogEngineMaxChars * DialogEngineFontWidth) / 2) - (13*DialogEngineFontWidth)), 571 + DialogEngineFontHeight + (DialogEngineMaxLines * (DialogEngineFontHeight)) + DialogEngineFontHeight, Color.Yellow);
+               
+                      if (DialogEngineSpaceOffset > 0)
+            {
+              DialogEngineSpaceOffset = 0;
+            }
+            EKSprite.End();
+        }
+        
+======================================================
+
+namespace Mdm1Srt1ImportTld1
+{
+    /// <summary>
+    /// Mdm1 Srt1 OpSys Bootstrap Mdm1Srt1ImportTld1 - MimportTld1App1 - MimportTld1
+    /// </summary>
+    public class MimportTld1 : IProcessFile1
+    {
+        /// <summary>
+        /// class Mdm1 Oss properties
+        /// </summary>
+        private string MdmAuthorCompanyName = "MacroDm";
+        private string MdmAuthorName = "David G. Horsman";
+        private string MdmProjectName = "MdmSrtVs5_0";
+        private string MdmTaskName = "Task8";
+        private string MdmTaskStepName = "Step1";
+        private string MdmCodeSolutionName = "Mdm1Srt1ImportTld1";
+        private string MdmCodeProjectName = "Mdm1Srt1ImportTld1";
+        private string MdmNamespaceName = "Mdm1Srt1ImportTld1";
+        private bool MdmSystemIntResult = false;
+        private string MdmSystemName = "MdmPc";
+        private int MdmSystemNumber = 99999;
+        private string MdmProcessName = "MimportTld1MainPage1";
+        private int MdmProcessIntStatus = 99999;
+        private int MdmProcessIntResult = 99999;
+        private string MdmProcessIntStatusText1 = "99999";
+        private string MdmProcessIntStatusText2 = "99999";
+        private string MdmClassIntStatusText = "99999";
+        private int MdmClassIntStatus = 99999;
+        private int MdmMethodIntResult = 99999;
+        private int MdmMethodStatus = 99999;
+        /// <summary>
+        /// class external properties
+        /// </summary>
+        /// 
+
+
+        /// <summary>
+        /// class internal properties
+        /// </summary>
+        ///
+
+        /// <summary>
+        /// class properties
+        /// </summary>
+        /// 
+
+
+=============================================
+
+        int LocalIntResult;
+        bool LocalBoolResult;
+        protected Mobject1 LocalMob;
+        public MimportTld1 MdmAction;
+        protected string ImpFileName;
+        //        protected Mfile1 ImportTldImpFile;
+        protected string OutFileName;
+        //        protected Mfile1 ImportTldOutFile;
+        protected string OutFileItemIdName;
+        protected string OutFileOptions;
+        ///
+        
+
+        public int AppPage1Loaded()
+        {
+            
+            LocalMob = new Mobject1();
+            LocalMob.MdmProcessIntStatusText2 = "initialised";
+            MdmAction = new MimportTld1();
+            ImpFileName = "";
+            //        protected Mfile1 ImportTldImpFile;
+            OutFileName = "";
+            //        protected Mfile1 ImportTldOutFile;
+            OutFileItemIdName = "";
+            OutFileOptions = "";
+
+            return 0;
+        }
+
+        public int AppDoProcessing()
+        {
+            LocalMob.MdmMethodIntResult = MdmAction.ProcessFile("Import", ImpFileName, OutFileName, OutFileItemIdName, OutFileOptions);
+            return 0;
+        }
+
+        public int AppCancelProcessing()
+        {
+
+            return 0;
+        }
+
+        public int InputFileCheck(string ImpPassedName)
+        {
+            ImpFileName = ImpPassedName;
+            LocalMob.MdmProcessIntStatusText2 = "initialised";
+            LocalMob.MdmMethodIntResult = MdmAction.CheckFileExists(ImpFileName);
+            if (LocalMob.MdmSystemBoolResult == true)
+                LocalMob.MdmMethodIntResult = 0;
+            else
+                LocalMob.MdmMethodIntResult = 1;
+
+            return LocalMob.MdmMethodIntResult;
+        }
+        public int OutputFileCheck(string OutPassedName)
+        {
+            OutFileName = OutPassedName;
+            LocalMob.MdmMethodIntResult = MdmAction.CheckFileExists(OutFileName);
+
+            if (LocalMob.MdmSystemBoolResult == false)
+                LocalMob.MdmMethodIntResult = 0;
+            else
+                LocalMob.MdmMethodIntResult = 1;
+            return LocalMob.MdmMethodIntResult;
+        }
+        public int OutputFileItemIdCheck(string OutPassedIdName)
+        {
+            OutFileItemIdName = OutPassedIdName;
+            LocalMob.MdmMethodIntResult = MdmAction.CheckFileExists(OutFileName);
+
+            if (LocalMob.MdmSystemBoolResult == false)
+                LocalMob.MdmMethodIntResult = 0;
+            else
+                LocalMob.MdmMethodIntResult = 1;
+            return LocalMob.MdmMethodIntResult;
+        }
+

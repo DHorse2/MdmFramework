@@ -1,0 +1,9 @@
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1IeAutomation1\obj\Debug\ResolveAssemblyReference.cache
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1IeAutomation1\obj\Debug\Mdm1Oss1Clipboard1.csproj.GenerateResource.Cache
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1IeAutomation1\bin\Debug\Mdm1Oss1Clipboard1.exe.config
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1IeAutomation1\bin\Debug\Mdm1Oss1Clipboard1.exe
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1IeAutomation1\bin\Debug\Mdm1Oss1Clipboard1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1IeAutomation1\bin\Debug\Interop.SHDocVw.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1IeAutomation1\obj\Debug\Mdm1Oss1Clipboard1.exe
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1IeAutomation1\obj\Debug\Mdm1Oss1Clipboard1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1IeAutomation1\obj\Debug\Mdm.Oss.ClipUtil.ClipMetaDef.resources

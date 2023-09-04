@@ -1,0 +1,8 @@
+C:\Srt Project\Mdm\Mdm1\Mdm1Bho1\Mdm1Oss1Bho1\Mdm1Oss1Bho1\bin\Release\Mdm1Oss1Bho1.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Bho1\Mdm1Oss1Bho1\Mdm1Oss1Bho1\bin\Release\Mdm1Oss1Bho1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Bho1\Mdm1Oss1Bho1\Mdm1Oss1Bho1\bin\Release\Interop.SHDocVw.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Bho1\Mdm1Oss1Bho1\Mdm1Oss1Bho1\obj\Release\ResolveAssemblyReference.cache
+C:\Srt Project\Mdm\Mdm1\Mdm1Bho1\Mdm1Oss1Bho1\Mdm1Oss1Bho1\obj\Release\Interop.SHDocVw.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Bho1\Mdm1Oss1Bho1\Mdm1Oss1Bho1\obj\Release\Mdm1Oss1Bho1.csproj.ResolveComReference.cache
+C:\Srt Project\Mdm\Mdm1\Mdm1Bho1\Mdm1Oss1Bho1\Mdm1Oss1Bho1\obj\Release\Mdm1Oss1Bho1.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Bho1\Mdm1Oss1Bho1\Mdm1Oss1Bho1\obj\Release\Mdm1Oss1Bho1.pdb

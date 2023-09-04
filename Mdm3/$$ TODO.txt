@@ -1,0 +1,29 @@
+private async void Blink(control ControlPassed, Color ColorA, Color ColorB){
+    while (true){
+		if (BlinkStop) { return; }
+        await Task.Delay(500);
+        ControlPassed.BackColor = ControlPassed.BackColor == ColorA ? ColorB : ColorA;
+    }
+}
+
+
+// TODO Review integrated Pause Cancel Run button handling
+// Add WAIT... label with blinking
+// Add Count label. File Directory
+// Button for Sort by Target by Name by Valid
+// " by Name by Target by Valid
+
+// Need to add database fields for shortcut valid flags.
+
+// Repait status changed event to drive offf of MAIN thread...
+// add a flag to handle this some how.
+
+
+// Extra Read Next
+// Implement Pause Button
+// Implement DbClear
+// Implement Progress posting using file and directory counts
+// Implement Lazy Load for ShortcutUtils form.
+// Implement Console output to control AND console
+// Add Icon buttons to consoles to toggle consoles.
+

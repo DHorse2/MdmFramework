@@ -1,0 +1,13 @@
+There are a variety of brushes available to both Silverlight and WPF.
+
+Brush WPF Silverlight
+SolidColorBrush Yes Yes
+LinearGradientBrush Yes Yes
+RadialGradientBrush Yes Yes
+ImageBrush Yes Yes
+DrawingBrush Yes No
+VisualBrush Yes No
+TileBrush Yes No
+VideoBrush No Yes
+
+The lack of a TileBrush in Silverlight prevents both the Video and Image brushes from also being

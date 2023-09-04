@@ -1,0 +1,48 @@
+        #region MdmLocalTemporaryDeclarations
+        // <Section Summary>
+        // <Section Role="Declarations">
+        // <Section Id = "MdmLocalTemporaryDeclarations">
+        // <Section Vs="MdmLocalTempVarVs0_8_5">
+        // MdmLocalTemporaryDeclarations MdmLocalTempVarVs0_8_5
+        // <Area Id = "Data">
+
+        // <Area Id = "Counters">
+
+        // <Area Id = "Integers">
+
+        // <Area Id = "Strings">
+
+        // <Area Id = "Printer">
+        
+        // <Area Id = "Progess Display Control">
+
+        // <Area Id = "Header, Footer, Status Line, TextBox">
+        
+        // <Area Id = "Display Output">
+
+        // <Area Id = "Printer Output">
+
+        // <Area Id = "Console Output">
+
+        // <Area Id = "Input">
+
+        // <Area Id = "System Standard Functions ">
+        
+        // <Area Id = "Character Constants">
+
+        // <Area Id = "Ascii Delimiters">
+
+        // <Area Id = "Pick Delimeters">
+
+        // <Area Id = "Special Ascii Characters">
+
+        // <Area Id = "White Space Characters">
+
+        // <Area Id = "Null">
+
+        // <Area Id = "Status Verbose Constants">
+
+        // <Area Id = "System Call Function Constants">
+
+        // </Section Summary>
+        #endregion

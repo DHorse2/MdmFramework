@@ -1,0 +1,40 @@
+    /*
+    public partial class GetStringPageFunction : PageFunction<String>
+    {
+        public GetStringPageFunction()
+        {
+            InitializeComponent();
+        }
+
+        public GetStringPageFunction(string initialValue)
+            : this()
+        {
+            this.stringTextBox.Text = initialValue;
+        }
+        
+        void okButton_Click(object sender, RoutedEventArgs e)
+        {
+            // Page function is accepted, so return a result
+            OnReturn(new ReturnEventArgs<string>(this.stringTextBox.Text));
+        }
+
+        void cancelButton_Click(object sender, RoutedEventArgs e)
+        {
+            // Page function is cancelled, so don't return a result
+            OnReturn(new ReturnEventArgs<string>(null));
+        }
+    }
+     */ 
+============================================
+#region MdmFileControlDeclarations
+
+private void zGotFocus(object sender, RoutedEventArgs e)
+        {
+            StatusLine1.Text = "Enter the file name to place the data into.";
+        }
+
+        private void zLostFocus(object sender, RoutedEventArgs e)
+        {
+            StatusLine1.Text = "";
+        }
+#endregion

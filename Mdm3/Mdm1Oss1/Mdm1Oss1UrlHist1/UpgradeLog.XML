@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="UrlHistoryLibrary">
+</Property><Property Name="Solution File" Value="C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1UrlHist1\UrlHistoryLibrary.sln">
+</Property><Property Name="Date" Value="June-25-10">
+</Property><Property Name="Time" Value="12:57:19 PM">
+</Property></Properties><Event ErrorLevel="0" Project="UrlHistoryDemo" Source="UrlHistoryDemo\UrlHistoryDemo.csproj" Description="Project file successfully backed up as C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1UrlHist1\Backup\UrlHistoryDemo.csproj">
+</Event><Event ErrorLevel="0" Project="UrlHistoryDemo" Source="UrlHistoryDemo\UrlHistoryDemo.csproj.user" Description="Project user file successfully backed up as C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1UrlHist1\Backup\UrlHistoryDemo.csproj.user">
+</Event><Event ErrorLevel="0" Project="UrlHistoryDemo" Source="UrlHistoryDemo\AssemblyInfo.cs" Description="File successfully backed up as C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1UrlHist1\Backup\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="UrlHistoryDemo" Source="UrlHistoryDemo\Form1.cs" Description="File successfully backed up as C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1UrlHist1\Backup\Form1.cs">
+</Event><Event ErrorLevel="0" Project="UrlHistoryDemo" Source="UrlHistoryDemo\App.ico" Description="File successfully backed up as C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1UrlHist1\Backup\App.ico">
+</Event><Event ErrorLevel="0" Project="UrlHistoryDemo" Source="UrlHistoryDemo\Form1.resx" Description="File successfully backed up as C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1UrlHist1\Backup\Form1.resx">
+</Event><Event ErrorLevel="0" Project="UrlHistoryDemo" Source="UrlHistoryDemo\UrlHistoryDemo.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="UrlHistoryDemo" Source="UrlHistoryDemo\UrlHistoryDemo.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="UrlHistoryDemo" Source="UrlHistoryDemo\UrlHistoryDemo.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

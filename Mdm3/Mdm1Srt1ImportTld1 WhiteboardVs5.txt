@@ -1,0 +1,9 @@
+Error	289	Field 'Mdm1Srt1ImportTld1.MimportTld1.ImportFileItemClassFields.iItemConvertFlag' must be fully assigned before control is returned to the caller	C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\MimportTld1.cs	401	20	Mdm1Srt1ImportTld1
+
+
+<Page>
+            <UIElement>
+                
+            </UIElement>
+        </Page>
+

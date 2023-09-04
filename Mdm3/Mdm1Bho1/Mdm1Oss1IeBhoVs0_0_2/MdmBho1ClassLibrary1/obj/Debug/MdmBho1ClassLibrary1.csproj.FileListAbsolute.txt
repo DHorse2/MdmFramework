@@ -1,0 +1,17 @@
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1IeBho1\MdmBho1ClassLibrary1\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1IeBho1\MdmBho1ClassLibrary1\obj\Debug\Interop.SHDocVw.dll
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1IeBho1\MdmBho1ClassLibrary1\obj\Debug\MdmBho1ClassLibrary1.csproj.ResolveComReference.cache
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1IeBho1\MdmBho1ClassLibrary1\bin\Debug\MdmBho1ClassLibrary1.dll
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1IeBho1\MdmBho1ClassLibrary1\bin\Debug\MdmBho1ClassLibrary1.pdb
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1IeBho1\MdmBho1ClassLibrary1\bin\Debug\Interop.SHDocVw.dll
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1IeBho1\MdmBho1ClassLibrary1\obj\Debug\MdmBho1ClassLibrary1.dll
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1IeBho1\MdmBho1ClassLibrary1\obj\Debug\MdmBho1ClassLibrary1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1IeBho1\MdmBho1ClassLibrary1\bin\Debug\MdmBho1ClassLibrary1.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1IeBho1\MdmBho1ClassLibrary1\bin\Debug\MdmBho1ClassLibrary1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1IeBho1\MdmBho1ClassLibrary1\bin\Debug\MdmBho1ClassLibrary1.tlb
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1IeBho1\MdmBho1ClassLibrary1\bin\Debug\Interop.SHDocVw.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1IeBho1\MdmBho1ClassLibrary1\obj\Debug\ResolveAssemblyReference.cache
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1IeBho1\MdmBho1ClassLibrary1\obj\Debug\Interop.SHDocVw.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1IeBho1\MdmBho1ClassLibrary1\obj\Debug\MdmBho1ClassLibrary1.csproj.ResolveComReference.cache
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1IeBho1\MdmBho1ClassLibrary1\obj\Debug\MdmBho1ClassLibrary1.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1IeBho1\MdmBho1ClassLibrary1\obj\Debug\MdmBho1ClassLibrary1.pdb

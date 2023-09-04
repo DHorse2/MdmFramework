@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="MyToolbar">
+</Property><Property Name="Solution File" Value="C:\Srt Project\Mdm\Mdm1\Mdm1Bho1\MyToolbar\source\MyToolbar.sln">
+</Property><Property Name="Date" Value="July-12-09">
+</Property><Property Name="Time" Value="23:37 PM">
+</Property></Properties><Event ErrorLevel="0" Project="BandObjectLib" Source="BandObjectLib\BandObjectLib.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="BandObjectLib" Source="BandObjectLib\BandObjectLib.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SearchBar" Source="SearchBar\SearchBar.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="SearchBar" Source="SearchBar\SearchBar.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="MyToolbar.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="MyToolbar.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="BandObjectLib" Source="BandObjectLib\BandObjectLib.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="SearchBar" Source="SearchBar\SearchBar.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

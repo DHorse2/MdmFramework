@@ -1,0 +1,10 @@
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Shell1\Mdm1Oss1Shell1\Mdm1Oss1Shell1Base1\bin\Release\Mdm1Oss1Shell1Base1.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Shell1\Mdm1Oss1Shell1\Mdm1Oss1Shell1Base1\bin\Release\Mdm1Oss1Shell1Base1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Shell1\Mdm1Oss1Shell1\Mdm1Oss1Shell1Base1\obj\Release\ResolveAssemblyReference.cache
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Shell1\Mdm1Oss1Shell1\Mdm1Oss1Shell1Base1\obj\Release\Mdm1Oss1Shell1Base1.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Shell1\Mdm1Oss1Shell1\Mdm1Oss1Shell1Base1\obj\Release\Mdm1Oss1Shell1Base1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Shell1\Mdm1Oss1Shell1Base1\bin\Release\Mdm1Oss1Shell1Base1.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Shell1\Mdm1Oss1Shell1Base1\bin\Release\Mdm1Oss1Shell1Base1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Shell1\Mdm1Oss1Shell1Base1\obj\Release\ResolveAssemblyReference.cache
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Shell1\Mdm1Oss1Shell1Base1\obj\Release\Mdm1Oss1Shell1Base1.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Shell1\Mdm1Oss1Shell1Base1\obj\Release\Mdm1Oss1Shell1Base1.pdb

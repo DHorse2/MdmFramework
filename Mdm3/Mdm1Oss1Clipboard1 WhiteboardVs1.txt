@@ -1,0 +1,36 @@
+{ get { return bX; } set { bX = value; } }
+
+			// 
+			// frmNotAreaIcon
+			// 
+        protected class frmNotAreaIcon : RichTextBox
+        {
+			protected string oContextMenu;
+			protected eDisplayMenuOnLeftClick;
+			protected ofrmNotAreaIcon.Icon;
+			protected string sTooltip;
+			protected bool bVisible;
+            frmNotAreaIcon : base
+        {
+        }
+			
+            // protected void ContextMenu{ get { return oContextMenu; } set { oContextMenu = value; } }
+;
+
+            protected DisplayMenuOnLeftClick{ get { return eDisplayMenuOnLeftClick; } set { eDisplayMenuOnLeftClick = value; } }
+;
+			
+            protected frmNotAreaIcon.Icon 
+{
+get { return bX; } set { bX = value; } }
+			
+            protected Tooltip
+{ get { return bX; } set { bX = value; } }
+			
+            protected Visible;
+{ get { return bX; } set { bX = value; } }
+			
+            protected System.EventHandler BalloonClick += new System.EventHandler(this.frmNotAreaIcon_BalloonClick);
+  
+        }
+

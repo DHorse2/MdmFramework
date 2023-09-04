@@ -1,0 +1,76 @@
+        #region MdmStandardRunControlDeclarations
+        // <Section Summary>
+        // <Section Role="Declarations">
+        // <Section Id = "MdmStandardRunControl">
+        // <Section Vs="MdmStdRunVs0_8_8">
+		// MdmStandardRunControlDeclarations MdmStdRunVs0_8_8
+        // <Area Id = "ConsoleCommandActions>
+        public string sCommandLineRequest;
+        public int iCommandLineRequest = 0;
+        // <Area Id = "PrimaryActions">
+        public string sFileActionRequest;
+        public string sPickFileActionRequest;
+        // <Area Id = "MdmStdObject">
+        public Mobject1 omoThisomoLocalMob;
+        // <Area Id = "Console">
+        public string sConsoleCommand;
+        public string sConsoleOutput;
+        public string sConsoleOutputLog = "";
+        public bool bConsoleOn = true;
+        public bool bConsoleToDisc = true;
+        // <Area Id = "Errors">
+        public int iRunErrorNumber = 0;
+        public int iRunShellErrorNumber = 0;
+        public string sLocalErrorMessage = "";
+        // <Area Id = "RunStatusControlFlags">
+        public bool bRunAbort = false;
+        public bool bRunReloop = false;
+        public bool bRunFirst = true;
+        // <Area Id = "InterationStatusControlFlags">
+        public int iInterationCount = 99999;
+        public int iInterationDebugCount = 99999;
+        public bool bInterationAbort = false;
+        public bool bInterationReloop = false;
+        public bool bInterationFirst = true;
+        public int iInterationLoopCounter = 0;
+        // <Area Id = "MethodInterationStatusControlFlags">
+        public bool bMethodInterationAbort = false;
+        public bool bMethodInterationReloop = false;
+        public bool bMethodInterationFirst = true;
+        public int iMethodInterationLoopCounter = 0;
+        // <Area Id = "LocalCallResults">
+        public int iLocalResult;
+        public string sLocalStringResult;
+        public bool bLocalResult;
+        public int iLocalObjectExists;
+        public object oLocalObjectResult;
+        // <Area Id = "ExternalCallResults">
+        int iExternalResult;
+        string ssExternalResult;
+        bool bExternalBoolResult;
+        object oExternalObjectResult;
+        public string sExternalResult;
+        // <Area Id = "ExecutionRun">
+        public string sRunOptions;
+        // <Area Id = "RunStatus">
+        public int iRunStatus = 99999;
+        public const int FUNCTION_ABNORMAL_END = 101;
+        public const int FUNCTION_ATTRIBUTE_OUT_OF_RANGE = 102;
+        public const int METHOD_OBJECT_OK = 0;
+        public const int METHOD_OBJECT_DOES_EXIST = 1;
+        public const int METHOD_OBJECT_DOES_NOT_EXIST = 2;
+        public const int METHOD_OBJECT_SHOULD_NOT_EXIST = 3;
+        public const int METHOD_NAME_OK = 0;
+        public const int METHOD_NAME_DOES_EXIST = 1;
+        public const int METHOD_NAME_DOES_NOT_EXIST = 2;
+        public const int METHOD_NAME_SHOULD_NOT_EXIST = 3;
+        public const int METHOD_NORMAL_END = 0;
+        public const int METHOD_ABNORMAL_END = 1;
+        public const int METHOD_VALID_RESULT = 0;
+        public const int METHOD_INVALID_RESULT = 1;
+        public const int METHOD_START = 0;
+        public const int METHOD_FAILED = 8;
+        public const int METHOD_MDM_OBJECT_CREATION_FAILED = 199;
+        public const int METHOD_MDM_NAME_CREATION_FAILED = 198;
+        // </Section Summary>
+        #endregion

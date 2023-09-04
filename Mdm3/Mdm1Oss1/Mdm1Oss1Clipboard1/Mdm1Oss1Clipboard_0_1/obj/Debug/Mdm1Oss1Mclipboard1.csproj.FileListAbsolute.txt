@@ -1,0 +1,37 @@
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Clipboard1\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Clipboard1\obj\Debug\Interop.AccessibilityCplAdminLib.dll
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Clipboard1\obj\Debug\Mdm1Oss1Mclipboard1.csproj.ResolveComReference.cache
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Clipboard1\obj\Debug\Mdm1Oss1Clipboard1.Properties.Resources.resources
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Clipboard1\obj\Debug\Mdm1Oss1Mclipboard1.csproj.GenerateResource.Cache
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Clipboard1\obj\Debug\Mdm1Oss1Clipboard1.pdb
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Clipboard1\obj\Debug\Mdm1Oss1Clipboard1.exe
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Clipboard1\bin\Debug\Mdm1Oss1Clipboard1.exe.config
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Clipboard1\bin\Debug\Mdm1Oss1Clipboard1.exe
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Clipboard1\bin\Debug\Mdm1Oss1Clipboard1.pdb
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Clipboard1\bin\Debug\Interop.AccessibilityCplAdminLib.dll
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Clipboard1\obj\Debug\Mdm1Oss1Clipboard1.Mclipboard1Form1.resources
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Clipboard1\bin\Debug\Mdm1Oss1Clipboard1.exe
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Clipboard1\bin\Debug\Mdm1Oss1Clipboard1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Clipboard1\bin\Debug\Mdm1Oss1Shell1Base1.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Clipboard1\bin\Debug\Mdm1Oss1Shell1Base1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Clipboard1\bin\Debug\Interop.AccessibilityCplAdminLib.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Clipboard1\obj\Debug\ResolveAssemblyReference.cache
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Clipboard1\obj\Debug\Interop.AccessibilityCplAdminLib.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Clipboard1\obj\Debug\Mdm1Oss1Mclipboard1.csproj.ResolveComReference.cache
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Clipboard1\obj\Debug\Mdm.Oss.ClipboardUtil.Mclipboard1Form1.resources
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Clipboard1\obj\Debug\Mdm.Oss.ClipboardUtil.Properties.Resources.resources
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Clipboard1\obj\Debug\Mdm1Oss1Mclipboard1.csproj.GenerateResource.Cache
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Clipboard1\obj\Debug\Mdm1Oss1Clipboard1.exe
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Clipboard1\obj\Debug\Mdm1Oss1Clipboard1.pdb
+F:\Bu\Srt Project1\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard_0_1\bin\Debug\Mdm1Oss1Clipboard1.exe
+F:\Bu\Srt Project1\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard_0_1\bin\Debug\Mdm1Oss1Clipboard1.pdb
+F:\Bu\Srt Project1\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard_0_1\bin\Debug\Mdm1Oss1Shell1Base1.pdb
+F:\Bu\Srt Project1\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard_0_1\bin\Debug\Interop.AccessibilityCplAdminLib.dll
+F:\Bu\Srt Project1\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard_0_1\obj\Debug\Mdm1Oss1Mclipboard1.csprojResolveAssemblyReference.cache
+F:\Bu\Srt Project1\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard_0_1\obj\Debug\Interop.AccessibilityCplAdminLib.dll
+F:\Bu\Srt Project1\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard_0_1\obj\Debug\Mdm1Oss1Mclipboard1.csproj.ResolveComReference.cache
+F:\Bu\Srt Project1\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard_0_1\obj\Debug\Mdm.Oss.ClipboardUtil.Mclipboard1Form1.resources
+F:\Bu\Srt Project1\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard_0_1\obj\Debug\Mdm.Oss.ClipboardUtil.Properties.Resources.resources
+F:\Bu\Srt Project1\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard_0_1\obj\Debug\Mdm1Oss1Mclipboard1.csproj.GenerateResource.Cache
+F:\Bu\Srt Project1\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard_0_1\obj\Debug\Mdm1Oss1Clipboard1.exe
+F:\Bu\Srt Project1\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Clipboard1\Mdm1Oss1Clipboard_0_1\obj\Debug\Mdm1Oss1Clipboard1.pdb

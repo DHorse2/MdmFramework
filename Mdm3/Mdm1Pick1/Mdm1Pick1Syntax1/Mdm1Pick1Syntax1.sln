@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual C# Express 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mdm1Pick1Syntax1", "Mdm1Pick1Syntax1.csproj", "{42818566-F9A1-4330-AC46-B2AE909F9862}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{42818566-F9A1-4330-AC46-B2AE909F9862}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42818566-F9A1-4330-AC46-B2AE909F9862}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42818566-F9A1-4330-AC46-B2AE909F9862}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42818566-F9A1-4330-AC46-B2AE909F9862}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

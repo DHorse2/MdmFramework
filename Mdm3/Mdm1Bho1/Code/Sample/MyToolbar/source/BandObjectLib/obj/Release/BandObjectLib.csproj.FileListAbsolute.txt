@@ -1,0 +1,6 @@
+C:\Srt Project\Mdm\Mdm1\Mdm1Bho1\MyToolbar\source\BandObjectLib\bin\Release\BandObjectLib.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Bho1\MyToolbar\source\BandObjectLib\bin\Release\Interop.SHDocVw.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Bho1\MyToolbar\source\BandObjectLib\obj\Release\ResolveAssemblyReference.cache
+C:\Srt Project\Mdm\Mdm1\Mdm1Bho1\MyToolbar\source\BandObjectLib\obj\Release\BandObjectLib.BandObject.resources
+C:\Srt Project\Mdm\Mdm1\Mdm1Bho1\MyToolbar\source\BandObjectLib\obj\Release\BandObjectLib.csproj.GenerateResource.Cache
+C:\Srt Project\Mdm\Mdm1\Mdm1Bho1\MyToolbar\source\BandObjectLib\obj\Release\BandObjectLib.dll

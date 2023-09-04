@@ -1,0 +1,70 @@
+        #region ApplicationLogicStatusMessages
+        #region Status Messages
+        private void SetMessage1(int PassedIntResult) {
+            switch (PassedIntResult) {
+                case (OF_RESULT_UNDEFINED):
+                    sMdmProcessStatusText1 = "Null start";
+                    break;
+                case (OF_RESULT_MISSING_NAME):
+                    sMdmProcessStatusText1 = "File must have a value";
+                    break;
+                case (OF_RESULT_DOES_NOT_EXIST):
+                    sMdmProcessStatusText1 = "File not found";
+                    break;
+                case (OF_RESULT_SHOULD_NOT_EXIST):
+                    sMdmProcessStatusText1 = "File already exists";
+                    break;
+                case (FILE_IO_ROW_ID_DOES_NOT_EXIST):
+                    sMdmProcessStatusText1 = "Item Id not found";
+                    break;
+                case (FILE_IO_ROW_ID_DOES_EXIST):
+                    sMdmProcessStatusText1 = "Item Id already exists";
+                    break;
+                default:
+                    sMdmProcessStatusText1 = "Unknown error" + " (" + PassedIntResult + ")";
+                    break;
+            }
+
+        }
+
+        private void SetMessage2(int PassedIntAction, int PassedIntResult, string PassedStringText, string PassedStringPrefix, string PassedStringSuffex) {
+            sMdmProcessStatusText3 = "";
+            if (PassedStringPrefix.Length > 0) {
+                sMdmProcessStatusText3 = PassedStringPrefix;
+            }
+            sMdmProcessStatusText3 += PassedStringText + PassedStringSuffex;
+            if (PassedIntResult != 0) {
+                sMdmProcessStatusText3 += " (" + PassedIntResult + ")";
+            }
+
+            switch (PassedIntAction) {
+                case 99999:
+                    sMdmProcessStatusText2.Insert(1, "Null start");
+                    break;
+                case 1:
+                    if (sMdmProcessStatusText2.Length > 0) {
+                        sMdmProcessStatusText2 += "\n";
+                    }
+                    sMdmProcessStatusText2 += sMdmProcessStatusText3;
+                    break;
+                case 2:
+                    if (sMdmProcessStatusText2.Length > 0) {
+                        sMdmProcessStatusText2 = sMdmProcessStatusText3 + "\n" + sMdmProcessStatusText2;
+                    } else {
+                        sMdmProcessStatusText2 = sMdmProcessStatusText3;
+                    }
+                    break;
+                case 3:
+                    sMdmProcessStatusText2 = sMdmProcessStatusText3;
+                    break;
+                default:
+                    if (sMdmProcessStatusText2.Length > 0) {
+                        sMdmProcessStatusText2 += "\n";
+                    }
+                    sMdmProcessStatusText2 += sMdmProcessStatusText3;
+                    break;
+            }
+            StatusLine2.Text = sMdmProcessStatusText2;
+        }
+        #endregion
+        #endregion

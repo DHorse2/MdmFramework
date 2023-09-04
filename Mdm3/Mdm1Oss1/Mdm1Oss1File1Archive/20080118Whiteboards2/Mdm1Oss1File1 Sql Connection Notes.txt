@@ -1,0 +1,117 @@
+========================================
+
+========================================
+
+========================================
+
+========================================
+
+========================================
+
+========================================
+
+========================================
+
+
+MDMPC10\SQLEXPRESS
+
+c:\Program Files\Microsoft SQL Server\MSSQL.2\MSSQL
+
+<connectionStrings>     
+    <add name="northwndConnectionString" connectionString="Data Source=.\SQLEXPRESS;AttachDbFilename=&quot;C:\SQL Server 2000 Sample Databases\DB\northwnd.mdf&quot;;Integrated Security=True;Connect Timeout=30;User Instance=False" providerName="System.Data.SqlClient"/>  
+</connectionStrings>  
+
+<connectionStrings>     
+    <add name="northwndConnectionString" connectionString="Data Source=.\SQLEXPRESS;AttachDbFilename=&quot;C:\SQL Server 2000 Sample Databases\DB\northwnd.mdf&quot;;Integrated Security=True;Connect Timeout=30;User Instance=False" providerName="System.Data.SqlClient"/>  
+</connectionStrings> 
+
+========================================
+Hi,
+
+The problem is you are using a Windows user for a SQL Authentication. Anyways I will give a step by step procedure this time.
+
+Enabling SQL Authentication
+
+STEP1:
+You need to enable SQL Authentication on the machine. This is complex in SQLExpress and you need to edit the registry. Copy the following lines of text onto a Notepad and save it with extention .REG.
+-------------COPY BELOW---------------------------------
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SQL Server\MSSQL.1\MSSQLServer]
+"LoginMode"=dword:00000002
+-------------COPY TILL THIS---------------------------------
+STEP2: Double Click on the .REG file to change the registry. This change the Authentication Mode to enable SQL Authentication.
+
+STEP3: Restart the SQL Server Express Service or reboot the machine for registry change to take effect.
+
+Next, you need to add a user with SQLLogin. To do this: Login to SQLExpress using Express Manager and run the script below:
+-------------------------------------------
+USE MASTER
+sp_addLogin 'aspuser', 'aspuser@123'
+GO
+sp_addsrvrolemember 'aspuser', 'sysadmin'
+GO
+USE Cartridge
+EXEC sp_adduser 'aspuser'
+-------------------------------------------
+
+In case you want to reduce the privilege for the user then you can specify something other than sysadmin, but we can think of that once this works.
+
+Now change your connection string as follows:
+connectionString = "server=.\\SQLExpress;uid=aspuser;pwd=aspuser@123;database=cartridge;";
+
+Regards,
+Vikram
+
+======================================================
+
+SQLCmd -E -S .\sqlexpress -Q "select @@version"
+
+c:\Program Files\Microsoft SQL Server\MSSQL.2\MSSQL\DATA
+C:\Data\MsSql2005\MsSql2005Data1
+
+======================================================
+Configuring and Managing SQL Server Express
+·	For improved manageability and security, SQL Server 2005 provides more control over the SQL Server surface area on your system. To minimize the surface area, the following default configurations have been applied to your instance of SQL server:
+
+o	TCP/IP connections are disabled
+o	Named Pipes is disabled
+o	SQL Browser must be started manually
+o	OPENROWSET and OPENDATASOURCE have been disabled
+o	CLR integration is disabled
+o	OLE automation is disabled
+o	xp_cmdshell is disabled
+
+======================================================
+
+SQLCmd -E -S .\sqlexpress -Q "select @@version"
+
+c:\Program Files\Microsoft SQL Server\MSSQL.2\MSSQL\DATA
+C:\Data\MsSql2005\MsSql2005Data1
+
+======================================================
+
+"Server=localhost;Database=dbo;Integrated Security=SSPI"
+
+======================================================
+Standard Security
+Data Source=myServerAddress;Initial Catalog=myDataBase;User Id=myUsername;Password=myPassword;
+======================================================
+Standard Security alternative syntax
+This connection string produce the same result as the previous one. The reason to include it is to point out that some connection string keywords have many equivalents. 
+
+Server=myServerAddress;Database=myDataBase;User ID=myUsername;Password=myPassword;Trusted_Connection=False;
+======================================================
+Trusted Connection
+Data Source=myServerAddress;Initial Catalog=myDataBase;Integrated Security=SSPI;
+======================================================
+Trusted Connection alternative syntax
+This connection string produce the same result as the previous one. The reason to include it is to point out that some connection string keywords have many equivalents. 
+Server=myServerAddress;Database=myDataBase;Trusted_Connection=True;
+======================================================
+======================================================
+======================================================
+======================================================
+======================================================
+======================================================
+======================================================

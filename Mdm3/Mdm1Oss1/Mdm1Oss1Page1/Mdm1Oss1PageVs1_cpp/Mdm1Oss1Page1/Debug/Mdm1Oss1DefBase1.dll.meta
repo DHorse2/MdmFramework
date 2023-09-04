@@ -1,0 +1,237 @@
+Assembly Mdm1Oss1DefBase1, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly Mdm1Pick1Syntax1, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=None
+Assembly mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=SHA1, flags=None
+Assembly PresentationFramework, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35: 
+	hash=SHA1, flags=None
+Assembly Mdm1Oss1Decl1, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=None
+Assembly System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=SHA1, flags=None
+Assembly WindowsBase, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35: 
+	hash=SHA1, flags=None
+Class Mdm.Oss.Decl.DefStdBaseRunFileConsole: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Mdm.Pick.PickSyntax
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    StatusLine1MdmTextAddDel StatusLine1MdmTextAdd : Public
+    StatusLine1MdmTextChangedDel StatusLine1MdmTextChanged : Public
+    StatusLine2MdmTextAddDel StatusLine2MdmTextAdd : Public
+    StatusLine2MdmTextChangedDel StatusLine2MdmTextChanged : Public
+    StatusLine3MdmTextAddDel StatusLine3MdmTextAdd : Public
+    StatusLine3MdmTextChangedDel StatusLine3MdmTextChanged : Public
+    StatusLine4MdmTextAddDel StatusLine4MdmTextAdd : Public
+    StatusLine4MdmTextChangedDel StatusLine4MdmTextChanged : Public
+    ConsoleCommandTextMdmTextAddDel ConsoleCommandTextMdmTextAdd : Public
+    PageSizeChangedDoAdjustDel PageSizeChangedDoAdjust : Public
+    System.Windows.Controls.TextBox StatusLine1 : Public
+    Mdm.Oss.Decl.TextBoxManage StatusLine1Manage : Public
+    System.Windows.Controls.TextBox StatusLine2 : Public
+    Mdm.Oss.Decl.TextBoxManage StatusLine2Manage : Public
+    System.Windows.Controls.TextBox StatusLine3 : Public
+    Mdm.Oss.Decl.TextBoxManage StatusLine3Manage : Public
+    System.Windows.Controls.TextBox StatusLine4 : Public
+    Mdm.Oss.Decl.TextBoxManage StatusLine4Manage : Public
+    System.Windows.Controls.TextBox ConsoleCommandText : Public
+    Mdm.Oss.Decl.TextBoxManage ConsoleCommandTextManage : Public
+    System.Windows.Controls.Button StartButtonPressed : Public
+    System.Windows.Controls.Button CancelButtonPressed : Public
+    System.Windows.Controls.Button PauseButtonPressed : Public
+    Boolean PageMainInvalidateVisual : Public
+    Boolean PageMainBringIntoView : Public
+    System.Windows.Controls.ProgressBar ProgressBarMdm1 : Public
+    Int64 TraceMdmIncrementResult : Public
+    Int64 TraceMdmBasicResult : Public
+    Int64 TraceMdmPointResult : Public
+    Boolean XUomUrvvXvCreateNow : Public
+    Boolean XUomClvvXvCreateNow : Public
+    System.IO.TextWriter ocotConsoleWriter : Public
+    System.IO.TextReader ocitConsoleReader : Public
+    System.IO.StreamWriter ocoConsoleWriter : Public
+    System.IO.StreamReader ociConsoleReader : Public
+    System.IO.IOException eIoe : Public
+    System.IO.TextWriter ocetErrorWriter : Public
+    Int64 ConsoleOpenResult : Public
+    Int64 ConsoleCloseResult : Public
+    Int64 ConsoleReadResult : Public
+    Int64 ConsoleWriteResult : Public
+    MessageMdmSendToPageNewLineSetDel MessageMdmSendToPageNewLineSet : Public
+    MessageMdmSendToPageNewLineDel MessageMdmSendToPageNewLine : Public
+    MessageMdmSendToPageDel MessageMdmSendToPage : Public
+  Events:
+    MessageMdmSendToPageAEventHandler MessageMdmSendToPageA: 
+  Methods:
+    TraceMdmCounterLevel1GetDefault(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    TraceMdmCounterLevel2GetDefault(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    TraceMdmDoIncrement(String): PrivateScope, Public, HideBySig
+    TraceMdmDoBasic(String): PrivateScope, Public, HideBySig
+    TraceMdmDo(Object&, Boolean, Int32, Int32, Int64, Boolean, Int32, Int32, Boolean, Int32, String): PrivateScope, Public, HideBySig
+    TraceMdmDoPrintMultiLine(Object&, String, String): PrivateScope, Public, HideBySig
+    TraceMdmDoPrint(Object&): PrivateScope, Public, HideBySig
+    TraceMdmDoCall(): PrivateScope, Public, HideBySig
+    RunPauseCheck(): PrivateScope, Public, HideBySig
+    ConsoleMdmInitialize(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ConsoleVerbositySet(Int32): PrivateScope, Public, HideBySig
+    ConsoleMdmPickOpenImpl(): PrivateScope, Public, HideBySig
+    ConsoleMdmPickCloseImpl(): PrivateScope, Public, HideBySig
+    ConsoleMdmPickDisplayImpl(String): PrivateScope, Public, HideBySig
+    ConsoleMdmStd_IoOpenImpl(): PrivateScope, Public, HideBySig
+    ConsoleMdmStd_IoReadImpl(Int32): PrivateScope, Public, HideBySig
+    ConsoleMdmStd_IoWriteImpl(String): PrivateScope, Public, HideBySig
+    ConsoleMdmStd_IoCloseImpl(): PrivateScope, Public, HideBySig
+    PrintOutputMdm_PickPrint_TargetValidate(String): PrivateScope, Public, HideBySig
+    PrintOutputMdm_PickPrint(Object&, Int32, Boolean, String): PrivateScope, Public, HideBySig
+    PrintOutputMdm_PickPrint(Object&, Int32, String, Boolean): PrivateScope, Public, HideBySig
+    PrintOutputMdm_PickPrint(Object&, Int32, String): PrivateScope, Public, HideBySig
+    PrintOutputMdm_PickPositionImpl(Int32, String, Boolean, Int32, Int32): PrivateScope, Public, HideBySig
+    PrintOutputMdm_PickPositionImpl(Int32, Boolean, Int32, Int32, String): PrivateScope, Public, HideBySig
+    PrintOutputMdm_PickPositionImpl(Int32, Boolean, Int32, Int32): PrivateScope, Public, HideBySig
+    PrintOutputMdm_PickPositionImpl(Int32, Boolean, Int32): PrivateScope, Public, HideBySig
+    add_MessageMdmSendToPageA(MessageMdmSendToPageAEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_MessageMdmSendToPageA(MessageMdmSendToPageAEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    MessageMdmSendToPageOnA(MessageMdmSendToPageArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    MessageMdmSendToPageTestIt(): PrivateScope, Public, HideBySig
+    MessageMdmSendToPageNewLineSetImpl(Object&, MessageMdmSendToPageArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    MessageMdmSendToPageNewLineSetImpl(Object&, String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    MessageMdmSendToPageNewLineImpl(Object&, String, Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    MessageMdmSendToPageImpl(Object&, String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Mdm.Oss.Decl.DefStdBaseRunFileConsole+StatusLine1MdmTextAddDel: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object&, String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object&, String, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(Object&, IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Mdm.Oss.Decl.DefStdBaseRunFileConsole+StatusLine1MdmTextChangedDel: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object&, String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object&, String, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(Object&, IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Mdm.Oss.Decl.DefStdBaseRunFileConsole+StatusLine2MdmTextAddDel: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object&, String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object&, String, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(Object&, IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Mdm.Oss.Decl.DefStdBaseRunFileConsole+StatusLine2MdmTextChangedDel: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object&, String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object&, String, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(Object&, IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Mdm.Oss.Decl.DefStdBaseRunFileConsole+StatusLine3MdmTextAddDel: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object&, String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object&, String, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(Object&, IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Mdm.Oss.Decl.DefStdBaseRunFileConsole+StatusLine3MdmTextChangedDel: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object&, String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object&, String, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(Object&, IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Mdm.Oss.Decl.DefStdBaseRunFileConsole+StatusLine4MdmTextAddDel: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object&, String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object&, String, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(Object&, IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Mdm.Oss.Decl.DefStdBaseRunFileConsole+StatusLine4MdmTextChangedDel: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object&, String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object&, String, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(Object&, IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Mdm.Oss.Decl.DefStdBaseRunFileConsole+ConsoleCommandTextMdmTextAddDel: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object&, String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object&, String, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(Object&, IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Mdm.Oss.Decl.DefStdBaseRunFileConsole+PageSizeChangedDoAdjustDel: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object&, TextBoxManage, TextBox, Double, Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object&, TextBoxManage, TextBox, Double, Double, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(Object&, IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Struct Mdm.Oss.Decl.DefStdBaseRunFileConsole+TraceConsoleFlags: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+    Void .ctor(Int64): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Mdm.Oss.Decl.DefStdBaseRunFileConsole+MessageDetailsMdm: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Mdm.Oss.Decl.DefStdBaseRunFileConsole+MessageMdmSendToPageAEventHandler: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, MessageMdmSendToPageArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, MessageMdmSendToPageArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Mdm.Oss.Decl.DefStdBaseRunFileConsole+MessageMdmSendToPageNewLineDel: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object&, String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object&, String, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(Object&, IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Mdm.Oss.Decl.DefStdBaseRunFileConsole+MessageMdmSendToPageNewLineSetDel: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object&, String, Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object&, String, Boolean, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(Object&, IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Mdm.Oss.Decl.DefStdBaseRunFileConsole+MessageMdmSendToPageDel: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object&, String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object&, String, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(Object&, IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Mdm.Oss.Decl.MessageMdmSendToPageArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.EventArgs
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String MessageToPage 'get set' : 
+    Boolean NewLine 'get set' : 
+    System.String MessageFrom 'get set' : 
+    System.String MessageTo 'get set' : 
+    Int32 Indent 'get set' : 
+    Int32 ErrorLevel 'get set' : 
+    System.String RunAction 'get set' : 
+    Int32 Line 'get set' : 
+    Int32 Column 'get set' : 
+    System.String Etc 'get set' : 
+  Methods:
+    get_MessageToPage(): PrivateScope, Public, HideBySig, SpecialName
+    set_MessageToPage(String): PrivateScope, Public, HideBySig, SpecialName
+    get_NewLine(): PrivateScope, Public, HideBySig, SpecialName
+    set_NewLine(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_MessageFrom(): PrivateScope, Public, HideBySig, SpecialName
+    set_MessageFrom(String): PrivateScope, Public, HideBySig, SpecialName
+    get_MessageTo(): PrivateScope, Public, HideBySig, SpecialName
+    set_MessageTo(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Indent(): PrivateScope, Public, HideBySig, SpecialName
+    set_Indent(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_ErrorLevel(): PrivateScope, Public, HideBySig, SpecialName
+    set_ErrorLevel(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_RunAction(): PrivateScope, Public, HideBySig, SpecialName
+    set_RunAction(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Line(): PrivateScope, Public, HideBySig, SpecialName
+    set_Line(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Column(): PrivateScope, Public, HideBySig, SpecialName
+    set_Column(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Etc(): PrivateScope, Public, HideBySig, SpecialName
+    set_Etc(String): PrivateScope, Public, HideBySig, SpecialName

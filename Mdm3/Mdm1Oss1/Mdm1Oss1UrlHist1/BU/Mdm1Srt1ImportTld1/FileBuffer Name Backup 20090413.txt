@@ -1,0 +1,33 @@
+        // BUFFER
+        #region FileBuffer
+        #region FileBuffer Name
+        public string sFileBufferFileName = "";
+        #endregion
+        #region FileBuffer Buffer
+        public string sFileBufferLineBuffer;
+        public string sFileBufferNewItem;
+        // internal string[] sFileBufferNewItem;     //  sNewItem=""
+        // internal string[] sFileItemData;      //  ofIfo.sFileItemData=""
+        #endregion
+        #region FileInputBufferIndexs Set
+        // FileBufferFields
+        public int iFileBufferBytesRead = 0;
+        public string sFileBuffer = "";
+        public string sFileBufferCurrent = "";
+        public int sFileBufferCharactersFound = 0;
+        // Attribute
+        public int iFileBufferAttributeIndex = 1;
+        public int iFileBufferAttributeMaxIndex = 0;
+        public int iFileBufferAttributeCounter = 0;
+        public int iFileBufferAttributeItemEofIndex = 0;
+        #endregion
+        #region FileBuffer Control Flags
+        public bool bFileBufferReadFileIsAtEnd = false;
+        public int iFileBufferReadFileCounter = 0;
+        public bool bFileBufferFileItemIsAtEnd = false;
+        public bool bFileBufferHasCharacters = false;
+        public bool bFileBufferReadFileError = false;
+        public string sFileBufferConvertableFileItem = "";
+        public int iFileBufferItemConvertFlag = 0;
+
+        #endregion

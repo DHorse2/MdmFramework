@@ -1,0 +1,122 @@
+        #region MdmClassTemporaryDeclarations
+        // <Section Summary>
+        // <Section Role="Declarations">
+        // <Section Id = "MdmClassTemporaryDeclarations">
+        // <Section Vs="MdmTempVarVs0_8_5">
+        // MdmClassTemporaryDeclarations MdmTempVarVs0_8_5
+        // <Area Id = "Data">
+        protected string sTempDataImport = "";
+        protected string sTempData = "";
+        // <Area Id = "Counters">
+        protected int iTempCounter = 0;
+        private int iCharCounter = 0;
+		// <Area Id = "Arrays">
+		// see Mobject Infrastructure Layer.
+		// protected bool b
+		// protected int i
+		// protected string s
+        // <Area Id = "Integers">
+        protected int iTemp = 0;
+        protected int iTemp0 = 0;
+        protected int iTemp1 = 0;
+        protected int iTemp2 = 0;
+        protected int iTemp3 = 0;
+        protected int iTemp4 = 0;
+        protected int iTemp5 = 0;
+        protected int iTemp6 = 0;
+        protected int iTemp7 = 0;
+        protected int iTemp8 = 0;
+        protected int iTemp9 = 0;
+        protected int iTempA = 0;
+        protected int iTempB = 0;
+        protected int iTempC = 0;
+        protected int iTempD = 0;
+        protected int iTempE = 0;
+        protected int iTempF = 0;
+        // <Area Id = "Strings">
+        protected string sTemp = "";
+        protected string sTemp0 = "";
+        protected string sTemp1 = "";
+        protected string sTemp2 = "";
+        protected string sTemp3 = "";
+        protected string sTemp4 = "";
+        protected string sTemp5 = "";
+        protected string sTemp6 = "";
+        protected string sTemp7 = "";
+        protected string sTemp8 = "";
+        protected string sTemp9 = "";
+        protected string sTempA = "";
+        protected string sTempB = "";
+        protected string sTempC = "";
+        protected string sTempD = "";
+        protected string sTempE = "";
+        protected string sTempF = "";
+        private string sCurrentString = "";
+        // <Area Id = "Printer">
+        // <Area Id = "ProgessDisplayControl">
+        protected int iPickPrinterRouting = 14;
+        const int PICK_PRINTER_ON = 11;
+        const int PICK_PRINT_TO_FILE = 12;
+        const int PICK_PRINT_TO_DISPLAY = 13;
+        const int PICK_PRINT_TO_CONSOLE = 14;
+        // <Area Id = "Head, Footer, Status Line, TextBox">
+        // <Area Id = "DisplayOutput">
+        protected bool bPickDisplayNewLine = false;
+        protected int iPickDisplayLineNumber = 0;
+        protected int iPickDisplayColumn = 0;
+        protected int iPickDisplayRow = 0;
+        // <Area Id = "PrinterOutput">
+        protected bool bPickPrinterNewLine = false;
+        protected int iPickPrinterColumnCounter = 0;
+        protected int iPickPrinterRowCounter = 0;
+        protected int iPickPrinterColumn = 0;
+        protected int iPickPrinterRow = 0;
+        // <Area Id = "ConsoleOutput">
+        protected bool bPickConsoleNewLine = false;
+        protected int iPickConsoleColumnCounter = 0;
+        protected int iPickConsoleRowCounter = 0;
+        // <Area Id = "Input">
+        protected bool bPromptNewLine = false;
+        protected string sPromptChar = @"?";
+        protected string sPromptText = @"";
+        protected int iPromptRow = 23;
+        protected int iPromptColumn = 1;
+        protected string sPromptResponse = @"";
+        protected string sPromptDefaultResponse = @"";
+        // <Area Id = "SystemStandardFunctionsCharacterConstants">
+        // <Area Id = "AsciiDelimiters">
+        protected string cbCrLf = ((char)13).ToString() + ((char)10).ToString();
+        string cbCr = ((char)13).ToString();
+        string cbLf = ((char)10).ToString();
+        string cbEof = ((char)26).ToString();
+        // string cbEot =  ((char)26).ToString();
+        // <Area Id = "PickDelimeters">
+        // string cbSm =  ((char)255).ToString();
+        string cbAm = ((char)254).ToString();
+        string cbVm = ((char)253).ToString();
+        string cbSvm = ((char)252).ToString();
+        string cbLvm = "*";
+        string cbLsvm = "@";
+        // <Area Id = "SpecialAsciiCharacters">
+        string cbsTld = "~";
+        string cbAsterisk = "*";
+        string cbStick = "|";
+        string cbBackSlash = @"\";
+        string cbForwardSlash = @"/";
+        string cbAtSymbol = @"@";
+        // <Area Id = "WhiteSpaceCharacters">
+        string cbFf = ((char)12).ToString();
+        string cbBs = ((char)08).ToString();
+        string cbSp = ((char)20).ToString();
+        // cbTab ; Horizontal Tab
+        // cbVtab ; Vertical Tab
+        // <Area Id = "Null">
+        string cbNull = ((char)00).ToString();
+        // <Area Id = "StatusVerboseConstants">
+        // <Area Id = "SystemCallFunctionConstants">
+        protected int iPickSystemCommand = -1;
+        const int SYSTEM_COMMAND_LINE = 0;
+        const int SYSTEM_SLEEP = 11;
+        const int SYSTEM_TYPEAHEAD_CHARACTERS = 14;
+        // </Section Summary>
+        #endregion

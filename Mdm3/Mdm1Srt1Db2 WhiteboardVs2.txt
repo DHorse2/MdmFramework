@@ -1,0 +1,50 @@
+SqlDataReader Class
+SqlDataReader Members
+
+Properties
+
+Methods
+==============
+Close Method
+GetBoolean Method
+GetByte Method
+GetBytes Method
+GetChar Method
+GetChars Method
+GetData Method
+GetDataTypeName Method
+GetDateTime Method
+GetDecimal Method
+GetDouble Method
+GetFieldType Method
+GetFloat Method
+GetGuid Method
+GetInt16 Method
+GetInt32 Method
+GetInt64 Method
+GetName Method
+GetOrdinal Method
+GetSchemaTable Method
+GetSqlBinary Method
+GetSqlBoolean Method
+GetSqlByte Method
+GetSqlDateTime Method
+GetSqlDecimal Method
+GetSqlDouble Method
+GetSqlGuid Method
+GetSqlInt16 Method
+GetSqlInt32 Method
+GetSqlInt64 Method
+GetSqlMoney Method
+GetSqlSingle Method
+GetSqlString Method
+GetSqlValue Method
+GetSqlValues Method
+GetString Method
+GetValue Method
+GetValues Method
+IDisposable.Dispose Method
+IEnumerable.GetEnumerator Method
+IsDBNull Method
+NextResult Method
+Read Method

@@ -1,0 +1,7 @@
+; wrapmscoree.def : Declares the module parameters.
+
+LIBRARY      "wrapmscoree.DLL"
+
+EXPORTS
+	DllCanUnloadNow     @1 PRIVATE
+	DllGetClassObject   @2 PRIVATE

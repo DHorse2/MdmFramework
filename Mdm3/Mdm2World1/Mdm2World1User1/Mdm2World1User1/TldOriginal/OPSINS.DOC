@@ -1,0 +1,357 @@
+*PROGRAM: OPSYS.INST
+*
+* Removes *%%???%%= labels based on the operting system parameter entered.
+*
+* AUTHOR: DAVID G. HORSMAN
+* COMPANY: AXION COMPUTER SYSTEMS
+* COMPANY: MACROSCOPE DESIGN MATRIX
+*
+* COPYRIGHT: (C) 1995 MACROSCOPE DESIGN MATRIX
+*            ALL RIGHTS RESERVED
+*
+* Start of INCLUDE IBP STANDARD.FUNCTIONS
+*CODE.SEGMENT: STANDARD.FUNCTIONS.SUBR
+
+* WARNING: STANDARD.FUNCTIONS is to be INCLUDED in programs only.
+*          Subroutines INCLUDE the code segment STANDARD.FUNCTIONS.SUBR
+*          Device Control Subroutines INCLUDE STANDARD.FUNCTIONS.DVC
+*
+*          The .DVC routine was designed for communications
+*           and printer sub-routine calls.
+*
+*          The .SUBR extension is now used in all called sub-routines.
+*
+*          One difference between the three code segments
+*           being .DVC and .SUBR do not output screen escape
+*           sequences. They also expect system controls and
+*           screen escape sequences to be passed unchanged
+*           either in the CALL or thru COMMON area.
+*
+*          It is especially important to use the .DVC version when
+*          working with programs in Axion's K-bil Sub-Applications such as
+*             - Counter Cash
+*             - Addressable Interface
+*             - Work Order Printing
+*             - EFT Communication Programs
+*             - Genie (by its open structure)
+*
+*          And Utility Routines such as
+*              -Communications
+*              -Auxilary Port Handling/Printing
+*              -Menus
+*              -Screen Handling
+*              -Functions like Unpack Number, Lock.Item, MOD11.DIGIT
+*
+*
+*
+! Standard characters
+*
+*%%MDD%%=**
+EMPTY = ""; ZERO = 0; ONE = 1; TWO = 2
+FALSE = ""; TRUE = 1; STAT = ""
+BELL = CHAR(7); LF = CHAR(10); FF = CHAR(12); CR = CHAR(13)
+SVM = CHAR(252); VM = CHAR(253); AM = CHAR(254); ESC = CHAR(27)
+*
+! Screen Escape Sequences
+*
+RVB = EMPTY; RVE = EMPTY; RVH = EMPTY
+CLL = EMPTY; CLS = EMPTY; CLB = EMPTY
+AUX.ON = EMPTY; AUX.OFF = EMPTY
+COL.ON = EMPTY; COL.OFF = EMPTY
+CLB0 = EMPTY; CLB1 = EMPTY; CLB2 = EMPTY; CLB3 = EMPTY; * 20,21,22,23
+*
+! System Information
+*
+WHO = ICONV(0,"U50BB"); * ULT ONLY
+* WHO = @USER0; * REV ONLY
+PORT = (FIELD(WHO," ",ONE)+1000)[TWO,3]; ACCT = FIELD(WHO," ",TWO)
+OPSYS = "U"; * ULT ONLY
+* OPSYS = "P"; PCK ONLY
+* OPSYS = "R"; * REV ONLY
+*%%MDD%%=OPSYS = "M"; * MDD ONLY
+TT = SYSTEM(7); * INST SUPP; * ULT ONLY
+* TT = EMPTY; * REV ONLY
+PT = EMPTY; AT = EMPTY
+*
+! Software Control
+*
+* RSP = EMPTY; RSPBUF = EMPTY; * SUBR
+* SUBR
+GENERIC = FALSE; * ULT ONLY
+* SUBR
+* GENERIC = FIELD(@USER0," ",3); * REV ONLY
+* TYPE.RUN = "S"; AUTO.RUN = EMPTY; PHAN.RUN = EMPTY; * SUBR
+* DISP.ONLY = EMPTY; REDISP = EMPTY; * SUBR
+* TRC = EMPTY; TM.MAX = 0; * SUBR
+* PROCBUF = EMPTY; RSPLOG = EMPTY; * SUBR
+*
+! Screen Attributes
+*
+CLS = @(-3); CLL = @(-4); PROMPT CHAR(0)
+IF GENERIC THEN
+CLB = @(ZERO,23); CLB0 = @(ZERO,20); CLB1 = @(ZERO,21); CLB2 = @(ZERO,22); CLB3 = @(ZERO,23)
+END ELSE
+CLB = @(ZERO,23):CLL; CLB0 = @(ZERO,20):CLL; CLB1 = @(ZERO,21):CLL; CLB2 = @(ZERO,22):CLL; CLB3 = @(ZERO,23):CLL
+END
+*
+BEGIN CASE
+*
+CASE OPSYS EQ "R"
+RVB = CHAR(27):"00"; RVE = CHAR(27):"0A"; RVH = CHAR(27):"01"
+AUX.ON = EMPTY; AUX.OFF = EMPTY
+*
+CASE TT EQ "D"; RVB = CHAR(27):"[7m"; RVE = CHAR(27):"[0m"; RVH = CHAR(27):"[1;7m"; AUX.ON = CHAR(27):"[5i"; AUX.OFF = CHAR(27):"[4i"
+*
+CASE TT EQ "R" AND OPSYS EQ "M"
+RVB = CHAR(27):"0P":CHAR(0):CHAR(14); RVE = CHAR(15); RVH = RVB; AUX.ON = CHAR(18):CHAR(27):"3"; AUX.OFF = CHAR(20):CHAR(27):"4"
+CLL = CHAR(27):"K"; CLS = CHAR(27):"k"
+*
+CASE TT EQ "R"
+RVB = CHAR(14); RVE = CHAR(15); RVH = RVB; AUX.ON = CHAR(0):CHAR(0):CHAR(0):CHAR(0):CHAR(18):CHAR(0):CHAR(0):CHAR(0):CHAR(0):CHAR(27):3; AUX.OFF = CHAR(0):CHAR(0):CHAR(0):CHAR(0):CHAR(20):CHAR(0):CHAR(0):CHAR(0):CHAR(0):CHAR(27):4
+* SUBR
+* IF NOT(SYSTEM(1)) THEN PRINT CHAR(27):"0Q":; * ULT ONLY
+*
+CASE TT EQ "U"; RVB = CHAR(14); RVE = CHAR(15); RVH = RVB; AUX.ON = EMPTY; AUX.OFF = EMPTY
+*
+CASE TT EQ "P"; RVB = CHAR(133); RVE = CHAR(128); RVH = CHAR(133); AUX.ON = CHAR(27):"R"; AUX.OFF = CHAR(27):"T"
+CLL = CHAR(27):"K"; CLS = CHAR(27):"J"
+*
+CASE TT EQ "p"; RVB = CHAR(0); RVE = CHAR(0); RVH = CHAR(0); AUX.ON = CHAR(27):"R"; AUX.OFF = CHAR(27):"T"
+CLL = CHAR(27):"K"; CLS = CHAR(27):"J"
+*
+CASE TT EQ "E"
+RVB = CHAR(27):"4":CHAR(14); RVE = CHAR(15); RVH = RVB; AUX.ON = CHAR(18):CHAR(27):"3"; AUX.OFF = CHAR(20):CHAR(27):"4"
+CLL = CHAR(27):"K"; CLS = CHAR(27):"k"
+*
+CASE TT EQ "H"
+RVB = CHAR(27):CHAR(48):"P"; RVE = CHAR(27):CHAR(48):"@"; RVH = CHAR(27):CHAR(48):"Q"
+AUX.ON = CHAR(27):CHAR(42):CHAR(0); AUX.OFF = CHAR(27):CHAR(63):CHAR(0)
+CLL = CHAR(15); CLS = CHAR(23)
+*
+CASE TRUE; RVB = EMPTY; RVE = EMPTY; RVH = EMPTY; AUX.ON = EMPTY; AUX.OFF = EMPTY
+END CASE
+*
+! Software Location Information
+*
+SYS.SYST = EMPTY; SYS.APPL = EMPTY; SYS.APPL.SUB = EMPTY
+* SYS.PROG = EMPTY; SYS.LOCT = EMPTY; SYS.LOCT.SUB = EMPTY
+SYS.ID = EMPTY ; REL.ID = EMPTY ; VER.ID = EMPTY
+*
+! SUBROUTINE INPUT.DATA.SG1(
+*
+* FILE.NAME = EMPTY; ITEM.NAME = EMPTY; ITEM = EMPTY
+* CL = EMPTY; LN = EMPTY; LH = EMPTY; LHM = EMPTY
+* LOCN = EMPTY; CONV = EMPTY; EDITS = EMPTY; EDIT.FILE = EMPTY
+* SEC.USER.ID = EMPTY; CURSOR.KEYS = EMPTY
+* NUMC = EMPTY; FIXED = EMPTY; DEF.SUPP = EMPTY; TC.FUNC = EMPTY
+* RSP.CL = EMPTY; RSP.LN = EMPTY; TC.FILL = EMPTY
+* STD.SUBR.NAME = EMPTY
+* )
+*
+! Temporary & Other
+*
+* PG = EMPTY; LINE = EMPTY; TEXT = EMPTY; TMP = EMPTY
+* DT = EMPTY; TM = EMPTY
+* CN = EMPTY; LOC = EMPTY
+* MAX = EMPTY
+*
+* End of include
+*
+OPEN "LST" TO LISTS.FILE ELSE STOP
+OPEN "SYS" TO SYS.FILE ELSE STOP
+*
+READ TERM.DISP FROM SYS.FILE,"TERMINAL.DISPLAY" ELSE TERM.DISP = TRUE
+*
+PROC.FL = TRUE
+* PROCREAD PROC.BUFFER ELSE PROC.FL = FALSE; PROC.BUFFER = EMPTY
+PROC.FL = FALSE; PROC.BUFFER = EMPTY
+*
+PRINT
+PRINT "Enter Autorun Flag: ":
+INPUT AUTO.RUN:
+PRINT
+PRINT "Auto.run: ":AUTO.RUN
+*
+PRINT
+PRINT "Enter Run Type: ":
+INPUT TYPE.RUN:
+PRINT
+PRINT "Type.run: ":TYPE.RUN
+*
+PRINT
+* 0 - READNEXT OR INPUT
+* 1 - READNEXT ONLY
+* 2 - INPUT ONLY
+* 3 - INPUT ONE ITEM ONLY
+*
+PRINT "Enter Operating System Type: ":
+INPUT OPSYS.TYPE:
+PRINT
+PRINT "Opsys.Type: ":OPSYS.TYPE
+*
+PRINT
+PRINT "Enter Input File Name: ":
+INPUT ITM.FILE.NAME:
+PRINT
+PRINT "Itm.File.Name: ":ITM.FILE.NAME
+*
+PRINT
+PRINT "Enter Output File Name: ":
+INPUT OUT.FILE.NAME:
+PRINT
+PRINT "Out.File.Name: ":OUT.FILE.NAME
+*
+PRINT
+*
+OPEN ITM.FILE.NAME TO ITM.FILE ELSE
+PRINT
+PRINT ITM.FILE.NAME:" file is missing!!!":BELL:
+PRINT
+STOP
+END
+*
+OPEN OUT.FILE.NAME TO OUT.FILE ELSE
+PRINT
+PRINT OUT.FILE.NAME:" file is missing!!!":BELL:
+PRINT
+STOP
+END
+*
+*
+!
+! MAIN LOOP
+*
+CONT = TRUE; PROC.CONT = TRUE
+OPSYS.TYPE = EMPTY
+PRINT
+*
+! Loop to input operating system type
+*
+IF OPSYS.TYPE EQ EMPTY THEN
+*
+READ OPSYS.TYPE FROM SYS.FILE,"OPSYS" ELSE
+*
+IF NOT(PROC.FL) THEN
+PRINT "Enter the operating system code (xxx): ":
+END
+*
+LOOP
+*
+INPUT OPSYS.TYPE:
+IF OPSYS.TYPE EQ "KILL" THEN STOP
+IF OPSYS.TYPE EQ EMPTY THEN CONT = FALSE; OPSYS.TYPE = "@@@"
+*
+BEGIN CASE
+*
+CASE OPSYS.TYPE EQ "STD"; CONT = FALSE; * Standard Code Version
+CASE OPSYS.TYPE EQ "ULT"; CONT = FALSE; * Ultimate 1000/2000
+CASE OPSYS.TYPE EQ "MDD"; CONT = FALSE; * McDonnel Douglas / Novadine
+CASE OPSYS.TYPE EQ "REV"; CONT = FALSE; * Revelation G2B
+CASE OPSYS.TYPE EQ "PCK"; CONT = FALSE; * Advanced PICK for DOS
+CASE OPSYS.TYPE EQ "ARV"; CONT = FALSE; * Advanced Revelation
+CASE OPSYS.TYPE EQ "UNX"; CONT = FALSE; * Unix
+CASE OPSYS.TYPE EQ "VMK"; CONT = FALSE; * VMark Unix
+CASE OPSYS.TYPE EQ "SCO"; CONT = FALSE; * SCO Unix
+CASE OPSYS.TYPE EQ "NAT"; CONT = FALSE; * PICK Native
+CASE OPSYS.TYPE EQ "REA"; CONT = FALSE; * Old MDD Reality systems
+*
+END CASE
+*
+WHILE CONT DO
+PRINT; PRINT "Invalid type, please re-enter: ":
+REPEAT
+*
+*
+IF OPSYS.TYPE NE "@@@" THEN
+*
+READ TMP FROM SYS.FILE,"OPSYS.TYPE.OLD" ELSE
+WRITE OPSYS.TYPE ON SYS.FILE,"OPSYS.TYPE.OLD"
+END
+*
+WRITE OPSYS.TYPE ON SYS.FILE,"OPSYS.TYPE"
+*
+END; * of @@@
+*
+END; * of read opsys.type
+*
+END; * of opsys.type empty
+*
+*
+! Apply operating system to file item(s)
+*
+CONT = TRUE; FIRST = TRUE; LST.OK = TRUE
+IF TYPE.RUN GE TWO THEN LST.OK = FALSE
+STR.LEN = 3 + LEN(OPSYS.TYPE) + 3
+*
+LOOP
+*
+IF FIRST OR TYPE.RUN LT 3 THEN
+*
+IF LST.OK THEN
+**READNEXT ITM.ID FROM ITM.FILE ELSE ITM.ID = "@@@"; LST.OK = FALSE
+READNEXT ITM.ID ELSE ITM.ID = "@@@"; LST.OK = FALSE
+END ELSE ITM.ID = "@@@"
+*
+IF ITM.ID EQ "@@@" AND TYPE.RUN NE 1 THEN
+PRINT
+PRINT "Enter Item ID: ":
+INPUT ITM.ID:
+IF ITM.ID EQ "KILL" THEN STOP
+IF ITM.ID EQ EMPTY THEN ITM.ID = "@@@"
+END
+*
+END ELSE ITM.ID = "@@@"
+*
+IF ITM.ID EQ "@@@" THEN CONT = FALSE
+*
+WHILE CONT DO
+*
+!
+*
+FIRST = FALSE
+FOUND = FALSE
+********************
+*
+READ ITM FROM ITM.FILE,ITM.ID ELSE GOTO NEXT.ITEM
+PRINT
+PRINT STR("*",40)
+PRINT ITM.FILE.NAME:" ":ITM.ID
+PRINT
+*
+LINE1 = ITM<1>
+IF LINE1[1,9] EQ "* PROGRAM" THEN
+LINE1 = "*":LINE1[3,999]
+ITM<1> = LINE1
+END
+*
+!
+*
+LOOP
+OPSYS.LOCN = INDEX(ITM,"*%%":OPSYS.TYPE:"%%",1)
+WHILE OPSYS.LOCN DO
+*
+TMP = DCOUNT(ITM[1,OPSYS.LOCN],AM)
+PRINT TMP "R#4":" ":ITM<TMP> "L#74"
+*
+ITM = ITM[1,OPSYS.LOCN-1]:ITM[OPSYS.LOCN+STR.LEN,99999]
+FOUND = TRUE
+PRINT TMP "R#4":" ":ITM<TMP> "L#74"
+*
+REPEAT
+*
+*
+* IF FOUND THEN
+WRITE ITM ON OUT.FILE,ITM.ID
+* END
+*
+NEXT.ITEM: ****
+*
+********************
+*
+*
+REPEAT
+STOP
+*
+*
+END
+

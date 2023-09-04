@@ -1,0 +1,7 @@
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Shell1\bin\Debug\Mdm1Oss1Shell1.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Shell1\bin\Debug\Mdm1Oss1Shell1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Shell1\bin\Debug\Mdm1Oss1Shell1Base1.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Shell1\bin\Debug\Mdm1Oss1Shell1Base1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Shell1\obj\Debug\ResolveAssemblyReference.cache
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Shell1\obj\Debug\Mdm1Oss1Shell1.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Shell1\obj\Debug\Mdm1Oss1Shell1.pdb

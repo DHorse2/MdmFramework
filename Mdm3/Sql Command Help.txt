@@ -1,0 +1,88 @@
+Microsoft Windows [Version 6.0.6001]
+Copyright (c) 2006 Microsoft Corporation.  All rights reserved.
+
+C:\Windows\system32>sqlps /?
+
+Unhandled Exception: System.IO.FileNotFoundException: Could not load file or ass
+embly 'System.Management.Automation, Version=1.0.0.0, Culture=neutral, PublicKey
+Token=31bf3856ad364e35' or one of its dependencies. The system cannot find the f
+ile specified.
+File name: 'System.Management.Automation, Version=1.0.0.0, Culture=neutral, Publ
+icKeyToken=31bf3856ad364e35'
+
+===============================================
+C:\Windows\system32>sqlcmd /?
+Microsoft (R) SQL Server Command Line Tool
+Version 10.0.1600.22 NT INTEL X86
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+usage: Sqlcmd            [-U login id]          [-P password]
+  [-S server]            [-H hostname]          [-E trusted connection]
+  [-d use database name] [-l login timeout]     [-t query timeout]
+  [-h headers]           [-s colseparator]      [-w screen width]
+  [-a packetsize]        [-e echo input]        [-I Enable Quoted Identifiers]
+  [-c cmdend]            [-L[c] list servers[clean output]]
+  [-q "cmdline query"]   [-Q "cmdline query" and exit]
+  [-m errorlevel]        [-V severitylevel]     [-W remove trailing spaces]
+  [-u unicode output]    [-r[0|1] msgs to stderr]
+  [-i inputfile]         [-o outputfile]        [-z new password]
+  [-f <codepage> | i:<codepage>[,o:<codepage>]] [-Z new password and exit]
+  [-k[1|2] remove[replace] control characters]
+  [-y variable length type display width]
+  [-Y fixed length type display width]
+  [-p[1] print statistics[colon format]]
+  [-R use client regional setting]
+  [-b On error batch abort]
+  [-v var = "value"...]  [-A dedicated admin connection]
+  [-X[1] disable commands, startup script, enviroment variables [and exit]]
+  [-x disable variable substitution]
+  [-? show syntax summary]
+
+C:\Windows\system32>
+===============================================
+C:\Windows\system32>osql /?
+Microsoft (R) SQL Server Command Line Tool
+Version 10.0.1600.22 NT INTEL X86
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Note: osql does not support all features of SQL Server 2008.
+Use sqlcmd instead. See SQL Server Books Online for details.
+
+usage: osql              [-U login id]          [-P password]
+  [-S server]            [-H hostname]          [-E trusted connection]
+  [-d use database name] [-l login timeout]     [-t query timeout]
+  [-h headers]           [-s colseparator]      [-w columnwidth]
+  [-a packetsize]        [-e echo input]        [-I Enable Quoted Identifiers]
+  [-L list servers]      [-c cmdend]            [-D ODBC DSN name]
+  [-q "cmdline query"]   [-Q "cmdline query" and exit]
+  [-n remove numbering]  [-m errorlevel]
+  [-r msgs to stderr]    [-V severitylevel]
+  [-i inputfile]         [-o outputfile]
+  [-p print statistics]  [-b On error batch abort]
+  [-X[1] disable commands [and exit with warning]]
+  [-O use Old ISQL behavior disables the following]
+      <EOF> batch processing
+      Auto console width scaling
+      Wide messages
+      default errorlevel is -1 vs 1
+  [-? show syntax summary]
+
+C:\Windows\system32>
+
+===============================================
+2008/12/27 12:35:32.39 SQLDIAG Collector version
+2008/12/27 12:35:33.50 SQLDIAG
+
+IMPORTANT:  Please wait until you see "Collection started" before attempting to
+reproduce your issue
+
+2008/12/27 12:35:33.50 SQLDIAG Output path: C:\Program Files\Microsoft SQL Serve
+r\100\Tools\Binn\SQLDIAG\
+2008/12/27 12:35:33.74 SQLDIAG Collecting from 1 logical machine(s)
+2008/12/27 12:35:33.77 MDMPC10\* SQL Server version: 10
+2008/12/27 12:35:33.78 MDMPC10\* Machine name: MDMPC10 (this machine)
+2008/12/27 12:35:33.78 MDMPC10\* Target machine is not a cluster
+2008/12/27 12:35:33.78 MDMPC10\* Instance: SQLEXPRESS (32-bit)
+2008/12/27 12:35:40.76 SQLDIAG Initialization starting...
+===============================================
+

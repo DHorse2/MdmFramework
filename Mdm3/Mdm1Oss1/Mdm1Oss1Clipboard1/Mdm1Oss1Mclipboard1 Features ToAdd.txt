@@ -1,0 +1,52 @@
+Select Window
+Select Stock Folder
+Select Stock Program
+------
+Paste as Execute Paramater
+Paste at Cursor
+Paste at End
+Paste at End with CR/LF before
+Paste at End with CR/LF after
+Paste as .Net Comment
+Paste as HTML Comment
+Paste as REMark
+------
+Extract File Name from End
+Extract Object (Folder) Name from End
+------
+Transform to Escaped Name
+Transform to URI
+Transform to Valid Mdm Name
+Transform to NoSpaces Word Caps
+Transform to Spaces Between Word Caps
+Transform Separator Character
+------
+Remove White Space
+------
+------
+Stock Tranformations for single line / word contents:
+	Remove double quotes, single quotes, slash quotes
+	Add <same>
+	If <contents> has > 1 slash or 1 slash & 1 colon
+		replace slash with double slashes (\\)
+		replace slash with underscore (_)
+		replace slash with period (.)
+		replace slash with space (<space>)
+		remove drive letter and colon from front
+		remove last dir or file name from end
+		// special case:
+			remove leading non alphabet characters
+			remove leading white space characters
+			remove leading lower case letters to first capital
+			remove leading 
+		//
+		replace slash with 
+		replace slash with 
+------
+
+------
+
+------
+
+------
+

@@ -1,0 +1,157 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace Mdm.Oss.Decl
+{
+    class zRemoved
+
+    {
+        #region ErrorControlExceptionDetail
+        protected static int SqlException = 110;
+        protected static int DBConcurrencyException = 111;
+        protected static int ConstraintException = 113;
+
+        protected static int DataException = 220;
+        protected static int StateChangeEventHandler = 221;
+        protected static int ofdSqlcdDbConnectStateChanged = 222;
+        protected static int StateChangeEventArgs = 223;
+
+        protected static int NotSupportedException = 900;
+
+        protected static int AppDomain = 640;
+        protected static int CrossAppDomainDelegate = 641;
+        protected static int AppException = 642;
+        protected static int AppDomainUnloadedException = 643;
+        protected static int AppDomainInitializer = 644;
+
+        protected static int SystemExceptions = 550;
+        protected static int ArgumentException = 551;
+        protected static int ArgumentOutOfRangeException = 552;
+        protected static int ArgumentNullException = 553;
+        // System Exceptions - Arithmetic
+        protected static int ArithmeticException = 354;
+        // System Exceptions - AccessViolation
+        protected static int AccessViolationException = 455;
+        // System Exceptions - DataMisaligned
+        protected static int DataMisalignedException = 856;
+        // System Exceptions - Configuration
+        protected static int ConfigurationException = 757;
+        // Path Exception
+        protected static int PathException = 3160;
+        // File Exception
+        protected static int FileException = 1000;
+        // File Data Exception
+        protected static int FileDataException = 2000;
+        // Math
+        protected static int MathException = 4000;
+        // MarkupMask
+        protected static int MarkupException = 5000;
+        #endregion
+
+    }
+}
+#region Class Temporary Declarations
+// <Section Summary>
+// <Section Role="Declarations">
+// <Section Id = "MdmClassTemporaryDeclarations">
+// <Section Vs="MdmTempVarVs0_8_5">
+// MdmClassTemporaryDeclarations MdmTempVarVs0_8_5
+// <Area Id = "Data">
+// protected String sTempDataImport;
+// protected String sTempData;
+// <Area Id = "Counters">
+// protected int iTempCounter;
+// protected int iCharCounter;
+// protected int iCharLocation;
+// <Area Id = "Arrays">
+// see Mobject Infrastructure Layer.
+// // <Area Id = "Bools">
+// protected bool bTemp;
+// protected bool bTemp0;
+// protected bool bTemp1;
+// protected bool bTemp2;
+// protected bool bTemp3;
+// protected bool bTemp4;
+// protected bool bTemp5;
+// protected bool bTemp6;
+// protected bool bTemp7;
+// protected bool bTemp8;
+// protected bool bTemp9;
+// // <Area Id = "Integers">
+// protected int iTemp;
+// protected int iTemp0;
+// protected int iTemp1;
+// protected int iTemp2;
+// protected int iTemp3;
+// protected int iTemp4;
+// protected int iTemp5;
+// protected int iTemp6;
+// protected int iTemp7;
+// protected int iTemp8;
+// protected int iTemp9;
+// protected int iTempA;
+// protected int iTempB;
+// protected int iTempC;
+// protected int iTempD;
+// protected int iTempE;
+// protected int iTempF;
+// // <Area Id = "long">
+// protected long lTemp;
+// protected long lTemp0;
+// protected long lTemp1;
+// protected long lTemp2;
+// protected long lTemp3;
+// protected long lTemp4;
+// protected long lTemp5;
+// protected long lTemp6;
+// protected long lTemp7;
+// protected long lTemp8;
+// protected long lTemp9;
+// protected long lTempA;
+// protected long lTempB;
+// protected long lTempC;
+// protected long lTempD;
+// protected long lTempE;
+// protected long lTempF;
+// // <Area Id = "double">
+// protected double dTemp;
+// protected double dTemp0;
+// protected double dTemp1;
+// protected double dTemp2;
+// protected double dTemp3;
+// protected double dTemp4;
+// protected double dTemp5;
+// protected double dTemp6;
+// protected double dTemp7;
+// protected double dTemp8;
+// protected double dTraceDisplayMessageDetail;
+// protected double dTempA;
+// protected double dTempB;
+// protected double dTempC;
+// protected double dTempD;
+// protected double dTempE;
+// protected double dTempF;
+// // <Area Id = "Strings">
+// protected String sTemp;
+// protected String sTemp0;
+// protected String sTemp1;
+// protected String sTemp2;
+// protected String sTemp3;
+// protected String sTemp4;
+// protected String sTemp5;
+// protected String sTemp6;
+// protected String sTemp7;
+// protected String sTemp8;
+// protected String sTemp9;
+// protected String sTempA;
+// protected String sTempB;
+// protected String sTempC;
+// protected String sTempD;
+// protected String sTempE;
+// protected String sTempF;
+
+// protected String sCurrentString;
+
+#endregion

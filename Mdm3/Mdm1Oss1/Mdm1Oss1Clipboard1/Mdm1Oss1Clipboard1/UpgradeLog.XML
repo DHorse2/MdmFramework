@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="ClipMon">
+</Property><Property Name="Solution File" Value="C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Clipboard1\ClipMon.sln">
+</Property><Property Name="User Options File" Value="C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Clipboard1\ClipMon.suo">
+</Property><Property Name="Date" Value="November-25-08">
+</Property><Property Name="Time" Value="0:45 AM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="ClipMon.sln" Description="File successfully backed up as C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Clipboard1\BU1\Backup\ClipMon.sln">
+</Event><Event ErrorLevel="0" Project="" Source="ClipMon.suo" Description="File successfully backed up as C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Clipboard1\BU1\Backup\ClipMon.suo">
+</Event><Event ErrorLevel="0" Project="ClipMon" Source="ClipMon.csproj" Description="Project file successfully backed up as C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Clipboard1\BU1\Backup\ClipMon.csproj">
+</Event><Event ErrorLevel="0" Project="ClipMon" Source="AssemblyInfo.cs" Description="File successfully backed up as C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Clipboard1\BU1\Backup\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="ClipMon" Source="frmMain.cs" Description="File successfully backed up as C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Clipboard1\BU1\Backup\frmMain.cs">
+</Event><Event ErrorLevel="0" Project="ClipMon" Source="Shell32.cs" Description="File successfully backed up as C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Clipboard1\BU1\Backup\Shell32.cs">
+</Event><Event ErrorLevel="0" Project="ClipMon" Source="User32.cs" Description="File successfully backed up as C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Clipboard1\BU1\Backup\User32.cs">
+</Event><Event ErrorLevel="0" Project="ClipMon" Source="App.ico" Description="File successfully backed up as C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Clipboard1\BU1\Backup\App.ico">
+</Event><Event ErrorLevel="0" Project="ClipMon" Source="frmMain.resx" Description="File successfully backed up as C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1Clipboard1\BU1\Backup\frmMain.resx">
+</Event><Event ErrorLevel="0" Project="ClipMon" Source="ClipMon.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="ClipMon" Source="ClipMon.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="ClipMon.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="ClipMon.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="ClipMon" Source="ClipMon.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

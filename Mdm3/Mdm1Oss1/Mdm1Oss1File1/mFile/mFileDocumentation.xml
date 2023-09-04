@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MyDocs>
+    <MyMembers name="Class Object Types">
+        <summary>
+            <para> ToDo. </para>
+            <para> The two main types of objects are File and Db (Database).</para>
+            <para> Each of these may have:</para>
+            <para> 1) A basic file object (Fmain). </para>
+            <para> 2) An ID object for identity. </para>
+            <para> 3) An IO object used readers and writers. </para>
+            <para> 4) One or more File Status Objects.</para>
+            <para> 5) One of serveral column and attribute control classes.</para>
+        </summary>
+    </MyMembers>
+    <MyMembers name="test">
+        <summary>
+            The summary for this type.
+        </summary>
+    </MyMembers>
+
+    <MyMembers name="test2">
+        <summary>
+            The summary for this other type.
+        </summary>
+    </MyMembers>
+
+</MyDocs>

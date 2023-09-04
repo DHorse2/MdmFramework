@@ -1,0 +1,12 @@
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1UrlHist1\UrlHistoryDemo\obj\Release\ResolveAssemblyReference.cache
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1UrlHist1\UrlHistoryDemo\obj\Release\UrlHistoryDemo.Form1.resources
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1UrlHist1\UrlHistoryDemo\obj\Release\UrlHistoryDemo.csproj.GenerateResource.Cache
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1UrlHist1\UrlHistoryDemo\bin\Release\UrlHistoryDemo.exe
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1UrlHist1\UrlHistoryDemo\bin\Release\Mdm1Oss1Shell1.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1UrlHist1\UrlHistoryDemo\bin\Release\Mdm1Oss1Shell1Base1.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1UrlHist1\UrlHistoryDemo\bin\Release\Mdm1Oss1Shell1File1.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1UrlHist1\UrlHistoryDemo\bin\Release\UrlHistoryLibrary.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1UrlHist1\UrlHistoryDemo\bin\Release\Mdm1Oss1Shell1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1UrlHist1\UrlHistoryDemo\bin\Release\Mdm1Oss1Shell1Base1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1UrlHist1\UrlHistoryDemo\bin\Release\Mdm1Oss1Shell1File1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1UrlHist1\UrlHistoryDemo\obj\Release\UrlHistoryDemo.exe

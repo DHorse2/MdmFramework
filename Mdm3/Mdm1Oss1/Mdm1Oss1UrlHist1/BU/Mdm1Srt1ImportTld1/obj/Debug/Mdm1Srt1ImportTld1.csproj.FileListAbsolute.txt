@@ -1,0 +1,180 @@
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Srt1ImportTld1.exe.manifest
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Srt1ImportTld1.xbap
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Srt1ImportTld1.exe
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Srt1ImportTld1.pdb
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\bin\Debug\Srt1ImportTld1CodeDocumentation.xml
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1Code1.exe
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1File1.dll
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1Support1.exe
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1Code1.pdb
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1Support1.pdb
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1File1.pdb
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\obj\Debug\Page1.baml
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\obj\Debug\Page2.baml
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\obj\Debug\Page1.g.cs
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\obj\Debug\Page2.g.cs
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\obj\Debug\App.g.cs
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\obj\Debug\Mdm1Srt1ImportTld1_MarkupCompile.cache
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\obj\Debug\Mdm1Srt1ImportTld1.g.resources
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\obj\Debug\Mdm1Srt1ImportTld1.Properties.Resources.resources
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\obj\Debug\Mdm1Srt1ImportTld1.csproj.GenerateResource.Cache
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\obj\Debug\Mdm1Srt1ImportTld1.TrustInfo.xml
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\obj\Debug\Mdm1Srt1ImportTld1.exe.manifest
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\obj\Debug\Mdm1Srt1ImportTld1.xbap
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\obj\Debug\Mdm1Srt1ImportTld1.exe
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\obj\Debug\Mdm1Srt1ImportTld1.pdb
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1Clipboard1.exe
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1Mapplication1.exe
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1OssFileCreation1.exe
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1OssFileCreation1.pdb
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1Clipboard1.pdb
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1Mapplication1.pdb
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1Mobject1.exe
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1Mobject1.pdb
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\bin\Debug\UrlHistoryDemo.exe
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\bin\Debug\UrlHistoryLibrary.dll
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\bin\Debug\UrlHistoryLibrary.pdb
+C:\Users\Public\Desktop\$ ToDo Dgh MdmSrt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\bin\Debug\UrlHistoryDemo.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Srt1ImportTld1.exe.manifest
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Srt1ImportTld1.xbap
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Srt1ImportTld1.exe
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Srt1ImportTld1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\bin\Debug\Srt1ImportTld1CodeDocumentation.xml
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1Clipboard1.exe
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1Code1.exe
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1File1.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1Mapplication1.exe
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1Mobject1.exe
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1OssFileCreation1.exe
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1Support1.exe
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\bin\Debug\UrlHistoryDemo.exe
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\bin\Debug\UrlHistoryLibrary.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1OssFileCreation1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1Clipboard1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\bin\Debug\UrlHistoryLibrary.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1Mapplication1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1Code1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1Support1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1File1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\bin\Debug\UrlHistoryDemo.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1Mobject1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\obj\Debug\ResolveAssemblyReference.cache
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\obj\Debug\Page1.baml
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\obj\Debug\Page2.baml
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\obj\Debug\Page1.g.cs
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\obj\Debug\Page2.g.cs
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\obj\Debug\App.g.cs
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\obj\Debug\Mdm1Srt1ImportTld1_MarkupCompile.cache
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\obj\Debug\Mdm1Srt1ImportTld1.g.resources
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\obj\Debug\Mdm1Srt1ImportTld1.Properties.Resources.resources
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\obj\Debug\Mdm1Srt1ImportTld1.csproj.GenerateResource.Cache
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\obj\Debug\Mdm1Srt1ImportTld1.TrustInfo.xml
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\obj\Debug\Mdm1Srt1ImportTld1.exe.manifest
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\obj\Debug\Mdm1Srt1ImportTld1.xbap
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\obj\Debug\Mdm1Srt1ImportTld1.exe
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\obj\Debug\Mdm1Srt1ImportTld1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1Shell1File1.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1Shell1Base1.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1Shell1File1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1Shell1Base1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Srt1ImportTld1.exe.manifest
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Srt1ImportTld1.xbap
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Srt1ImportTld1.exe
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Srt1ImportTld1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\Mdm1Srt1ImportTld1\bin\Debug\Srt1ImportTld1CodeDocumentation.xml
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1Clipboard1.exe
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1Code1.exe
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1Decl1.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1DefBase1.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1File1.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1Mapplication1.exe
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1Mobject1.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1OssFileCreation1.exe
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1Support1.exe
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Pick1Db1.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Pick1Syntax1.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\Mdm1Srt1ImportTld1\bin\Debug\UrlHistoryLibrary.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\Mdm1Srt1ImportTld1\bin\Debug\UrlHistoryLibraryUi.exe
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1Shell1Base1.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1Shell1File1.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1Shell1Base1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1Decl1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1OssFileCreation1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Pick1Db1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Pick1Syntax1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1Code1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1Shell1File1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1Mapplication1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1DefBase1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1Support1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1File1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1Mobject1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\Mdm1Srt1ImportTld1\obj\Debug\ResolveAssemblyReference.cache
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\Mdm1Srt1ImportTld1\obj\Debug\MinputTldPage1.baml
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\Mdm1Srt1ImportTld1\obj\Debug\MinputTldPage2.baml
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\Mdm1Srt1ImportTld1\obj\Debug\MinputTldPage1.g.cs
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\Mdm1Srt1ImportTld1\obj\Debug\MinputTldPage2.g.cs
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\Mdm1Srt1ImportTld1\obj\Debug\MinputTldApp.g.cs
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\Mdm1Srt1ImportTld1\obj\Debug\Mdm1Srt1ImportTld1_MarkupCompile.cache
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\Mdm1Srt1ImportTld1\obj\Debug\Mdm1Srt1ImportTld1.g.resources
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\Mdm1Srt1ImportTld1\obj\Debug\Mdm.Srt.ImportTld.Properties.Resources.resources
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\Mdm1Srt1ImportTld1\obj\Debug\Mdm1Srt1ImportTld1.csproj.GenerateResource.Cache
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\Mdm1Srt1ImportTld1\obj\Debug\Mdm1Srt1ImportTld1.TrustInfo.xml
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\Mdm1Srt1ImportTld1\obj\Debug\Mdm1Srt1ImportTld1.exe.manifest
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\Mdm1Srt1ImportTld1\obj\Debug\Mdm1Srt1ImportTld1.xbap
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\Mdm1Srt1ImportTld1\obj\Debug\Mdm1Srt1ImportTld1.exe
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\Mdm1Srt1ImportTld1\obj\Debug\Mdm1Srt1ImportTld1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1Shell1.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1Shell1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1Clipboard1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1_1_0\Mdm1Srt1ImportTld1\obj\Debug\ResolveAssemblyReference.cache
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1_1_0\Mdm1Srt1ImportTld1\obj\Debug\MinputTldPage1.baml
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1_1_0\Mdm1Srt1ImportTld1\obj\Debug\MinputTldPage2.baml
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1_1_0\Mdm1Srt1ImportTld1\obj\Debug\MinputTldPage1.g.cs
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1_1_0\Mdm1Srt1ImportTld1\obj\Debug\MinputTldPage2.g.cs
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1_1_0\Mdm1Srt1ImportTld1\obj\Debug\MinputTldApp.g.cs
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1_1_0\Mdm1Srt1ImportTld1\obj\Debug\Mdm1Srt1ImportTld1_MarkupCompile.cache
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1_1_0\Mdm1Srt1ImportTld1\obj\Debug\Mdm1Srt1ImportTld1.g.resources
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1_1_0\Mdm1Srt1ImportTld1\obj\Debug\Mdm.Srt.ImportTld.Properties.Resources.resources
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1_1_0\Mdm1Srt1ImportTld1\obj\Debug\Mdm1Srt1ImportTld1.csproj.GenerateResource.Cache
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1_1_0\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Srt1ImportTld1.exe.manifest
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1_1_0\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Srt1ImportTld1.xbap
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1_1_0\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Srt1ImportTld1.exe
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1_1_0\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Srt1ImportTld1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1_1_0\Mdm1Srt1ImportTld1\bin\Debug\Srt1ImportTld1CodeDocumentation.xml
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1_1_0\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1Clipboard1.exe
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1_1_0\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1Code1.exe
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1_1_0\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1Decl1.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1_1_0\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1DefBase1.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1_1_0\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1File1.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1_1_0\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1Mapplication1.exe
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1_1_0\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1Mobject1.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1_1_0\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1Shell1.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1_1_0\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1Support1.exe
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1_1_0\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Pick1Db1.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1_1_0\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Pick1Syntax1.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1_1_0\Mdm1Srt1ImportTld1\bin\Debug\UrlHistoryLibraryUi.exe
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1_1_0\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1Shell1Base1.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1_1_0\Mdm1Srt1ImportTld1\bin\Debug\UrlHistoryLibrary.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1_1_0\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1Shell1File1.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1_1_0\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1Shell1Base1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1_1_0\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1Decl1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1_1_0\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1Code1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1_1_0\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Pick1Db1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1_1_0\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Pick1Syntax1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1_1_0\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1File1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1_1_0\Mdm1Srt1ImportTld1\bin\Debug\UrlHistoryLibrary.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1_1_0\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1Shell1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1_1_0\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1Shell1File1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1_1_0\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1Clipboard1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1_1_0\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1Mapplication1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1_1_0\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1DefBase1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1_1_0\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1Support1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1_1_0\Mdm1Srt1ImportTld1\bin\Debug\UrlHistoryLibraryUi.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1_1_0\Mdm1Srt1ImportTld1\bin\Debug\Mdm1Oss1Mobject1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1_1_0\Mdm1Srt1ImportTld1\obj\Debug\Mdm1Srt1ImportTld1.TrustInfo.xml
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1_1_0\Mdm1Srt1ImportTld1\obj\Debug\Mdm1Srt1ImportTld1.exe.manifest
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1_1_0\Mdm1Srt1ImportTld1\obj\Debug\Mdm1Srt1ImportTld1.xbap
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1_1_0\Mdm1Srt1ImportTld1\obj\Debug\Mdm1Srt1ImportTld1.exe
+C:\Srt Project\Mdm\Mdm1\Mdm1Srt1\Mdm1Srt1ImportTld1_1_0\Mdm1Srt1ImportTld1\obj\Debug\Mdm1Srt1ImportTld1.pdb

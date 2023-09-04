@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>PropertyConvert</Title>
+			<Shortcut>pmMake</Shortcut>
+			<Description>Code snippet Property Create from Field</Description>
+			<Author>DaveHorsman MacroDM</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+				<SnippetType>SurroundsWith</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal Editable="true">
+					<ID>PropertyName</ID>
+					<ToolTip>The name of this property</ToolTip>
+					<Default>NewIntergerPropteryName</Default>
+				</Literal>
+				<Literal Editable="true">
+					<ID>PropertyDefault</ID>
+					<ToolTip>The default value of this property</ToolTip>
+					<Default> = 0</Default>
+				</Literal>
+				<Literal Editable="true">
+					<ID>PropertyGetAccess</ID>
+					<ToolTip>Scope Access for GET</ToolTip>
+					<Default>        </Default>
+				</Literal>
+				<Literal Editable="true">
+					<ID>PropertySetAccess</ID>
+					<ToolTip>Scope Access for SET</ToolTip>
+					<Default>internal</Default>
+				</Literal>
+				<Literal Editable="true">
+					<ID>Type</ID>
+					<ToolTip>TYPE of Property to create</ToolTip>
+					<Default>int</Default>
+				</Literal>
+				<Literal Editable="true">
+					<ID>PrefixPolish</ID>
+					<ToolTip>TYPE Polish Prefix (first letter of type)</ToolTip>
+					<Default>i</Default>
+				</Literal>
+				<Literal Editable="true">
+					<ID>Notes</ID>
+					<ToolTip>Add a comment line of notes here</ToolTip>
+					<Default></Default>
+				</Literal>
+			</Declarations>
+			<Code Language="csharp"><![CDATA[
+        // property $Type$ $PropertyName$
+        private $Type$ $PrefixPolish$p$PropertyName$$PropertyDefault$;
+        public $Type$ $PrefixPolish$$PropertyName$ {
+        $PropertyGetAccess$ get { return $PrefixPolish$p$PropertyName$; }
+        $PropertySetAccess$ set { $PrefixPolish$p$PropertyName$ = value; }
+        } //  $Notes$
+		]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

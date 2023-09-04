@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual C# Express 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mdm1Oss1Mapplication1", "Mdm1Oss1Mapplication1\Mdm1Oss1Mapplication1.csproj", "{A27F9436-D58A-47E2-9B1F-9770CAB773BF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A27F9436-D58A-47E2-9B1F-9770CAB773BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A27F9436-D58A-47E2-9B1F-9770CAB773BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A27F9436-D58A-47E2-9B1F-9770CAB773BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A27F9436-D58A-47E2-9B1F-9770CAB773BF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

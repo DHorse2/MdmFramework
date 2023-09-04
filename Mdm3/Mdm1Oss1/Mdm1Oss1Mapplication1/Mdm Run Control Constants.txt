@@ -1,0 +1,377 @@
+		// Run State
+		//
+        public int iRun_Tense = 0;
+        public const iRun_Do = 1;
+        public const iRun_Doing = 2;
+        public const iRun_Did = 3;
+        //
+        public int iRun_Action = 0;
+        public const int ciRun_Cancel = 1;
+        public const int ciRun_Pause = 2;
+        public const int ciRun_Start = 3;
+        public const int ciRun_NoOp4 = 4;
+        public const int ciRun_NoOp5 = 5;
+        public const int ciRun_Initialize = 6;
+        public const int ciRun_RunDo = 7;
+        public const int ciRun_UserInput = 8;
+        public const int ciRun_Open = 9;
+        public const int ciRun_Main_Do = 10;
+        public const int ciRun_Main_Do_Select = 11;
+        public const int ciRun_Main_Do_Lock_Add = 12;
+        public const int ciRun_Main_Do_Read = 13;
+        public const int ciRun_Main_Do_Validate = 14;
+        public const int ciRun_Main_Do_Accept = 15;
+        public const int ciRun_Main_Do_Report = 16;
+        public const int ciRun_Main_Do_Process = 17;
+        public const int ciRun_Close_Do_Update = 18;
+        public const int ciRun_Close_Do_Write = 19;
+        public const int ciRun_Main_Do_Lock_Remove = 20;
+        public const int ciRun_Finish = 21;
+        public const int ciRun_Option1 = 22;
+        public const int ciRun_Option2 = 23;
+        //
+        public string[] sRun_Action_Verb = { "NoOp", 
+                                               "Cancel", "Pause", "Start", "NoOp4", "NoOp5", 
+                                               "Initialize", "Do", "UserInput", "Open", "DoMain",
+                                               "Select", "Lock", "Read", "Validate", "Accept",
+                                               "Report", "Process", "Update", "Write", "UnLock",
+                                               "VerbY", "VerbZ"
+                                           };
+        public string[] sRun_Action_Doing = { "NoOping", 
+                                                "Cancelling", "Pausing", "Starting", "NoOp4", "NoOp5", 
+                                               "Initialize", "Doing", "UserInputing", "Opening", "DoingMain",
+                                               "Selecting", "Locking", "Reading", "Validating", "Accepting",
+                                               "Reporting", "Processing", "Updating", "Writing", "UnLocking",
+                                               "VerbYing", "VerbZing"
+                                            };
+        public string[] sRun_Action_Did = { "NoOped", 
+                                              "Cancelled", "Paused", "Started", "NoOp4", "NoOp5", 
+                                               "Initialized", "Did", "UserInputed", "Opened", "DoMained",
+                                               "Selected", "Locked", "Read", "Validated", "Accepted",
+                                               "Reported", "Processed", "Updated", "Writen", "UnLocked",
+                                               "VerbYed", "VerbZed"
+                                          };
+        //
+// xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+        #region Run Action Handling
+        #region Run Status Constants
+        public string sRunOptions;
+        public int iRunStatus = 99999;
+        public const int ciMethod_OBJECT_OK = 0;
+        public const int ciMethod_OBJECT_Does_Exist = 1;
+        public const int ciMethod_OBJECT_Does_Not_Exist = 2;
+        public const int ciMethod_OBJECT_Should_Not_Exist = 3;
+        public const int ciMethod_OBJECT_POINTER_NOT_MATCHED = 4;
+        //
+        public const int ciMethod_NORMAL_End = 0;
+        public const int ciMethod_ABNORMAL_End = 1;
+        //
+        public const int ciMethod_Valid_RESULT = 0;
+        public const int ciMethod_INVALID_RESULT = 1;
+        //
+        public const int ciMethod_MDM_NAME_CREATION_Failed = 199;
+        public const int ciMethod_MDM_OBJECT_CREATION_Failed = 199;
+        //
+        public const int FUNCTION_ABNORMAL_End = 101;
+        public const int FUNCTION_ATTRIBUTE_OUT_OF_RANGE = 107;
+        //
+        public const int ciMethod_Name_OK = 0;
+        public const int ciMethod_Start = 0;
+        public const int ciMethod_Does_Exist = 1;
+        public const int ciMethod_Does_Not_Exist = 2;
+        public const int ciMethod_Should_Not_Exist = 3;
+        public const int ciMethod_Failed = 9;
+        //
+        public const int ciMethod_Name_Does_Exist = 1;
+        public const int ciMethod_Name_Does_Not_Exist = 2;
+        public const int ciMethod_Name_Should_Not_Exist = 3;
+        public const int ciMethod_Name_POINTER_NOT_MATCHED = 4;
+        public const int ciMethod_Name_Is_Invalid = 7;
+        public const int ciMethod_Name_Is_EMPTY = 8;
+        public const int ciMethod_Name_Failed = 9;
+        //
+        #endregion
+        #region Run Action Constants
+        //
+        public int iRun_Tense = 0;
+        public const int ciRun_Tense_Off = 0;
+        public const int ciRun_Tense_Do = 1;
+        public const int ciRun_Tense_Do_Not = 2;
+        public const int ciRun_Tense_Doing = 3;
+        public const int ciRun_Tense_Did = 4;
+        public const int ciRun_Tense_Did_Not = 5;
+        //
+        public const int ciRun_State = 1;
+        public const int ciRun_State_Last_Update = 2;
+        public const int ciRun_Do_Last_Count = 3;
+        public const int ciRun_Do_Count = 4;
+        public const int ciRun_Do_Skip_Count = 5;
+        public const int ciRun_Do_Error_Count = 6;
+        public const int ciRun_Do_Warning_Count = 7;
+        public const int ciRun_Do_Retry_Count = 8;
+        //
+        public static int iRun_Action_State_Max = 23;
+        public int[,] iRun_Action_State = new int[iRun_Action_State_Max + 5,8];
+        public ProgressChangedEventArgs ePceaRun_Action_State = new ProgressChangedEventArgs((int)0, "");
+        //
+        public int iRun_Action = 0;
+        public const int ciRun_Cancel = 1;
+        public const int ciRun_Pause = 2;
+        public const int ciRun_Start = 3;
+        public const int ciRun_NoOp4 = 4;
+        public const int ciRun_NoOp5 = 5;
+        public const int ciRun_Initialize = 6;
+        public const int ciRun_RunDo = 7;
+        public const int ciRun_UserInput = 8;
+        public const int ciRun_Open = 9;
+        public const int ciRun_Main_Do = 10;
+        public const int ciRun_Main_Do_Select = 11;
+        public const int ciRun_Main_Do_Lock_Add = 12;
+        public const int ciRun_Main_Do_Read = 13;
+        public const int ciRun_Main_Do_Validate = 14;
+        public const int ciRun_Main_Do_Accept = 15;
+        public const int ciRun_Main_Do_Report = 16;
+        public const int ciRun_Main_Do_Process = 17;
+        public const int ciRun_Close_Do_Update = 18;
+        public const int ciRun_Close_Do_Write = 19;
+        public const int ciRun_Main_Do_Lock_Remove = 20;
+        public const int ciRun_Finish = 21;
+        public const int ciRun_Abort = 22;
+        public const int ciRun_Reloop = 23;
+        public const int ciRun_OptionX = iRun_Action_State_Max + 1;
+        public const int ciRun_OptionY = iRun_Action_State_Max + 2;
+        public const int ciRun_OptionZ = iRun_Action_State_Max + 3;
+        public const int ciRun_Option1 = iRun_Action_State_Max + 4;
+        public const int ciRun_Option2 = iRun_Action_State_Max + 5;
+        //
+        public string[] sRun_Action_Verb = { "NoOp", 
+                                               "Cancel", "Pause", "Start", "NoOp4", "NoOp5", 
+                                               "Initialize", "Do", "UserInput", "Open", "DoMain",
+                                               "Select", "Lock", "Read", "Validate", "Accept",
+                                               "Report", "Process", "Update", "Write", "UnLock",
+                                               "Finish", "Abort", 
+                                               "OptionX", "OptionY", "OptionZ", "VerbY", "VerbZ"
+                                           };
+        public string[] sRun_Action_Doing = { "NoOping", 
+                                                "Cancelling", "Pausing", "Starting", "NoOp4", "NoOp5", 
+                                               "Initialize", "Doing", "UserInputing", "Opening", "DoingMain",
+                                               "Selecting", "Locking", "Reading", "Validating", "Accepting",
+                                               "Reporting", "Processing", "Updating", "Writing", "UnLocking",
+                                               "Finishing", "Abortint", 
+                                               "OptionXing", "OptionYing", "OptionZing", "VerbYing", "VerbZing"
+                                            };
+        public string[] sRun_Action_Did = { "NoOped", 
+                                              "Cancelled", "Paused", "Started", "NoOp4", "NoOp5", 
+                                               "Initialized", "Did", "UserInputed", "Opened", "DoMained",
+                                               "Selected", "Locked", "Read", "Validated", "Accepted",
+                                               "Reported", "Processed", "Updated", "Writen", "UnLocked",
+                                               "Finished", "Aborted", 
+                                               "OptionXed", "OptionYed", "OptionZed", "VerbYed", "VerbZed"
+                                          };
+        //
+        #endregion
+        #region Run Action State
+        // <Area Id = "Errors">
+        public int iRunErrorNumber = 0;
+        public int iRunGlobalErrorNumber = 99999;
+        public int iRunThrowException = 99999;
+        public int iRunShellErrorNumber = 99999;
+        public string sLocalErrorMessage = "";
+        public string sTraceErrorMessage = "";
+        // <Area Id = "RunStatusControlItFlags">
+        public int iRunCount = 0;
+        public int iRunDebugCount = 0;
+        public int iRunErrorCount = 0;
+        //
+        public bool bRunErrorDidOccur = false;
+        public bool bRunciError_Did_OccurOnce = false;
+        public bool bRunAbort = bNO;
+        //
+        public bool bRunFirst = bYES;
+        //
+        public bool bRunStartPending = bNO;
+        public bool bRunStarting = bNO;
+        public bool bRunStarted = bNO;
+        //
+        public bool bRunInitializing = bNO;
+        public bool bRun_State_Initialized = bNO;
+        //
+        public bool bRunUserInput = bNO;
+        //
+        public bool bRunRunning = bNO;
+        //
+        public bool bRunOpening = bNO;
+        public bool bRunOpened = bNO;
+        //
+        public bool bRunPausePending = bNO;
+        public bool bRunPaused = bNO;
+        //
+        public bool bRunCancellationPending = bNO;
+        public bool bRunCancelled = bNO;
+        //
+        public bool bRunClosing = bNO;
+        //
+        public bool bRunReloop = bNO;
+        //
+        public bool bRunFinalizing = bNO;
+        //
+        public bool bRunComplete = bNO;
+        //
+        public string sRun_Action_Request;
+        public string sUserState;
+        public string sUserCommandPrefix;
+        public string sUserCommand;
+        #endregion
+        #region Run Action Analysis
+        public void App_Run_Action_Evaluate(object sender, ProgressChangedEventArgs ePcea) {
+            try {
+                sUserState = (string)ePcea.UserState;
+            } catch { sUserState = ""; }
+            sUserCommandPrefix = "";
+            sUserCommand = "";
+            if (sUserState.Length > 0) { sUserCommandPrefix = sUserState.Substring(0, 1); }
+            if (sUserState.Length > 1) { sUserCommand = sUserState.Substring(1); }
+
+            if (sUserCommandPrefix == "$") {
+
+                if (sUserCommand == "Cancel") {
+                    bRunCancellationPending = bYES;
+                    bRunAbort = bYES;
+                    omW.Run_CancelAsync();
+                    // System.Windows.RoutedEventArgs eRea = new System.Windows.RoutedEventArgs;
+                    // eRea.Source = this;
+                    // omV.CallerAsynchronousEventsCancel_Click(this, eRea);
+                } else if (sUserCommand == "Cancelled") {
+                    bRunCancellationPending = bNO;
+                } else if (sUserCommand == "Start") {
+                } else if (sUserCommand == "Started") {
+
+                } else if (sUserCommand == "xxxxx") {
+
+                } else if (sUserCommand == "Pause") {
+                    if (bRunPaused == bNO) {
+                        bRunPausePending = bYES;
+                        bRunPaused = bYES;
+                    } else {
+                        bRunPausePending = bNO;
+                        bRunPaused = bNO;
+                    }
+                } else if (sUserCommand == "Paused") {
+                    bRunPausePending = bNO;
+                }
+            }
+        } 
+        #endregion
+        #endregion
+// xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                // Run State Change Handling
+                switch (sProcessStatusFunc) {
+                    case("R"):
+                        # region Run State State / Tense
+                        // Run State Tense
+                        switch (iRun_Tense) {
+                            case (ciRun_Tense_Off):
+                                break;
+                            case (ciRun_Tense_Do):
+                                break;
+                            case (ciRun_Tense_Do_Not):
+                                break;
+                            case (ciRun_Tense_Doing):
+                                break;
+                            case (ciRun_Tense_Did):
+                                break;
+                            case (ciRun_Tense_Did_Not):
+                                break;
+                            default:
+                                break;
+                        }
+                        #endregion
+                        # region Run State Metrics
+                        // Run State Metrics
+                        switch (iRun_Metric) {
+                            case (ciRun_State):
+                                break;
+                            case (ciRun_State_Last_Update):
+                                break;
+                            case (ciRun_Do_Last_Count):
+                                break;
+                            case (ciRun_Do_Count):
+                                break;
+                            case (ciRun_Do_Skip_Count):
+                                break;
+                            case (ciRun_Do_Error_Count):
+                                break;
+                            case (ciRun_Do_Warning_Count):
+                                break;
+                            case (ciRun_Do_Retry_Count):
+                                break;
+                            default:
+                                break;
+                        }
+                        #endregion
+                        # region Run State Action Verb
+                        // Run State
+                        switch (iRun_Action) {
+                            case (ciRun_Cancel):
+                                break;
+                            case (ciRun_Pause):
+                                break;
+                            case (ciRun_Start):
+                                break;
+                            case (ciRun_NoOp4):
+                                break;
+                            case (ciRun_NoOp5):
+                                break;
+                            case (ciRun_Initialize):
+                                break;
+                            case (ciRun_RunDo):
+                                break;
+                            case (ciRun_UserInput):
+                                break;
+                            case (ciRun_Open):
+                                break;
+                            case (ciRun_Main_Do):
+                                break;
+                            case (ciRun_Main_Do_Select):
+                                break;
+                            case (ciRun_Main_Do_Lock_Add):
+                                break;
+                            case (ciRun_Main_Do_Read):
+                                break;
+                            case (ciRun_Main_Do_Validate):
+                                break;
+                            case (ciRun_Main_Do_Accept):
+                                break;
+                            case (ciRun_Main_Do_Report):
+                                break;
+                            case (ciRun_Main_Do_Process):
+                                break;
+                            case (ciRun_Main_Do_Update):
+                                break;
+                            case (ciRun_Main_Do_Write):
+                                break;
+                            case (ciRun_Main_Do_Lock_Remove):
+                                break;
+                            case (ciRun_Close):
+                                break;
+                            case (ciRun_Finish):
+                                break;
+                            case (ciRun_Abort):
+                                break;
+                            case (ciRun_Reloop):
+                                break;
+                            case (ciRun_First):
+                                break;
+                            default:
+                                if (iRun_Action == ciRun_OptionX) { ; }
+                                if (iRun_Action == ciRun_OptionY) { ; }
+                                if (iRun_Action == ciRun_OptionZ) { ; }
+                                if (iRun_Action == ciRun_Option1) { ; }
+                                if (iRun_Action == ciRun_Option2) { ; }
+                                break;
+                        }
+                        #endregion
+                        break;
+                    case("S"):
+                        break;
+// xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx

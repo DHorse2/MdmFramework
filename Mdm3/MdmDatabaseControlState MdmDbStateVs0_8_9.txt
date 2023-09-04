@@ -1,0 +1,52 @@
+        #region MdmFileDatabaseControlState
+        // <Section Summary>
+        // <Section Role="Declarations">
+        // <Section Id = "MdmFileDatabaseControlState">
+        // <Section Vs="MdmFileDbVs0_8_9">
+        // <Area Id = "FileIOStateStatus">
+        private int ipFileStatus = 0;
+        public int iFileStatus {
+            get { return ipFileStatus; }
+            private set { ipFileStatus = value; }
+        }
+        // <Area Id = "FileExistanceStatus">
+        private int ipFileExistanceStatus;
+        public int iFileExistanceStatus {
+            get { return ipFileExistanceStatus; }
+            private set { ipFileExistanceStatus = value; }
+        }
+        // <Area Id = "GeneralStatusCondition">
+        //
+        // <Area Id = "FileIOType">
+        private int ipFileIOType;
+        public int iFileIOType {
+            get { return ipFileIOType; }
+            set { ipFileIOType = value; }
+        }
+        // <Area Id = "FileReadMode">
+        private int ipFileReadMode = 0;
+        public int iFileReadMode {
+            get { return ipFileReadMode; }
+            set { ipFileReadMode = value;}
+        }
+        // <Area Id = "FileWriteMode">
+        private int ipFileWriteMode = 0;
+        public int iFileWriteMode {
+            get { return ipFileWriteMode; }
+            set { ipFileWriteMode = value; }
+        }
+        // <Area Id = "FileAccessMode">
+        private int ipFileAccessMode = 0;
+        public int iFileAccessMode {
+            get { return ipFileAccessMode; }
+            set { ipFileAccessMode = value; }
+        }
+        // <Area Id = "FileOpenStatus"
+        private int ipFileOpenStatus;
+        protected int iFileOpenStatus {
+            get { return ipFileOpenStatus; }
+            private set { ipFileOpenStatus = value; }
+        }
+        // <Area Id = "AsciiOpenOptions">
+        protected int iAsciiOpenOptions = 0;
+        #endregion

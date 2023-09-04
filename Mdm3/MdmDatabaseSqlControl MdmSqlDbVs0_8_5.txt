@@ -1,0 +1,554 @@
+		#region FileDatabaseSqlControlDeclarations
+		// <Section Summary>
+		// <Section Role="Declarations">
+        // <Section Id = "MdmFileDatabaseControl">
+		// <Section Vs="MdmFileDbSqlVs0_8_4">
+        // Basic File Information        
+        // ==================================================================
+        protected object oFileObject = null;
+        protected FileStream fFileStream;
+        protected StreamReader fFileStreamReader;
+        protected string sFileName;
+        protected string sFileExt;
+        protected string sFileNameAlias;
+        protected int iFileId;
+        protected string sFileShortName;
+        protected string sFileShort83Name;
+
+        // ==================================================================
+        // File Guid
+        // ==================================================================
+        protected Guid sFileNameGuid;
+
+        // ==================================================================
+        // Source Parent Name
+        // ==================================================================
+        protected string sParentName;
+        protected string sParentNameAlias;
+        protected int iParentId;
+        protected string sParentShortName;
+
+        // ==================================================================
+        // Source ConsolodationParent Name
+        // ==================================================================
+        protected string sConsolodationParentName;
+        protected string sConsolodationParentNameAlias;
+        protected int iConsolodationParentId;
+        protected string sConsolodationParentShortName;
+
+        // ==================================================================
+        // File Contents
+        // ==================================================================
+        protected string sFileIOBlock;
+        protected string sFileIOAll;
+        protected string sFileIOLine;
+        
+        // ==================================================================
+        // File Options
+        // ==================================================================
+        public string sFileOptions;
+        
+        // ==================================================================
+        // File Type
+        // ==================================================================
+        protected string sFileType;
+        protected int iFileType = 99999;
+        protected string[] aFileExt = { "tld", "txt", "csv", "mdf", "xxx" };
+        protected string[] aFileTypeCode = { "tld", "txt", "csv", "mdf", "xxx" };
+        // more Text: "asc", "fix",
+        // more MsSql:
+        // more MySql:
+        // more Code Script: "bat", "js", "wsh", "proc"
+        // more Code Language: "cobol", "dartbasic", "pickbasic", "c", "cpp", "csharp"
+        // more Markup: "ini", "AcsDoc", "MdmDoc", "html", "xhtml", "css"
+        // more Mdm Protcol: "AscEftBank1", "MdmAi1", "AscCreditCardCo1"
+        // more Std Protcol: "IP", "TCP", "Http", "Pkh", "Kermit", "Scada"
+        // more Telco Protocol:
+
+        //
+        // per:
+        // string[] sWeekDays = { "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" };
+        protected string[] aFilePrimaryType = { "Text", "Text", "TextCsv", "MsSql", "MySql" };
+        protected string[] aFileSecondaryType = { "Tilde", "Text", "Csv", "Datafile", "Datafile" };
+        protected string[] aFileTypeDescription = { 
+            "Tilde delimeted datafile", 
+            "Text File", 
+            "Comma delimited  text file", 
+            "MS SQL data file", 
+            "My Sql data file" };
+
+        // ==================================================================
+        // Source Details and Properties
+        // ==================================================================
+        // Source Drive Name
+        // ==================================================================
+        protected string sFileDriveName;
+        protected string sFileDriveLetter;
+        protected string sFileDriveLetterAlias;
+        protected int iFileDriveSystemId;
+        protected string sFileDriveShortName;
+
+        // ==================================================================
+        // Source Path Name
+        // ==================================================================
+        protected string sPathName;
+        protected string sPathNameAlias;
+        protected int iPathId;
+        protected string sPathShortName;
+
+        // ==================================================================
+
+        // ==================================================================
+        // =          File IO Action Being Performed   
+        // ==================================================================
+
+        // Source File Name Line
+        public string FileNameLine { get; set; }
+
+        // Source File Action
+        public string FileAction { get; set; }
+
+        // Source File Action Name
+        public string FileActionName { get; set; }
+        //
+        /*
+        // Source File Action Name
+         *
+         *  0    - Null
+         *  1    - Exists
+         *  2    - Create
+         *  4    - Open
+         *  8    - Close
+         *  16   - Delete
+         *  32   - Empty (Delete All)
+         *  64   - Shrink
+         *  128  - Expand
+         *  256  - Lock
+         *  512  - Unlock
+         *  1024 - Defragment
+         *  2048 - Read Only
+         *  4096 - Rebuild
+         *  8192 - Rebuild Statistics
+         *  16384 - x
+         *  32768 - x
+         *  65536 - x
+         * 
+         */
+
+        // ==================================================================
+
+        // Mdm Standard File Information
+
+        // ==================================================================
+        // Source File Name
+        // ==================================================================
+        public string FileName { get; private set; }
+        public string FileNameAlias { get; private set; }
+        public int FileId { get; private set; }
+        public string FileShortName { get; private set; }
+        public string FileShort83Name { get; private set; }
+
+        public Guid FileNameGuid { get; private set; }
+
+
+        // ==================================================================
+        // Root Domain Information
+        // ==================================================================
+
+        // ==================================================================
+        // Xml Xpath Information
+        // ==================================================================
+
+        // ==================================================================
+        // Ip Domain Information
+        // ==================================================================
+
+        // ==================================================================
+        // Root Domain Information
+        // ==================================================================
+        // Root Owner Entity Information
+        // Root Owner Path Patern Information
+        // Root Owner Clustering Information
+        // Root Owner Replication Information
+
+
+        // ==================================================================
+        // Source System Information
+        // ==================================================================
+
+        // ==================================================================
+        // Source Database Information
+        // ==================================================================
+
+
+        // ==================================================================
+        // Source Database FileGroup Information
+        // ==================================================================
+
+        // ==================================================================
+        // Source Database FileName Information
+        // ==================================================================
+
+        // ==================================================================
+        // Source Drive Name
+        // ==================================================================
+        public string FileDriveName { get; private set; }
+        public string FileDriveLetter { get; private set; }
+        public string FileDriveLetterAlias { get; private set; }
+        public int FileDriveSystemId { get; private set; }
+        public string FileDriveShortName { get; private set; }
+
+        // ==================================================================
+        // Source Path Name
+        // ==================================================================
+        public string PathName { get; private set; }
+        public string PathNameAlias { get; private set; }
+        public int PathId { get; private set; }
+        public string PathShortName { get; private set; }
+
+        // ==================================================================
+        // Source Parent Name
+        // ==================================================================
+        public string ParentName { get; private set; }
+        public string ParentNameAlias { get; private set; }
+        public int ParentId { get; private set; }
+        public string ParentShortName { get; private set; }
+
+        // ==================================================================
+        // Source ConsolodationParent Name
+        // ==================================================================
+        public string ConsolodationParentName { get; private set; }
+        public string ConsolodationParentNameAlias { get; private set; }
+        public int ConsolodationParentId { get; private set; }
+        public string ConsolodationParentShortName { get; private set; }
+
+        //=============== Database Message Constants
+
+        protected const string SQL_CONNECTION_STRING =
+            "Server=localhost;" +
+            "DataBase=;" +
+            "Integrated Security=SSPI";
+
+        protected const string CONNECTION_ERROR_MSG =
+            "To run this sample, you must have SQL " +
+            "or MSDE with the Northwind database installed.  For " +
+            "instructions on installing MSDE, view the ReadMe file.";
+
+        /*
+        protected const string MSDE_CONNECTION_STRING =
+            @"Server=(local)\NetSDK;" +
+            "DataBase=;" +
+            "Integrated Security=SSPI";
+        */
+
+        //=============== Database Objects
+
+        protected Exception MexceptCmdException;
+
+        protected SqlConnection MmdSqlDbConnection;
+        protected SqlException MexceptDbException;
+
+        //=============== Database Control Messages
+
+        protected string MformStatusMessage = "";
+        protected string MmessageBoxMessage = "";
+
+        //=============== General Commands
+
+        protected string MstrCmd = "not used";
+
+        //=============== 
+        //=============== Server Master Databases Location
+
+        protected string MstrDbServerMasterDefault = "master..sysdatabases";
+        // protected string MstrDbServerMasterDefault = "MdmServer99..sysdatabases";
+
+        //=============== Server Master Files Location
+
+        protected string MstrDbMasterFile = "localhost.dbo.sysobjects";
+        //protected string MstrDbMasterFile = "MdmServer99.dbo.sysobjects";
+        protected string MstrDbMasterFileDefault = "localhost.dbo.sysobjects";
+        //protected string MstrDbMasterFileDefault = "MdmServer99.dbo.sysobjects";
+
+        //=============== 
+        //=============== Server Control
+
+        protected string MstrDbServerId = "99999";
+
+        protected string MstrDbServer = "localhost";
+        // protected string MstrDbServer = "MdmServer99";
+
+        protected string MstrDbServerDefault = "localhost";
+        // protected string MstrDbServerDefault = "MdmServer99";
+
+        //=============== Server Command
+
+        protected string MstrDbServerCreateCmd = "not used";
+
+        //=============== 
+        //=============== Server Connection Control
+
+        //protected bool   MboolDbConnExists = false;
+        protected bool MboolDbConnIsInvalid = false;
+        //protected bool   MboolDbConnIsCreating = false;
+        //protected bool   MboolDbConnIsCreated = false;
+
+        //=============== Server Connection Status
+
+        protected bool MboolDbConnIsConnecting = false;
+        protected bool MboolDbConnIsConnected = false;
+
+        protected bool MboolDbConnIsOpen = false;
+        protected bool MboolDbConnIsCreating = false;
+        protected bool MboolDbConnIsCreated = false;
+        protected bool MboolDbConnIsClosed = false;
+
+        //=============== Server Connection Command
+
+        protected string MstrDbConnCreateCmd = "not used";
+
+        protected string MstrDbConnString = SQL_CONNECTION_STRING;
+
+        //=============== 
+        //=============== Database Creation Control
+
+        protected string MstrDbDatabaseId = "99999";
+        protected string MstrDbDatabase = "MdmDatabase99";
+        protected string MstrDbDatabaseDefault = "MdmDatabase99";
+
+        //=============== Database Creation Command
+
+        protected string MstrDbDatabaseCreateCmd = "not used";
+
+        //=============== Database Creation Status
+
+        protected bool MboolDbDatabaseExists = false;
+        protected bool MboolDbDatabaseIsInvalid = false;
+        protected bool MboolDbDatabaseIsCreating = false;
+        protected bool MboolDbDatabaseIsCreated = false;
+
+        //=============== 
+        //=============== Security Control
+
+        protected string MstrDbSecurityId = "99999";
+        protected string MstrDbSecurity = "";
+
+        //=============== 
+        //=============== User Control
+
+        protected string MstrDbUserServerId = "99999";
+        protected string MstrDbUserDbId = "99999";
+        protected string MstrDbUserId = "99999";
+        protected string MstrDbUser = "MdmUser99";
+        protected string MstrDbUserPw = "password99";
+
+        //=============== User Status
+
+        protected bool MboolDbUserExists = false;
+        protected bool MboolDbUserIsInvalid = false;
+        protected bool MboolDbUserIsCreating = false;
+        protected bool MboolDbUserIsCreated = false;
+
+        //=============== 
+        //=============== File Group
+
+        protected string MstrDbFileGroupServerId = "99999";
+        protected string MstrDbFileGroupDbId = "99999";
+        protected string MstrDbFileGroupId = "99999";
+        protected string MstrDbFileGroup = "MdmFileGroup99";
+
+        //=============== File Group Status
+
+        protected bool MboolDbFileGroupExists = false;
+        protected bool MboolDbFileGroupIsInvalid = false;
+        protected bool MboolDbFileGroupIsCreating = false;
+        protected bool MboolDbFileGroupIsCreated = false;
+
+        //=============== File Group Command
+
+        protected string MstrDbFileGroupCreateCmd = "not used";
+
+        //=============== 
+        //=============== File
+
+        protected string MstrDbFileDbId = "99999";
+        protected string MstrDbFileDb = "MdmDatabase99";
+        protected string MstrDbFileDbDefault = "MdmDatabase99";
+        protected string MstrDbFileFileGroupId = "99999";
+        protected string MstrDbFileFileGroup = "MdmFileGroup99";
+        protected string MstrDbFileGroupDefault = "MdmFileGroup99";
+
+        protected string MstrDbFileId = "99999";
+        protected string MstrDbFile = "MdmFile99";
+
+        //=============== File Status
+
+        protected bool MboolDbFileExists = false;
+        protected bool MboolDbFileIsInvalid = false;
+        protected bool MboolDbFileIsCreating = false;
+        protected bool MboolDbFileIsCreated = false;
+
+        // ==================================================================
+        /*
+         * ArgumentException:
+         * path is a zero-length string, contains only white space, or 
+         * contains one or more invalid characters as defined by InvalidPathChars.  
+         * ArgumentNullException:
+         * path is null reference
+         * path is null or Nothing or null ptra null 
+         * (Nothing in Visual Basic). 
+ 
+         * PathTooLongException:
+         * The specified path, file name, or both 
+         * exceed the system-defined maximum length. 
+         * For example, on Windows-based platforms, 
+         * paths must be less than 248 characters, 
+         * and file names must be less than 260 characters. 
+ 
+         * DirectoryNotFoundException:
+         * The specified path is invalid, 
+         * (for example, it is on an unmapped drive). 
+ 
+         * UnauthorizedAccessException:
+         * path specified a directory. 
+         * -or- 
+         * The caller does not have the required permission. 
+ 
+         * FileNotFoundException:
+         * The file specified in path was not found. 
+
+         * NotSupportedException:
+         * path is in an invalid format. 
+ 
+        */
+        //=============== File Command
+
+        protected string MstrDbFileCreateCmd = "";
+
+        //=============== 
+        //=============== Phrases
+        //=============== 
+        //=============== Server and Database Phrases
+
+        protected string MstrDbPhraseServer;
+        protected string MstrDbPhraseDatabase;
+        protected string MstrDbPhraseSecurity;
+        protected string MstrDbPhraseUser;
+        protected string MstrDbPhraseUserPw;
+
+        //=============== Creation Phrases
+        //=============== Phrases
+        //=============== Database Creation Phrases
+
+        protected string MstrDbPhrase;
+
+        protected bool MboolDbPhraseIfUsed = true;
+        protected string MstrDbPhraseIf = "IF EXISTS (";
+        protected string MstrDbPhraseIfEnd = ")";
+
+        protected bool MbollDbPhraseSelectUsed = true;
+        protected string MstrDbPhraseSelect = "SELECT * ";
+
+        protected bool MboolDbPhraseFromUsed = true;
+        protected string MstrDbPhraseFrom = "FROM ";
+        protected string MstrDbPhraseFromItems = "MdmServer99..sysdatabases";
+        protected string MstrDbPhraseFromEnd = " ";
+
+        protected bool MboolDbPhraseWhereUsed = true;
+        protected string MstrDbPhraseWhere = "WHERE ";
+        // sb paired list of dict + value
+        protected string MstrDbPhraseWhereItems = "Name = 'HowToDemo'";
+
+        protected bool MboolDbPhraseDropUsed = true;
+        protected string MstrDbPhraseDrop = "DROP ";
+        // sb paired list of dict + value
+        protected string MstrDbPhraseDropItems = "DATABASE HowToDemo";
+
+        protected bool MboolDbPhraseCreateUsed = true;
+        protected string MstrDbPhraseCreate = "CREATE ";
+        // sb paired list of dict + value
+        protected string MstrDbPhraseCreateItems = "CREATE DATABASE HowToDemo";
+
+        protected bool MstrDbPhraseFileGroupUsed = false;
+        protected string MstrDbPhraseFileGroup = "HowToDemoFileGroup";
+
+        //=============== Phrases
+        //=============== File Creation Phrases
+
+        protected string MstrDbFilePhrase;
+
+        protected bool MboolDbFilePhraseUseUsed = true;
+        protected string MstrDbFilePhraseUse = "USE ";
+        protected string MstrDbFilePhraseUseEnd = "";
+
+        protected bool MboolDbFilePhraseIfUsed = true;
+        protected string MstrDbFilePhraseIf = "IF EXISTS (";
+        protected string MstrDbFilePhraseIfEnd = ")";
+
+        protected bool MbollDbFilePhraseSelectUsed = true;
+        protected string MstrDbFilePhraseSelect = "SELECT * ";
+
+        protected bool MboolDbFilePhraseFromUsed = true;
+        protected string MstrDbFilePhraseFrom = "FROM ";
+        protected string MstrDbFilePhraseFromItems = "master..sysdatabases";
+        protected string MstrDbFilePhraseFromEnd = " ";
+
+        protected bool MboolDbFilePhraseWhereUsed = true;
+        protected string MstrDbFilePhraseWhere = "WHERE ";
+        protected string MstrDbFilePhraseWhereAnd = " AND ";
+        // sb paired list of dict + value
+        protected string MstrDbFilePhraseWhereItems1 = "Name = 'HowToDemo'";
+        // sb paired list of dict + value
+        protected string MstrDbFilePhraseWhereItems2 = "TYPE = 'u'";
+        // MstrDbFilePhraseWhereItemsId[X];
+        // MstrDbFilePhraseWhereItemsExpression[X];
+        // MstrDbFilePhraseWhereItemsValue[X];
+
+        protected bool MboolDbFilePhraseBeginUsed = true;
+        protected string MstrDbFilePhraseBegin = "BEGIN";
+        protected string MstrDbFilePhraseBeginEnd = "END";
+
+        protected bool MboolDbFilePhraseDropUsed = true;
+        protected string MstrDbFilePhraseDrop = "DROP ";
+        // sb paired list of dict + value
+        protected string MstrDbFilePhraseDropItems = "TABLE " + "HowToDemo.dbo.MdmFile99";
+
+        protected bool MboolDbFilePhraseCreateUsed = true;
+        protected string MstrDbFilePhraseCreate = "CREATE ";
+        protected string MstrDbFilePhraseCreateObject = "TABLE ";
+        protected string MstrDbFilePhraseCreateTableName = "MdmFile99";
+        // + "HowToDemo.dbo.This";TableName
+
+        protected string MstrDbFilePhraseItemsBegin = "(";
+        protected string MstrDbFilePhraseItemsEnd = ")";
+
+        // MstrDbFilePhraseDbColumnId[X] 
+        // MstrDbFilePhraseWhereItemsType[X]; 
+        // MstrDbFilePhraseWhereItemsTypeHasLength[X];
+        // if (MboolDbFilePhraseCreateUsed)
+        // {
+        // + "("
+        // MstrDbFilePhraseWhereItemsTypeLength[X];
+        // + ")"
+        // }
+        // + " "
+        // MstrDbFilePhraseWhereItemsRange[X];
+        // "NOT NULL "
+
+        protected bool MboolDbFilePhraseConstraintUsed = true;
+        protected string MstrDbFilePhraseConstraint = "CONSTRAINT [";
+        protected string MstrDbFilePhraseConstraintCol = "PK_Numeric99";
+        protected string MstrDbFilePhraseConstraintNameDefault = "PK_Numeric99";
+        protected string MstrDbFilePhraseConstraintEnd = "]";
+
+        protected string MstrDbFilePhraseConstraintType1 = " PRIMARY KEY ";
+        protected string MstrDbFilePhraseConstraintType2 = " CLUSTERED ";
+
+        protected string MstrDbFilePhraseConstraintColBegin = " (";
+        protected string MstrDbFilePhraseConstraintColName = "Column0";
+        protected string MstrDbFilePhraseConstraintColNameDefalut = "Column0";
+        protected string MstrDbFilePhraseConstraintColEnd = ")";
+
+        protected string MstrDbFilePhraseCreateItems = "CREATE DATABASE HowToDemo";
+        // </Section Summary>
+		#endregion

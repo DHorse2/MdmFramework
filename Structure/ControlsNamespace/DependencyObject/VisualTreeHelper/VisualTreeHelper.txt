@@ -1,0 +1,26 @@
+VisualTreeHelper
+
+The VisualTreeHelper class allows the developer to examine and work with the visual tree structure. The implementation of this helper class works around the limitation of Silverlight not having a Visual base class.
+
+Both WPF and Silverlight contain this helper class; however, they are implemented differently.
+
+Method WPF Silverlight
+FindElementsInHostCoordinates No Yes
+GetBitmapEffect Yes No
+GetBitmapEffectInput Yes No
+GetChild Yes Yes
+GetChildrenCount Yes Yes
+GetClip Yes No
+GetContentBounds Yes No
+GetDesecendantBounds Yes No
+GetDrawing Yes No
+GetEdgeMode Yes No
+GetEffect Yes No
+GetOffset Yes No
+GetOpacity Yes No
+GetOpacityMask Yes No
+GetParent Yes Yes
+GetTransform Yes No
+GetXSnappingGuidelines Yes No
+GetYSnappingGuidelines Yes No
+HitTest Yes No

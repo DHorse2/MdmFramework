@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="13.0" version="13.0" Modules="simple" RootPath="." Language="en" Id="{0259D755-68B3-475C-8333-473203E490C6}">
+  <COMPONENT cid="caphyon.advinst.msicomp.ProjectOptionsComponent">
+    <ROW Name="HiddenItems" Value="MsiThemeComponent;BackgroundImagesComponent;UpdaterComponent;SerValComponent;DigCertStoreComponent;MsiInstExSeqComponent;DictionaryComponent;MsiAppSearchComponent;MsiAssemblyComponent;MsiClassComponent;MsiOdbcDataSrcComponent;MsiServInstComponent;MsiOrgComponent;MsiExtComponent;CPLAppletComponent;ActSyncAppComponent;PreReqComponent;WebApplicationsComponent;MsiJavaComponent;MsiDriverPackagesComponent;UserAccountsComponent;ScheduledTasksComponent;SqlConnectionComponent;AutorunComponent;FirewallExceptionComponent;GameUxComponent;MsiDirectEditorComponent;SharePointSlnComponent;SilverlightSlnComponent;MultipleInstancesComponent;SccmComponent;ActSyncAppComponent"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0"/>
+    <ROW Property="AI_PROPPATH_PERBUILD_Mdm1Oss1Clipboard1.exe" Value="bin\Debug\Mdm1Oss1Clipboard1.exe" MultiBuildValue="AnyCPU_Release:bin\Release\Mdm1Oss1Clipboard1.exe"/>
+    <ROW Property="AI_PROPPATH_PERBUILD_Mdm1Oss1Clipboard1.exe.config" Value="bin\Debug\Mdm1Oss1Clipboard1.exe.config" MultiBuildValue="AnyCPU_Release:bin\Release\Mdm1Oss1Clipboard1.exe.config"/>
+    <ROW Property="AI_PROPPATH_PERBUILD_Mdm1Oss1Decl1.dll" Value="..\..\Mdm1Oss1Definitions1\Mdm1Oss1Decl1\bin\Debug\Mdm1Oss1Decl1.dll" MultiBuildValue="AnyCPU_Release:..\..\Mdm1Oss1Definitions1\Mdm1Oss1Decl1\bin\Release\Mdm1Oss1Decl1.dll"/>
+    <ROW Property="AI_PROPPATH_PERBUILD_Mdm1Oss1DefBase1.dll" Value="..\..\Mdm1Oss1Definitions1\Mdm1Oss1DefBase1\bin\Debug\Mdm1Oss1DefBase1.dll" MultiBuildValue="AnyCPU_Release:..\..\Mdm1Oss1Definitions1\Mdm1Oss1DefBase1\bin\Release\Mdm1Oss1DefBase1.dll"/>
+    <ROW Property="AI_PROPPATH_PERBUILD_Mdm1Oss1File1.dll" Value="..\..\Mdm1Oss1File1\bin\Debug\Mdm1Oss1File1.dll" MultiBuildValue="AnyCPU_Release:..\..\Mdm1Oss1File1\bin\Release\Mdm1Oss1File1.dll"/>
+    <ROW Property="AI_PROPPATH_PERBUILD_Mdm1Oss1File1.dll.config" Value="..\..\Mdm1Oss1File1\bin\Debug\Mdm1Oss1File1.dll.config" MultiBuildValue="AnyCPU_Release:..\..\Mdm1Oss1File1\bin\Release\Mdm1Oss1File1.dll.config"/>
+    <ROW Property="AI_PROPPATH_PERBUILD_Mdm1Oss1Mobject1.dll" Value="..\..\Mdm1Oss1Mobject1\Mdm1Oss1Mobject1\bin\Debug\Mdm1Oss1Mobject1.dll" MultiBuildValue="AnyCPU_Release:..\..\Mdm1Oss1Mobject1\Mdm1Oss1Mobject1\bin\Release\Mdm1Oss1Mobject1.dll"/>
+    <ROW Property="AI_PROPPATH_PERBUILD_Mdm1Oss1Shell1Base1.dll" Value="..\..\Mdm1Oss1Shell1\Mdm1Oss1Shell1Base1\bin\Debug\Mdm1Oss1Shell1Base1.dll" MultiBuildValue="AnyCPU_Release:..\..\Mdm1Oss1Shell1\Mdm1Oss1Shell1Base1\bin\Release\Mdm1Oss1Shell1Base1.dll"/>
+    <ROW Property="AI_PROPPATH_PERBUILD_Mdm1Pick1Db1.dll" Value="..\..\..\Mdm1Pick1\Mdm1Pick1Db1\bin\Debug\Mdm1Pick1Db1.dll" MultiBuildValue="AnyCPU_Release:..\..\..\Mdm1Pick1\Mdm1Pick1Db1\bin\Release\Mdm1Pick1Db1.dll"/>
+    <ROW Property="AI_PROPPATH_PERBUILD_Mdm1Pick1Syntax1.dll" Value="..\..\..\Mdm1Pick1\Mdm1Pick1Syntax1\bin\Debug\Mdm1Pick1Syntax1.dll" MultiBuildValue="AnyCPU_Release:..\..\..\Mdm1Pick1\Mdm1Pick1Syntax1\bin\Release\Mdm1Pick1Syntax1.dll"/>
+    <ROW Property="AI_PROPPATH_PERBUILD_Mdm1Srt1Transform1.exe" Value="..\..\..\Mdm1Srt1\Mdm1Srt1Transform1\bin\Debug\Mdm1Srt1Transform1.exe" MultiBuildValue="AnyCPU_Release:..\..\..\Mdm1Srt1\Mdm1Srt1Transform1\bin\Release\Mdm1Srt1Transform1.exe"/>
+    <ROW Property="AI_PROPPATH_PERBUILD_Mdm2World1Base1.dll" Value="..\..\..\Mdm2World1\Mdm2World1Base1\Mdm2World1Base1\bin\Debug\Mdm2World1Base1.dll" MultiBuildValue="AnyCPU_Release:..\..\..\Mdm2World1\Mdm2World1Base1\Mdm2World1Base1\bin\Release\Mdm2World1Base1.dll"/>
+    <ROW Property="AI_PROPPATH_PERBUILD_Mdm2World1User1.exe" Value="..\..\..\Mdm2World1\Mdm2World1User1\Mdm2World1User1\bin\Debug\Mdm2World1User1.exe" MultiBuildValue="AnyCPU_Release:..\..\..\Mdm2World1\Mdm2World1User1\Mdm2World1User1\bin\Release\Mdm2World1User1.exe"/>
+    <ROW Property="ALLUSERS" Value="1"/>
+    <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
+    <ROW Property="CTRLS" Value="2"/>
+    <ROW Property="Manufacturer" Value="Your Company"/>
+    <ROW Property="ProductCode" Value="1033:{8EB82098-F668-41E4-AD2E-585ABFAC817F} " Type="16"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="Your Application"/>
+    <ROW Property="ProductVersion" Value="1.0.0" Type="32"/>
+    <ROW Property="RUNAPPLICATION" Value="1" Type="4"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
+    <ROW Property="UpgradeCode" Value="{AB5926C6-C2A2-4FB3-A976-9E12B83F40DD}"/>
+    <ROW Property="WindowsType9X" MultiBuildValue="AnyCPU_Debug:Windows 9x/ME#AnyCPU_Release:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsType9XDisplay" MultiBuildValue="AnyCPU_Debug:Windows 9x/ME#AnyCPU_Release:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40" MultiBuildValue="AnyCPU_Debug:Windows NT 4.0#AnyCPU_Release:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40Display" MultiBuildValue="AnyCPU_Debug:Windows NT 4.0#AnyCPU_Release:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50" MultiBuildValue="AnyCPU_Debug:Windows 2000#AnyCPU_Release:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50Display" MultiBuildValue="AnyCPU_Debug:Windows 2000#AnyCPU_Release:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5X" MultiBuildValue="AnyCPU_Debug:Windows XP/2003 RTM, Windows XP/2003 SP1, Windows XP SP2 x86#AnyCPU_Release:Windows XP/2003 RTM, Windows XP/2003 SP1, Windows XP SP2 x86" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5XDisplay" MultiBuildValue="AnyCPU_Debug:Windows XP/2003 RTM, Windows XP/2003 SP1, Windows XP SP2 x86#AnyCPU_Release:Windows XP/2003 RTM, Windows XP/2003 SP1, Windows XP SP2 x86" ValueLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1"/>
+    <ROW Directory="DesktopFolder" Directory_Parent="TARGETDIR" DefaultDir="DESKTO~1|DesktopFolder" IsPseudoRoot="1"/>
+    <ROW Directory="SHORTCUTDIR" Directory_Parent="TARGETDIR" DefaultDir="SHORTC~1|SHORTCUTDIR" IsPseudoRoot="1"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="Mdm1Oss1Clipboard1.exe" ComponentId="{538F6161-D308-4E80-AFB3-4635FA91A181}" Directory_="APPDIR" Attributes="0" KeyPath="Mdm1Oss1Clipboard1.exe"/>
+    <ROW Component="Mdm1Oss1Clipboard1.exe.config" ComponentId="{D62AF693-5EA2-4356-9A77-7144CAB6D2B8}" Directory_="APPDIR" Attributes="0" KeyPath="Mdm1Oss1Clipboard1.exe.config" Type="0"/>
+    <ROW Component="Mdm1Oss1Decl1.dll" ComponentId="{B44E24DC-2257-4534-9048-2E25B2D6BD13}" Directory_="APPDIR" Attributes="0" KeyPath="Mdm1Oss1Decl1.dll"/>
+    <ROW Component="Mdm1Oss1DefBase1.dll" ComponentId="{CE88D666-0018-4162-928F-E24B7FDB9317}" Directory_="APPDIR" Attributes="0" KeyPath="Mdm1Oss1DefBase1.dll"/>
+    <ROW Component="Mdm1Oss1File1.dll" ComponentId="{8AAB1AA6-6B79-44F1-9C41-FB770F5CCDF4}" Directory_="APPDIR" Attributes="0" KeyPath="Mdm1Oss1File1.dll"/>
+    <ROW Component="Mdm1Oss1Mobject1.dll" ComponentId="{C296C370-D62B-4B49-B619-5296067BE285}" Directory_="APPDIR" Attributes="0" KeyPath="Mdm1Oss1Mobject1.dll"/>
+    <ROW Component="Mdm1Oss1Shell1Base1.dll" ComponentId="{77D12B36-8709-482F-BE7F-B0D6C6FF5783}" Directory_="APPDIR" Attributes="0" KeyPath="Mdm1Oss1Shell1Base1.dll"/>
+    <ROW Component="Mdm1Pick1Db1.dll" ComponentId="{66DD9498-81F1-4BD9-9402-2E3C216AE219}" Directory_="APPDIR" Attributes="0" KeyPath="Mdm1Pick1Db1.dll"/>
+    <ROW Component="Mdm1Pick1Syntax1.dll" ComponentId="{F58F649F-2F9C-4E11-A0EB-2D44ECBC3B89}" Directory_="APPDIR" Attributes="0" KeyPath="Mdm1Pick1Syntax1.dll"/>
+    <ROW Component="Mdm1Srt1Transform1.exe" ComponentId="{20EEE24B-4290-488D-9975-FF04176BB4C5}" Directory_="APPDIR" Attributes="0" KeyPath="Mdm1Srt1Transform1.exe"/>
+    <ROW Component="Mdm2World1Base1.dll" ComponentId="{857304A9-76DE-45ED-8DF6-1801DA868DAD}" Directory_="APPDIR" Attributes="0" KeyPath="Mdm2World1Base1.dll"/>
+    <ROW Component="Mdm2World1User1.exe" ComponentId="{F8076EA4-6C57-4AE5-9CE3-A7021B93F067}" Directory_="APPDIR" Attributes="0" KeyPath="Mdm2World1User1.exe"/>
+    <ROW Component="ProductInformation" ComponentId="{22D7F247-FA5D-482F-8453-714CF6F9BA0F}" Directory_="APPDIR" Attributes="4" KeyPath="Version"/>
+    <ROW Component="SHORTCUTDIR" ComponentId="{D12B1BFD-4CB2-4164-825D-E50F8C9345A2}" Directory_="SHORTCUTDIR" Attributes="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0" Components="Mdm1Oss1Clipboard1.exe Mdm1Oss1Clipboard1.exe.config Mdm1Oss1Decl1.dll Mdm1Oss1DefBase1.dll Mdm1Oss1File1.dll Mdm1Oss1Mobject1.dll Mdm1Oss1Shell1Base1.dll Mdm1Pick1Db1.dll Mdm1Pick1Syntax1.dll Mdm1Srt1Transform1.exe Mdm2World1Base1.dll Mdm2World1User1.exe ProductInformation SHORTCUTDIR"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="Mdm1Oss1Clipboard1.exe" Component_="Mdm1Oss1Clipboard1.exe" FileName="MDM1OS~1.EXE|Mdm1Oss1Clipboard1.exe" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Mdm1Oss1Clipboard1.exe&gt;" SelfReg="false" NextFile="Mdm1Oss1Clipboard1.exe.config" DigSign="true"/>
+    <ROW File="Mdm1Oss1Clipboard1.exe.config" Component_="Mdm1Oss1Clipboard1.exe.config" FileName="MDM1OS~1.CON|Mdm1Oss1Clipboard1.exe.config" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Mdm1Oss1Clipboard1.exe.config&gt;" SelfReg="false" NextFile="Mdm1Pick1Syntax1.dll"/>
+    <ROW File="Mdm1Oss1Decl1.dll" Component_="Mdm1Oss1Decl1.dll" FileName="MDM1OS~3.DLL|Mdm1Oss1Decl1.dll" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Mdm1Oss1Decl1.dll&gt;" SelfReg="false" NextFile="Mdm1Oss1File1.dll"/>
+    <ROW File="Mdm1Oss1DefBase1.dll" Component_="Mdm1Oss1DefBase1.dll" FileName="MDM1OS~5.DLL|Mdm1Oss1DefBase1.dll" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Mdm1Oss1DefBase1.dll&gt;" SelfReg="false" NextFile="Mdm1Pick1Db1.dll"/>
+    <ROW File="Mdm1Oss1File1.dll" Component_="Mdm1Oss1File1.dll" FileName="MDM1OS~4.DLL|Mdm1Oss1File1.dll" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Mdm1Oss1File1.dll&gt;" SelfReg="false" NextFile="Mdm1Oss1File1.dll.config"/>
+    <ROW File="Mdm1Oss1File1.dll.config" Component_="Mdm1Oss1Clipboard1.exe.config" FileName="MDM1OS~2.CON|Mdm1Oss1File1.dll.config" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Mdm1Oss1File1.dll.config&gt;" SelfReg="false" NextFile="Mdm2World1Base1.dll"/>
+    <ROW File="Mdm1Oss1Mobject1.dll" Component_="Mdm1Oss1Mobject1.dll" FileName="MDM1OS~2.DLL|Mdm1Oss1Mobject1.dll" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Mdm1Oss1Mobject1.dll&gt;" SelfReg="false" NextFile="Mdm1Srt1Transform1.exe"/>
+    <ROW File="Mdm1Oss1Shell1Base1.dll" Component_="Mdm1Oss1Shell1Base1.dll" FileName="MDM1OS~1.DLL|Mdm1Oss1Shell1Base1.dll" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Mdm1Oss1Shell1Base1.dll&gt;" SelfReg="false" NextFile="Mdm2World1User1.exe"/>
+    <ROW File="Mdm1Pick1Db1.dll" Component_="Mdm1Pick1Db1.dll" FileName="MDM1PI~2.DLL|Mdm1Pick1Db1.dll" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Mdm1Pick1Db1.dll&gt;" SelfReg="false"/>
+    <ROW File="Mdm1Pick1Syntax1.dll" Component_="Mdm1Pick1Syntax1.dll" FileName="MDM1PI~1.DLL|Mdm1Pick1Syntax1.dll" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Mdm1Pick1Syntax1.dll&gt;" SelfReg="false" NextFile="Mdm1Oss1Shell1Base1.dll"/>
+    <ROW File="Mdm1Srt1Transform1.exe" Component_="Mdm1Srt1Transform1.exe" FileName="MDM1SR~1.EXE|Mdm1Srt1Transform1.exe" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Mdm1Srt1Transform1.exe&gt;" SelfReg="false" NextFile="Mdm1Oss1Decl1.dll" DigSign="true"/>
+    <ROW File="Mdm2World1Base1.dll" Component_="Mdm2World1Base1.dll" FileName="MDM2WO~1.DLL|Mdm2World1Base1.dll" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Mdm2World1Base1.dll&gt;" SelfReg="false" NextFile="Mdm1Oss1DefBase1.dll"/>
+    <ROW File="Mdm2World1User1.exe" Component_="Mdm2World1User1.exe" FileName="MDM2WO~1.EXE|Mdm2World1User1.exe" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Mdm2World1User1.exe&gt;" SelfReg="false" NextFile="Mdm1Oss1Mobject1.dll" DigSign="true"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.AppPathsComponent">
+    <ROW Name="AI_APPPATH_PERBUILD_Mdm1Oss1Clipboard1.exe" Path="[|AI_PROPPATH_PERBUILD_Mdm1Oss1Clipboard1.exe]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Mdm1Oss1Clipboard1.exe.config" Path="[|AI_PROPPATH_PERBUILD_Mdm1Oss1Clipboard1.exe.config]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Mdm1Oss1Decl1.dll" Path="[|AI_PROPPATH_PERBUILD_Mdm1Oss1Decl1.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Mdm1Oss1DefBase1.dll" Path="[|AI_PROPPATH_PERBUILD_Mdm1Oss1DefBase1.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Mdm1Oss1File1.dll" Path="[|AI_PROPPATH_PERBUILD_Mdm1Oss1File1.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Mdm1Oss1File1.dll.config" Path="[|AI_PROPPATH_PERBUILD_Mdm1Oss1File1.dll.config]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Mdm1Oss1Mobject1.dll" Path="[|AI_PROPPATH_PERBUILD_Mdm1Oss1Mobject1.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Mdm1Oss1Shell1Base1.dll" Path="[|AI_PROPPATH_PERBUILD_Mdm1Oss1Shell1Base1.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Mdm1Pick1Db1.dll" Path="[|AI_PROPPATH_PERBUILD_Mdm1Pick1Db1.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Mdm1Pick1Syntax1.dll" Path="[|AI_PROPPATH_PERBUILD_Mdm1Pick1Syntax1.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Mdm1Srt1Transform1.exe" Path="[|AI_PROPPATH_PERBUILD_Mdm1Srt1Transform1.exe]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Mdm2World1Base1.dll" Path="[|AI_PROPPATH_PERBUILD_Mdm2World1Base1.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Mdm2World1User1.exe" Path="[|AI_PROPPATH_PERBUILD_Mdm2World1User1.exe]" Type="2" Content="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="AnyCPU_Debug" BuildName="AnyCPU_Debug" BuildOrder="1" BuildType="0" PackageFolder="..\..\..\..\..\..\Users\J\Documents\Advanced Installer\Projects\Your Application\Setup Files" Languages="en" InstallationType="4" UseLargeSchema="true"/>
+    <ROW BuildKey="AnyCPU_Release" BuildName="AnyCPU_Release" BuildOrder="2" BuildType="0" PackageFileName="AnyCPU_Release" Languages="en" InstallationType="4" UseLargeSchema="true"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_en.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
+    <ROW Fragment="FolderDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\FolderDlg.aip"/>
+    <ROW Fragment="MaintenanceTypeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceTypeDlg.aip"/>
+    <ROW Fragment="MaintenanceWelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceWelcomeDlg.aip"/>
+    <ROW Fragment="SequenceDialogs.aip" Path="&lt;AI_THEMES&gt;classic\fragments\SequenceDialogs.aip"/>
+    <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_THEMES&gt;classic\fragments\UI.aip"/>
+    <ROW Fragment="Validation.aip" Path="&lt;AI_FRAGS&gt;Validation.aip"/>
+    <ROW Fragment="VerifyRemoveDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRemoveDlg.aip"/>
+    <ROW Fragment="VerifyRepairDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRepairDlg.aip"/>
+    <ROW Fragment="WelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\WelcomeDlg.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="FolderDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="FolderDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="99"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_MAINT" Ordering="198"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="202"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_INSTALL" Ordering="197"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_MAINT" Ordering="101"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="ChangeButton" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="501"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceWelcomeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RemoveButton" Event="NewDialog" Argument="VerifyRemoveDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RepairButton" Event="NewDialog" Argument="VerifyRepairDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="1"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Repair" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="399" Options="1"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Remove" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="299" Options="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_PATCH" Ordering="201"/>
+    <ROW Dialog_="ResumeDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_RESUME" Ordering="299"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_PATCH" Ordering="199"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="203"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCreateFolderComponent">
+    <ROW Directory_="SHORTCUTDIR" Component_="SHORTCUTDIR" ManualDelete="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_DpiContentScale" Type="1" Source="aicustact.dll" Target="DpiContentScale"/>
+    <ROW Action="AI_EnableDebugLog" Type="321" Source="aicustact.dll" Target="EnableDebugLog"/>
+    <ROW Action="AI_InstallModeCheck" Type="1" Source="aicustact.dll" Target="UpdateInstallMode" WithoutSeq="true"/>
+    <ROW Action="AI_LaunchApp" Type="1" Source="aicustact.dll" Target="[#Mdm1Oss1Clipboard1.exe]"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
+    <ROW Action="AI_SHOW_LOG" Type="65" Source="aicustact.dll" Target="LaunchLogFile" WithoutSeq="true"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="(Not Installed) OR REINSTALL" Sequence="1501"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1399"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="53"/>
+    <ROW Action="AI_DpiContentScale" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
+    <ROW Condition="(VersionNT &lt;&gt; 400)" Description="[ProductName] cannot be installed on [WindowsTypeNT40Display]." DescriptionLocId="AI.LaunchCondition.NoNT40" IsPredefined="true" Builds="AnyCPU_Debug;AnyCPU_Release"/>
+    <ROW Condition="(VersionNT &lt;&gt; 500)" Description="[ProductName] cannot be installed on [WindowsTypeNT50Display]." DescriptionLocId="AI.LaunchCondition.NoNT50" IsPredefined="true" Builds="AnyCPU_Debug;AnyCPU_Release"/>
+    <ROW Condition="(VersionNT64 OR ((VersionNT &lt;&gt; 501) OR (ServicePackLevel = 3))) AND ((VersionNT &lt;&gt; 502) OR (ServicePackLevel = 2))" Description="[ProductName] cannot be installed on [WindowsTypeNT5XDisplay]." DescriptionLocId="AI.LaunchCondition.NoNT5X" IsPredefined="true" Builds="AnyCPU_Debug;AnyCPU_Release"/>
+    <ROW Condition="VersionNT" Description="[ProductName] cannot be installed on [WindowsType9XDisplay]." DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="AnyCPU_Debug;AnyCPU_Release"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
+    <ROW Registry="Path" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Path" Value="[APPDIR]" Component_="ProductInformation"/>
+    <ROW Registry="Version" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Version" Value="[ProductVersion]" Component_="ProductInformation"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
+    <ROW Shortcut="Mdm1Oss1Clipboard1.exe" Directory_="SHORTCUTDIR" Name="MDM1OS~1.EXE|Mdm1Oss1Clipboard1.exe" Component_="Mdm1Oss1Clipboard1.exe" Target="[#Mdm1Oss1Clipboard1.exe]" Description="Mdm1Oss1Clipboard1.exe" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+    <ROW Shortcut="Mdm1Oss1Clipboard1.exe_1" Directory_="DesktopFolder" Name="MDM1OS~1.EXE|Mdm1Oss1Clipboard1.exe" Component_="Mdm1Oss1Clipboard1.exe" Target="[#Mdm1Oss1Clipboard1.exe]" Description="Mdm1Oss1Clipboard1.exe" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
+    <ATTRIBUTE name="UsedTheme" value="classic"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="0.0.1" VersionMax="[|ProductVersion]" Attributes="257" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+</DOCUMENT>

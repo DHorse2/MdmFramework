@@ -1,0 +1,10 @@
+d        #region MdmClassInternalProperties
+        // <Section Id = "ClassInternalProperties">
+        // <Area Id = "FileInputBuffers">
+        // <Area Id = "FileFunction">
+        // <Section Vs="MdmClassIntPropVs0_8_5">
+		// MdmClassInternalProperties MdmClassIntPropVs0_8_5
+        #region Primary Data Objects
+
+        #endregion
+        #endregion

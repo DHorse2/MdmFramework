@@ -1,0 +1,8 @@
+C:\Srt Project\Mdm\Mdm1\Mdm1Bho1\BHO_HelloWorld\bin\Release\BHOHelloWorld.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Bho1\BHO_HelloWorld\bin\Release\BHOHelloWorld.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Bho1\BHO_HelloWorld\bin\Release\Interop.SHDocVw.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Bho1\BHO_HelloWorld\obj\Release\ResolveAssemblyReference.cache
+C:\Srt Project\Mdm\Mdm1\Mdm1Bho1\BHO_HelloWorld\obj\Release\Interop.SHDocVw.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Bho1\BHO_HelloWorld\obj\Release\BHO HelloWorld.csproj.ResolveComReference.cache
+C:\Srt Project\Mdm\Mdm1\Mdm1Bho1\BHO_HelloWorld\obj\Release\BHOHelloWorld.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Bho1\BHO_HelloWorld\obj\Release\BHOHelloWorld.pdb

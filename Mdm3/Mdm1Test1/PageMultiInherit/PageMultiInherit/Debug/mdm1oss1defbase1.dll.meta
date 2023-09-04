@@ -1,0 +1,47 @@
+Assembly Mdm1Oss1DefBase1, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly Mdm1Pick1Syntax1, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=None
+Assembly PresentationFramework, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35: 
+	hash=SHA1, flags=None
+Assembly mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=SHA1, flags=None
+Assembly Mdm1Oss1Decl1, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=None
+Assembly System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=SHA1, flags=None
+Assembly WindowsBase, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35: 
+	hash=SHA1, flags=None
+Class Mdm.Oss.Decl.DefStdBaseRunFileConsole: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Mdm.Pick.PickSyntax
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Windows.Controls.TextBox StatusLine1 : Public
+    System.Windows.Controls.TextBox StatusLine2 : Public
+    System.Windows.Controls.TextBox StatusLine3 : Public
+    System.Windows.Controls.TextBox StatusLine4 : Public
+    System.IO.TextWriter ocotConsoleWriter : Public
+    System.IO.TextReader ocitConsoleReader : Public
+    System.IO.StreamWriter ocoConsoleWriter : Public
+    System.IO.StreamReader ociConsoleReader : Public
+    System.IO.IOException eIoe : Public
+    System.IO.TextWriter ocetErrorWriter : Public
+    Int64 ConsoleOpenResult : Public
+    Int64 ConsoleCloseResult : Public
+    Int64 ConsoleReadResult : Public
+    Int64 ConsoleWriteResult : Public
+  Methods:
+    MdmTraceCounterLevel1GetDefault(): PrivateScope, Public, HideBySig
+    MdmTraceCounterLevel2GetDefault(): PrivateScope, Public, HideBySig
+    ConsoleMdmControlSet(): PrivateScope, Public, HideBySig
+    ConsoleMdmConsolePickConsoleOpen(): PrivateScope, Public, HideBySig
+    ConsoleMdmConsolePickConsoleClose(): PrivateScope, Public, HideBySig
+    ConsoleMdmConsolePickConsoleDisplay(String): PrivateScope, Public, HideBySig
+    MdmOutputPrint_PickPrint_TargetValidate(String): PrivateScope, Public, HideBySig
+    MdmOutputPrint_PickPrint(Int32, String, Boolean): PrivateScope, Public, HideBySig
+    MdmOutputPrint_PickPrint(Int32, String): PrivateScope, Public, HideBySig
+    MdmOutputPrint_PickPrint(Int32, Boolean, String): PrivateScope, Public, HideBySig
+    MdmOutputPrint_PickPosition(Int32, Boolean, Int32, Int32, String): PrivateScope, Public, HideBySig
+    MdmOutputPrint_PickPosition(Int32, Boolean, Int32, Int32): PrivateScope, Public, HideBySig
+    MdmOutputPrint_PickPosition(Int32, Boolean, Int32): PrivateScope, Public, HideBySig
+    MdmOutputPrint_PickPosition(Int32, String, Boolean, Int32, Int32): PrivateScope, Public, HideBySig

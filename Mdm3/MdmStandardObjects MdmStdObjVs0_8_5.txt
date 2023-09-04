@@ -1,0 +1,8 @@
+        #region MdmStandardObjects
+        // <Section Summary>
+        // <Section Role="Declarations">
+        // <Section Id = "MdmStandardObjects">
+        // <Section Vs="MdmStdObjVs0_8_5">
+		// MdmStandardObjects MdmStdObjVs0_8_5
+        public Mobject1 LocalMob;
+        #endregion

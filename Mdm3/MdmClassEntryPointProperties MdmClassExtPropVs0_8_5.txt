@@ -1,0 +1,33 @@
+        #region MdmClassEntryPointProperties
+        // <Section Summary>
+        // <Section Role="Declarations">
+        // <Section Id = "MdmClassEntryPointProperties">
+        // <Section Vs="MdmClassExtPropVs0_8_5">
+		// MdmClassEntryPointProperties MdmClassExtPropVs0_8_5
+        // <Section Id = "ClassExternalProperties">
+        #region ClassCommandsConsoleAction
+        private string sClassCommandLineRequest;
+        // <Area Id = "PrimaryAction">
+        private string sClassFileActionRequest;
+        // <Area Id = "CommandOptions (External)">
+        private string sClassFileActionOptions;
+        protected string sClassFileOptions = "";
+        // <Area Id = "OptionFlags">
+        protected bool bClassOptionOne= false;
+        protected bool bClassOptionTwo = false;
+        protected bool bClassOptionThree = false;
+        protected bool bClassOptionFour = false;
+        protected bool bClassOptionFive = false;
+        protected bool bClassOptionSix = false;
+        #endregion
+        #region ApplicationInputOutput (System, Database, File, Id (In, Out))
+        // <Section Id = "ApplicationInputOutput (System, Database, File, Id (In, Out))">
+        private string sClassSystemNameIn;
+        private string sClassSystemNameOut;
+        private string sClassDatabaseNameIn;
+        private string sClassDatabaseNameOut;
+        private string sClassFileNameIn;
+        private string sClassFileNameOut;
+        private string sClassFileItemIdOut;
+        #endregion
+        #endregion

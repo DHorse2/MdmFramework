@@ -1,0 +1,22 @@
+C:\Srt Project1\Mdm\Mdm3\Mdm1Oss1\Mdm1Oss1Definitions1\Mdm1Oss1Decl1\bin\Debug\Mdm1Oss1Decl1.dll
+C:\Srt Project1\Mdm\Mdm3\Mdm1Oss1\Mdm1Oss1Definitions1\Mdm1Oss1Decl1\bin\Debug\Mdm1Oss1Decl1.pdb
+C:\Srt Project1\Mdm\Mdm3\Mdm1Oss1\Mdm1Oss1Definitions1\Mdm1Oss1Decl1\obj\Debug\Mdm1Oss1Decl1.dll
+C:\Srt Project1\Mdm\Mdm3\Mdm1Oss1\Mdm1Oss1Definitions1\Mdm1Oss1Decl1\obj\Debug\Mdm1Oss1Decl1.pdb
+C:\Srt Project1\Mdm\Mdm3\Mdm1Oss1\Mdm1Oss1Definitions1\Mdm1Oss1Decl1\obj\Debug\Mdm3Oss1Decl1.csprojResolveAssemblyReference.cache
+F:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Definitions1\Mdm1Oss1Decl1\obj\Debug\Mdm3Oss1Decl1.csproj.CoreCompileInputs.cache
+F:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Definitions1\Mdm1Oss1Decl1\bin\Debug\Mdm1Oss1Decl1.dll
+F:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Definitions1\Mdm1Oss1Decl1\bin\Debug\Mdm1Oss1Decl1.pdb
+F:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Definitions1\Mdm1Oss1Decl1\obj\Debug\Mdm1Oss1Decl1.dll
+F:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Definitions1\Mdm1Oss1Decl1\obj\Debug\Mdm1Oss1Decl1.pdb
+F:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Definitions1\Mdm1Oss1Decl1\obj\Debug\Mdm3Oss1Decl1.csprojAssemblyReference.cache
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Definitions1\Mdm1Oss1Decl1\obj\Debug\Mdm3Oss1Decl1.csproj.CoreCompileInputs.cache
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Definitions1\Mdm1Oss1Decl1\obj\Debug\Mdm1Oss1Decl1.dll
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Definitions1\Mdm1Oss1Decl1\obj\Debug\Mdm1Oss1Decl1.pdb
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Definitions1\Mdm1Oss1Decl1\bin\Debug\Mdm1Oss1Decl1.dll
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Definitions1\Mdm1Oss1Decl1\bin\Debug\Mdm1Oss1Decl1.pdb
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Definitions1\Mdm1Oss1Decl1\obj\Debug\Interop.IWshRuntimeLibrary.dll
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Definitions1\Mdm1Oss1Decl1\obj\Debug\Interop.Shell32.dll
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Definitions1\Mdm1Oss1Decl1\obj\Debug\Mdm3Oss1Decl1.csproj.ResolveComReference.cache
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Definitions1\Mdm1Oss1Decl1\bin\Debug\Interop.IWshRuntimeLibrary.dll
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Definitions1\Mdm1Oss1Decl1\bin\Debug\Interop.Shell32.dll
+H:\Dev\Mdm3ShortcutUtilsPhase2\Mdm1Oss1\Mdm1Oss1Definitions1\Mdm1Oss1Decl1\obj\Debug\Mdm3Oss1Decl1.csprojAssemblyReference.cache

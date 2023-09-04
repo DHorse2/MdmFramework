@@ -1,0 +1,10 @@
+
+		private void zGotFocus(object sender, RoutedEventArgs e)
+        {
+            StatusLine1.Text = "Enter the file name to place the data into.";
+        }
+
+        private void zLostFocus(object sender, RoutedEventArgs e)
+        {
+            StatusLine1.Text = "";
+        }

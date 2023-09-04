@@ -1,0 +1,366 @@
+            /*
+            * 
+            * "USE HowToDemo" + Environment.NewLine +
+            * "IF EXISTS (" + 
+            * "SELECT * " + 
+            * "FROM " + 
+            * "HowToDemo.dbo.sysobjects " + 
+            * "WHERE " +  
+            *
+            * file:
+            * "Name = 'NW_Seafood' " + 
+            * "AND " + 
+            *
+            * Type is user table
+            * "TYPE = 'u' + 
+            * Type U is used to Drop and entire table
+            * (It is inclusive of all table objects)
+            *
+            * Table Objects:
+            * U - User Table
+            * F - Foreign Key
+            * PK - Primary Key
+            * UQ - Unique Key 
+            * K - Key
+            * 
+            * TR - Trigger
+            * IF - Inlined Table Function
+            * TF - Table Function
+            * P - Stored Procedure
+            * X - Extended Stored Procedure
+            *
+            * V - View
+            *
+            * Constraints
+            * C - Check Constraint
+            * D - Default Constraint
+            *
+            * S - System Table
+            *
+            * Other
+            * L - Log
+            * FN - Scalar Function
+            *
+            *
+            * ")" + 
+            *
+            * Environment.NewLine + 
+            * "BEGIN" + Environment.NewLine + 
+            * "DROP " + 
+            * "TABLE " + 
+            * "HowToDemo.dbo.NW_Seafood" + 
+            * Environment.NewLine + 
+            * "END" + 
+            * Environment.NewLine + 
+            * "CREATE TABLE NW_Seafood" +  
+            * "(" +
+            * "ProductID Int NOT NULL," + 
+            * "ProductName NVarChar(40) NOT NULL," + 
+            * "QuantityPerUnit NVarChar(20) NOT NULL," + 
+            * "UnitPrice Money NOT NULL," + 
+            * "CONSTRAINT [" + 
+            * "PK_Product" + 
+            * "]" + 
+            * " PRIMARY KEY" + 
+            * " CLUSTERED" + 
+            * " (" + 
+            * "ProductID" + 
+            * ")" + 
+            * ")";
+            */
+
+==============================================================
+
+        /*
+        private void OrigCreateTable()
+        {
+
+            string strSQL = "IF EXISTS (" +
+                            "SELECT * " +
+                            "FROM master..sysdatabases " +
+                            "WHERE Name = 'HowToDemo')" + Environment.NewLine +
+                            "DROP DATABASE HowToDemo" + Environment.NewLine +
+                            "CREATE DATABASE HowToDemo";
+
+            // Display a status message saying that we're attempting to connect.
+            // This only needs to be done the very first time a connection is
+            // attempted.  After we've determined that MSDE or SQL Server is
+            // installed, this message no longer needs to be displayed.
+
+            frmStatus frmStatusMessage = new frmStatus();
+
+            if (bolDidPreviouslyConnect == false)
+            {
+
+                frmStatusMessage.Show("Connecting to SQL Server");
+
+            }
+
+            // Attempt to connect to the local SQL server instance, and a local
+            // MSDE installation (with Northwind).  
+
+            bool bolIsConnecting = true;
+
+            while (bolIsConnecting)
+            {
+                try
+                {
+
+                    // The SqlConnection class allows you to communicate with SQL Server.
+                    // The constructor accepts a connection string an argument.  This
+                    // connection string uses Integrated Security, which means that you 
+                    // must have a login in SQL Server, or be part of the Administrators
+                    // group for this to work.
+
+                    SqlConnection northwindConnection = new SqlConnection(connectionstring);
+
+                    // A Cmd object is used to execute the SQL commands.
+
+                    Cmd cmd = new Cmd(strSQL, northwindConnection);
+
+                    // Open the connection, execute the command, and close the 
+                    // connection. It is more efficient to ExecuteNonQuery when data is 
+                    // not being returned.
+
+                    northwindConnection.Open();
+                    cmd.ExecuteNonQuery();
+                    northwindConnection.Close();
+
+                    // Data has been successfully submitted, so break out of the loop
+                    // and close the status form.
+
+                    bolIsConnecting = false;
+                    bolDidPreviouslyConnect = true;
+                    bolDidCreateTable = true;
+                    frmStatusMessage.Close();
+
+                    // Show the controls for the next step.
+
+                    lblArrow1.Visible = true;
+                    lblStep2.Enabled = true;
+                    btnCreateTable.Enabled = true;
+                    MessageBox.Show("Database 'HowToDemo' successfully created!", "Database Creation Status", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                }
+                catch (SqlException sqlExc)
+                {
+
+                    MessageBox.Show(sqlExc.ToString(), "SQL Exception Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                catch (Exception exc)
+                {
+
+                    if (connectionstring == SQL_CONNECTION_STRING)
+                    {
+
+                        // Couldn't connect to SQL Server.  Now try MSDE.
+                        connectionstring = MSDE_CONNECTION_STRING;
+                        frmStatusMessage.Show("Connecting to MSDE");
+                    }
+                    else
+                    {
+
+                        // Unable to connect to SQL Server or MSDE
+
+                        frmStatusMessage.Close();
+                        MessageBox.Show(CONNECTION_ERROR_MSG, "Connection Failed!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                        Application.Exit();
+
+                    }
+
+                }
+
+            }
+
+            frmStatusMessage.Close();
+
+        }
+
+        // Sets up the user interface so that the user proceeds in proper order
+
+        // through the steps.
+*/
+
+==============================================================
+
+        /*
+        private void OrigbtnCreateTable_Click(object sender, System.EventArgs e)
+        {
+
+            string strSQL = "USE HowToDemo" + Environment.NewLine +
+                                "IF EXISTS (" +
+                                "SELECT * " +
+                                "FROM HowToDemo.dbo.sysobjects " +
+                                "WHERE Name = 'NW_Seafood' " +
+                                "AND TYPE = 'u')" + Environment.NewLine +
+                                "BEGIN" + Environment.NewLine +
+                                "DROP TABLE HowToDemo.dbo.NW_Seafood" + Environment.NewLine +
+                                "END" + Environment.NewLine +
+                                "CREATE TABLE NW_Seafood (" +
+                                "ProductID Int NOT NULL," +
+                                "ProductName NVarChar(40) NOT NULL," +
+                                "QuantityPerUnit NVarChar(20) NOT NULL," +
+                                "UnitPrice Money NOT NULL," +
+                                "CONSTRAINT [PK_Product] PRIMARY KEY CLUSTERED" +
+                                "(ProductID))";
+
+            try
+            {
+
+                // The SqlConnection class allows you to communicate with SQL Server.
+                // The constructor accepts a connection string an argument.  This
+                // connection string uses Integrated Security, which means that you 
+                // must have a login in SQL Server, or be part of the Administrators
+                // group for this to work.
+
+                SqlConnection northwindConnection = new SqlConnection(connectionstring);
+
+                // A Cmd object is used to execute the SQL commands.
+
+                Cmd cmd = new Cmd(strSQL, northwindConnection);
+
+                // Open the connection, execute the command, and close the connection.
+                // It is more efficient to ExecuteNonQuery when data is not being 
+                // returned.
+
+                northwindConnection.Open();
+                cmd.ExecuteNonQuery();
+                northwindConnection.Close();
+
+                // Show the controls for the next step.
+
+                lblArrow2.Visible = true;
+                lblStep3.Enabled = true;
+                btnCreateSP.Enabled = true;
+                MessageBox.Show("Table 'NW_Seafood' successfully created.",
+                                "Table Creation Status",
+                                MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+            catch (SqlException sqlExc)
+            {
+                MessageBox.Show(sqlExc.ToString(), "SQL Exception Error!",
+                                MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+
+        }
+         */
+
+
+==============================================================
+
+        private void MdmDoCreateDbFile()
+        {
+
+            
+            //btnCreateTable_Click(object sender, System.EventArgs e)
+            string MstrDbFileCreateCmd = 
+                "USE HowToDemo" + Environment.NewLine +
+                                "IF EXISTS (" +
+                                "SELECT * " +
+                                "FROM HowToDemo.dbo.sysobjects " +
+                                "WHERE Name = 'NW_Seafood' " +
+                                "AND TYPE = 'u')" + Environment.NewLine +
+                                "BEGIN" + Environment.NewLine +
+                                "DROP TABLE HowToDemo.dbo.NW_Seafood" + Environment.NewLine +
+                                "END" + Environment.NewLine +
+                                "CREATE TABLE NW_Seafood (" +
+                                "ProductID Int NOT NULL," +
+                                "ProductName NVarChar(40) NOT NULL," +
+                                "QuantityPerUnit NVarChar(20) NOT NULL," +
+                                "UnitPrice Money NOT NULL," +
+                                "CONSTRAINT [PK_Product] PRIMARY KEY CLUSTERED" +
+                                "(ProductID))";
+
+            try
+            {
+
+                // The SqlConnection class allows you to communicate with SQL Server.
+                // The constructor accepts a connection string an argument.  This
+                // connection string uses Integrated Security, which means that you 
+                // must have a login in SQL Server, or be part of the Administrators
+                // group for this to work.
+
+                SqlConnection MobjDbConn = new SqlConnection(connectionstring);
+
+                // A Cmd object is used to execute the SQL commands.
+
+                Cmd TempMstrDbFileCreateCmd = new Cmd(MstrDbFileCreateCmd, MobjDbConn);
+
+                // Open the connection, execute the command, and close the connection.
+                // It is more efficient to ExecuteNonQuery when data is not being 
+                // returned.
+
+                MobjDbConn.Open();
+                TempMstrDbFileCreateCmd.ExecuteNonQuery();
+                MobjDbConn.Close();
+
+                // Show the controls for the next step.
+                /*
+                lblArrow2.Visible = true;
+                lblStep3.Enabled = true;
+                btnCreateSP.Enabled = true;
+                MessageBox.Show("Table 'NW_Seafood' successfully created.",
+                                "Table Creation Status",
+                                MessageBoxButtons.OK, MessageBoxIcon.Information);
+                */
+
+                MmessageBoxMessage = LocalMob.MdmProcessTitle  + "/n" + @"Database Creation Status" + "/n" + "Table Creation Status" + "/n" + "Table " + MstrDbFile + " successfully created.";
+
+            }
+            catch (SqlException MexceptDbException)
+            {
+                //MessageBox.Show(sqlExc.ToString(), "SQL Exception Error!",
+                //                MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                MmessageBoxMessage = LocalMob.MdmProcessTitle  + "/n" + @"Database Creation Status" + "/n" + "Table Creation Status" + "/n" + "SQL Exception Error!" + "/n" + MexceptDbException.ToString();
+
+            }
+
+        }
+
+
+==============================================================
+
+
+        /*
+        //================ Basic File ============
+
+        protected string MstrDbFilePhrase;
+        protected string MstrDbFilePhraseIf;
+        protected string MstrDbFilePhraseSelect;
+        protected string MstrDbFilePhraseFrom;
+        protected string MstrDbFilePhraseWhere;
+        protected string MstrDbFilePhraseIfEnd;
+        protected string MstrDbFilePhraseDrop;
+        protected string MstrDbFilePhraseCreate;
+
+        /*
+        //================ Msde ============
+
+        protected SqlConnection MobjMsdeDbConn;
+        protected SqlException MexceptMsdeException;
+
+        protected string MstrMsdeCommand;
+        protected string MstrMsdePhraseServer;
+        protected string MstrMsdePhraseDatabase;
+        protected string MstrMsdePhraseSecurity;
+        protected string MstrMsdePhraseUser;
+        protected string MstrMsdePhraseUserPw;
+        */
+
+==============================================================
+
+SqlConnection northwindConnection = new SqlConnection(connectionstring);
+SqlCommand cmd = new SqlCommand(strSQL, northwindConnection);
+
+==============================================================
+
+
+==============================================================
+
+
+==============================================================
+

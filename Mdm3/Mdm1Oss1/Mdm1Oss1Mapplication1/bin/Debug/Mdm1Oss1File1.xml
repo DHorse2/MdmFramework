@@ -1,0 +1,1767 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Mdm1Oss1File1</name>
+    </assembly>
+    <members>
+        <member name="T:Mdm.Oss.FileUtil._a_File_Application_Object_Mfile_ReadMe">
+            <summary> 
+            <para> Mdm File Application Object.</para>
+            <para> A Utility Object (File Console level)</para>
+            <para> .</para>
+            <para> Notes:</para>
+            <para> Text File is a regular text file.</para>
+            <para> Ascii ItemData File is a Simple Text File.</para>
+            <para> Sql File is the ItemData Table in the RDBMS.</para>
+            <para> Sql Dict is the Schema or Dictionary File for the Sql File.</para>
+            <para> DatabaseFile is the Database File that contains the Sql File.</para>
+            <para> Conn is the Connection opened to access the Sql File.</para>
+            <para> __________________________________________</para>
+            <para> .</para>
+            <para> File Base Class Definition</para>
+            <para> .</para>
+            <para> File</para>
+            <para> ..Ascii</para>
+            <para> ..Text</para>
+            <para> ..Binary</para>
+            <para> Database File</para>
+            <para> ..Sql</para>
+            <para> ....MS Sql</para>
+            <para> ....MY Sql</para>
+            <para> ..Db2</para>
+            <para> ..Pick</para>
+            <para> __________________________________________</para>
+            <para> .</para>
+            <para> File Type Area:</para>
+            <para> Sql, Ascii, Text, Binary, Pick</para>
+            <para> .</para>
+            <para> File class usage:</para>
+            <para> base, abstract, sealed, interface... ???</para>
+            <para> __________________________________________</para>
+            <para> .</para>
+            <para> File Type Organization:</para>
+            <para> Binary File</para>
+            <para> Ascii File</para>
+            <para> Ascii Delimited RowPerLine - DEL</para>
+            <para> Ascii Delimited CellPerLine - DEL</para>
+            <para> Text File</para>
+            <para> Text Delimited File</para>
+            <para> Text Delimited RowPerLine</para>
+            <para> Text Delimited RowPerLine - CSV</para>
+            <para> Text Delimited RowPerLine - FIX</para>
+            <para> Text Delimited CellPerLine</para>
+            <para> Text Delimited CellPerLine - Tilde</para>
+            <para> Sql File</para>
+            <para> Pick File</para>
+            <para> __________________________________________</para>
+            <para> .</para>
+            <para> File XXXX is virtual and will be overriden in the subclasses when implemented</para>
+            <para> Therefore SqlOpen, AsciiFileOpen and TextFileOpen become FileOpen in the SqlFile, AsciiFile, TextFile classes</para>
+            <para> __________________________________________</para>
+            <para> .</para>
+            <para> File Management Objects:</para>
+            <para> DbMaster - Database Master Files</para>
+            <para> Db - Database Tables being accessed</para>
+            <para> File - Primary File Stream</para>
+            <para> Item - A record item or complete data block</para>
+            <para> Buf - A file stream, ring buffer, pipe, etc.</para>
+            <para> .</para>
+            <para> Schema Management Objects:</para>
+            <para> DbDict - Schema for file</para>
+            <para> PickDict - Pick style dictionary schema.</para>
+            <para> Dict - Flat file schema (Tld, CSV)</para>
+            <para> XmlDict - Schema for XML</para>
+            <para> __________________________________________</para>
+            <para> .</para>
+            <para> A File System Object contains two File Stream Objects:</para>
+            <para> 1) Fmain, the Main or Primary File Stream Object. </para>
+            <para> ...and...</para>
+            <para> 1) Faux, the Auxillary File Stream Object. </para>
+            <para> .</para>
+            <para> Each File Stream Object is composed of:</para>
+            <para> 2) A File Summary object. </para>
+            <para> For each of the File and DB sub-objects:</para>
+            <para> 3) An ID identification object. </para>
+            <para> 4) An IO object to move data to and from the file. </para>
+            <para> 5) One or more File Status Objects. </para>
+            <para> 6) One or more Row and Column Management objects. </para>
+            <para> At the Stream or System level:</para>
+            <para> 7) Additional objects created by extended classes. </para>
+            <para> 8) Meta data is also present for the File. 
+            Internal Data is present in the form of run control,
+            exceptions handling, threading, messaging, etc. </para>
+            <para> .</para>
+            <para> In general, a File Stream Object should either use
+            the File sub-object for various file actions or it should
+            use the DB sub-object for database IO.</para>
+            <para> However, File and DB sub-objects can be reused or 
+            used concurrently keeping in mind that they share
+            a common set of fields and belong to one File Stream Object.</para>
+            <para> __________________________________________</para>
+            <para> .</para>
+            <para> The Core (or primary) set of objects and lists is
+            ordered by:</para>
+            <para> 1) System, </para>
+            <para> 2) Service, </para>
+            <para> 3) Server, </para>
+            <para> 4) Database, </para>
+            <para> 5) FileOwner, </para>
+            <para> 6) FileGroup, </para>
+            <para> 7) Table and DiskFile.</para>
+            <para> __________________________________________</para>
+            <para> .</para>
+            <para> Types of Run Control Object:</para>
+            <para> File Action - Contains the file action verb and a few details</para>
+            <para> File Transformation - Contains an input, output and direction</para>
+            <para> __________________________________________</para>
+            <para> .</para>
+            <para> Types of File Object classes:</para>
+            <para> General design pattern.  Each type of file object has:</para>
+            <para> Summary - Contains database, user, security, system and other database and additional info</para>
+            <para> Id - Contains the name of the file, path, Id and basic information</para>
+            <para> Io - Contains I/O Objects such as streams, readers, buffers</para>
+            <para> Status - Status setting related to a file</para>
+            <para> Options - User option flags for a faile</para>
+            <para> </para>
+            <para> Row / Item / Record Level Objects:</para>
+            <para> ItemDef - Contains an Item block, Id, version and a few flags</para>
+            <para> RowInfo - Counters, indexing and status for a row</para>
+            </summary> 
+            <remarks>
+            <para> PROCEED TO SqlDictProcessDb(String PassedFileName </para> 
+            <para> __________________________________________</para>
+            <para> .</para>
+            <para> Note on passing by reference:</para>
+            <para> All Methods [Object]Check[State] take Passed Names and Options, States and Actions.</para>
+            <para> </para>
+            <para> They do NOT set THIS fields, Options, States or Actions to the passed values.  These methods are independant of THIS and be able to act on any Passed Name.</para>
+            <para> .</para>
+            <para> The rationelle for this is that each Method might need to Check various States of different Files, perhaps even on different Servers, without Altering the State of This Object or in particular,</para>
+            <para> The Options and Actions such as:</para>
+            <para> Open, Delete, Connect, Count,  CheckExists, SchemaChange, RowAdd, RowColumnUpdate, etc.</para>
+            <para> </para>
+            <para> The States or Options and Actions on This Object include flags such as DoKeepOpen which indicates that the Using Class wants This Object to ultimately be returned in an Open State.</para>
+            <para> .</para>
+            </remarks> 
+        </member>
+        <member name="T:Mdm.Oss.FileUtil.Mfile">
+            <summary>
+            <para> A Utility Object (File Console level)</para>
+            <para> The console implements:</para>
+            <para> ....Trace Mdm,</para>
+            <para> ....print output,</para>
+            <para> ....Console Output,</para>
+            <para> ....Run Action and Control</para>
+            <para> ....Mdm Message Handling</para>
+            <para> . </para>
+            <para> DefStdBaseRunFile is the lowest tier of the file system.</para>
+            <para> DefStdBaseRunFileConsole would similarly represent the first
+            tier performing User Interface and OS functionality.</para>
+            <para> . </para>
+            <para> The console also enables communication between classes, control
+            over execution, and interoperation betweens threads and modules.</para>
+            </summary>
+        </member>
+        <member name="F:Mdm.Oss.FileUtil.Mfile.Meta">
+            <summary> 
+            File System Object Meta Data, System Object,
+            and working fields.
+            </summary> 
+        </member>
+        <member name="F:Mdm.Oss.FileUtil.Mfile.Fmain">
+            <summary> 
+            File Main Primary object and File Auxillary object.
+            </summary> 
+        </member>
+        <!-- Badly formed XML comment ignored for member "F:Mdm.Oss.FileUtil.Mfile.ExceptionGeneral" -->
+        <!-- Badly formed XML comment ignored for member "F:Mdm.Oss.FileUtil.Mfile.ExceptSql" -->
+        <member name="M:Mdm.Oss.FileUtil.Mfile.#ctor(Mdm.Oss.Mobj.Mobject@)">
+            <summary>
+            Creates a file object associated with the passed Mobject.
+            This effectively gives ownership of the file to PassedOb.
+            </summary> 
+            <param name="PassedOb">Parent or owner Mobject</param> 
+            <param name="ClassUses.RoleAsUtility">File (Objects) are utility objects</param> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.#ctor(Mdm.Oss.Mobj.Mobject@,System.Int32)">
+            <summary>
+            Creates a file for "Direction" (i.e. Input, Output, Both)
+            whose object is associated with the passed Mobject.
+            This effectively gives ownership of the file to PassedOb.
+            </summary> 
+            <param name="PassedOb">Parent or owner Mobject</param> 
+            <param name="DirectionPassed">Direction of File IO for this file.</param> 
+            <param name="ClassUses.RoleAsUtility">File (Objects) are utility objects</param> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.#ctor">
+            <summary> 
+            Default constructor would essentially own itself and
+            operate as a controller.
+            </summary> 
+            <param name="ClassUses.RoleAsUtility">File (Objects) are utility objects</param> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.MfileInitialize(System.Int32)">
+            <summary> 
+            Standard initialize after constructors.
+            Create Meta and System data, initializes fields.
+            Create Primary and Auxillary File Stream objects.
+            Create Utility, management and state objects.
+            Create Script Syntax objects.
+            </summary> 
+            <param name="DirectionPassed">Expected direction of IO data flow (Input, Output, Both).</param> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.AppMfileObjectGet(Mdm.Oss.FileUtil.FileMainDef@)">
+            <summary> 
+            Not Used - Get the file object (this)
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.AppMfileObjectSet(Mdm.Oss.FileUtil.FileMainDef@)">
+            <summary> 
+            Not Used - Set the Primary File Stream object Fmain (this)
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.MainFileProcessing">
+            <summary> 
+            Main Processing Loop method.
+            Virtual method overriden in derived class
+            but could be delegate based.
+            It would use a standard Action delegate.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.TableCreateDo(Mdm.Oss.FileUtil.FileMainDef@)">
+            <summary> 
+            
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.TableOpen">
+            <summary> 
+            Open the current table.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.TableOpen(Mdm.Oss.FileUtil.FileMainDef@)">
+            <summary> 
+            Open the passed table.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.ExceptTableOpenError(System.Data.SqlClient.SqlException@)">
+            <summary> 
+            An SQL Exception while Opening Tables.
+            </summary> 
+            <param name="ExceptionSql">The SQL exception that occurred.</param> 
+            <remarks></remarks> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.ExceptTableOpenError(Mdm.Oss.FileUtil.FileMainDef@,System.Data.SqlClient.SqlException@)">
+            <summary> 
+            An SQL Exception while Opening on the passed Table.
+            </summary> 
+            <param name="ExceptionSql">The SQL exception that occurred.</param> 
+            <remarks></remarks> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.TableOpenOLD(Mdm.Oss.FileUtil.FileMainDef@)">
+            <summary> 
+            Obsolete Open...
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.TableDoesExist(Mdm.Oss.FileUtil.FileMainDef@)">
+            <summary> 
+            Returns a bool indicating if the Table exists.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.TableCheckDoesExist">
+            <summary> 
+            Check if the Table exists.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.TableCheckDoesExist(Mdm.Oss.FileUtil.FileMainDef@)">
+            <summary> 
+            Check if the passed table exists.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.TableTestAccess(Mdm.Oss.FileUtil.FileMainDef@)">
+            <summary> 
+            Test access to the Table.
+            </summary> 
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Mdm.Oss.FileUtil.Mfile.ObjectListLoadAscii(Mdm.Oss.FileUtil.FileMainDef@,System.Collections.Generic.List{System.String}@)" -->
+        <member name="M:Mdm.Oss.FileUtil.Mfile.ObjectParamLoad(Mdm.Oss.FileUtil.FileMainDef@,System.String)">
+            <summary> 
+            Load the requested parameter from file.
+            </summary> 
+            <param name="ParamFullNamePassed">Fully qualified path name to paramater</param> 
+            <remarks></remarks> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.ObjectParamLoadAscii(Mdm.Oss.FileUtil.FileMainDef@,System.String@)">
+            <summary> 
+            Load the passed Parameter Ascii Result
+            </summary> 
+            <param name="ItemParamPassed"></param> 
+            <remarks>Not Finished!!!</remarks> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.SystemListLoad(Mdm.Oss.FileUtil.FileMainDef@,System.Boolean,System.Boolean)">
+            <summary> 
+            Load the list of Systems
+            </summary> 
+            <param name="DoClearTargetPassed"></param> 
+            <param name="DoGetUiVs"></param> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.SystemNameChanged">
+            <summary> 
+            OnChange in Systems
+            Reset dependent data.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.AllCoreNameChanged">
+            <summary> 
+            All lists are to be reset.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.SystemListCheck(Mdm.Oss.FileUtil.FileMainDef@,System.Boolean,System.Boolean)">
+            <summary> 
+            Check if the System is in the System List.
+            </summary> 
+            <param name="DoClearTargetPassed"></param> 
+            <param name="DoGetUiVs"></param> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.SystemNameGetDefault(Mdm.Oss.FileUtil.FileMainDef@)">
+            <summary> 
+            Get the default System Name.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.SystemListGet(Mdm.Oss.FileUtil.FileMainDef@,System.Boolean,System.Boolean)">
+            <summary> 
+            Get the System List.
+            </summary> 
+            <param name="DoClearTargetPassed"></param> 
+            <param name="DoGetUiVs"></param> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.ServiceListLoad(Mdm.Oss.FileUtil.FileMainDef@,System.Boolean,System.Boolean)">
+            <summary> 
+            Load the Service List.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.ServiceNameGetDefault(Mdm.Oss.FileUtil.FileMainDef@)">
+            <summary> 
+            Get the default Service Name.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.ServiceNameChanged">
+            <summary> 
+            On Service Name changed.
+            Clear dependent lists.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.ServiceListCheck(Mdm.Oss.FileUtil.FileMainDef@,System.Boolean,System.Boolean)">
+            <summary> 
+            Check if the Service is in the Service List.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.ServiceListGet(Mdm.Oss.FileUtil.FileMainDef@,System.Boolean,System.Boolean)">
+            <summary> 
+            Get this Service List.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.ServerListLoad(Mdm.Oss.FileUtil.FileMainDef@,System.Boolean,System.Boolean)">
+            <summary> 
+            Load the Server List.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.ServerListCheck(Mdm.Oss.FileUtil.FileMainDef@,System.Boolean,System.Boolean)">
+            <summary> 
+            Check if the Server is in the Server List.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.ServerNameGetDefault(Mdm.Oss.FileUtil.FileMainDef@)">
+            <summary> 
+            Get the default Server Name.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.ServerNameChanged">
+            <summary> 
+            On Server Name Changed.
+            Clear dependent lists.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.ServerListGet(Mdm.Oss.FileUtil.FileMainDef@,System.Boolean,System.Boolean)">
+            <summary> 
+            Get the Server List.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.DatabaseListLoad(Mdm.Oss.FileUtil.FileMainDef@,System.Boolean,System.Boolean)">
+            <summary> 
+            Load the Database List.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.DatabaseListCheck(Mdm.Oss.FileUtil.FileMainDef@,System.Boolean,System.Boolean)">
+            <summary> 
+            Check if the Database is in the Database List.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.DatabaseNameGetDefault(Mdm.Oss.FileUtil.FileMainDef@)">
+            <summary> 
+            Get the default Database Name.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.DatabaseNameChanged">
+            <summary> 
+            On Database Name changed
+            Clear dependent lists.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.DatabaseListGet(Mdm.Oss.FileUtil.FileMainDef@,System.Boolean,System.Boolean)">
+            <summary> 
+            Get the Database List.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.FileOwnerListLoad(Mdm.Oss.FileUtil.FileMainDef@,System.Boolean,System.Boolean)">
+            <summary> 
+            Load the File Owner List.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.FileOwnerListCheck(Mdm.Oss.FileUtil.FileMainDef@,System.Boolean,System.Boolean)">
+            <summary> 
+            Check if the File Owner is in the File Owner List.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.FileOwnerGetDefault(Mdm.Oss.FileUtil.FileMainDef@)">
+            <summary> 
+            Get the default File Owner.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.FileOwnerListGet(Mdm.Oss.FileUtil.FileMainDef@,System.Boolean,System.Boolean)">
+            <summary> 
+            Get the File Owner List.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.FileNameGetDefault(Mdm.Oss.FileUtil.FileMainDef@,System.Boolean,System.Boolean)">
+            <summary> 
+            Get the default File Name.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.TableListLoad(Mdm.Oss.FileUtil.FileMainDef@,System.Boolean,System.Boolean)">
+            <summary> 
+            Load the Table List.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.TableListCheck(Mdm.Oss.FileUtil.FileMainDef@,System.Boolean,System.Boolean)">
+            <summary> 
+            Check if the Table is in the Table List.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.TableGetDefault(Mdm.Oss.FileUtil.FileMainDef@)">
+            <summary> 
+            Get the default Table Name.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.TableListGet(Mdm.Oss.FileUtil.FileMainDef@,System.Boolean,System.Boolean)">
+            <summary> 
+            Get the Table List.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.FileGroupListLoad(Mdm.Oss.FileUtil.FileMainDef@,System.Boolean,System.Boolean)">
+            <summary> 
+            Load the File Group List.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.FileGroupListCheck(Mdm.Oss.FileUtil.FileMainDef@,System.Boolean,System.Boolean)">
+            <summary> 
+            Check if the File Group is in the File Group List.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.FileGroupGetDefault(Mdm.Oss.FileUtil.FileMainDef@)">
+            <summary> 
+            Get the default File Group.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.FileGroupListGet(Mdm.Oss.FileUtil.FileMainDef@,System.Boolean,System.Boolean)">
+            <summary> 
+            Get the File Group List.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.SqlCommandDoReader(Mdm.Oss.FileUtil.FileMainDef@,System.String@)">
+            <summary> 
+            Do the SQL Reader Command.
+            </summary> 
+            <param name="CommandPassed">The SQL Command to be executed.</param> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.SqlCommandDo(Mdm.Oss.FileUtil.FileMainDef@,System.String)">
+            <summary> 
+            Do the SQL Command.
+            </summary> 
+            <param name="CommandPassed">The SQL Command to be executed.</param> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.SqlCommandSetDefault(Mdm.Oss.FileUtil.FileMainDef@)">
+            <summary> 
+            Set the default SQL Command for this Table.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.SqlReaderClose(Mdm.Oss.FileUtil.FileMainDef@)">
+            <summary> 
+            Close the SQL Reader.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.SqlWriterClose(Mdm.Oss.FileUtil.FileMainDef@)">
+            <summary> 
+            CLose the SQL Writer.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.SqlDataInsert(Mdm.Oss.FileUtil.FileMainDef@)">
+            <summary> 
+            Put an Insert command
+            into the SQL Data command.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.SqlDataUpdate(Mdm.Oss.FileUtil.FileMainDef@)">
+            <summary> 
+            Put an Update command
+            into the SQL Data command.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.SqlDataDelete(Mdm.Oss.FileUtil.FileMainDef@)">
+            <summary> 
+            Put a Delete command
+            into the SQL Data command.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.SqlDataAdd(Mdm.Oss.FileUtil.FileMainDef@)">
+            <summary> 
+            Put and Add command
+            into the SQL Data command.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.SqlDataGet(Mdm.Oss.FileUtil.FileMainDef@)">
+            <summary> 
+            Put a Get command
+            into the SQL Data command.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.SqlDataWrite(Mdm.Oss.FileUtil.FileMainDef@)">
+            <summary> 
+            Put a Create Table command (NO)
+            into the SQL Data command.
+            Create the SQL Command instance.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.SqlDictProcessDb(Mdm.Oss.FileUtil.FileMainDef@,System.Boolean,System.Boolean,System.Boolean,Mdm.Oss.FileUtil.RowInfoDef,Mdm.Oss.FileUtil.ColTransformDef)">
+            <summary> 
+            Process the dictionary definition data.
+            </summary> 
+            <param name=""></param> 
+            <remarks></remarks> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.SqlColAddCmdBuild(Mdm.Oss.FileUtil.FileMainDef@,System.Boolean,System.Boolean,System.Int32,System.String,System.Int32,System.Int32)">
+            <summary> 
+            Add an SQL Column Add command
+            </summary> 
+            <param name="PassedUsePrimary"></param> 
+            <param name="PassedUseIndexName"></param> 
+            <param name="iPassedColAction"></param> 
+            <param name="SqlColumnBuildOptionPassed"></param> 
+            <param name="iPassedIndex"></param> 
+            <param name="iPassedCount"></param> 
+            <remarks></remarks> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.SqlColAddCmdBuildAll(Mdm.Oss.FileUtil.FileMainDef@,System.Boolean,System.Boolean,System.Int32,System.String,System.Int32,System.Int32)">
+            <summary> 
+            Build an SQL Add Command for all Columns
+            </summary> 
+            <param name=""></param> 
+            <remarks></remarks> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.SqlColAction(Mdm.Oss.FileUtil.FileMainDef@,System.Boolean,System.Int32,System.String,System.Int32,System.Int32)">
+            <summary> 
+            Do an SQL Column Action.
+            </summary> 
+            <param name="UseIndexNamePassed"></param> 
+            <param name="ColActionPassed">The Action to perform. (i.e. Set_Row, Set_Column, Get_Native_Value...)</param> 
+            <param name="ColRowIndexNamePassed"></param> 
+            <param name="ColRowIndexPassed"></param> 
+            <param name="ColRowIndexCountPassed"></param> 
+            <remarks></remarks> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.SqlColConvertCharacters(System.String,System.Char[],System.Char[])">
+            *
+             <summary> 
+             Character converter, s/b obsolete.
+             </summary> 
+             <param name="PassedField"></param> 
+             <param name="PassedCharsIn"></param> 
+             <param name="PassedCharsOut"></param> 
+             <remarks>obsolete</remarks> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.SqlDictArrayIndexError(System.Int32,System.FormatException@,System.IndexOutOfRangeException@,System.String,System.Boolean,System.Boolean)">
+            <summary> 
+            Exception handling for Dict Arrays.
+            </summary> 
+            <param name=""></param> 
+            <remarks></remarks> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.SqlDictArrayInsert(Mdm.Oss.FileUtil.FileMainDef@,System.String)">
+            <summary> 
+            Insert into the Sql Dict Array
+            </summary> 
+            <param name=""></param> 
+            <remarks></remarks> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.SqlColAddCmdBuildAllFromArray(Mdm.Oss.FileUtil.FileMainDef@,System.String)">
+            <summary> 
+            Add Command Build for all columns from Array.
+            </summary> 
+            <param name=""></param> 
+            <remarks></remarks> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.SqlColAddCmdBuildAddFromArray(Mdm.Oss.FileUtil.FileMainDef@,System.String)">
+            <summary> 
+            Add Command Build from Array.
+            </summary> 
+            <param name=""></param> 
+            <remarks></remarks> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.SqlColAddCmdBuildViewFromArray(Mdm.Oss.FileUtil.FileMainDef@,System.String)">
+            <summary> 
+            Build views dictionary data from Array.
+            </summary> 
+            <param name=""></param> 
+            <remarks></remarks> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.SqlColClear(System.Int32)">
+            <summary> 
+            Clear the SQL Column Data
+            </summary> 
+            <param name=""></param> 
+            <remarks></remarks> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.SqlDictArrayInsertBuild(Mdm.Oss.FileUtil.FileMainDef@,System.String)">
+            <summary> 
+            Insert Command Build for Dict Array Data.
+            </summary> 
+            <param name=""></param> 
+            <remarks></remarks> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.SqlDictArrayInsertDo(Mdm.Oss.FileUtil.FileMainDef@,System.String)">
+            <summary> 
+            Do the Execution of SQL Commands
+            for the Insert.
+            </summary> 
+            <param name=""></param> 
+            <remarks></remarks> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.TextFileDoesExist(Mdm.Oss.FileUtil.FileMainDef@)">
+            <summary> 
+            Returns a bool indicating if the Text File Exists.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.TextFileCheckDoesExist(Mdm.Oss.FileUtil.FileMainDef@)">
+            <summary> 
+            Check if the Text File Exists.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.TextFileOpen(Mdm.Oss.FileUtil.FileMainDef@)">
+            <summary> 
+            Open the Text File.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.TextFileClose(Mdm.Oss.FileUtil.FileMainDef@)">
+            <summary> 
+            Close the Text File.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.TextFileWrite(Mdm.Oss.FileUtil.FileMainDef@)">
+            <summary> 
+            Write data to the Text File.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.TextFileReset(Mdm.Oss.FileUtil.FileMainDef@)">
+            <summary> 
+            Reset the Text File Object.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.TextFileCreate(Mdm.Oss.FileUtil.FileMainDef@)">
+            <summary> 
+            Create the Text File.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.TextFileDelete(Mdm.Oss.FileUtil.FileMainDef@)">
+            <summary> 
+            Delete the Text File.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.TextFileProcessMain(System.String)">
+            <summary> 
+            Main Method (virtual) for Processing Text File.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.FileDataReset(Mdm.Oss.FileUtil.FileMainDef@)">
+            <summary> 
+            FileDataReset should reset all of Fmain...
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.ColIndexReset(Mdm.Oss.FileUtil.ColIndexDef@)">
+            <summary> 
+            Reset the Column Index Data.
+            </summary> 
+            <param name="ColIndexPassed"></param> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.FileDictClearCurrent(Mdm.Oss.FileUtil.FileMainDef@)">
+            <summary> 
+            Clear Dictionary Data.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.FileDataClearCurrent(Mdm.Oss.FileUtil.FileMainDef@)">
+            <summary> 
+            Clear File Data.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.ConnClose(Mdm.Oss.FileUtil.FileMainDef@)">
+            <summary> 
+            Close the Connection.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.ConnOpen">
+            <summary> 
+            Open the Connection.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.ConnOpen(Mdm.Oss.FileUtil.FileMainDef@)">
+            <summary> 
+            Open the Passed Connection.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.ConnReset(Mdm.Oss.FileUtil.FileMainDef@)">
+            <summary> 
+            Reset the Connection.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.ConnCheck(Mdm.Oss.FileUtil.FileMainDef@)">
+            <summary> 
+            Check the Connection.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.ConnCheckDoesExist(Mdm.Oss.FileUtil.FileMainDef@)">
+            <summary> 
+            Check if the Connection Exists.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.ConnCmdBuild(Mdm.Oss.FileUtil.FileMainDef@)">
+            <summary> 
+            Build the Connection Command.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.ConnCreate">
+            <summary> 
+            Create a Connection.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.ConnCreate(Mdm.Oss.FileUtil.FileMainDef@)">
+            <summary> 
+            Create the Passed Connection.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.ConnCreateCmdBuild">
+            <summary> 
+            Build a Connection Create Command.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.ExeceptConnCreateImpl(System.Data.SqlClient.SqlException@)">
+            <summary> 
+            Exception handling for Connetion Creation.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.ExeceptConnCreateImpl(Mdm.Oss.FileUtil.FileMainDef@,System.Data.SqlClient.SqlException@)">
+            <summary> 
+            Exception handling for Passed Connection Creation.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.DatabaseReset(Mdm.Oss.FileUtil.FileMainDef@)">
+            <summary> 
+            Reset the Database.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.DatabaseFieldsGetDefault(Mdm.Oss.FileUtil.FileMainDef@)">
+            <summary> 
+            Set the default field values for the Database.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.TableNameLineBuild(Mdm.Oss.FileUtil.FileMainDef@)">
+            <summary> 
+            Build the Table Name Line for the Passed Table.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.TableNameLineBuild">
+            <summary> 
+            Build the Table Name Line for this Table.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.DatabaseCreateCmdBuild">
+            <summary> 
+            Build the Create Command for the Database.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.ExceptTableCreationImpl(System.Data.SqlClient.SqlException@)">
+            <summary> 
+            Exceptions handling for Create Command handling.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.ExceptTableCreationImpl(Mdm.Oss.FileUtil.FileMainDef@,System.Data.SqlClient.SqlException@)">
+            <summary> 
+            Exception handling for Passed File on Create Command handling.
+            </summary> 
+            <param name="ExceptionSql"></param> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.ExceptTableCloseImpl(System.Data.SqlClient.SqlException@)">
+            <summary> 
+            Exceptions handling for Table Close Command handling.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.ExceptTableCloseImpl(Mdm.Oss.FileUtil.FileMainDef@,System.Data.SqlClient.SqlException@)">
+            <summary> 
+            Exceptions handling for Table Close Command handling for Passed File.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.ExceptTableGeneralImpl(System.NotSupportedException@)">
+            <summary> 
+            Exceptions - General - Not Supported.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.ExceptTableGeneralImpl(Mdm.Oss.FileUtil.FileMainDef@,System.NotSupportedException@)">
+            <summary> 
+            Exceptions - General - Not Support for Passed File.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.ExceptTableGeneralImpl(System.Exception@)">
+            <summary> 
+            Exceptions - General
+            Main Method for all exceptions.
+            Exceptions being move to base classes
+            including utility classes such as Mfile.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.ExceptTableGeneralImpl(Mdm.Oss.FileUtil.FileMainDef@,System.Exception@)">
+            <summary> 
+            Exceptions - General for the Passed File.
+            Main Method for all exceptions.
+            Exceptions being move to base classes
+            including utility classes such as Mfile.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.AsciiFileReadDirList(Mdm.Oss.FileUtil.FileMainDef@)">
+            <summary> 
+            Get the Ascii File Directory List.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.AsciiFileReadRecord(Mdm.Oss.FileUtil.FileMainDef@)">
+            <summary> 
+            Read an Ascii File Data Record.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.AsciiFileReadAll(Mdm.Oss.FileUtil.FileMainDef@)">
+            <summary> 
+            Ascii Read All Content for Item.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.AsciiFileReadLine(Mdm.Oss.FileUtil.FileMainDef@)">
+            <summary> 
+            Ascii Read Line for Item.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.AsciiFileFileStreamReaderCheck(Mdm.Oss.FileUtil.FileMainDef@)">
+            <summary> 
+            Check the Ascii File Stream Reader.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.AsciiFileReadBlock(Mdm.Oss.FileUtil.FileMainDef@)">
+            <summary> 
+            Read a Block of Data from the Ascii File.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.AsciiFileReadBlockSeek(Mdm.Oss.FileUtil.FileMainDef@)">
+            <summary> 
+            Read a Block of Data by Seeking in the Ascii File.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.AsciiFileWrite">
+            <summary> 
+            Write the Ascii File Data.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.AsciiFileWrite(Mdm.Oss.FileUtil.FileMainDef@)">
+            <summary> 
+            Write the Ascii File Data for the Passed File.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.AsciiFileClose(Mdm.Oss.FileUtil.FileMainDef@)">
+            <summary> 
+            Close the Passed Ascii File
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.AsciiFileDelete">
+            <summary> 
+            Delete the Ascii File Data or Item.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.AsciiFileDelete(Mdm.Oss.FileUtil.FileMainDef@)">
+            <summary> 
+            Delete the Ascii File Data or Item for the Passed File.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.AsciiFileClear(Mdm.Oss.FileUtil.FileMainDef@)">
+            <summary> 
+            Clear the Ascii File Data.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.AsciiFileCreate">
+            <summary> 
+            Create Ascii File.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.AsciiFileCreate(Mdm.Oss.FileUtil.FileMainDef@)">
+            <summary> 
+            Create the Passed Ascii File.
+            </summary> 
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Mdm.Oss.FileUtil.Mfile.AsciiFileReset(Mdm.Oss.FileUtil.FileMainDef@)" -->
+        <member name="M:Mdm.Oss.FileUtil.Mfile.FileNameLineBuild(Mdm.Oss.FileUtil.FileMainDef@)">
+            <summary> 
+            Build the File Name Line from the File Info for the Passed File.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.FileNameLineBuild">
+            <summary> 
+            Build the File Name Line from the File Info.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.FileSeek(Mdm.Oss.FileUtil.FileMainDef@,System.Int32,System.Int32,System.Int64)">
+            <summary> 
+            Perform a low level file seek on file.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.FileReadLine(Mdm.Oss.FileUtil.FileMainDef@,System.String,System.Int32)">
+            <summary> 
+            Perform a read line.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.FileReadAll(Mdm.Oss.FileUtil.FileMainDef@,System.String@,System.Int32)">
+            <summary> 
+            Perform a read all content for item.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.FileCloseHandle(Mdm.Oss.FileUtil.FileMainDef@)">
+            <summary> 
+            Close low level file handles, unmanaged objects, etc.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.FileReadLineClose(Mdm.Oss.FileUtil.FileMainDef@)">
+            <summary> 
+            Close the File Line Reader.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.FileClose(Mdm.Oss.FileUtil.FileMainDef@)">
+            <summary> 
+            Close the File.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.FileOpenHandle(Mdm.Oss.FileUtil.FileMainDef@,System.String,System.Int64,System.Int64)">
+            <summary> 
+            Open a low level file handle.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.FileOpen(Mdm.Oss.FileUtil.FileMainDef@,System.String,System.Int64,System.Int64)">
+            <summary> 
+            Open the file.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.FileWrite(Mdm.Oss.FileUtil.FileMainDef@)">
+            <summary> 
+            Write the file data or item.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.FileDo(System.Boolean)">
+            <summary> 
+            Do File Action.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.FileDo(Mdm.Oss.FileUtil.FileMainDef@)">
+            <summary> 
+            Do File Action for Passed File.
+            Main Method for all file actions.
+            Centralised in order for muilti-threading 
+            and messaging to operate.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.FileIoErrorDescriptionGet(System.Int64)">
+            <summary> 
+            Get a File IO Error Description.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.FileMainHeaderGet(Mdm.Oss.FileUtil.FileMainDef@)">
+            <summary> 
+            Get a File Object Header string
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.StateDescriptionGet(Mdm.Oss.FileUtil.FileMainDef@)">
+            <summary> 
+            Get the State Description for the current File Action.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.ResultDescriptionLong(Mdm.Oss.FileUtil.FileMainDef@)">
+            <summary> 
+            Build the File Action Long Description string.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.FileIndexPointerIncrement(Mdm.Oss.FileUtil.FileMainDef@)">
+            <summary> 
+            Increment the File Index Pointer.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.ColPointerIncrement(Mdm.Oss.FileUtil.FileMainDef@)">
+            <summary> 
+            Increment the Column Index Pointer.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.ShiftCheck(Mdm.Oss.FileUtil.FileMainDef@)">
+            <summary> 
+            Perform a File Buffer Shift Check.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.ItemDataShift(Mdm.Oss.FileUtil.FileMainDef@,System.Int32)">
+            <summary> 
+            File Buffer - Item Data Shift Data and Pointer.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.ConnectionClear(Mdm.Oss.FileUtil.FileMainDef@)">
+            <summary> 
+            Clear the Database Connection.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.DatabaseClear(Mdm.Oss.FileUtil.FileMainDef@)">
+            <summary> 
+            Clear the Database Name.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.TableNameClear(Mdm.Oss.FileUtil.FileMainDef@)">
+            <summary> 
+            Clear the Tabe Name.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.FileNameClear(Mdm.Oss.FileUtil.FileMainDef@)">
+            <summary> 
+            Clear the Disk File Name.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.ItemIdClear(Mdm.Oss.FileUtil.FileMainDef@)">
+            <summary> 
+            Clear the File Item Id.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.ItemAtrributeClear(Mdm.Oss.FileUtil.FileMainDef@)">
+            <summary> 
+            Clear the Item Attribute Pointers.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.ItemDataAtrributeClear(Mdm.Oss.FileUtil.FileMainDef@)">
+            <summary> 
+            Clear the Item Attributes and Values Pointers.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.ItemDataCharClear(Mdm.Oss.FileUtil.FileMainDef@)">
+            <summary> 
+            Clear the Item Data Characters Pointers.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.ExceptCommonFileImpl(System.Object,Mdm.Oss.FileUtil.FileMainDef@,System.Int32,System.Int32,System.String,System.Int64)">
+            <summary> 
+            Exception Main Method - All Exceptions
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.ExceptSqlImpl(Mdm.Oss.FileUtil.FileMainDef@,System.String,System.Data.SqlClient.SqlException@,System.Int64)">
+            <summary> 
+            Exceptions Main Method - SQL Exceptions
+            SECTION MessageDetailsMdm not implemented.
+            Two classes Trace and Message
+            Exceptions are part of Trace Class
+            Database classes can be 
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.ExceptGeneralFileImpl(Mdm.Oss.FileUtil.FileMainDef@,System.String,System.Exception@,System.Int64)">
+            <summary> 
+            Exceptions Main Method - File Exceptions
+            Routes from SQL Exception.
+            Routes to General Exception.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.ExceptNotSupportedImpl(Mdm.Oss.FileUtil.FileMainDef@,System.String,System.NotSupportedException@,System.Int64)">
+            <summary> 
+            Exceptions - Not Supported Exception
+            Routes to General Exception.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.ExceptIoImpl(Mdm.Oss.FileUtil.FileMainDef@,System.String,System.IO.IOException@,System.Int64)">
+            <summary> 
+            Exceptions - IO Exception
+            Routes to File Exception.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.Mfile.ToString">
+            <summary> 
+            String Description of File System Object
+            </summary> 
+        </member>
+        <member name="T:Mdm.Oss.FileUtil.Mfile.SelectionList">
+            <summary>
+            <para>Selection Lists can be lists of any sort but generally 
+            apply to lists that will be used for validation or used
+            to populate combo boxes or other user interface controls.</para>
+            <para> There is a predefined hierarchy of lists used to validate
+            database and disk file selection. </para>
+            <para> This is:</para> 
+            <para> ..System</para>
+            <para> ..Service</para>
+            <para> ..Server</para>
+            <para> ..Database</para>
+            <para> ..FileGroup</para>
+            <para> ..Table</para>
+            <para> ..DiskFile</para>
+            <para> ..FileOwner</para>
+            <para> . </para>
+            <para> Lists consist of the four components:</para>
+            <para> ..Main</para>
+            <para> ..Curr(ent)</para>
+            <para> ..Prev(ious)</para>
+            <para> ..DropDown</para>
+            <para> The usage is self-evident except in the case of 
+            DropDown.  It is loaded with the hard coded defaults and
+            defaults loaded from file.  Dropdown is the list returned
+            for user interface purposes.</para>
+            <para> . </para>
+            <para> The lists services are primarily supported
+            by the following methods:</para>
+            <para> ..ObjectListLoad</para>
+            <para> ..ObjectListClearData</para>
+            <para> ..GenericListLoad</para>
+            <para> ..ObjectListLoadAscii</para>
+            <para> ..ObjectParamLoad</para>
+            <para> ..ObjectParamLoadAscii</para>
+            <para> . </para>
+            <para> Each predefined list type has a structured
+            set of method names in order to operate.</para>
+            <para> These are:</para>
+            <para> ..[ListName]ListLoad</para>
+            <para> ..[ListName]NameChanged</para>
+            <para> ..[ListName]ListCheck</para>
+            <para> ..[ListName]NameGetDefault</para>
+            <para> ..[ListName]ListGet</para>
+            <para> Please note there is a slight naming convention
+            error here.  ListName s/b = FieldName but is not.  One
+            example, System (the ListName) # SystemName (the field).</para>
+            <para> The issues is the use of Name in the structured
+            names.  This should be switch to Field so that it will
+            be compatable with any field (beyond just Name(s)). In
+            the second item:</para>
+            <para> SystemNameChanged becomes SystemFieldChanged</para>
+            </summary>
+        </member>
+        <member name="T:Mdm.Oss.FileUtil.SysDef">
+            <summary>
+            System Level execeptions, arguments and objects
+            related to a file object.  Not implemented.
+            </summary> 
+        </member>
+        <member name="T:Mdm.Oss.FileUtil.MetaDef">
+            <summary>
+            A File Managment System Object.
+            Meta data for general file object defining 
+            file stream objects (primary/auxillary).
+            Equivalent to "this" Mfile.
+            </summary> 
+            <remarks>
+            Data context specific to this file
+            system object not already present in
+            the base classes (run, file, etc.)
+            </remarks> 
+        </member>
+        <member name="T:Mdm.Oss.FileUtil.ActionInfoDef">
+            <summary>
+             <para> System control object for Actions
+            this would be aggregated with the 
+            Run Action, File Do, and File Action objects
+            in the case of logging, tracing and system event history.
+            Also used in exceptions data collection. </para> 
+             <para> . </para> 
+             <para> Note 1: A Core Object (strongly typed) Verb 
+            executes and acts on the Object and Target 
+            to generate a Result and/or Result Object. </para> 
+             <para> Note 2: Applications fill this information in
+            typically to match the internal implementation
+            used in the application. </para> 
+            </summary> 
+        </member>
+        <member name="T:Mdm.Oss.FileUtil.FileActionDef">
+            <summary>
+            <para>A File Action to be taken on either the
+            primary or auxillary streams.</para>
+            <para> . </para>
+            <para> File Actions include:</para>
+            <para> 1) ListGet</para>
+            <para> 2) Check</para>
+            <para> 3) Open</para>
+            <para> 4) Close</para>
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.FileActionDef.#ctor(Mdm.Oss.FileUtil.Mfile)">
+            <summary>
+            Main Method - Create a File Action associated with the passed file.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.FileActionDef.#ctor">
+            <summary>
+            Default File Action not (yet) associated with a file handler.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.FileActionDef.CopyTo(Mdm.Oss.FileUtil.FileActionDef@)">
+            <summary>
+            Copy the File Action to the Passed Target.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.FileActionDef.CopyFrom(Mdm.Oss.FileUtil.FileActionDef@)">
+            <summary>
+            Copy the File Action from the Passed Souce.
+            </summary> 
+        </member>
+        <member name="P:Mdm.Oss.FileUtil.FileActionDef.ToDo">
+            <summary>
+            The File Action to perform.
+            For example GetList, CheckList, Open, Close...
+            </summary> 
+        </member>
+        <member name="P:Mdm.Oss.FileUtil.FileActionDef.Name">
+            <summary>
+            The text name of the File Action.
+            </summary> 
+        </member>
+        <member name="P:Mdm.Oss.FileUtil.FileActionDef.KeyName">
+            <summary>
+            The id of File Action Transaction
+            </summary> 
+        </member>
+        <member name="T:Mdm.Oss.FileUtil.FileOptionsDef">
+            <summary>
+            A general purpose file options flag set.
+            Can be used for connections, files, file items or rows
+            or as needed.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.FileOptionsDef.#ctor">
+            <summary>
+            A general purpose file options flag set.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.FileOptionsDef.DataClear">
+            <summary>
+            Standard clear all flags.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.FileOptionsDef.#ctor(System.String)">
+            <summary>
+            Set file options using passed console string.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.FileOptionsDef.OptionsParseToString(Mdm.Oss.FileUtil.FileOptionsDef)">
+            <summary>
+            Create a console string for the current options.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.FileOptionsDef.OptionsParse(System.String)">
+            <summary>
+            Parses the passed console compatable string and
+            sets the currents options per the text.
+            </summary> 
+        </member>
+        <member name="T:Mdm.Oss.FileUtil.FileStatusDef">
+            <summary>
+            A general purpose file options flag set.
+            Can be used for connections, files, file items or rows
+            or as needed.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.FileStatusDef.DataClear">
+            <summary>
+            Standard clear all flags.
+            </summary> 
+        </member>
+        <member name="T:Mdm.Oss.FileUtil.DelSepDef">
+            <summary>
+            Delimited Separators Common defines the hierarchy
+            of characters used as delimiters
+            and support functions for delimited data processing.
+            </summary> 
+        </member>
+        <member name="T:Mdm.Oss.FileUtil.FileTypeDef">
+            <summary>
+            A Management Class for File Type (Items).
+            Used extensively by the File Management System
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.FileTypeDef.FileTypeItemsAdd(System.Int64,System.String,System.Int64,System.String,System.Int64,System.String,System.Int64,System.String,System.Int64,System.Boolean)">
+            <summary> 
+            Add a completely defined type using the passed fields.
+            </summary> 
+            <param name="ItemIdPassed">The id of the file type definition.</param>  
+            <param name="FileExtPassed">Extesions served by this type.</param>  
+            <param name="FileLevelPassed">Abstraction level of file (i.e. Data, Dict, Domain)</param> 
+            <param name="FileTypeNamePassed">The name of the major file type.</param> 
+            <param name="FileTypeIdPassed">The general or major file type.</param> 
+            <param name="FileSubTypeNamePassed">Text name of the file sub-type.</param> 
+            <param name="FileSubTypeIdPassed">The specific fil sub-type.</param> 
+            <param name="DescriptionPassed">Description for this file type definition.</param> 
+            <param name="FileReadModePassed">The file IO read mode to use with this type.</param> 
+            <param name="IsDefaultPassed">Are defaults taken from the passed information.</param> 
+            <remarks>
+            </remarks> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.FileTypeDef.FileTypeItemsBuild">
+            <summary> 
+            Build the file types table using the system defined
+            core group of supported file types.
+            Clears the list as well so provides a basic list that
+            specific applicaitons might add to or remove from.
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.FileTypeDef.FileTypeGetDefault">
+            <summary> 
+            Property lookup and default (uses LINQ).
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.FileTypeDef.FileTypeGetExt(System.String)">
+            <summary> 
+            Property lookup and default (uses LINQ).
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.FileTypeDef.FileTypeGetType(System.String)">
+            <summary> 
+            Property lookup and default (uses LINQ).
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.FileTypeDef.FileTypeGetTypeId(System.Int64)">
+            <summary> 
+            Property lookup and default (uses LINQ).
+            </summary> 
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.FileTypeDef.FileTypeGetSubTypeId(System.Int64)">
+            <summary> 
+            Property lookup and default (uses LINQ).
+            </summary> 
+        </member>
+        <member name="T:Mdm.Oss.FileUtil.FileTypeItemDef">
+            <summary>
+            <para> File Type Definition Item</para>
+            <para> Defines a specific file type
+            in the file system.  These are collected
+            by the File Type class and used to validate
+            file types and provide default information.</para>
+            </summary>
+        </member>
+        <member name="T:Mdm.Oss.FileUtil.FileSummaryDef">
+            <summary>
+            <para> File Summary Class</para>
+            <para> This class contains all of the 
+            text fields used to identify a file,
+            its system, server, database, location
+            on disk and related fields such as
+            ownership and security.</para>
+            <para> This object is intended to be
+            passed between applications and has a
+            relatively small footprint compared to
+            the Mfile File Application Object or 
+            either of the FileMain Stream Objects 
+            Fmain and Faux.</para>
+            <para> The class also includes instances
+            of FileIo, FileId and FileOpt(ion) classes.
+            These exist here to provide user interface
+            access to completely identify a file object.</para>
+            <para> . </para>
+            <para> . </para>
+            </summary>
+        </member>
+        <member name="T:Mdm.Oss.FileUtil.FileIdDef">
+            <summary>
+            <para> File Identification Class</para>
+            <para> File Name, Path, Drive, etc. </para>
+            <para> This is used to identify the file that
+            will be access and to store the disk file name
+            for database files.</para>
+            </summary>
+            <remarks>
+            <para> The two main types of objects are File and Db (Database).</para>
+            <para> Each of these may have:</para>
+            <para> 1) A basic file object (Fmain).</para>
+            <para> 2) A File Summary Object. </para>
+            <para> 3) An ID object for identity. </para>
+            <para> 4) An IO object used readers and writers.</para>
+            <para> 5) One or more File Status Objects.</para>
+            <para> 6) One of serveral column and attribute control classes.</para>
+            </remarks>
+        </member>
+        <member name="T:Mdm.Oss.FileUtil.DbIoDef">
+            <summary>
+            <para> Database IO fields and objects including connection.</para>
+            </summary>
+            <remarks>
+            <para> The two main types of objects are File and Db (Database).</para>
+            <para> Each of these may have:</para>
+            <para> 1) A basic file object (Fmain).</para>
+            <para> 2) A File Summary Object. </para>
+            <para> 3) An ID object for identity. </para>
+            <para> 4) An IO object used readers and writers.</para>
+            <para> 5) One or more File Status Objects.</para>
+            <para> 6) One of serveral column and attribute control classes.</para>
+            </remarks>
+        </member>
+        <member name="T:Mdm.Oss.FileUtil.FileIoDef">
+            <summary>
+            <para> File IO fields and objects.</para>
+            <para> . </para>
+            <para> File Io is used for the types:</para>
+            <para> Ascii, Text, Xml, Uml, Tld, Delimited and Feild Separated.</para>
+            <para> . </para>
+            <para> The IO object includes buffers, streams and IO control flags.</para>
+            </summary>
+            <remarks>
+            <para> The two main types of objects are File and Db (Database).</para>
+            <para> Each of these may have:</para>
+            <para> 1) A basic file object (Fmain).</para>
+            <para> 2) A File Summary Object. </para>
+            <para> 3) An ID object for identity. </para>
+            <para> 4) An IO object used readers and writers.</para>
+            <para> 5) One or more File Status Objects.</para>
+            <para> 6) One of serveral column and attribute control classes.</para>
+            </remarks>
+        </member>
+        <member name="T:Mdm.Oss.FileUtil.BufIoDef">
+            <summary>
+            <para> Buf IO instances are used for
+            File IO for the buffer.</para>
+            <para> . </para>
+            <para> Generally, a File IO class like Buf
+            will have an matching BufIO class which
+            contains file buffers, connection pointers,
+            file streams and other IO objects.</para>
+            <para> It will additionally have an ID sub-class
+            which contains ID's and fields that uniquely
+            identify the item being accessed.</para>
+            <para> Typically, a File Status object is
+            also part of the group for status control</para>
+            </summary>
+        </member>
+        <member name="T:Mdm.Oss.FileUtil.BufDef">
+            <summary>
+            <para>Buffer Definition includes the bufferes,
+            read, write and converted counts, control flags
+            and fields.  </para>
+            <para> . </para>
+            <para>The Char fields are indexers used to
+            point at characters in the buffer.</para>
+            <para> . </para>
+            <para> Buf instances are used by the file system
+            for the ASCII and Binary file types.</para>
+            </summary>
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.BufDef.ByteCountClear">
+            <summary>
+            Clear the read, write and converted fields.
+            </summary>
+        </member>
+        <member name="M:Mdm.Oss.FileUtil.BufDef.DataClear">
+            <summary>
+            Clear all buffer data.
+            </summary>
+        </member>
+        <member name="T:Mdm.Oss.FileUtil.ItemDef">
+            <summary>
+            <para>Item Definition contains the
+            item data and item Id.</para>
+            <para> An item is a data record.  Its
+            specific content can be a:</para>
+            <para> Document. </para>
+            <para> File. </para>
+            <para> Row of data.</para>
+            <para> Result of one read. </para>
+            <para> . </para>
+            <para> A block is not considered an item.  One or
+            more blocks are read to create an item.</para>
+            </summary>
+        </member>
+        <member name="T:Mdm.Oss.FileUtil.RowInfoDef">
+            <summary>
+            <para> Row Information </para>
+            <para> Control flags, counts, indexers for
+            row control.  Indicates if a line represents
+            a column or row.</para>
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "F:Mdm.Oss.FileUtil.RowInfoDef.CloseIsNeeded" -->
+        <member name="T:Mdm.Oss.FileUtil.ColIndexDef">
+            <summary>
+            <para>Column / Field Index Control Class</para>
+            <para>An indexed class accessing the Col(umn)Array.</para>
+            <para> . </para>
+            <para>The Col(umn)Index access the Array which may
+            hold up to ColumnMax items. The current count is 
+            found in Col(umn)IndexTotal.</para>
+            <para> . </para>
+            <para>This is a general purpose class used for
+            storing rows of data.  It can also be used for
+            building row data or as a general utility class.</para>
+            <para> . </para>
+            <para>There is one group of fields, ColXxxxxx intended
+            to manage this Array.  The second group ColAttrXxxxxx
+            is independent and used locally as a seperate set of
+            pointers</para>
+            </summary>
+        </member>
+        <member name="T:Mdm.Oss.FileUtil.ColTransformDef">
+            <summary>
+            <para> Column Tranformation Definition</para>
+            <para> Used to transform a column from on type
+            to another including transformation and setting
+            of strong type information for the coloumn.</para>
+            </summary>
+        </member>
+        <member name="T:Mdm.Oss.FileUtil.ColPickDef">
+            <summary>
+            <para> Pick Column Indexing Management Class</para>
+            <para> Used by the derived Pick DB Classes to 
+            augment the basic column management in Column Index. </para>
+            </summary>
+        </member>
+        <member name="T:Mdm.Oss.FileUtil.ColTypeDef">
+            <summary>
+            <para> Column Type Management Class</para>
+            <para> Used to set and manage a Column's Type information</para>
+            </summary>
+        </member>
+        <member name="T:Mdm.Oss.FileUtil.DbIdDef">
+            <summary>
+            <para>Database ID fields and Objects.</para>
+            </summary>
+            <remarks>
+            <para> The two main types of objects are File and Db (Database).</para>
+            <para> Each of these may have:</para>
+            <para> 1) A basic file object (Fmain).</para>
+            <para> 2) A File Summary Object. </para>
+            <para> 3) An ID object for identity. </para>
+            <para> 4) An IO object used readers and writers.</para>
+            <para> 5) One or more File Status Objects.</para>
+            <para> 6) One of serveral column and attribute control classes.</para>
+            </remarks>
+        </member>
+        <member name="T:Mdm.Oss.FileUtil.DbStatusDef">
+            <summary>
+            <para> Database Status flags</para>
+            <para> Contains database and connection
+            specific flags to indicate status.</para>
+            <para> Note: File Status flag instances are
+            used for other item and file status needs.</para>
+            </summary>
+        </member>
+        <member name="T:Mdm.Oss.FileUtil.DbMasterDef">
+            <summary>
+            <para>Master File Class for Database</para>
+            <para> A separate database object for performing
+            actions on the master files independent of the
+            current open database file stream object.</para>
+            </summary>
+        </member>
+        <member name="T:Mdm.Oss.FileUtil.DbMasterSynDef">
+            <summary>
+            <para> Master File Syntax Object</para>
+            <para> Used for building console commands
+            for the master database.</para>
+            <para>Commands include Create, Delete.</para>
+            </summary>
+        </member>
+        <member name="T:Mdm.Oss.FileUtil.DbSynDef">
+            <summary>
+            <para> Database File Syntax Object</para>
+            <para> Used for building console commands
+            for the database.</para>
+            <para>Command include Create, Add, Alter, Insert, Update, Delete.</para>
+            </summary>
+        </member>
+        <member name="T:Mdm.Oss.FileUtil.PickDictItemArrayDef">
+            <summary>
+            <para> Pick Dictionary Item Array Index</para>
+            <para> An indexed array of ColumnAliasMax elements
+            that contains the dictionary entry items (records.)
+            It is used to build or manipulate a Pick dictionary.</para>
+            </summary>
+            <remarks>
+            Usage needs clarification
+            </remarks>
+        </member>
+        <member name="T:Mdm.Oss.FileUtil.PickRowDef">
+            <summary>
+            <para> Pick Dictionary Row</para>
+            <para> An indexed array of ColumnAliasMax elements</para>
+            </summary>
+            <remarks>
+            Usage needs clarification
+            </remarks>
+        </member>
+        <member name="T:Mdm.Oss.FileUtil.PickDictItemDef">
+            <summary>
+            <para> Pick Dictionary Item</para>
+            <para> This defines a single dictionary entry
+            for the pick file system.  Naming conventions
+            follow the Pick equivalents fairly closely.</para>
+            </summary>
+            <remarks>
+            Usage needs clarification
+            </remarks>
+        </member>
+        <member name="T:Mdm.Oss.FileUtil.PickDictIndexDef">
+            <summary>
+            <para> Pick Dictionary Index</para>
+            <para> An indexed array of ColumnMax elements
+            used to build or manipulate a Pick dictionary.</para>
+            </summary>
+            <remarks>
+            Usage needs clarification
+            </remarks>
+        </member>
+        <member name="T:Mdm.Oss.FileUtil.DbFileTempDef">
+            <summary>
+            <para> A group of temporary object, pointers and fields.</para>
+            </summary>
+        </member>
+        <member name="T:Mdm.Oss.FileUtil.FileTransformControlDef">
+            <summary>
+            <para> File Transform Control</para>
+            <para> This is a control structure for
+            applications that have an input and output file.
+            When input data is processed (or tranformed) to
+            create a new output file.</para>
+            <para> It consists of an input and output
+            File Summary for persistence and during the
+            user interface stage.  The summaries are used
+            to open the file object for processing.</para>
+            <para> It is permitted and recommended to have
+            the InFile and OutFile files open during the
+            user entry process.  However, proper attention
+            must be paid to changes in file name versus
+            what file has be opened.</para>
+            </summary>
+        </member>
+        <member name="T:Mdm.Oss.FileUtil.FileMainDef">
+            <summary>
+            <para> (Main) File Stread Object </para>
+            <para> See Mfile for an expanded discussion
+            of these objects.  This is the object that
+            performs file IO for a Mfile File System
+            Object.  There is a primary and auxillary object.</para>
+            </summary>
+            <remarks>
+            <para> List of classes used:</para>
+            <para> General objects:</para>
+            <para> ....Io State</para>
+            <para> ....File Action</para>
+            <para> ....File Summary</para>
+            <para> ....File Status</para>
+            <para> Ascii File Objects:</para>
+            <para> ....File Id (contained in File Summary)</para>
+            <para> ....File Io (contained in File Summary)</para>
+            <para> ....File Opt(ions) (contained in File Summary)</para>
+            <para> ....Item</para>
+            <para> ....Buf</para>
+            <para> ....Buf Io</para>
+            <para> Database File Objects:</para>
+            <para> ....Db Io</para>
+            <para> ....Db Status</para>
+            <para> ....System Status</para>
+            <para> ....Server Status</para>
+            <para> ....Conn(ection) Status</para>
+            <para> Column and Row Management:</para>
+            <para> ....Row Info(rmation)</para>
+            <para> ....Col(umn) Index</para>
+            <para> Primary and Auxillary Column Indexing:</para>
+            <para> ....Row Info(rmation)</para>
+            <para> Column Transformation:</para>
+            <para> ....Col(umn)Transform</para>
+            <para> Other:</para>
+            <para> ....Del(imiter)Sep(arator)</para>
+            </remarks>
+        </member>
+        <member name="T:Mdm.Oss.FileUtil.MdmRecord">
+            <summary>
+            <para>Mdm Record class is used
+            for ASCII delimited IO.  This is
+            typically disk file data read where
+            the columns or fields are text.</para>
+            <para> Typically each line contains
+            a field, the other most common format
+            being CSV where a line defines a row
+            where columns are separated by commas.</para>
+            <para> MdmRecord accepts Std Delimiter
+            structures to define field separators.</para>
+            <para> It is closely tied to the ASCII file
+            type IO and applies to all sub-types that
+            are delimited.</para>
+            </summary>
+        </member>
+        <member name="T:Mdm.Oss.FileUtil.FileCommandDef">
+            <summary>
+            <para> File Command Class</para>
+            <para> involving column data retrieved
+            or created for the the database file.</para>
+            <para> This differs from a File Action in
+            that column data is included with the object.
+            It includes column ordering and unique ID 
+            information along with requested columns.</para>
+            </summary>
+            <remarks>
+            <para>This class is not currently implemented.  It
+            will be implement when the multithreaded code and
+            property system are implemented.</para>
+            <para> . </para>
+            <para>Unique Id must be part of the select and returned
+            Although it may not be part of the data requested
+            it must be saved in the list in order to susequently
+            reselect a unique record from the database.</para>
+            </remarks>
+        </member>
+        <member name="T:Mdm.Oss.FileUtil.Mfile1Interface1">
+            <summary>
+            <para> This interface is out out date and 
+            needs revision.  It's purpose is to define
+            a basic set methods to access the Mfile 
+            File Application Object.</para>
+            </summary>
+            <remarks>
+            Needs updating after implementing either
+            derived classes or generics.
+            </remarks>
+        </member>
+        <member name="P:Mdm.Oss.FileUtil.Mfile1Interface1.FileNameLine">
+            Source File Name Line
+        </member>
+        <member name="P:Mdm.Oss.FileUtil.Mfile1Interface1.FileAction">
+            Source File Action
+        </member>
+        <member name="P:Mdm.Oss.FileUtil.Mfile1Interface1.FileAction_Name">
+            Source File Action Name
+        </member>
+        <member name="P:Mdm.Oss.FileUtil.Mfile1Interface1.FileNameAlias">
+            Source File Name
+        </member>
+        <member name="P:Mdm.Oss.FileUtil.Mfile1Interface1.FileDriveName">
+            Source Drive Name
+        </member>
+        <member name="P:Mdm.Oss.FileUtil.Mfile1Interface1.sPathName">
+            Source Path Name
+        </member>
+        <member name="P:Mdm.Oss.FileUtil.Mfile1Interface1.sParentName">
+            Source Parent Name
+        </member>
+        <member name="P:Mdm.Oss.FileUtil.Mfile1Interface1.sConsolodationParentName">
+            Source ConsolodationParent Name
+        </member>
+    </members>
+</doc>

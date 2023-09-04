@@ -1,0 +1,303 @@
+#region MdmSrtRelsDeclarations
+		// <Section Summary>
+        // <MdmSrtRelsDeclarations Vs="MdmSrtRelsVs0_8_5">
+        // <Segment Summary>
+        // Class Mdm1 Author properties
+        // </Segment Summary>
+        // <Segment Summary>
+        // Class Mdm1 Author Company properties
+        // </Segment Summary>
+        private string sMdmAuthorCompanyId = "99999";
+        private string  sMdmAuthorCompanyName = "MacroDm";
+        private string sMdmAuthorCompanyTitle = "unknown";
+        private int iMdmAuthorCompanyNumber = 99999;
+        private int iMdmAuthorCompanyIntStatus = 99999;
+        private string sMdmAuthorCompanyStatusText = "unknown";
+        private int iMdmAuthorCompanyIntResult = 99999;
+        private bool bMdmAuthorCompanyBoolResult = false;
+        //
+        // <Segment Summary>
+        // Class Mdm1 Author Person properties
+        // </Segment Summary>
+        private string  sMdmAuthorId = "99999";
+        private string  sMdmAuthorName = "David G. Horsman";
+        private string  sMdmAuthorTitle = "unknown";
+        private int iMdmAuthorNumber = 99999;
+        private int iMdmAuthorIntStatus = 99999;
+        private string sMdmAuthorStatusText = "unknown";
+        private int iMdmAuthorIntResult = 99999;
+        private bool bMdmAuthorBoolResult = false;
+        // <Segment Summary>
+        // Project properties
+        // </Segment Summary>
+        private string sMdmProjectId = "99999";
+        private string sMdmProjectName = "MdmSrtVs5_0";
+        private string sMdmProjectTitle = "Welcome to MdmSrtVs5_0";
+        private int iMdmProjectNumber = 99999;
+        private int iMdmProjectIntStatus = 99999;
+        private string sMdmProjectStatusText = "unknown";
+        private int iMdmProjectIntResult = 99999;
+        private bool bMdmProjectBoolResult = false;
+        // <Segment Summary>
+        // Task properties
+        // </Segment Summary>
+        private string sMdmTaskId = "99999";
+        private string sMdmTaskName = "Task0";
+        private string sMdmTaskTitle = "unknown";
+        private int iMdmTaskNumber = 99999;
+        private int iMdmTaskIntStatus = 99999;
+        private string sMdmTaskStatusText = "unknown";
+        private int iMdmTaskIntResult = 99999;
+        private bool bMdmTaskBoolResult = false;
+        // <Segment Summary>
+        // Task Step properties
+        // </Segment Summary>
+        private string sMdmTaskStepId = "99999";
+        private string sMdmTaskStepName = "Step0";
+        private string sMdmTaskStepTitle = "unknown";
+        private int iMdmTaskStepNumber = 99999;
+        private int iMdmTaskStepIntStatus = 99999;
+        private string sMdmTaskStepStatusText = "unknown";
+        private int iMdmTaskStepIntResult = 99999;
+        private bool bMdmTaskStepBoolResult = false;
+        // <Segment Summary>
+        // Solution properties
+        // </Segment Summary>
+        private string sMdmSolutionId = "99999";
+        private string sMdmSolutionName = "unknown";
+        private string sMdmSolutionTitle = "unknown";
+        private int iMdmSolutionNumber = 99999;
+        private int iMdmSolutionIntStatus = 99999;
+        private string sMdmSolutionStatusText = "unknown";
+        private int iMdmSolutionIntResult = 99999;
+        private bool bMdmSolutionBoolResult = false;
+        // <Segment Summary>
+        // Namespace properties
+        // </Segment Summary>
+        private string sMdmNamespaceId = "99999";
+        private string sMdmNamespaceName = "unknown";
+        private string sMdmNamespaceTitle = "unknown";
+        private int iMdmNamespaceNumber = 99999;
+        private int iMdmNamespaceIntStatus = 99999;
+        private string sMdmNamespaceStatusText = "unknown";
+        private int iMdmNamespaceIntResult = 99999;
+        private bool bMdmNamespaceBoolResult = false;
+        // <Segment Summary>
+        // Assembly properties
+        // </Segment Summary>
+        private string sMdmAssemblyId = "99999";
+        private string sMdmAssemblyName = "unknown";
+        private string sMdmAssemblyTitle = "unknown";
+        private int iMdmAssemblyNumber = 99999;
+        private int iMdmAssemblyIntStatus = 99999;
+        private string sMdmAssemblyStatusText = "unknown";
+        private int iMdmAssemblyIntResult = 99999;
+        private bool bMdmAssemblyBoolResult = false;
+        // <Segment Summary>
+        // System properties
+        // </Segment Summary>
+        private string sMdmSystemId = "99999";
+        private string sMdmSystemName = "MdmPc";
+        private string sMdmSystemTitle = "MdmPc";
+        private int iMdmSystemNumber = 99999;
+        private int iMdmSystemIntStatus = 99999;
+        private string sMdmSystemStatusText = "unknown";
+        private int iMdmSystemIntResult = 99999;
+        private bool bMdmSystemBoolResult = false;
+        // <Segment Summary>
+        // Process properties
+        // </Segment Summary>
+        private string sMdmProcessId = "99999";
+        private string sMdmProcessName = "unknown";
+        private string sMdmProcessTitle = "unknown";
+        private int iMdmProcessNumber = 99999;
+        private int iMdmProcessIntStatus = 99999;
+        private string sMdmProcessStatusText = "unknown";
+        private int iMdmProcessIntResult = 99999;
+        private bool bMdmProcessBoolResult = false;
+        // <Segment Summary>
+        // Status Message properties
+        // </Segment Summary>
+        private string sMdmProcessStatusText1 = "unknown";
+        private string sMdmProcessStatusText2 = "unknown";
+        private string sMdmProcessStatusText3 = "unknown";
+        private string sMdmProcessStatusText4 = "unknown";
+        // <Segment Summary>
+        // Class properties
+        // </Segment Summary>
+        private string sMdmClassId = "99999";
+        private string sMdmClassName = "unknown";
+        private string sMdmClassTitle = "unknown";
+        private int iMdmClassNumber = 99999;
+        private int iMdmClassIntStatus = 99999;
+        private string sMdmClassStatusText = "unknown";
+        private int iMdmClassIntResult = 99999;
+        private bool bMdmClassBoolResult = false;
+        // <Segment Summary>
+        // Method properties
+        // </Segment Summary>
+        private string sMdmMethodId = "99999";
+        private string sMdmMethodName = "unknown";
+        private string sMdmMethodTitle = "unknown";
+        private int iMdmMethodNumber = 99999;
+        private int iMdmMethodStatus = 99999;
+        private string sMdmMethodStatusText = "unknown";
+        private int iMdmMethodIntResult = 99999;
+        private bool bMdmMethodBoolResult = false;
+        // <Segment Summary>
+        // Property properties
+        // </Segment Summary>
+        private string sMdmPropertyId = "99999";
+        private string sMdmPropertyName = "unknown";
+        private string sMdmPropertyTitle = "unknown";
+        private int iMdmPropertyNumber = 99999;
+        private int iMdmPropertyStatus = 99999;
+        private string sMdmPropertyStatusText = "unknown";
+        private int iMdmPropertyIntResult = 99999;
+        private bool bMdmPropertyBoolResult = false;
+        // 
+        // <Segment Summary>
+        // Attribute properties
+        // </Segment Summary>
+        private string sMdmAttributeId = "99999";
+        private string sMdmAttributeName = "unknown";
+        private string sMdmAttributeTitle = "unknown";
+        private int iMdmAttributeNumber = 99999;
+        private int iMdmAttributeStatus = 99999;
+        private string sMdmAttributeStatusText = "unknown";
+        private int iMdmAttributeIntResult = 99999;
+        private bool bMdmAttributeBoolResult = false;
+        // <Segment Summary>
+        // Parameter properties
+        // </Segment Summary>
+        private string sMdmParameterId = "99999";
+        private string sMdmParameterName = "unknown";
+        private string sMdmParameterTitle = "unknown";
+        private int iMdmParameterNumber = 99999;
+        private int iMdmParameterStatus = 99999;
+        private string sMdmParameterStatusText = "unknown";
+        private int iMdmParameterIntResult = 99999;
+        private bool bMdmParameterBoolResult = false;
+        // <Segment Summary>
+        // Command properties
+        // </Segment Summary>
+        private string sMdmCommandId = "99999";
+        private string sMdmCommandName = "unknown";
+        private string sMdmCommandTitle = "unknown";
+        private int iMdmCommandNumber = 99999;
+        private int iMdmCommandStatus = 99999;
+        private string sMdmCommandStatusText = "unknown";
+        private int iMdmCommandIntResult = 99999;
+        private bool bMdmCommandBoolResult = false;
+        // <Segment Summary>
+        // Console properties
+        // </Segment Summary>
+        private string sMdmConsoleId = "99999";
+        private string sMdmConsoleName = "unknown";
+        private string sMdmConsoleTitle = "unknown";
+        private int iMdmConsoleNumber = 99999;
+        private int iMdmConsoleStatus = 99999;
+        private string sMdmConsoleStatusText = "unknown";
+        private int iMdmConsoleIntResult = 99999;
+        private bool bMdmConsoleBoolResult = false;
+        // <Segment Summary>
+        // Run properties
+        // </Segment Summary>
+        private string sMdmRunId = "99999";
+        private string sMdmRunName = "unknown";
+        private string sMdmRunTitle = "unknown";
+        private int iMdmRunNumber = 99999;
+        private int iMdmRunStatus = 99999;
+        private string sMdmRunStatusText = "unknown";
+        private int iMdmRunIntResult = 99999;
+        private bool bMdmRunBoolResult = false;
+        // <Segment Summary>
+        // AutoRun properties
+        // </Segment Summary>
+        private string sMdmAutoRunId = "99999";
+        private string sMdmAutoRunName = "unknown";
+        private string sMdmAutoRunTitle = "unknown";
+        private int iMdmAutoRunNumber = 99999;
+        private int iMdmAutoRunStatus = 99999;
+        private string sMdmAutoRunStatusText = "unknown";
+        private int iMdmAutoRunIntResult = 99999;
+        private bool bMdmAutoRunBoolResult = false;
+        // <Segment Summary>
+        // Input properties
+        // </Segment Summary>
+        private string sMdmInputId = "99999";
+        private string sMdmInputName = "unknown";
+        private string sMdmInputTitle = "unknown";
+        private int iMdmInputNumber = 99999;
+        private int iMdmInputStatus = 99999;
+        private string sMdmInputStatusText = "unknown";
+        private int iMdmInputIntResult = 99999;
+        private bool bMdmInputBoolResult = false;
+        // <Segment Summary>
+        // Output properties
+        // </Segment Summary>
+        private string sMdmOutputId = "99999";
+        private string sMdmOutputName = "unknown";
+        private string sMdmOutputTitle = "unknown";
+        private int iMdmOutputNumber = 99999;
+        private int iMdmOutputStatus = 99999;
+        private string sMdmOutputStatusText = "unknown";
+        private int iMdmOutputIntResult = 99999;
+        private bool bMdmOutputBoolResult = false;
+        // 
+        // <Segment Summary>
+        // Class External properties
+        // </Segment Summary>
+        // 
+        private string sMdmExternalId = "99999";
+        private string sMdmExternalName = "unknown";
+        private string sMdmExternalTitle = "unknown";
+        private int iMdmExternalNumber = 99999;
+        private int iMdmExternalStatus = 99999;
+        private string sMdmExternalStatusText = "unknown";
+        private int iMdmExternalIntResult = 99999;
+        private bool bMdmExternalBoolResult = false;
+        // 
+        // <Segment Summary>
+        // Class Internal properties
+        // </Segment Summary>
+        //
+        private string sMdmInternalId = "99999";
+        private string sMdmInternalName = "unknown";
+        private string sMdmInternalTitle = "unknown";
+        private int iMdmInternalNumber = 99999;
+        private int iMdmInternalStatus = 99999;
+        private string sMdmInternalStatusText = "unknown";
+        private int iMdmInternalIntResult = 99999;
+        private bool bMdmInternalBoolResult = false;
+        // 
+        // <Segment Summary>
+        // Class Application properties
+        // </Segment Summary>
+        private string sMdmApplicationId = "99999";
+        private string sMdmApplicationName = "unknown";
+        private string sMdmApplicationTitle = "unknown";
+        private int iMdmApplicationNumber = 99999;
+        private int iMdmApplicationStatus = 99999;
+        private string sMdmApplicationStatusText = "unknown";
+        private int iMdmApplicationIntResult = 99999;
+        private bool bMdmApplicationBoolResult = false;
+        // 
+        // 
+        // <Segment Summary>
+        // Class Other properties
+        // </Segment Summary>
+        private string sMdmOtherId = "99999";
+        private string sMdmOtherName = "unknown";
+        private string sMdmOtherTitle = "unknown";
+        private int iMdmOtherNumber = 99999;
+        private int iMdmOtherStatus = 99999;
+        private string sMdmOtherStatusText = "unknown";
+        private int iMdmOtherIntResult = 99999;
+        private bool bMdmOtherBoolResult = false;
+        // <Segment Summary>
+        // Class properties
+        // </Segment Summary>
+        // </MdmSrtRels>
+        // </Section Summary>
+#endregion

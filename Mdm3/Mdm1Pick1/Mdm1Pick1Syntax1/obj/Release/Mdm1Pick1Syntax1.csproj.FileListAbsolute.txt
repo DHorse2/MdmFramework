@@ -1,0 +1,7 @@
+C:\Srt Project\Mdm\Mdm1\Mdm1Pick1\Mdm1Pick1Syntax1\obj\Release\ResolveAssemblyReference.cache
+C:\Srt Project\Mdm\Mdm1\Mdm1Pick1\Mdm1Pick1Syntax1\bin\Release\Mdm1Pick1Syntax1.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Pick1\Mdm1Pick1Syntax1\bin\Release\Mdm1Pick1Syntax1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Pick1\Mdm1Pick1Syntax1\obj\Release\Mdm1Pick1Syntax1.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Pick1\Mdm1Pick1Syntax1\obj\Release\Mdm1Pick1Syntax1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Pick1\Mdm1Pick1Syntax1\bin\Release\Mdm1Oss1Decl1.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Pick1\Mdm1Pick1Syntax1\bin\Release\Mdm1Oss1Decl1.pdb

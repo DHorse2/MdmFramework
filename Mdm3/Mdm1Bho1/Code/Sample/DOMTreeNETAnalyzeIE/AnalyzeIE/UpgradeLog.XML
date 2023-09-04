@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="AnalyzeIE">
+</Property><Property Name="Solution File" Value="C:\Users\MdmSysAdmin\Desktop\Srt BHO Project (Desktop)\DOMTreeNETAnalyzeIE\AnalyzeIE\AnalyzeIE.sln">
+</Property><Property Name="Date" Value="October-23-10">
+</Property><Property Name="Time" Value="12:29 PM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="AnalyzeIE.sln" Description="File successfully backed up as C:\Users\MdmSysAdmin\Desktop\Srt BHO Project (Desktop)\DOMTreeNETAnalyzeIE\AnalyzeIE\Backup\AnalyzeIE.sln">
+</Event><Event ErrorLevel="0" Project="AnalyzeIE" Source="AnalyzeIE.csproj" Description="Project file successfully backed up as C:\Users\MdmSysAdmin\Desktop\Srt BHO Project (Desktop)\DOMTreeNETAnalyzeIE\AnalyzeIE\Backup\AnalyzeIE.csproj">
+</Event><Event ErrorLevel="0" Project="AnalyzeIE" Source="AssemblyInfo.cs" Description="File successfully backed up as C:\Users\MdmSysAdmin\Desktop\Srt BHO Project (Desktop)\DOMTreeNETAnalyzeIE\AnalyzeIE\Backup\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="AnalyzeIE" Source="CmdDispatch.cs" Description="File successfully backed up as C:\Users\MdmSysAdmin\Desktop\Srt BHO Project (Desktop)\DOMTreeNETAnalyzeIE\AnalyzeIE\Backup\CmdDispatch.cs">
+</Event><Event ErrorLevel="0" Project="AnalyzeIE" Source="DOMPeek.cs" Description="File successfully backed up as C:\Users\MdmSysAdmin\Desktop\Srt BHO Project (Desktop)\DOMTreeNETAnalyzeIE\AnalyzeIE\Backup\DOMPeek.cs">
+</Event><Event ErrorLevel="0" Project="AnalyzeIE" Source="Interfaces.cs" Description="File successfully backed up as C:\Users\MdmSysAdmin\Desktop\Srt BHO Project (Desktop)\DOMTreeNETAnalyzeIE\AnalyzeIE\Backup\Interfaces.cs">
+</Event><Event ErrorLevel="0" Project="AnalyzeIE" Source="maindlg.cs" Description="File successfully backed up as C:\Users\MdmSysAdmin\Desktop\Srt BHO Project (Desktop)\DOMTreeNETAnalyzeIE\AnalyzeIE\Backup\maindlg.cs">
+</Event><Event ErrorLevel="2" Project="AnalyzeIE" Source="licenses.licx" Description="Failed to backup file as C:\Users\MdmSysAdmin\Desktop\Srt BHO Project (Desktop)\DOMTreeNETAnalyzeIE\AnalyzeIE\Backup\licenses.licx">
+</Event><Event ErrorLevel="0" Project="AnalyzeIE" Source="maindlg.resx" Description="File successfully backed up as C:\Users\MdmSysAdmin\Desktop\Srt BHO Project (Desktop)\DOMTreeNETAnalyzeIE\AnalyzeIE\Backup\maindlg.resx">
+</Event><Event ErrorLevel="0" Project="AnalyzeIE" Source="AnalyzeIE.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="AnalyzeIE" Source="AnalyzeIE.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="AnalyzeIE.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="AnalyzeIE.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="AnalyzeIE" Source="AnalyzeIE.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

@@ -1,0 +1,14 @@
+USE [MdmDatabase99]
+GO
+/****** Object:  Table [dbo].[MdmFile99]    Script Date: 01/18/2009 17:41:43 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[MdmFile99](
+	[TempCol1] [int] IDENTITY(1,1) NOT NULL,
+	[TempCol2] [nchar](10) NULL
+) ON [PRIMARY]
+
+GO
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'TempTable1' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'MdmFile99'

@@ -1,0 +1,158 @@
+        #region MdmFileDatabaseServer
+        // <Section Summary>
+        // <Section Role="Declarations">
+        // <Section Id = "MdmFileDatabaseServer">
+        // <Section Vs="MdmFileDbSeverVs0_8_9">
+		// MdmFileDatabaseServer MdmFileDbSeverVs0_8_9
+        #region MdmFileDatabaseServerMasterFields
+        // <Area Id = "MasterServerInformation">
+        #region MdmFileMasterServerDatabase
+        // <Area Id = "MasterServerDatabase">
+
+        protected string MstrDbServer = "localhost";
+        protected string MstrDbServerMdm = "MdmServer99";
+        protected string MstrDbServerDefault = "localhost";
+        protected string MstrDbServerDefaultMdm = "MdmServer99";
+        protected string MstrDbServerId = "99999";
+        protected string MstrDbServerMasterDefault = "master..sysdatabases";
+        protected string MstrDbServerMasterDefaultMdm = "MdmServer99..sysdatabases";
+
+        // <Area Id = "MasterServerFilesLocation">
+
+        protected string MstrDbMasterFile = "localhost.dbo.sysobjects";
+        protected string MstrDbMasterFileMdm = "MdmServer99.dbo.sysobjects";
+        protected string MstrDbMasterFileDefault = "localhost.dbo.sysobjects";
+        protected string MstrDbMasterFileDefaultMdm = "MdmServer99.dbo.sysobjects";
+
+        // <Area Id = "MasterServer - ServerControl">
+
+        // <Area Id = "MasterServer - Connection">
+        protected string MstrCmd = "not used";
+        // <Area Id = "MasterServer - Creation">
+        protected string MstrDbServerCreateCmd;
+
+        // <Area Id = "MasterServer - DatabaseControl">
+        protected string MstrDbDatabaseId = "99999";
+        protected string MstrDbDatabase = "dbo";
+        protected string MstrDbDatabaseDefault = "MdmDatabase99";
+        protected string MstrDbDatabaseDefaultMdm = "MdmDatabase99";
+
+        // <Area Id = "MasterDatabaseConnectionCommand">
+
+        // <Area Id = "MasterDatabase - Creation">
+        protected string MstrDbDatabaseCreateCmd;
+        // <Area Id = "MasterDatabase - Connection">
+        protected string MstrDbConnCreateCmd = "not used";
+        protected string MstrDbConnString = SQL_CONNECTION_STRING;
+
+        // <Area Id = "MasterDatabaseStatus">
+        protected bool bMstrDbDatabaseExists = false;
+        protected bool bMstrDbDatabaseIsInvalid = false;
+        protected bool bMstrDbDatabaseIsCreating = false;
+        protected bool bMstrDbDatabaseIsCreated = false;
+
+        // <Area Id = "EndOfMasterServerAndDatabase">
+
+        #endregion
+        #region MdmFileDatabaseSecurityFields
+
+
+        // <Area Id = "SecurityControl">
+
+        protected string MstrDbSecurityId = "99999";
+        protected string MstrDbSecurity = "";
+
+        #endregion
+        #region MdmFileUserControl
+        // <Area Id = "UserControl">
+
+        protected string MstrDbUserServerId = "99999";
+        protected string MstrDbUserDbId = "99999";
+        protected string MstrDbUserId = "99999";
+        protected string MstrDbUser = "MdmUser99";
+        protected string MstrDbUserPw = "password99";
+
+
+        // <Area Id = "UserStatus">
+
+        protected bool bDbUserExists = false;
+        protected bool bDbUserIsInvalid = false;
+        protected bool bDbUserIsCreating = false;
+        protected bool bDbUserIsCreated = false;
+        #endregion
+        #region MdmFileMasterFileGroup
+        // <Area Id = "FileGroup">
+
+        protected string MstrDbFileGroupServerId = "99999";
+        protected string MstrDbFileGroupDbId = "99999";
+        protected string MstrDbFileGroupId = "99999";
+        protected string MstrDbFileGroup = "MdmFileGroup99";
+        // <Area Id = "FileGroupStatus">
+        protected bool bDbFileGroupExists = false;
+        protected bool bDbFileGroupIsInvalid = false;
+        protected bool bDbFileGroupIsCreating = false;
+        protected bool bDbFileGroupIsCreated = false;
+        // <Area Id = "FileGroupCommand">
+        protected string sMDbFileGroupCreateCmd = "not used";
+        #endregion
+        #region MdmFileMasterFileFile
+        // <Area Id = "File">
+
+        protected string MstrDbFileDbId = "99999";
+        protected string MstrDbFileDb = "MdmDatabase99";
+        protected string MstrDbFileDbDefault = "MdmDatabase99";
+        protected string MstrDbFileFileGroupId = "99999";
+        protected string MstrDbFileFileGroup = "MdmFileGroup99";
+        protected string MstrDbFileGroupDefault = "MdmFileGroup99";
+
+        protected string MstrDbFileId = "99999";
+        protected string MstrDbFile = "MdmFile99";
+
+        // <Area Id = "FileStatus">
+
+        protected bool bDbFileExists = false;
+        protected bool bDbFileIsInvalid = false;
+        protected bool bDbFileIsCreating = false;
+        protected bool bDbFileIsCreated = false;
+        #endregion
+        #endregion
+        #region MdmFileDatabaseExceptions
+        /*
+         // <Area Id = "ArgumentException:
+         * path is a zero-length string, contains only white space, or 
+         * contains one or more invalid characters as defined by InvalidPathChars.  ">
+         // <Area Id = "ArgumentNullException:
+         * path is null reference
+         * path is null or Nothing or null ptra null 
+         * (Nothing in Visual Basic). ">
+ 
+         // <Area Id = "PathTooLongException:
+         * The specified path, file name, or both 
+         * exceed the system-defined maximum length. 
+         * For example, on Windows-based platforms, 
+         * paths must be less than 248 characters, 
+         * and file names must be less than 260 characters. ">
+ 
+         // <Area Id = "DirectoryNotFoundException:
+         * The specified path is invalid, 
+         * (for example, it is on an unmapped drive). ">
+ 
+         // <Area Id = "UnauthorizedAccessException:
+         * path specified a directory. 
+         * -or- 
+         * The caller does not have the required permission. ">
+ 
+         // <Area Id = "FileNotFoundException:
+         * The file specified in path was not found. ">
+
+         // <Area Id = "NotSupportedException:
+         * path is in an invalid format. ">
+ 
+        */
+
+        // <Area Id = "FileCommand">
+
+        protected string ofcMstrDbFileCreateCmd = "";
+
+        #endregion
+        #endregion

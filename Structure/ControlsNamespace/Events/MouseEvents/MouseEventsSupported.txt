@@ -1,0 +1,48 @@
+
+Mouse Event WPF Silverlight
+LostMouseCapture Yes Yes
+MouseDoubleClick Yes No
+MouseDown Yes Yes
+MouseEnter Yes Yes
+MouseLeave Yes Yes
+MouseLeftButtonDown Yes Yes
+MouseLeftButtonUp Yes Yes
+MouseMove Yes Yes
+MouseRightButtonDown Yes No
+MouseRightButtonUp Yes No
+MouseUp Yes No
+MouseWheel Yes No
+PreviewMouseDoubleClick Yes No
+PreviewMouseDown Yes No
+PreviewMouseLeftButtonDown Yes No
+PreviewMouseLeftButtonUp Yes No
+PreviewMouseMove Yes No
+PreviewMouseRightButtonDown Yes No
+PreviewMouseRightButtonUp Yes No
+PreviewMouseUp Yes No
+PreviewMouseWheel Yes No
+
+The MouseEventArgs implementation:
+
+Property / Method WPF Silverlight
+GetPosition(IInputElement) Yes Yes
+LeftButton Yes No
+MiddleButton Yes No
+MouseDevice Yes No
+RightButton Yes No
+StylusDevice Yes Yes
+XButton1 Yes No
+XButton2 Yes No
+
+The MouseButtonEventArgs class adds some additional properties to the MouseEventArgs class. The additional implementation details are:
+
+Property / Method WPF Silverlight
+ButtonState Yes No
+ChangedButton Yes No
+ClickCount Yes No
+
+
+In order to obtain right mouse button and wheel support in Silverlight, developers need to interact with the browser through JavaScript and pass the mouse data back to Silverlight. 
+
+Since Silverlight is, at its core, a browser plug-in, it is reliant on the plug-in models of the browser. Most browsers have special handling for the right mouse click and wheel events, and therefore pose a problem for the Silverlight plug-in. However, there are several implementations solving this issue available on the web through the use of browser inter-operation capabilities.
+

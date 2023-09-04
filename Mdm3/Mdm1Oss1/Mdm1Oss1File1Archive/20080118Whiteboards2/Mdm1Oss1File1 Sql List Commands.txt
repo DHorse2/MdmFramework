@@ -1,0 +1,76 @@
+========================================
+LIST TABLES 
+LIST DATABASE 
+LIST VIEWS   
+========================================
+LIST Commands
+LIST CONNECTIONS Command
+LIST DATABASE Command
+LIST DLLS Command
+LIST OBJECTS Command
+LIST PROCEDURES Command
+LIST TABLES Command
+LIST VIEWS Command
+========================================
+LIST   [FIELDS FieldList]    [Scope] [FOR lExpression1]
+ [WHILE lExpression2]   [OFF]   [NOCONSOLE]   [NOOPTIMIZE]
+   [TO PRINTER [PROMPT] | TO FILE FileName [ADDITIVE]]
+-or-
+LIST FILES   [ON Drive]    [LIKE FileSkeleton]
+   [TO PRINTER [PROMPT] | TO FILE FileName [ADDITIVE]]
+-or-
+LIST MEMORY   [LIKE FileSkeleton]   [NOCONSOLE]
+   [TO PRINTER [PROMPT] | TO FILE FileName [ADDITIVE]]
+-or-
+LIST STATUS   [NOCONSOLE]   
+[TO PRINTER [PROMPT] | TO FILE FileName [ADDITIVE]]
+-or-
+LIST STRUCTURE   [IN nWorkArea | cTableAlias]   [NOCONSOLE]
+   [TO PRINTER [PROMPT] | TO FILE FileName [ADDITIVE]]
+========================================
+LIST VIEWS   [TO PRINTER [PROMPT] | TO FILE FileName]   [NOCONSOLE]
+
+========================================
+sys.all_objects
+sys.all_views
+sys.all_columns
+INFORMATION_SCHEMA.TABLES
+
+========================================
+CLOSE DATABASES
+SET PATH TO (HOME(2) + 'data\')   && Sets path to database
+OPEN DATABASE testdata  && Open testdata database
+
+========================================
+LIST TABLES   [TO PRINTER [PROMPT] | TO FILE FileName]
+   [NOCONSOLE]
+
+CLEAR
+LIST TABLES  && Lists information about tables in the database
+
+OSQL -E -S MDMPC10\SQLEXPRESS LIST TABLES  && Lists information about tables in the database;
+
+OSQL -E -e LIST TABLES  && Lists information about tables in the database;
+
+========================================
+
+LIST DATABASE   [TO PRINTER [PROMPT] | TO FILE FileName]   [NOCONSOLE]
+
+CLEAR
+DISPLAY TABLES  && Displays tables in the database
+LIST DATABASE  && Lists table information
+========================================
+========================================
+
+========================================
+
+========================================
+
+========================================
+
+========================================
+
+========================================
+
+========================================
+

@@ -1,0 +1,29 @@
+========================================
+select table_name, column_name, data_type, character_maximum_length, is_nullable from information_schema.columns where table_name in (select name from sysobjects where xtype='U') order by table_name, colomn_name
+========================================
+"SELECT * FROM INFORMATION_SCHEMA.COLUMNS" 
+
+========================================
+SELECT * from syscolumns
+WHERE id = object_id('yourtablename')
+
+========================================
+SELECT * FROM table_one WHERE unique_column =  (SELECT unique_column FROM table_two WHERE id_column = 1)
+
+========================================
+SELECT table_name
+FROM INFORMATION_SCHEMA.TABLES
+WHERE TABLE_SCHEMA ='dbo'
+AND TABLE_TYPE ='BASE TABLE'
+
+========================================
+select name from sysobjects where xtype = 'U'
+========================================
+select * from sysobjects where xtype = 'u'  
+/*This will list all tables and its properties*/
+select name from sysobjects where xtype = 'u'  
+/*This will list table name as Jamie mentioned*/
+========================================
+
+========================================
+

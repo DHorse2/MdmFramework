@@ -1,0 +1,1143 @@
+        # region MdmFileDatabaseControl
+        /// <summary>
+        /// <Section Summary>
+        /// </summary>
+        // <Section Summary>
+        // <Section Role="Declarations">
+        // <Section Id = "MdmFileDatabaseControl">
+        // <Section Vs="MdmFileDbVs0_8_9">
+        // <Section Id = "MdmFileDatabaseControl MdmFilesDbVs0_8_9">
+        #region BasicFileInformation
+        // <Area Id = "BasicFileInformation">
+
+        private string spFileItemId = "";
+        public string sFileItemId {
+            get { return spFileItemId; }
+            set { spFileItemId = value; }
+        }
+
+        private string spFileItemIdCurrent = "";
+        public string sFileItemIdCurrent {
+            get { return spFileItemIdCurrent; }
+            set { spFileItemIdCurrent = value; }
+        }
+
+        private string spFileItemIdNext = "";
+        public string sFileItemIdNext {
+            get { return spFileItemIdNext; }
+            set { spFileItemIdNext = value; }
+        }
+
+        private string spFileNameNext = "";
+        public string sFileNameNext {
+            get { return spFileNameNext; }
+            set { spFileNameNext = value; }
+        }
+
+        private string spFileItemData = "";
+        public string sFileItemData {
+            get { return spFileItemData; }
+            set { spFileItemData = value; }
+        }
+        
+        private string spFileOwner = "";
+        // private string spFileOwner = "dbo";
+        public string sFileOwner {
+            get { return spFileOwner; }
+            set { spFileOwner = value; }
+        }
+        private string spFileName = "";
+        public string sFileName {
+            get { return spFileName; }
+            set { spFileName = value; }
+        }
+        private string spFileNameFull = "";
+        public string sFileNameFull {
+            get { return spFileNameFull; }
+            set { spFileNameFull = value; }
+        }
+        private string spFileNameLine = "";
+        public string sFileNameLine {
+            get { return spFileNameLine; }
+            set { spFileNameLine = value; }
+        }
+        private string spFileExt = "";
+        public string sFileExt {
+            get { return spFileExt; }
+            set { spFileExt = value; }
+        }
+        private int ipFileId = -99999;
+        public int iFileId {
+            get { return ipFileId; }
+            private set { ipFileId = value; }
+        }
+
+        private string spMdmDbFileNameLong = "";
+        public string sMdmDbFileNameLong {
+            get { return spMdmDbFileNameLong; }
+            set { spMdmDbFileNameLong = value; }
+        }
+
+        // <Area Id = "FileGroupInformation">
+        private string spFileGroupName = "";
+        public string sFileGroupName {
+            get { return spFileGroupName; }
+            set { spFileGroupName = value; }
+        }
+
+        // <Area Id = "FileGroupInformation">
+        private string spDatabaseName = "";
+        public string sDatabaseName {
+            get { return spDatabaseName; }
+            set { spDatabaseName = value; }
+        }
+
+        private int ipFileGroupId = -99999;
+        public int iFileGroupId {
+            get { return ipFileGroupId; }
+            private set { ipFileGroupId = value; }
+        }
+
+        // <Area Id = "FileGroupInformation">
+        private string spSystemName = "";
+        public string sSystemName {
+            get { return spSystemName; }
+            set { spSystemName = value; }
+        }
+
+        #region FileDetails
+        // <Area Id = "FileNamePlatform">
+        private string spFileNameAlias = "";
+        public string sFileNameAlias {
+            get { return spFileNameAlias; }
+            private set { spFileNameAlias = value; }
+        }
+
+        private string spFileShortName = "";
+        public string sFileShortName {
+            get { return spFileShortName; }
+            private set { spFileShortName = value; }
+        }
+
+        private string spFileShort83Name = "";
+        public string sFileShort83Name {
+            get { return spFileShort83Name; }
+            private set { spFileShort83Name = value; }
+        }
+
+        private string spFileShortUnixName = "";
+        public string sFileShortUnixName {
+            get { return spFileShortUnixName; }
+            private set { spFileShortUnixName = value; }
+        }
+
+        // <Area Id = "FileGuid">
+        private Guid gpFileNameGuid;
+        public Guid gFileNameGuid {
+            get { return gpFileNameGuid; }
+            private set { gpFileNameGuid = value; }
+        }
+
+        // <Area Id = "sFileOptions">
+        private string spFileOptions = "";
+        public string sFileOptions {
+            get { return spFileOptions; }
+            set { spFileOptions = value; }
+        }
+
+        // <Area Id = "sFileType">
+        private string spFileType = "";
+        public string sFileType {
+            get { return spFileType; }
+            set { spFileType = value; }
+        }
+
+        private int ipFileTypeId = -99999;
+        public int iFileTypeId {
+            get { return ipFileTypeId; }
+            set { ipFileTypeId = value; }
+        }
+
+        private string spFileSubType = "";
+        public string sFileSubType {
+            get { return spFileSubType; }
+            set { spFileSubType = value; }
+        }
+
+        private int ipFileSubTypeId = -99999;
+        public int iFileSubTypeId {
+            get { return ipFileSubTypeId; }
+            set { ipFileSubTypeId = value; }
+        }
+
+        private bool bpTextFileExists = false;
+        public bool bTextFileExists {
+            get { return bpTextFileExists; }
+            private set { bpTextFileExists = value; }
+        }
+
+        private bool bpSqlFileExists = false;
+        public bool bSqlFileExists {
+            get { return bpSqlFileExists; }
+            private set { bpSqlFileExists = value; }
+        }
+
+        #endregion
+        #region FileData
+        // <Area Id = "FileContents">
+
+        private string ofsrpFileIOReadBuffer = ""; // xxx
+        public string ofsrFileIOReadBuffer {
+            get { return ofsrpFileIOReadBuffer; }
+            set { ofsrpFileIOReadBuffer = value; }
+        }
+
+        private string spFileIOBlock = "";
+        public string sFileIOBlock {
+            get { return spFileIOBlock; }
+            set { spFileIOBlock = value; }
+        }
+
+        private string spFileIOLine = "";
+        public string sFileIOLine {
+            get { return spFileIOLine; }
+            set { spFileIOLine = value; }
+        }
+
+        private string spFileIOAll = "";
+        public string sFileIOAll {
+            get { return spFileIOAll; }
+            set { spFileIOAll = value; }
+        }
+
+        #endregion
+        #endregion
+        #region FileObjects
+        // <Area Id = "FileObjects">
+        public object ooDbFileObject = null;
+        public FileStream ofsDbFileStream = null;
+        public StreamReader ofsrDbFileStreamReader = null;
+        // Exception
+        public Exception oeDbFileCmdException;
+
+        // <Area Id = "FileDatabaseObjects">
+        public SqlConnection ofdSqlDbConnection = null;
+        public SqlCommand ofdcSqlDbCommand = null;
+        public string sCommandCurrent = null;
+        // Exception
+        public SqlException ofeMexceptDbFileException;
+        // <Area Id = "FileDatabaseStatus">
+        #endregion
+        #region FileTypeControlConstants
+        // Text
+        const int FILE_TYPE_TEXT = 1;
+        const int FILE_SUBTYPE_TEXT = 1;
+        const int FILE_SUBTYPE_ASC = 6;
+        const int FILE_SUBTYPE_FIX = 12;
+        const int FILE_SUBTYPE_DAT = 13;
+        const int FILE_SUBTYPE_CSV = 5;
+        // Sql
+        const int FILE_TYPE_SQL = 3;
+        const int FILE_SUBTYPE_SQL = 2;
+        const int FILE_SUBTYPE_MS = 3;
+        const int FILE_SUBTYPE_MY = 4;
+        // Tld Tilde
+        const int FILE_TYPE_PICK = 2;
+        const int FILE_SUBTYPE_TILDE = 3;
+        const int FILE_SUBTYPE_TILDE_CSV = 4;
+        const int FILE_SUBTYPE_TILDE_ROW = 7;
+        const int FILE_SUBTYPE_TILDE_NATIVE = 8;
+        const int FILE_SUBTYPE_TILDE_NATIVE_ONE = 9;
+        // Db2
+        const int FILE_TYPE_DB2 = 1;
+        // Oracle
+        const int FILE_TYPE_ORACLE = 2;
+        // Xml
+        const int FILE_TYPE_XML = 4;
+        //
+        const int FILE_TYPE_UNKNOWN = 99;
+        const int FILE_SUBTYPE_UNKNOWN = 99;
+        //
+        #endregion
+        #region FileDescriptionArrays
+        protected string[] saDbFileExt = { "tld", "txt", "csv", "mdf", "xxx" };
+        protected string[] saDbFileTypeCode = { "tld", "txt", "csv", "mdf", "xxx" };
+        // <Area Id = "more Text: "asc", "fix",
+        // more MsSql:
+        // more MySql:
+        // more Code Script: "bat", "js", "wsh", "proc"
+        // more Code Language: "cobol", "dartbasic", "pickbasic", "c", "cpp", "csharp"
+        // more Markup: "ini", "AcsDoc", "MdmDoc", "html", "xhtml", "css"
+        // more Mdm Protcol: "AscEftBank1", "MdmAi1", "AscCreditCardCo1"
+        // more Std Protcol: "IP", "TCP", "Http", "Pkh", "Kermit", "Scada"
+        // more Telco Protocol:">
+
+        // <Area Id = "per:
+        // string[] saWeekDays = { "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" };">
+        protected string[] saDbFilePrimaryType = { "Text", "Text", "TextCsv", "MsSql", "MySql" };
+        protected string[] saDbFileSecondaryType = { "Tilde", "Text", "Csv", "Datafile", "Datafile" };
+        protected string[] saDbFileTypeDescription = { 
+            "Tilde delimeted datafile", 
+            "Text File", 
+            "Comma delimited  text file", 
+            "MS SQL data file", 
+            "My Sql data file" };
+        #endregion
+        #region FileDatabase
+        #region MdmFileDatabaseSecurity
+        #endregion
+        #region MdmFileDatabaseUser
+        #endregion
+        #region MdmFileDatabasePhraseConstrution
+        // <Area Id = "Phrases">
+
+        #region MdmFileMasterServerAndDatabasePhrases
+        // <Area Id = "MasterServerAndDatabasePhrases">
+
+        protected string MstrDbPhraseServer;
+        protected string MstrDbPhraseDatabase;
+        protected string MstrDbPhraseSecurity;
+        protected string MstrDbPhraseUser;
+        protected string MstrDbPhraseUserPw;
+
+
+        // <Area Id = "CreationPhrases">
+
+        // <Area Id = "MasterDatabase - CreationPhrases">
+
+        protected string MstrDbPhrase;
+
+        protected bool bDbPhraseIfUsed = true;
+        protected string MstrDbPhraseIf = "IF EXISTS (";
+        protected string MstrDbPhraseIfEnd = ")";
+
+        protected bool MboolDbPhraseSelectUsed = true;
+        protected string MstrDbPhraseSelect = "SELECT * ";
+
+        protected bool bDbPhraseFromUsed = true;
+        protected string MstrDbPhraseFrom = "FROM ";
+        protected string MstrDbPhraseFromItems = "MdmServer99..sysdatabases";
+        protected string MstrDbPhraseFromEnd = " ";
+
+        protected bool bDbPhraseWhereUsed = true;
+        protected string MstrDbPhraseWhere = "WHERE ";
+        // <Area Id = "sb paired list of dict + value
+        protected string MstrDbPhraseWhereItems = "Name = 'HowToDemo'";
+
+        protected bool bDbPhraseDropUsed = true;
+        protected string MstrDbPhraseDrop = "DROP ";
+        // <Area Id = "sb paired list of dict + value
+        protected string MstrDbPhraseDropItems = "DATABASE HowToDemo";
+
+        protected bool bDbPhraseCreateUsed = true;
+        protected string MstrDbPhraseCreate = "CREATE ";
+        // <Area Id = "sb paired list of dict + value
+        protected string MstrDbPhraseCreateItems = "CREATE DATABASE HowToDemo";
+
+        protected bool MstrDbPhraseFileGroupUsed = false;
+        protected string MstrDbPhraseFileGroup = "HowToDemoFileGroup";
+        #endregion
+        #region MdmFileFileCreationPhrases
+        // <Area Id = "FileCreationPhrases">
+
+        protected string MstrDbFilePhrase;
+
+        protected bool bDbFilePhraseUseUsed = true;
+        protected string MstrDbFilePhraseUse = "USE ";
+        protected string MstrDbFilePhraseUseEnd = "";
+
+        protected bool bDbFilePhraseIfUsed = true;
+        protected string MstrDbFilePhraseIf = "IF EXISTS (";
+        protected string MstrDbFilePhraseIfEnd = ")";
+
+        protected bool MboolDbFilePhraseSelectUsed = true;
+        protected string MstrDbFilePhraseSelect = "SELECT * ";
+
+        protected bool bDbFilePhraseFromUsed = true;
+        protected string MstrDbFilePhraseFrom = "FROM ";
+        protected string MstrDbFilePhraseFromItems = "master..sysdatabases";
+        protected string MstrDbFilePhraseFromEnd = " ";
+
+        protected bool bDbFilePhraseWhereUsed = true;
+        protected string MstrDbFilePhraseWhere = "WHERE ";
+        protected string MstrDbFilePhraseWhereAnd = " AND ";
+        // <Area Id = "sb paired list of dict + value">
+        protected string MstrDbFilePhraseWhereItems1 = "Name = 'HowToDemo'";
+        // <Area Id = "sb paired list of dict + value">
+        protected string MstrDbFilePhraseWhereItems2 = "TYPE = 'u'";
+        // MstrDbFilePhraseWhereItemsId[X];
+        // MstrDbFilePhraseWhereItemsExpression[X];
+        // MstrDbFilePhraseWhereItemsValue[X];
+
+        protected bool bDbFilePhraseBeginUsed = true;
+        protected string MstrDbFilePhraseBegin = "BEGIN";
+        protected string MstrDbFilePhraseBeginEnd = "END";
+
+        protected bool bDbFilePhraseDropUsed = true;
+        protected string MstrDbFilePhraseDrop = "DROP ";
+        // <Area Id = "sb paired list of dict + value">
+        protected string MstrDbFilePhraseDropItems = "TABLE " + "HowToDemo.dbo.MdmFile99";
+
+
+        // <Section Id = "x">
+
+        protected bool bDbFilePhraseCreateUsed = true;
+        protected string MstrDbFilePhraseCreate = "CREATE ";
+        protected string MstrDbFilePhraseCreateObject = "TABLE ";
+        protected string MstrDbFilePhraseCreateTableName = "MdmFile99";
+        // + "HowToDemo.dbo.This";TableName
+
+        protected string MstrDbFilePhraseItemsBegin = "(";
+        protected string MstrDbFilePhraseItemsEnd = ")";
+
+        // <Area Id = "MstrDbFilePhraseDbColumnId[X] 
+        // MstrDbFilePhraseWhereItemsType[X]; 
+        // MstrDbFilePhraseWhereItemsTypeHasLength[X];
+        // if (bDbFilePhraseCreateUsed)
+        // {
+        // + "("
+        // MstrDbFilePhraseWhereItemsTypeLength[X];
+        // + ")"
+        // }
+        // + " "
+        // MstrDbFilePhraseWhereItemsRange[X];
+        // "NOT NULL "">
+
+
+        // <Section Id = "x">
+
+        protected bool bDbFilePhraseConstraintUsed = true;
+        protected string MstrDbFilePhraseConstraint = "CONSTRAINT [";
+        protected string MstrDbFilePhraseConstraintCol = "PK_Numeric99";
+        protected string MstrDbFilePhraseConstraintNameDefault = "PK_Numeric99";
+        protected string MstrDbFilePhraseConstraintEnd = "]";
+
+        protected string MstrDbFilePhraseConstraintType1 = " PRIMARY KEY ";
+        protected string MstrDbFilePhraseConstraintType2 = " CLUSTERED ";
+
+        protected string MstrDbFilePhraseConstraintColBegin = " (";
+        protected string MstrDbFilePhraseConstraintColName = "Column0";
+        protected string MstrDbFilePhraseConstraintColNameDefalut = "Column0";
+        protected string MstrDbFilePhraseConstraintColEnd = ")";
+
+
+        protected string MstrDbFilePhraseCreateItems = "CREATE DATABASE HowToDemo";
+        #endregion
+        #endregion
+        #endregion
+        #region MdmFileDatabaseControlState
+        // <Section Summary>
+        // <Section Role="Declarations">
+        // <Section Id = "MdmFileDatabaseControlState">
+        // <Section Vs="MdmFileDbVs0_8_9">
+        // <Area Id = "FileIOStateStatus">
+        private int ipFileStatus = 0;
+        public int iFileStatus {
+            get { return ipFileStatus; }
+            private set { ipFileStatus = value; }
+        }
+        // <Area Id = "FileExistanceStatus">
+        private int ipFileExistanceStatus;
+        public int iFileExistanceStatus {
+            get { return ipFileExistanceStatus; }
+            private set { ipFileExistanceStatus = value; }
+        }
+        // <Area Id = "GeneralStatusCondition">
+        //
+        // <Area Id = "FileIOType">
+        private int ipFileIOType;
+        public int iFileIOType {
+            get { return ipFileIOType; }
+            set { ipFileIOType = value; }
+        }
+        // <Area Id = "FileReadMode">
+        private int ipFileReadMode = 0;
+        public int iFileReadMode {
+            get { return ipFileReadMode; }
+            set { ipFileReadMode = value;}
+        }
+        // <Area Id = "FileWriteMode">
+        private int ipFileWriteMode = 0;
+        public int iFileWriteMode {
+            get { return ipFileWriteMode; }
+            set { ipFileWriteMode = value; }
+        }
+        // <Area Id = "FileAccessMode">
+        private int ipFileAccessMode = 0;
+        public int iFileAccessMode {
+            get { return ipFileAccessMode; }
+            set { ipFileAccessMode = value; }
+        }
+        // <Area Id = "FileOpenStatus"
+        private int ipFileOpenStatus;
+        protected int iFileOpenStatus {
+            get { return ipFileOpenStatus; }
+            private set { ipFileOpenStatus = value; }
+        }
+        // <Area Id = "AsciiOpenOptions">
+        protected int iAsciiOpenOptions = 0;
+        #endregion
+        #region MdmFileDatabaseSystemFields
+        // <Area Id = "SourceDetailsProperties">
+
+        // <Area Id = "SourceDriveSystem - PhysicalLocation">
+        private int ipFileDriveSystemId = -99999;
+        public int iFileDriveSystemId {
+            get { return ipFileDriveSystemId; }
+            private set { ipFileDriveSystemId = value; }
+        }
+
+        // <Area Id = "SourceDriveName - PhysicalLocation">
+        private string spFileDriveName = "";
+        public string sFileDriveName {
+            get { return spFileDriveName; }
+            private set { spFileDriveName = value; }
+        }
+
+        private string spFileDriveLetter = "";
+        public string sFileDriveLetter {
+            get { return spFileDriveLetter; }
+            private set { spFileDriveLetter = value; }
+        }
+
+        private string spFileDriveLetterAlias = "";
+        public string sFileDriveLetterAlias {
+            get { return spFileDriveLetterAlias; }
+            private set { spFileDriveLetterAlias = value; }
+        }
+
+        private string spFileDriveShortName = "";
+        public string sFileDriveShortName {
+            get { return spFileDriveShortName; }
+            private set { spFileDriveShortName = value; }
+        }
+
+        // <Area Id = "SourcePathName">
+        private string spPathName = "";
+        public string sPathName {
+            get { return spPathName; }
+            private set { spPathName = value; }
+        }
+
+        private string spPathNameAlias = "";
+        public string sPathNameAlias {
+            get { return spPathNameAlias; }
+            private set { spPathNameAlias = value; }
+        }
+
+        private int ipPathId = -99999;
+        public int iPathId {
+            get { return ipPathId; }
+            private set { ipPathId = value; }
+        }
+
+        private string spPathShortName = "";
+        public string sPathShortName {
+            get { return spPathShortName; }
+            private set { spPathShortName = value; }
+        }
+
+        // <Area Id = "FileIOActionBeingPerformed">
+
+        // <Area Id = "SourceFileAction">
+        private string spFileAction = "";
+        public string sFileAction {
+            get { return spFileAction; }
+            set { spFileAction = value; }
+        }
+
+        private string spFileActionName = "";
+        public string sFileActionName {
+            get { return spFileActionName; }
+            set { spFileActionName = value; }
+        }
+        // <Area Id = "SourceFileActionFlags">
+        /*
+         *  0    - Null
+         *  1    - Exists
+         *  2    - Create
+         *  4    - Open
+         *  8    - Close
+         *  16   - Delete
+         *  32   - Empty (Delete All)
+         *  64   - Shrink
+         *  128  - Expand
+         *  256  - Lock
+         *  512  - Unlock
+         *  1024 - Defragment
+         *  2048 - Read Only
+         *  4096 - Rebuild
+         *  8192 - Rebuild Statistics
+         *  16384 - x
+         *  32768 - x
+         *  65536 - x
+         */
+
+        // <Area Id = "MdmStandardFileInformation">
+
+        #endregion
+        #region MdmFileDatabaseParentDwBiFields
+
+        // <Area Id = "SourceParentName">
+        // private string spParentName;
+        public string sParentName { get; private set; }
+        // private string spParentNameAlias;
+        public string sParentNameAlias { get; private set; }
+        // private int ipParentId;
+        public int iParentId { get; private set; }
+        // private string spParentShortName;
+        public string sParentShortName { get; private set; }
+ 
+        // <Area Id = "SourceConsolodationParentName">
+        // private string spConsolodationParentName;
+        public string sConsolodationParentName { get; private set; }
+        // private string spConsolodationParentNameAlias;
+        public string sConsolodationParentNameAlias { get; private set; }
+        // private int iConsolodationParentId;
+        public int iConsolodationParentId { get; private set; }
+        // private string spConsolodationParentShortName;
+        public string sConsolodationParentShortName { get; private set; }
+
+        // <Area Id = "ContextDomainInformation">
+
+        // <Area Id = "RootDomainInformation">
+
+        // <Area Id = "RootOwnerEntityInformation">
+        // <Area Id = "RootOwnerPathPaternInformation">
+        // <Area Id = "RootOwnerClusteringInformation">
+        // <Area Id = "RootOwnerReplicationInformation">
+
+
+        // <Area Id = "XmlXpathInformation">
+
+        // <Area Id = "IpDomainInformation">
+
+        // <Area Id = "SourceODBC">
+
+        // <Area Id = "SQLSystemInformation (Physical)">
+
+        // <Area Id = "SourceSystemInformation">
+
+        // <Area Id = "ServerInformationDatabase">
+
+        #endregion
+        #region MdmFileDatabaseConnectionControlFields
+        // <Area Id = "SourceDatabaseInformation">
+        protected bool bDbConnExists = false;
+        protected bool bDbConnIsInvalid = false;
+
+        // <Area Id = "DatabaseConnectionStatus">
+        protected bool bDbConnIsConnecting = false;
+        protected bool bDbConnIsConnected = false;
+        protected bool bDbConnIsOpen = false;
+        protected bool bDbConnIsCreating = false;
+        protected bool bDbConnIsCreated = false;
+        protected bool bDbConnIsClosed = false;
+
+        // <Area Id = "DatabaseControlMessages">
+        protected string MformStatusMessage = "";
+        protected string MmessageBoxMessage = "";
+
+        // <Area Id = "SourceDatabaseFileGroupInformation">
+
+        // <Area Id = "SourceDatabaseFileNameInformation">
+
+        // <Area Id = "DatabaseMessageConstants">
+
+        protected const string SQL_CONNECTION_STRING =
+            "Server=localhost;" +
+            "DataBase=;" +
+            "Integrated Security=SSPI";
+
+        protected const string CONNECTION_ERROR_MSG =
+            "To run this sample, you must have SQL " +
+            "or MSDE with the Northwind database installed.  For " +
+            "instructions on installing MSDE, view the ReadMe file.";
+
+        /*
+        protected const string MSDE_CONNECTION_STRING =
+            @"Server=(local)\NetSDK;" +
+            "DataBase=;" +
+            "Integrated Security=SSPI";
+        */
+        #endregion
+        #region MdmFileDatabaseControlConstants
+        // <Section Summary>
+        // <Section Role="Declarations">
+        // <Section Id = "MdmFileDatabaseControlConstants">
+        // <Section Vs="MdmStdRunVs0_8_9">
+        // <Section Id = "FileIOConstants">
+        // <Area Id = "FileSchemaLevel"
+        const int FILE_DICT_DATA = 1;
+        const int FILE_DATA = 2;
+        // <Area Id = "FileExistanceConstants">
+        // protected int FileExistanceStatus = 0;
+        const int FILE_IO_FILE_SHOULD_NOT_EXIST = 3;
+        const int FILE_IO_FILE_DOES_EXIST = 2;
+        const int FILE_IO_FILE_DOES_NOT_EXIST = 1;
+        // <Area Id = "GeneralStatusConditionConstants">
+        const int FILE_IO_OK = 0;
+        const int FILE_IO_NO_STATUS_SET = 99999;
+        // <Area Id = "FileOpenConstants">
+        // protected int FileOpenStatus = 0;
+        const int FILE_IO_OPEN_TRY_FIRST = -3;
+        const int FILE_IO_OPEN_TRY_AGAIN = -2;
+        const int FILE_IO_OPEN_TRY_DEFAULT = 2;
+        const int FILE_IO_OPEN_TRY_ORIGINAL = 3;
+        const int FILE_IO_OPEN_TRY_ALL = 3;
+        const int FILE_IO_OPEN_FAILED = 121;
+        const int FILE_IO_CLOSE_FAILED = 122;
+        const int FILE_IO_NO_FILE_OPEN = 128;
+        const int FILE_IO_NO_FILE_NAME = 129;
+        // <Area Id = "FileIOTypeConstants">
+        // protected int FileIOType = 0;
+        const int DATABASE_IO_OK = 0;
+        const int DATABASE_IO_OPEN_FAILED = 131;
+        const int DATABASE_IO_CLOSE_FAILED = 132;
+        const int DATABASE_IO_NO_FILE_OPEN = 138;
+        const int DATABASE_IO_NO_FILE_NAME = 139;
+        const int STREAM_IO_OK = 0;
+        const int STREAM_IO_OPEN_FAILED = 141;
+        const int STREAM_IO_CLOSE_FAILED = 142;
+        const int STREAM_IO_NO_FILE_OPEN = 148;
+        const int STREAM_IO_NO_FILE_NAME = 149;
+        const int BINARY_IO_OK = 0;
+        const int BINARY_IO_OPEN_FAILED = 151;
+        const int BINARY_IO_CLOSE_FAILED = 152;
+        const int BINARY_IO_NO_FILE_OPEN = 158;
+        const int BINARY_IO_NO_FILE_NAME = 159;
+        // <Area Id = "FileReadModeConstants">
+        // protected int ipFileReadMode = 0;
+        const int FILE_IO_MODE_NOT_SET = 0;
+        const int FILE_IO_MODE_BLOCK = 1;
+        const int FILE_IO_MODE_LINE = 2;
+        const int FILE_IO_MODE_ALL = 3;
+        const int FILE_IO_MODE_SQL = 4;
+        const int FILE_IO_MODE_ERROR = 5;
+        // additional access modes
+        const int FILE_IO_MODE_BINARY = 25;
+        const int FILE_IO_MODE_SEEK = 28;
+        // <Area Id = "AsciiOpenOptions">
+        // protected int AsciiOpenOptions = 0;
+        // <Area Id = "FileAccess">
+        const int FILE_IO_ACCESS_NOT_SET = 0;
+        const int FILE_IO_ACCESS_READ_ONLY = 21;
+        const int FILE_IO_ACCESS_APPEND_ONLY = 22;
+        const int FILE_IO_ACCESS_ERROR = 5;
+        // <Area Id = "FileCreation">
+        const int FILE_IO_CREATE_IF_MISSING = 23;
+        const int FILE_IO_CREATE_ONLY = 24;
+        // <Area Id = "FileReadErrors">
+		// FileReadAscii
+        const int FILE_IO_READ_OK = 0;
+        const int FILE_IO_READ_END_OF_FILE = 123;
+        const int FILE_IO_READ_FAILED = 125;
+		// FileReadDatabase
+        const int DATABASE_IO_READ_END_OF_FILE = 133;
+        const int DATABASE_IO_READ_OK = 0;
+        const int DATABASE_IO_READ_FAILED = 135;
+		// FileReadStream
+        const int STREAM_IO_READ_END_OF_FILE = 143;
+        const int STREAM_IO_READ_OK = 0;
+        const int STREAM_IO_READ_FAILED = 145;
+		// FileReadBinary
+        const int BINARY_IO_READ_END_OF_FILE = 153;
+        const int BINARY_IO_READ_OK = 0;
+        const int BINARY_IO_READ_FAILED = 155;
+        // <Area Id = "FileWriteErrorsConstants">
+		// FileWrite
+		// FileWriteAscii
+        const int FILE_IO_WRITE_OK = 0;
+        const int FILE_IO_WRITE_FAILED = 126;
+		// FileWriteDatabase
+        const int DATABASE_IO_WRITE_OK = 0;
+        const int DATABASE_IO_WRITE_FAILED = 136;
+		// FileWriteBinary
+        const int BINARY_IO_WRITE_OK = 0;
+        const int BINARY_IO_WRITE_FAILED = 156;
+		// FileWriteStream
+        const int STREAM_IO_WRITE_OK = 0;
+        const int STREAM_IO_WRITE_FAILED = 146;
+		// FileNull
+		// FileField
+		// FileTable
+		// FileTableRow
+		// FileTableColumn
+        // <Area Id = "FileNullErrorsConstants">
+        // <Area Id = "FileFileIdErrorsConstants">
+        // <Area Id = "FileTableErrorsConstants">
+        // <Area Id = "FileTableRowErrorsConstants">
+        const int FILE_IO_NO_ROW_ID = 99;
+        const int FILE_IO_ROW_ID_SHOULD_NOT_EXIST = 33;
+        const int FILE_IO_ROW_ID_DOES_EXIST = 32;
+        const int FILE_IO_ROW_ID_DOES_NOT_EXIST = 31;
+        // <Area Id = "FileTableColumnErrorsConstants">
+        #endregion        
+        #region MdmFileDatabaseServer
+        // <Section Summary>
+        // <Section Role="Declarations">
+        // <Section Id = "MdmFileDatabaseServer">
+        // <Section Vs="MdmFileDbSeverVs0_8_9">
+        // MdmFileDatabaseServer MdmFileDbSeverVs0_8_9
+        #region MdmFileDatabaseServerMasterFields
+        // <Area Id = "MasterServerInformation">
+        #region MdmFileMasterServerDatabase
+        // <Area Id = "MasterServerDatabase">
+
+        protected string MstrDbServer = "localhost";
+        protected string MstrDbServerMdm = "MdmServer99";
+        protected string MstrDbServerDefault = "localhost";
+        protected string MstrDbServerDefaultMdm = "MdmServer99";
+        protected string MstrDbServerId = "99999";
+        protected string MstrDbServerMasterDefault = "master..sysdatabases";
+        protected string MstrDbServerMasterDefaultMdm = "MdmServer99..sysdatabases";
+
+        // <Area Id = "MasterServerFilesLocation">
+
+        protected string MstrDbMasterFile = "localhost.dbo.sysobjects";
+        protected string MstrDbMasterFileMdm = "MdmServer99.dbo.sysobjects";
+        protected string MstrDbMasterFileDefault = "localhost.dbo.sysobjects";
+        protected string MstrDbMasterFileDefaultMdm = "MdmServer99.dbo.sysobjects";
+
+        // <Area Id = "MasterServer - ServerControl">
+
+        // <Area Id = "MasterServer - Connection">
+        protected string MstrCmd = "not used";
+        // <Area Id = "MasterServer - Creation">
+        protected string MstrDbServerCreateCmd;
+
+        // <Area Id = "MasterServer - DatabaseControl">
+        protected string MstrDbDatabaseId = "99999";
+        protected string MstrDbDatabase = "dbo";
+        protected string MstrDbDatabaseDefault = "MdmDatabase99";
+        protected string MstrDbDatabaseDefaultMdm = "MdmDatabase99";
+
+        // <Area Id = "MasterDatabaseConnectionCommand">
+
+        // <Area Id = "MasterDatabase - Creation">
+        protected string MstrDbDatabaseCreateCmd;
+        // <Area Id = "MasterDatabase - Connection">
+        protected string MstrDbConnCreateCmd = "not used";
+        protected string MstrDbConnString = SQL_CONNECTION_STRING;
+
+        // <Area Id = "MasterDatabaseStatus">
+        protected bool bMstrDbDatabaseExists = false;
+        protected bool bMstrDbDatabaseIsInvalid = false;
+        protected bool bMstrDbDatabaseIsCreating = false;
+        protected bool bMstrDbDatabaseIsCreated = false;
+
+        // <Area Id = "EndOfMasterServerAndDatabase">
+
+        #endregion
+        #region MdmFileDatabaseSecurityFields
+
+
+        // <Area Id = "SecurityControl">
+
+        protected string MstrDbSecurityId = "99999";
+        protected string MstrDbSecurity = "";
+
+        #endregion
+        #region MdmFileUserControl
+        // <Area Id = "UserControl">
+
+        protected string MstrDbUserServerId = "99999";
+        protected string MstrDbUserDbId = "99999";
+        protected string MstrDbUserId = "99999";
+        protected string MstrDbUser = "MdmUser99";
+        protected string MstrDbUserPw = "password99";
+
+
+        // <Area Id = "UserStatus">
+
+        protected bool bDbUserExists = false;
+        protected bool bDbUserIsInvalid = false;
+        protected bool bDbUserIsCreating = false;
+        protected bool bDbUserIsCreated = false;
+        #endregion
+        #region MdmFileMasterFileGroup
+        // <Area Id = "FileGroup">
+
+        protected string MstrDbFileGroupServerId = "99999";
+        protected string MstrDbFileGroupDbId = "99999";
+        protected string MstrDbFileGroupId = "99999";
+        protected string MstrDbFileGroup = "MdmFileGroup99";
+        // <Area Id = "FileGroupStatus">
+        protected bool bDbFileGroupExists = false;
+        protected bool bDbFileGroupIsInvalid = false;
+        protected bool bDbFileGroupIsCreating = false;
+        protected bool bDbFileGroupIsCreated = false;
+        // <Area Id = "FileGroupCommand">
+        protected string sMDbFileGroupCreateCmd = "not used";
+        #endregion
+        #region MdmFileMasterFileFile
+        // <Area Id = "File">
+
+        protected string MstrDbFileDbId = "99999";
+        protected string MstrDbFileDb = "MdmDatabase99";
+        protected string MstrDbFileDbDefault = "MdmDatabase99";
+        protected string MstrDbFileFileGroupId = "99999";
+        protected string MstrDbFileFileGroup = "MdmFileGroup99";
+        protected string MstrDbFileGroupDefault = "MdmFileGroup99";
+
+        protected string MstrDbFileId = "99999";
+        protected string MstrDbFile = "MdmFile99";
+
+        // <Area Id = "FileStatus">
+
+        protected bool bDbFileExists = false;
+        protected bool bDbFileIsInvalid = false;
+        protected bool bDbFileIsCreating = false;
+        protected bool bDbFileIsCreated = false;
+        #endregion
+        #endregion
+        #region MdmFileDatabaseExceptions
+        /*
+         // <Area Id = "ArgumentException:
+         * path is a zero-length string, contains only white space, or 
+         * contains one or more invalid characters as defined by InvalidPathChars.  ">
+         // <Area Id = "ArgumentNullException:
+         * path is null reference
+         * path is null or Nothing or null ptra null 
+         * (Nothing in Visual Basic). ">
+ 
+         // <Area Id = "PathTooLongException:
+         * The specified path, file name, or both 
+         * exceed the system-defined maximum length. 
+         * For example, on Windows-based platforms, 
+         * paths must be less than 248 characters, 
+         * and file names must be less than 260 characters. ">
+ 
+         // <Area Id = "DirectoryNotFoundException:
+         * The specified path is invalid, 
+         * (for example, it is on an unmapped drive). ">
+ 
+         // <Area Id = "UnauthorizedAccessException:
+         * path specified a directory. 
+         * -or- 
+         * The caller does not have the required permission. ">
+ 
+         // <Area Id = "FileNotFoundException:
+         * The file specified in path was not found. ">
+
+         // <Area Id = "NotSupportedException:
+         * path is in an invalid format. ">
+ 
+        */
+
+        // <Area Id = "FileCommand">
+
+        protected string ofcMstrDbFileCreateCmd = "";
+
+        #endregion
+        #endregion
+        #region MdmFileDictionaryDeclarations
+        // <Section Summary>
+        // <Section Role="Declarations">
+        // <Section Id = "MdmFileDictionaryDeclarations">
+        // <Section Vs="MdmFileDictVs0_8_9">
+        // MdmFileDictionaryDeclarations MdmFileDictVs0_8_9
+        public string[] saFileDictItem = new string[100];
+        public struct osPickDict {
+            public string sItemId;
+            public int iItemId;
+            public bool bItemIdIsNumeric;
+            public int iDictAttributePointer;  //  Field being examined in this Dicctionary Item
+            //
+            public int iDictAttributeCount;  // Number of fields making up this Dictionary Item
+            public int[] iaDictItemAttributeCount;
+            public int[] iaDictItemLength;
+            //
+            public int iAttributeType;
+            public string sAttributeType;
+            public string sType;
+            public string sSubType;
+            //
+            public string sAttributeNumber;
+            public bool bAttributeIsNumeric;
+            public bool bAttributeIsData;
+            // Array Index
+            public int iDictColumnPointer; // Dictionary Column Number
+            public int iColumnDataPoints;
+            public int iColumnType;
+            public int iColumnInvalid;
+
+            public string sHeading;
+            public string sDependancy;
+            public string sFive;
+
+            public string sInputConversion;
+            public string sInputConvType;
+            public string sInputConvSubType;
+
+            public string sOutputConversion;
+            public string sOutputConvType;
+            public string sOutputConvSubType;
+
+            public string sCorrelative;
+            public string sCorrType;
+            public string sCorrSubType;
+
+            public string sJustify;
+            public string sJustification;
+            public string sJustifyType;
+            
+            public string sLength;
+            public int iLength;
+            public bool bLengthIsNumeric;
+
+            public string sHeadingLong;
+            public string sHelpShort;
+            public string sRevColumnName;
+
+            public int iColumnNumericPoints;
+            public int iColumnDecimals;
+            public int iColumnCurrencyPoints;
+            public int iColumnDateFormat;
+            public int iColumnFunctionPoints;
+            public bool bColumnSubFile;
+
+            public int[] iaDictColumnTouched;
+            public bool[] baDictColumnIdDone;
+            public int[] iaDictColumnLength;
+            public bool[] baDictColumnLengthChange;
+            public bool[] baDictColumnDefinitionFound;
+
+            public string sColumnTypeWord;
+            public bool bColumnUseParenthesis;
+        }
+        public osPickDict osPd;
+        #region DictionaryItem
+        const int ITEM_ISNOTSET = 0;
+        const int ITEM_ISATTRIBUTE = 10;
+        const int ITEM_ISFILE = 20;
+        const int ITEM_ISFILEALIAS = 30;
+        const int ITEM_ISSATTRIBUTE = 40;
+        const int ITEM_ISFUNCTION = 50;
+        const int ITEM_ISUNKNOWN = 60;
+        const int ITEM_ISDATA = 70;
+        const int ITEM_TYPEERROR = 90;
+        #endregion
+        #region DictionaryColumn
+        const int COLUMN_ISNOTSET = 0;
+        const int COLUMN_ISNUMERIC = 11;
+        const int COLUMN_ISINTEGER = 22;
+        const int COLUMN_ISDATE = 31;
+        const int COLUMN_ISDATETIME = 32;
+        const int COLUMN_ISCHAR = 12;
+        const int COLUMN_ISVARCHAR = 13;
+        const int COLUMN_ISCHARU = 14;
+        const int COLUMN_ISVARCHARU = 15;
+        const int COLUMN_ISFLOAT = 41;
+        const int COLUMN_ISCURRENCY = 42;
+        const int COLUMN_ISFUNCTION = 50;
+        const int COLUMN_ISUNKNOWN = 80;
+        const int COLUMN_TYPEERROR = 90;
+        #endregion
+        #endregion
+        #region MdmSqlSyntax
+        //
+        public string sOutputCommand = "";
+        public string sOutputInsertCommand = "";
+        public string sOutputInsertPrefix = "INSERT INTO ";
+        public string sOutputInsertPrefix1 = " (";
+        public string sOutputInsert = "";
+        public string sOutputInsertSuffix = ")";
+        //
+        public string sOutputUpdatePrefix = "UPDATE";
+        //
+        public string sOutputDeleteprefix = "DELETE";
+        //
+        public string sOutputValuesPrefix = "VALUES (";
+        public string sOutputValues = "";
+        public string sOutputValuesSuffix = ")";
+        //
+        public string sOutputAlterPrefix = "ALTER TABLE ";
+        public string sOutputAlterVerb = "ADD";
+        public string sOutputAlterColumnName = "1";
+        public string sOutputAlterColumnTypePrefix = "VARCHAR(";
+        public string sOutputAlterColumnLenght = "50";
+        public string sOutputAlterColumnTypeSuffix = ")";
+        public string sOutputAlterColumnNull = " NULL";
+        #region CreateDatabase
+        // "CREATE DATABASE"
+        // "CREATE DEFAULT"
+        // "CREATE PROC"
+        // "CREATE RULE"
+        // "CREATE TRIGGER"
+        // "CREATE VIEW"
+        // "CREATE SCHEMA"
+        // "CREATE PARTITION FUNCTION"
+        // "CREATE PARTITION SCHEME"
+        // /* Comment text */
+        // -- Comment text
+        // /* Comment block */
+
+        // @@GLOBALS
+        // @@CURSOR
+        // @@SYSTEM
+        // @@SYSTEM STATISTICAL
+        // SYSTEM FUNCTIONS()
+        // AGGREGATION()
+        // CHECKSUM()
+        // CAST() CONVERT()
+        // CURSOR_STATUS()
+        // DATE()
+        // IMAGE TEXTVALID()
+        // MATH()
+        // METADATA()
+        // RANK()
+        // SECURITY SUSER_SID()
+        // STRING MANIPULATION()
+
+        // ACTIVE DIRECTORY
+        // CATALOG
+        // CURSOR MANAGEMENT
+        // DATABASE ENGINE
+        // DATABASE MAINTENANCE
+        // DATABASE QUERIES
+        // EXTERNAL SYSTEMS
+        // EXTENDED PROCEDURES
+        // FULE-TEXT INDEX / SEARCH
+        // LOG SHIPPING
+        // MAIL
+        // NOTIFICATION SERVICES
+        // OLE AUTOMATION
+        // PROFILER
+
+        // REPLICATION
+        // SECURITY
+        // SQL AGENT
+
+
+        // "ENABLE"
+        // "DISABLE"
+
+        // "DECLARE"
+        // "DECLARE" "@"
+        // "SET"
+        // "LIKE"
+
+        // "WITH" "AS"
+        // "SELECT"
+        // "TOP"
+        // "SELECT" "INTO"
+        // "SELECT" "FROM"
+        // "SELECT" "FROM" "WHERE"
+
+        // "GROUP BY"
+        // "HAVING"
+        // "UNION"
+
+        // "EXCEPT"
+        // "INTERCEPT"
+
+        // "ORDER BY"
+        // "COMPUTER BY"
+
+        // "FOR"
+        // "OPTION"
+        // "CASE"
+        #endregion
+        #endregion
+        #endregion

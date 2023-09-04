@@ -1,0 +1,152 @@
+//Dialog Engine Stuff Init place at the top of your class to make it global
+    Texture DialogBox;
+    int DialogEngineState = 0;
+    int DialogEngineNpc = 0;
+    int DialogEnginePage = 0;
+    int DialogEnginePageCount = 0;
+    int DialogEngineMaxChars = 55;
+    int DialogEngineMaxLines = 5;
+    string DialogEngineDialogText;
+    int DialogEngineLineCount = 0;
+    int DialogEngineFontHeight = 20;
+    int DialogEngineFontWidth = 20;
+    int DialogEngineSpaceOffset = 0;
+    int DialogEngineAtEnd = 0;
+    int[] DialogEnginePageCharCount = new int[255];
+
+// function to handle the keyboard stuff just to give you an example change it 
+// to fit your game 
+void ReadDialogStateKeys()
+    {
+        KeyboardState keys = keyb.GetCurrentKeyboardState();
+        if (keys[Key.Escape])
+        {
+            DialogEngineState = 100;
+            Thread.Sleep(250);
+        }
+        if (keys[Key.Space])
+        {
+            if (DialogEngineAtEnd == 1)
+            {
+                DialogEngineState = 100;
+            }
+            else
+            {
+                DialogEngineState = 2;
+                if (DialogEnginePage < DialogEnginePageCount)
+                    DialogEnginePage++;
+            }
+            Thread.Sleep(250);
+        }
+    }
+//in my main keyboard processing loop this is the interact key that starts the 
+// dialog engine
+ 
+//Interact key 
+        if (keys[Key.Return])
+        {
+            //First use talk to npc 
+            // check to see if there is an npc in front of you 
+
+            DialogEngineNpc = CheckNpcTalk(); 
+            //you will see this is just used 
+            //to get the specific dialog text for that npc add your code here
+            if (DialogEngineNpc != 1000000)
+            {
+                // yes there is an npc to talk to.
+                if (DialogEngineState == 0) DialogEngineState = 1;
+                else DialogEngineState = 0;
+                Thread.Sleep(250);
+            }
+        }
+
+
+// this is the meat and potatoes here 
+// the eksprite thing is for drawing a box to go around the text 
+// once again insert your code there 
+// and the drawtext function is whatever you use to draw your text
+
+ void DialogEngine()
+    {
+        if (DialogEngineState == 1)
+        {
+            // Step one Get Npc and Dialog
+            // Npc already set from the enter key check 
+            DialogEngineDialogText = Npcs[DialogEngineNpc].Dialog;
+            double lines = (float)DialogEngineDialogText.Length / (float)DialogEngineMaxChars;
+            lines = Math.Ceiling(lines);
+            DialogEngineLineCount = (int)lines;
+            DialogEnginePage = 0;
+            DialogEnginePageCount = (int)Math.Ceiling((double)DialogEngineLineCount / (double)DialogEngineMaxLines);
+            DialogEngineState = 2;
+        }
+        if(DialogEngineState == 2)
+        {
+            EKSprite.Begin(SpriteFlags.AlphaBlend | SpriteFlags.SortDepthBackToFront);
+            EKSprite.Draw(DialogBox, new Vector3(0, 0, 0), new Vector3(58, 561, .5f), Color.White.ToArgb());
+            // Display LineMax Number of lines based on PageCount
+            // Draw the NpcCount Name first
+            DrawText2(Npcs[DialogEngineNpc].Name , 79, 556, Color.Yellow);
+            int offset = 0;
+            if (DialogEnginePage > 0)
+            {
+                DialogEnginePageCharCount[DialogEnginePage] = DialogEnginePageCharCount[DialogEnginePage - 1];
+                offset = DialogEnginePageCharCount[DialogEnginePage - 1];
+            }
+            
+            int Counter = 0;
+          
+            DialogEnginePageCharCount[DialogEnginePage] = offset;
+            for( int i = (DialogEnginePage*4); i<=(DialogEnginePage*4)+DialogEngineMaxLines-1; i++)
+            {
+                int TotalLength = DialogEngineDialogText.Length;
+                int CutLength = DialogEngineMaxChars;
+                int PositionOffset = (DialogEngineMaxChars * i)-offset;
+                
+                int StartPos = PositionOffset - DialogEngineSpaceOffset;
+                int CheckSpace = 0;
+                string TempString;
+
+                if (PositionOffset + CutLength > TotalLength)
+                {
+                    CutLength = TotalLength - PositionOffset;
+                    DialogEngineAtEnd = 1;
+                }
+                if (CutLength < 0) break;
+              
+                if (StartPos < 0) StartPos = 0;
+                            
+                TempString = DialogEngineDialogText.Substring(StartPos, CutLength);
+
+               
+                //Check for Cut off Words 
+                CheckSpace = TempString.LastIndexOf(" ");
+                if (CheckSpace < TempString.Length && DialogEngineAtEnd != 1)
+                {
+                    // there is not a space at the end of the line so there must be a word split
+                    // but are we at the end of the dialog 
+                    int SliceLength = TempString.Length - CheckSpace ;
+                    TempString = TempString.Substring(0, CheckSpace);
+                    DialogEngineSpaceOffset += SliceLength;
+                    DialogEnginePageCharCount[DialogEnginePage] += SliceLength;
+                }
+
+                
+                //DialogEnginePageCharCount[DialogEnginePage] += TempString.Length;
+                
+                TempString = TempString.TrimStart(' ');
+
+                DrawText2(TempString, 70, 571 + DialogEngineFontHeight + (Counter * DialogEngineFontHeight), Color.White);
+                Counter++;
+            }
+                           DrawText2("Press Spacebar to continue", 40 + (((DialogEngineMaxChars * DialogEngineFontWidth) / 2) - (13*DialogEngineFontWidth)), 571 + DialogEngineFontHeight + (DialogEngineMaxLines * (DialogEngineFontHeight)) + DialogEngineFontHeight, Color.Yellow);
+               
+                      if (DialogEngineSpaceOffset > 0)
+            {
+              DialogEngineSpaceOffset = 0;
+            }
+            EKSprite.End();
+        }
+
+
+

@@ -1,0 +1,129 @@
+        #region ImportFileItemClassFieldStructure
+        struct ImportFileItemClassFields
+        {
+            #region ImportFileItemClassFields
+            // Source and Destination Objects
+            #region ImportFileItem
+            // Import File
+            protected string sImportFileName;
+            protected Mfile1 oImportFileObject;
+            protected string sImportFileOptions = "";
+            #endregion
+            #region FileOutputItem
+            // Output System
+            protected string sOutputSystemName = "unknown";
+            protected object oOutputSystemObject = null;
+            // Output Database
+            protected string sOutputDatabaseName = "unknown";
+            protected SqlConnection OutputDatabaseObject = null;
+            // Output File
+            protected string sOutputFileName;
+            protected Mfile1 oOutputFileObject;
+            protected string sOutputFileOptions = "";
+            // Output File Item Id
+            protected string sOutputFileItemId;
+            // the follow id would be found in the 
+            // input (import) file
+            // this id may be compared to the
+            // (entered) sOutputFileItemId that was
+            // supplied by the user.
+            // (Currently) the user can only
+            // enter one id.  The idea is for them
+            // to enter a matched list that would
+            // be presented as a paired list for
+            // comparison (verification) by the user.
+            // 
+            // Existing Output File Item Id
+            protected string sImportFileItemId;
+            #endregion
+            #endregion
+            #region ClassInternalProperties
+            // protected string sImportFileName = "";
+            private int iImportFileItemLen = 0;
+            #region File Input Item
+            // Strings
+            public string sImportFileNameDefault = "";
+            public string sImportFileNameOriginal = "";
+            public string sImportItemVersion = "";
+            public string sImportItemVersionDate = "";
+            // Integers
+            private int iImportItemArrayPointer = 1;
+            private int iAttributePointer = 0;
+            private int iAttributeMaxPointer = 0;
+            private int iAttributeCounter = 0;
+            private int iImportItemAttributePointer = 0;
+            #endregion
+            #region File Output Item
+            public string sOutputFileNameDefault = "";
+            public string sOutputFileNameOriginal = "";
+            protected bool bOutputItemWriteFlag = false;
+            #endregion
+            #region File Input Buffers
+            protected string sLineBuffer = "";
+            protected string sNewItem = "";
+            protected string sImportFileItem = "";
+            // private string[] sNewItem;     //  sNewItem=@""
+            // private string[] sImportFileItem;      //  sImportFileItem=@""
+            // File Bulk Character Conversion (Function)
+            protected string sConvertableFileItem = "";
+            protected int iItemConvertFlag = 0;
+            #endregion
+            #endregion
+            public  ImportFileItemClassFields
+            (
+                #region ImportFileItemClassFields
+                // Source and Destination Objects
+                #region ImportFileItem
+                // Import File
+                string sPassedImportFileName, 
+                Mfile1 oPassedImportFileObject, 
+                string sPassedImportFileOptions, 
+                #endregion
+                #region FileOutputItem
+                // Output System
+                string sPassedOutputSystemName, 
+                object oPassedOutputSystemObject, 
+                // Output Database
+                string sPassedOutputDatabaseName, 
+                SqlConnection oPassedOutputDatabaseObject, 
+                // Output File
+                string sPassedOutputFileName, 
+                Mfile1 oPassedOutputFileObject, 
+                string sPassedOutputFileOptions, 
+                // Output File Item Id
+                string sPassedOutputFileItemId, 
+                // Existing File Item Id
+                string sPassedImportFileItemId 
+                #endregion
+            #endregion
+                )
+            {
+                #region ImportFileItem
+                sImportFileName = sPassedImportFileName;
+                iImportFileItemLen = sImportFileName.Length;
+                // Strings
+                sImportFileNameDefault = ""; // sPassedImportFileNameDefault;
+                sImportFileNameOriginal = ""; // sPassedImportFileNameOriginal;
+                sImportItemVersion = ""; // sPassedImportItemVersion;
+                sImportItemVersionDate = ""; // sPassedImportItemVersionDate;
+                #endregion
+                #region FileOutputItem
+                sOutputFileName = sPassedOutputFileName;
+                // MFILE1 OBJECT
+                if (oPassedOutputFileObject != null)
+                {
+                    if (oOutputFileObject != null)
+                    {
+                        oOutputFileObject = null;
+                    }
+                    oOutputFileObject = oPassedOutputFileObject;
+                }
+                sOutputFileItemId = sPassedOutputFileItemId;
+                #endregion
+            }
+            public override string ToString()
+            {
+                return System.String.Format("String overload ToString function: ", sImportFileName, sOutputFileName);
+            }
+        }
+        #endregion

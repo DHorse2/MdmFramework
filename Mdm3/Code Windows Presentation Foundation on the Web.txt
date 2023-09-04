@@ -1,0 +1,63 @@
+Windows Presentation Foundation
+==========================
+
+Windows Presentation Foundation on the Web
+Microsoft .NET Framework 3.0 Runtime Components September CTP (PDC 2005 Build)
+
+Web Browser Applications
+====================
+Web Browser Applications - WBA
+
+
+Hardware acceleration. 
+Security sandbox. 
+No-touch deployment.
+NET Framework programming languages. 
+Same programming model for desktop/Web
+Designer and Developer split. 
+
+Application Scenarios for Web Browser Applications
+========================================
+Scenarios Where Web Browser Applications Are Recommended:
+Reading and Rich Content Visualizations.
+Online Gaming and Modeling
+Data Flow Management and Productivity Applications
+Two Versions of Application: Desktop and Web
+
+Scenarios Where Web Browser Applications Should Be Considered:
+Marketing campaigns.
+E-commerce.
+
+
+=====================================
+
+Extensible Application Markup Language - XAML
+
+Sandbox Features - see attached
+
+Global Assembly Cache - GAC
+AllowPartiallyTrustedCallers - APTCA
+
+Loose XAML
+
+
+Procedures to Migrate
+=================
+Add Loose XAML 
+Put WBAs in IFrames
+Create a mixed site
+
+Communicating between HTML and WPF
+================================
+communication options between HTML hosted in WPF or WPF hosted in HTML: 
+
+Use the server as a mediator for communication (HTTP Web requests). 
+Leverage URI parameters on the hosted HTML or WBA URI. 
+Use first-party Internet Explorer cookies. 
+
+[ComVisibleAttribute(true)]
+[AttributeUsageAttribute(AttributeTargets.Assembly, AllowMultiple = false, 
+    Inherited = false)]
+public sealed class AllowPartiallyTrustedCallersAttribute : Attribute
+
+<Application x:Class="MyApp" />

@@ -1,0 +1,9 @@
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1UrlHist1\UrlHistoryUi\bin\Debug\Mdm1Oss1UrlUtil1Form1.exe
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1UrlHist1\UrlHistoryUi\bin\Debug\Mdm1Oss1UrlUtil1Form1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1UrlHist1\UrlHistoryUi\bin\Debug\Mdm1Oss1UrlUtil1Hist1.dll
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1UrlHist1\UrlHistoryUi\bin\Debug\Mdm1Oss1UrlUtil1Hist1.pdb
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1UrlHist1\UrlHistoryUi\obj\Debug\ResolveAssemblyReference.cache
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1UrlHist1\UrlHistoryUi\obj\Debug\Mdm.Oss.UrlUtil.Hist.MurlHist1Form1.resources
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1UrlHist1\UrlHistoryUi\obj\Debug\Mdm1Oss1MurlHistory1Form1.csproj.GenerateResource.Cache
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1UrlHist1\UrlHistoryUi\obj\Debug\Mdm1Oss1UrlUtil1Form1.exe
+C:\Srt Project\Mdm\Mdm1\Mdm1Oss1\Mdm1Oss1UrlHist1\UrlHistoryUi\obj\Debug\Mdm1Oss1UrlUtil1Form1.pdb

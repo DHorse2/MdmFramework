@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="UrlHistoryLibrary">
+</Property><Property Name="Solution File" Value="C:\Users\Admin. Dad\Favorites\IE History Favorites\ponta_demo\ponta_demo\UrlHistoryLibrary\UrlHistoryLibrary.sln">
+</Property><Property Name="Date" Value="March-31-09">
+</Property><Property Name="Time" Value="14:07 PM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="UrlHistoryLibrary.sln" Description="File successfully backed up as C:\Users\Admin. Dad\Favorites\IE History Favorites\ponta_demo\ponta_demo\UrlHistoryLibrary\Backup\UrlHistoryLibrary.sln">
+</Event><Event ErrorLevel="0" Project="UrlHistoryLibrary" Source="UrlHistoryLibrary.csproj" Description="Project file successfully backed up as C:\Users\Admin. Dad\Favorites\IE History Favorites\ponta_demo\ponta_demo\UrlHistoryLibrary\Backup\UrlHistoryLibrary.csproj">
+</Event><Event ErrorLevel="0" Project="UrlHistoryLibrary" Source="UrlHistoryLibrary.csproj.user" Description="Project user file successfully backed up as C:\Users\Admin. Dad\Favorites\IE History Favorites\ponta_demo\ponta_demo\UrlHistoryLibrary\Backup\UrlHistoryLibrary.csproj.user">
+</Event><Event ErrorLevel="0" Project="UrlHistoryLibrary" Source="AssemblyInfo.cs" Description="File successfully backed up as C:\Users\Admin. Dad\Favorites\IE History Favorites\ponta_demo\ponta_demo\UrlHistoryLibrary\Backup\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="UrlHistoryLibrary" Source="urlhist.cs" Description="File successfully backed up as C:\Users\Admin. Dad\Favorites\IE History Favorites\ponta_demo\ponta_demo\UrlHistoryLibrary\Backup\urlhist.cs">
+</Event><Event ErrorLevel="0" Project="UrlHistoryLibrary" Source="UrlHistoryWrapper.cs" Description="File successfully backed up as C:\Users\Admin. Dad\Favorites\IE History Favorites\ponta_demo\ponta_demo\UrlHistoryLibrary\Backup\UrlHistoryWrapper.cs">
+</Event><Event ErrorLevel="0" Project="UrlHistoryLibrary" Source="Win32api.cs" Description="File successfully backed up as C:\Users\Admin. Dad\Favorites\IE History Favorites\ponta_demo\ponta_demo\UrlHistoryLibrary\Backup\Win32api.cs">
+</Event><Event ErrorLevel="0" Project="UrlHistoryLibrary" Source="UrlHistoryLibrary.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="UrlHistoryLibrary" Source="UrlHistoryLibrary.csproj" Description="Converted">
+</Event><Event ErrorLevel="1" Project="UrlHistoryDemo" Source="..\UrlHistoryDemo\UrlHistoryDemo.csproj" Description="Warning: The project file is being backed up to a relative path that differs from the original solution relative path.  The difference in folder hierarchy may create problems in opening or building the backed up solution and project.">
+</Event><Event ErrorLevel="0" Project="UrlHistoryDemo" Source="..\UrlHistoryDemo\UrlHistoryDemo.csproj" Description="Project file successfully backed up as C:\Users\Admin. Dad\Favorites\IE History Favorites\ponta_demo\ponta_demo\UrlHistoryLibrary\Backup\UrlHistoryDemo\UrlHistoryDemo.csproj">
+</Event><Event ErrorLevel="0" Project="UrlHistoryDemo" Source="..\UrlHistoryDemo\UrlHistoryDemo.csproj.user" Description="Project user file successfully backed up as C:\Users\Admin. Dad\Favorites\IE History Favorites\ponta_demo\ponta_demo\UrlHistoryLibrary\Backup\UrlHistoryDemo\UrlHistoryDemo.csproj.user">
+</Event><Event ErrorLevel="0" Project="UrlHistoryDemo" Source="..\UrlHistoryDemo\AssemblyInfo.cs" Description="File successfully backed up as C:\Users\Admin. Dad\Favorites\IE History Favorites\ponta_demo\ponta_demo\UrlHistoryLibrary\Backup\UrlHistoryDemo\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="UrlHistoryDemo" Source="..\UrlHistoryDemo\Form1.cs" Description="File successfully backed up as C:\Users\Admin. Dad\Favorites\IE History Favorites\ponta_demo\ponta_demo\UrlHistoryLibrary\Backup\UrlHistoryDemo\Form1.cs">
+</Event><Event ErrorLevel="0" Project="UrlHistoryDemo" Source="..\UrlHistoryDemo\App.ico" Description="File successfully backed up as C:\Users\Admin. Dad\Favorites\IE History Favorites\ponta_demo\ponta_demo\UrlHistoryLibrary\Backup\UrlHistoryDemo\App.ico">
+</Event><Event ErrorLevel="0" Project="UrlHistoryDemo" Source="..\UrlHistoryDemo\Form1.resx" Description="File successfully backed up as C:\Users\Admin. Dad\Favorites\IE History Favorites\ponta_demo\ponta_demo\UrlHistoryLibrary\Backup\UrlHistoryDemo\Form1.resx">
+</Event><Event ErrorLevel="0" Project="UrlHistoryDemo" Source="..\UrlHistoryDemo\UrlHistoryDemo.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="UrlHistoryDemo" Source="..\UrlHistoryDemo\UrlHistoryDemo.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="UrlHistoryLibrary.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="UrlHistoryLibrary.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="UrlHistoryLibrary" Source="UrlHistoryLibrary.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="UrlHistoryDemo" Source="..\UrlHistoryDemo\UrlHistoryDemo.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

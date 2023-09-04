@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual C++ Express 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Mdm1Oss1Shell1Hook1", "Mdm1Oss1Shell1Hook1a.vcproj", "{417C6941-0114-468C-A4B0-31B856A68E21}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{417C6941-0114-468C-A4B0-31B856A68E21}.Debug|Win32.ActiveCfg = Debug|Win32
+		{417C6941-0114-468C-A4B0-31B856A68E21}.Debug|Win32.Build.0 = Debug|Win32
+		{417C6941-0114-468C-A4B0-31B856A68E21}.Release|Win32.ActiveCfg = Release|Win32
+		{417C6941-0114-468C-A4B0-31B856A68E21}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

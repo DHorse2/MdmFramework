@@ -1,0 +1,1290 @@
+<Page x:Class="Mdm1Srt1ImportTld1.Page1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="MacroDm Tilde File Import Utility" FontSize="12" ToolTip="You may use this utility to import single or multiple items from a text file." WindowTitle="MacroDm Tilde File Multi-Item Import Utility" VerticalAlignment="Top" HorizontalAlignment="Left" AllowDrop="True" Loaded="PageLoaded">
+
+<ScrollViewer HorizontalScrollBarVisibility="Auto">
+    <StackPanel VerticalAlignment="Top" HorizontalAlignment="Left">
+      <TextBlock TextWrapping="Wrap" Margin="0,0,0,20">Scrolling is enabled when it is necessary. 
+      Resize the window, making it larger and smaller.</TextBlock>
+      <Rectangle Fill="Red" Width="500" Height="500"></Rectangle>
+    </StackPanel>
+  </ScrollViewer>
+
+
+
+
+
+<Grid ShowGridLines="False" ToolTip="Check off any options you want to use on this import." VerticalAlignment="Top" HorizontalAlignment="Left" AllowDrop="True">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="90*" MinHeight="60" />
+            <RowDefinition Height="60*" MinHeight="45" MaxHeight="180" />
+            <RowDefinition Height="60*" MinHeight="45" MaxHeight="180" />
+            <RowDefinition Height="60*" MinHeight="45" MaxHeight="180" />
+            <RowDefinition Height="40*" MinHeight="20" SharedSizeGroup="TldOptionRows" />
+            <RowDefinition Height="40*" MinHeight="20" SharedSizeGroup="TldOptionRows"/>
+            <RowDefinition Height="40*" MinHeight="20" SharedSizeGroup="TldOptionRows"/>
+            <RowDefinition Height="50*" MinHeight="50" />
+            <RowDefinition Height="60*" MinHeight="45" />
+            <RowDefinition Height="60*" MinHeight="45" />
+            <RowDefinition Height="60*" MinHeight="45" MaxHeight="180" />
+            <RowDefinition Height="20*" MinHeight="5" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150" />
+            <ColumnDefinition Width="45" />
+            <ColumnDefinition Width="100" />
+            <ColumnDefinition Width="100" />
+            <ColumnDefinition Width="100" />
+            <ColumnDefinition Width="100" />
+            <ColumnDefinition Width="25" />
+        </Grid.ColumnDefinitions>
+        <Label Name="ApplicationHeading1" Grid.ColumnSpan="6" Margin="0" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">MacroDm Import File Processing</Label>
+        <Label Name="InputFileNameLabel" ClipToBounds="False" Grid.Row="1" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Margin="57.11,0,5.074,0" FontSize="12" Padding="3" VerticalAlignment="Center" Focusable="False" Grid.ColumnSpan="2" Height="21.96">Input File Name</Label>
+        <TextBox Name="InputFileLine" TextAlignment="Left" FontSize="12" MinWidth="120" Grid.Row="1" ToolTip="Enter the file that will be processed.  Normal a text file with optional TLD format row / records names (i.e. ~me~) when there are multiple records in the file." Grid.Column="2" Grid.IsSharedSizeScope="False" Margin="10" MinHeight="25" TextWrapping="WrapWithOverflow" Cursor="IBeam" Grid.ColumnSpan="5" Padding="3" VerticalContentAlignment="Center" ClipToBounds="False" MaxLines="3" VerticalScrollBarVisibility="Auto" AcceptsReturn="False" MaxLength="512" LostKeyboardFocus="InputFileLineLostFocus" GotFocus="InputFileLineGotFocus" />
+        <Label Name="OutputFileNameLabel" Grid.Row="2" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Margin="67.11,0,5.074,0" FontSize="12" Padding="3" VerticalAlignment="Center" ClipToBounds="False" Focusable="False" Grid.ColumnSpan="2" Height="21.96">Output File Name</Label>
+        <TextBox Name="OutputFileLine" TextAlignment="Left" FontSize="12" MinWidth="120" Grid.Row="2" ToolTip="Enter the output file that the process will use.  Normal a text file with optional TLD format row / records names (i.e. ~me~) when there are multiple records in the file." Grid.Column="2" Grid.IsSharedSizeScope="False" MinHeight="25" TextWrapping="WrapWithOverflow" Cursor="IBeam" Grid.ColumnSpan="5" Padding="3" VerticalAlignment="Center" VerticalContentAlignment="Center" ClipToBounds="False" MaxLines="3" VerticalScrollBarVisibility="Auto" AcceptsReturn="False" Margin="10" MaxLength="512" GotFocus="OutputFileLineGotFocus" LostFocus="OutputFileLineLostFocus" />
+        <Label Name="OutputIdLabel" Grid.Row="3" FontSize="12" HorizontalContentAlignment="Right" VerticalAlignment="Center" Padding="3" VerticalContentAlignment="Center" ClipToBounds="False" Focusable="False" Grid.Column="0" Height="21.96" Grid.ColumnSpan="2">Output Id</Label>
+        <TextBox Name="OutputFileItemId" Grid.Column="2" Grid.Row="3" Margin="10" FontSize="12" MinWidth="120" ToolTip="Enter the Id , Row identifier or (unique) key for the Output File.  Not required for TLD formated text files or where multiple items are imported from a single file." Grid.ColumnSpan="5" Padding="0" VerticalContentAlignment="Center" ForceCursor="False" UndoLimit="5" ClipToBounds="False" MaxLength="512" MinHeight="25" MaxLines="3" VerticalScrollBarVisibility="Auto" TextWrapping="WrapWithOverflow" GotFocus="OutputFileItemIdGotFocus" LostFocus="OutputFileItemIdLostFocus" />
+        <Label Name="OptionsLabel" Grid.Row="4" HorizontalContentAlignment="Right" VerticalAlignment="Center" VerticalContentAlignment="Center" Padding="3" ClipToBounds="False" Focusable="False" Grid.Column="0" Height="21.96" Grid.ColumnSpan="2">Options</Label>
+        <CheckBox Name="OptionToOverwriteExistingItem" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Grid.Column="2" Grid.Row="4" Grid.IsSharedSizeScope="False" OverridesDefaultStyle="False" Padding="0" ClipToBounds="False" Grid.ColumnSpan="2" Grid.RowSpan="1" VerticalAlignment="Center" HorizontalAlignment="Left">Overwrite Existing Item</CheckBox>
+        <CheckBox Name="OptionToCheckItemIds" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Grid.Column="2" Grid.Row="5" Grid.IsSharedSizeScope="False" OverridesDefaultStyle="False" VerticalAlignment="Center" Padding="0" ClipToBounds="False" Grid.ColumnSpan="2" HorizontalAlignment="Left">Check Item Ids</CheckBox>
+        <CheckBox Name="OptionToEnterEachItemId" Grid.Column="2" Grid.Row="6" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Grid.IsSharedSizeScope="False" OverridesDefaultStyle="False" Padding="0" ClipToBounds="False" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Left">Enter Each Item Id</CheckBox>
+        <CheckBox Name="OptionToLogActivity" HorizontalContentAlignment="Left" OverridesDefaultStyle="False" Padding="0" VerticalContentAlignment="Center" Grid.Column="4" Grid.Row="4" VerticalAlignment="Center" ClipToBounds="False" HorizontalAlignment="Left">Log Activity</CheckBox>
+        <CheckBox Name="OptionToProceedAutomatically" HorizontalContentAlignment="Left" OverridesDefaultStyle="False" Padding="0" VerticalContentAlignment="Center" Grid.Column="4" Grid.Row="5" VerticalAlignment="Center" ClipToBounds="False" Grid.ColumnSpan="3" HorizontalAlignment="Left">Proceed Automatically</CheckBox>
+        <CheckBox Name="OptionToAddAnotherOption" HorizontalContentAlignment="Left" OverridesDefaultStyle="False" Padding="0" VerticalContentAlignment="Center" Grid.Column="4" Grid.Row="6" VerticalAlignment="Center" ClipToBounds="False" Grid.ColumnSpan="3" HorizontalAlignment="Left">Add Another Option</CheckBox>
+        <Button Name="StartButtonPressed" Grid.Column="3" Grid.Row="7" Margin="10" HorizontalContentAlignment="Center" ClipToBounds="False" Padding="5" Click="StartFileImport" FontSize="10" Grid.ColumnSpan="1" HorizontalAlignment="Center" VerticalAlignment="Center" MinWidth="60" MinHeight="20">Start</Button>
+        <Button Name="CancelButtonPressed" Grid.Column="5" Grid.Row="7" Margin="10" ClipToBounds="False" Click="CancelFileImport" FontSize="10" Padding="5" MinWidth="60" HorizontalAlignment="Center" VerticalAlignment="Center" MinHeight="20">Cancel</Button>
+        <Label Name="ConsoleCommandlabel" Grid.Row="8" Margin="10" HorizontalContentAlignment="Right" Grid.ColumnSpan="1" VerticalAlignment="Top" Padding="3">Console Command</Label>
+        <TextBox Name="ConsoleCommandText" Grid.ColumnSpan="6" Grid.Row="8" Margin="10" VerticalContentAlignment="Center" Grid.Column="1" MinHeight="25" MinWidth="120" ForceCursor="False" VerticalScrollBarVisibility="Auto" TextWrapping="WrapWithOverflow" MaxLines="20" TextChanged="ConsoleCommandText_TextChanged" />
+        <TextBox Name="StatusLine1" Grid.Row="9" Grid.Column="1" Grid.ColumnSpan="6" Focusable="False" Margin="10" MinHeight="25" MinWidth="120" VerticalScrollBarVisibility="Auto" TextWrapping="WrapWithOverflow" />
+        <TextBox Name="StatusLine2" Grid.Column="1" Grid.ColumnSpan="6" Grid.Row="10" Margin="10" Focusable="False" MinHeight="25" MinWidth="125" VerticalScrollBarVisibility="Auto" TextWrapping="WrapWithOverflow" />
+    </Grid>
+</Page>
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+public static void AddCopyingHandler(
+System.Windows.DependencyObject element, 
+System.Windows.DataObjectCopyingEventHandler handler)
+
+Member of System.Windows.DataObject
+
+Summary:
+Adds a System.Windows.DataObject.Copying event handler to a specified dependency object.
+
+Parameters:
+
+element: The dependency object 
+(a System.Windows.UIElement or System.Windows.ContentElement)
+to which to add the event handler.
+
+handler: A delegate that references the handler method to add.
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+System.Windows.AutoResizedEventArgs
+System.Windows.AutoResizedEventHandler
+System.Windows.Clipboard
+System.Windows.DataObject
+System.Windows.DataObjectCopyingEventArgs
+System.Windows.DataObjectCopyingEventHandler
+System.Windows.DataObjectEventArgs
+System.Windows.DataObjectPastingEventArgs
+System.Windows.DataObjectPastingEventHandler
+System.Windows.DataObjectSettingDataEventArgs
+System.Windows.DataObjectSettingDataEventHandler
+System.Windows.DragAction
+System.Windows.DragDrop
+System.Windows.DragDropEffects
+System.Windows.DragDropKeyStates
+System.Windows.DragEventArgs
+System.Windows.DragEventHandler
+
+
+// xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+System.Windows
+System.Windows.IDataObject
+System.Windows.DataObjectCopyingEventArgs
+System.Windows.DataObject.AddCopyingHandler(System.Windows.DependencyObject, System.Windows.DataObjectCopyingEventHandler)
+System.Windows.Forms.DataGridViewClipboardCopyMode
+System.Windows.DataObjectCopyingEventHandler
+
+
+
+// xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+public string Name
+{
+    get 
+    {
+       return sName; 
+    }
+    set 
+    { 
+       sName = value; 
+    }
+}
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+public string Name { get {return sName; } set { sName = value; }}
+// xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+/// <summary>
+        /// class Mdm1 Oss properties
+        /// </summary>
+        // private string sMdmAuthorCompanyName = "MacroDm";
+public string MdmAuthorCompanyName { get {return sMdmAuthorCompanyName; } set { sMdmAuthorCompanyName = value; }}
+        // private string sMdmAuthorName = "David G. Horsman";
+public string MdmAuthorName { get {return sMdmAuthorName; } set { sMdmAuthorName = value; }}
+        // private string sMdmProjectName = "MdmSrtVs5_0";
+public string MdmProjectName { get {return sMdmProjectName; } set { sMdmProjectName = value; }}
+        // private string sMdmTaskName = "Task0";
+public string MdmTaskName { get {return sMdmTaskName; } set { sMdmTaskName = value; }}
+        // private string sMdmTaskStepName = "Step0";
+public string MdmTaskStepName { get {return sMdmTaskStepName; } set { sMdmTaskStepName = value; }}
+        // private string sMdmProcessTitle = "unknown";
+public string MdmProcessTitle { get {return sMdmProcessTitle; } set { sMdmProcessTitle = value; }}
+        /// <summary>
+        /// 
+        /// </summary>
+        // private string sMdmCodeSolutionName = "unknown";
+public string MdmCodeSolutionName { get {return sMdmCodeSolutionName; } set { sMdmCodeSolutionName = value; }}
+        // private string sMdmCodeProjectName = "unknown";
+public string MdmCodeProjectName { get {return sMdmCodeProjectName; } set { sMdmCodeProjectName = value; }}
+        // private string sMdmNamespaceName = "unknown";
+public string MdmNamespaceName { get {return sMdmNamespaceName; } set { sMdmNamespaceName = value; }}
+        /// <summary>
+        /// 
+        /// </summary>
+        // private string sMdmSystemName = "MdmPc";
+public string MdmSystemName { get {return sMdmSystemName; } set { sMdmSystemName = value; }}
+        // private int iMdmSystemNumber = 99999;
+public int MdmSystemNumber { get {return iMdmSystemNumber; } set { iMdmSystemNumber = value; }}
+        // private int iMdmSystemIntResult = 99999;
+public int MdmSystemIntResult { get {return iMdmSystemIntResult; } set { iMdmSystemIntResult = value; }}
+        // private bool bMdmSystemBoolResult = false;
+public bool MdmSystemBoolResult { get {return bMdmSystemBoolResult; } set { bMdmSystemBoolResult = value; }}
+
+        /// <summary>
+        /// 
+        /// </summary>
+        // private string sMdmProcessName = "unknown";
+public string MdmSystemBoolResult { get {return sMdmSystemBoolResult; } set { sMdmSystemBoolResult = value; }}
+        // private int iMdmProcessIntStatus = 99999;
+public string MdmProcessIntStatus { get {return sMdmProcessIntStatus; } set { sMdmProcessIntStatus = value; }}
+        // private int iMdmProcessIntResult = 99999;
+public string Name { get {return sName; } set { sName = value; }}
+        // private bool bMdmProcessBoolResult = false;
+public string MdmProcessBoolResult { get {return sMdmProcessBoolResult; } set { sMdmProcessBoolResult = value; }}
+        // private string sMdmProcessIntStatusText1 = "99999";
+public string MdmProcessIntStatusText1 { get {return sMdmProcessIntStatusText1; } set { sMdmProcessIntStatusText1 = value; }}
+        // private string sMdmProcessIntStatusText2 = "99999";
+public string MdmProcessIntStatusText2 { get {return sMdmProcessIntStatusText2; } set { sMdmProcessIntStatusText2 = value; }}
+        /// <summary>
+        /// 
+        /// </summary>
+        // private string sMdmClassName = "unknown";
+public string MdmClassName { get {return sMdmClassName; } set { sMdmClassName = value; }}
+        // private int iMdmClassIntStatus = 99999;
+public int MdmClassIntStatus { get {return iMdmClassIntStatus; } set { iMdmClassIntStatus = value; }}
+        // private string sMdmClassIntStatusText = "99999";
+public string MdmClassIntStatusText { get {return sMdmClassIntStatusText; } set { sMdmClassIntStatusText = value; }}
+        /// <summary>
+        /// 
+        /// </summary>
+        // private string sMdmMethodName = "unknown";
+public string MdmMethodName { get {return sMdmMethodName; } set { sMdmMethodName = value; }}
+        // private int iMdmMethodStatus = 99999;
+public string MdmMethodStatus { get {return sMdmMethodStatus; } set { sMdmMethodStatus = value; }}
+        // private int iMdmMethodIntResult = 99999;
+public string MdmMethodIntResult { get {return sMdmMethodIntResult; } set { sMdmMethodIntResult = value; }}
+        // private bool bMdmMethodBoolResult = false;
+public bool MdmMethodBoolResult { get {return bMdmMethodBoolResult; } set { bMdmMethodBoolResult = value; }}
+        /// <summary>
+        /// class external properties
+        /// </summary>
+        /// 
+        /// <summary>
+        /// class internal properties
+        /// </summary>
+        ///
+        // private int iLocalIntResult;
+public int LocalIntResult { get {return iLocalIntResult; } set { iLocalIntResult = value; }}
+        // private bool iLocalBoolResult;
+public string LocalBoolResult { get {return sLocalBoolResult; } set { sLocalBoolResult = value; }}
+        // private string iLocalClassName;
+public string LocalClassName { get {return sLocalClassName; } set { sLocalClassName = value; }}
+        // private int iLocalObjectExists = 0;
+public string LocalObjectExists { get {return sLocalObjectExists; } set { sLocalObjectExists = value; }}
+
+
+        /// <summary>
+        /// class internal properties
+        /// </summary>
+        ///
+        private int iLocalIntResult;
+        private bool iLocalBoolResult;
+        private string iLocalClassName;
+        private int iLocalObjectExists = 0;
+
+        /// <summary>
+        /// class properties
+        /// </summary>
+        /// 
+
+// xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+/// <summary>
+        /// class Mdm1 Oss properties
+        /// </summary>
+        private string sMdmAuthorCompanyName = "MacroDm";
+        private string sMdmAuthorName = "David G. Horsman";
+        private string sMdmProjectName = "MdmSrtVs5_0";
+        private string sMdmTaskName = "Task0";
+        private string sMdmTaskStepName = "Step0";
+        private string sMdmProcessTitle = "unknown";
+        /// <summary>
+        /// 
+        /// </summary>
+        private string sMdmCodeSolutionName = "unknown";
+        private string sMdmCodeProjectName = "unknown";
+        private string sMdmNamespaceName = "unknown";
+        /// <summary>
+        /// 
+        /// </summary>
+        private string sMdmSystemName = "MdmPc";
+        private int iMdmSystemNumber = 99999;
+        private int iMdmSystemIntResult = 99999;
+        private bool bMdmSystemBoolResult = false;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        private string sMdmProcessName = "unknown";
+        private int iMdmProcessIntStatus = 99999;
+        private int iMdmProcessIntResult = 99999;
+        private bool bMdmProcessBoolResult = false;
+        private string sMdmProcessIntStatusText1 = "99999";
+        private string sMdmProcessIntStatusText2 = "99999";
+        /// <summary>
+        /// 
+        /// </summary>
+        private string sMdmClassName = "unknown";
+        private int iMdmClassIntStatus = 99999;
+        private string sMdmClassIntStatusText = "99999";
+        /// <summary>
+        /// 
+        /// </summary>
+        private string sMdmMethodName = "unknown";
+        private int iMdmMethodStatus = 99999;
+        private int iMdmMethodIntResult = 99999;
+        private bool bMdmMethodBoolResult = false;
+        /// <summary>
+        /// class external properties
+        /// </summary>
+        /// 
+
+
+        /// <summary>
+        /// class internal properties
+        /// </summary>
+        ///
+        private int iLocalIntResult;
+        private bool iLocalBoolResult;
+        private string iLocalClassName;
+        private int iLocalObjectExists = 0;
+
+        /// <summary>
+        /// class properties
+        /// </summary>
+        /// 
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+/// <summary>
+        /// class Mdm1 Oss properties
+        /// </summary>
+        private string sMdmAuthorCompanyName = "MacroDm";
+        private string sMdmAuthorName = "David G. Horsman";
+        private string sMdmProjectName = "MdmSrtVs5_0";
+        private string sMdmTaskName = "Task0";
+        private string sMdmTaskStepName = "Step0";
+        private string sMdmProcessTitle = "unknown";
+        /// <summary>
+        /// 
+        /// </summary>
+        private string sMdmCodeSolutionName = "unknown";
+        private string sMdmCodeProjectName = "unknown";
+        private string sMdmNamespaceName = "unknown";
+        /// <summary>
+        /// 
+        /// </summary>
+        private string sMdmSystemName = "MdmPc";
+        private int iMdmSystemNumber = 99999;
+        private int iMdmSystemIntResult = 99999;
+        private bool bMdmSystemBoolResult = false;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        private string sMdmProcessName = "unknown";
+        private int iMdmProcessIntStatus = 99999;
+        private int iMdmProcessIntResult = 99999;
+        private bool bMdmProcessBoolResult = false;
+        private string sMdmProcessIntStatusText1 = "99999";
+        private string sMdmProcessIntStatusText2 = "99999";
+        /// <summary>
+        /// 
+        /// </summary>
+        private string sMdmClassName = "unknown";
+        private int iMdmClassIntStatus = 99999;
+        private string sMdmClassIntStatusText = "99999";
+        /// <summary>
+        /// 
+        /// </summary>
+        private string sMdmMethodName = "unknown";
+        private int iMdmMethodStatus = 99999;
+        private int iMdmMethodIntResult = 99999;
+        private bool bMdmMethodBoolResult = false;
+        /// <summary>
+        /// class external properties
+        /// </summary>
+        /// 
+
+
+        /// <summary>
+        /// class internal properties
+        /// </summary>
+        ///
+        private int iLocalIntResult;
+        private bool iLocalBoolResult;
+        private string iLocalClassName;
+        private int iLocalObjectExists = 0;
+
+        /// <summary>
+        /// class properties
+        /// </summary>
+        /// 
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
+// using System.Drawing;
+using System.Linq;
+using System.Text;
+// using System.Windows.Forms;
+using Mdm1Oss1Object1;
+using Mdm1Oss1File1;
+using Mdm1Oss1Code1;
+
+
+
+namespace Mdm1Srt1ImportTld1
+{
+    public class Mcontrol1
+    {
+        /// <summary>
+        /// Interaction logic for App.xaml
+        /// </summary>
+        int LocalIntResult;
+        bool LocalBoolResult;
+        public Mobject1 LocalMob;
+        public MimportTld1 MdmAction;
+
+        protected string ImportFileName;
+        //        protected Mfile1 ImportTldImpFile;
+        protected string OutputFileName;
+        //        protected Mfile1 ImportTldOutFile;
+        protected string OutputFileItemId;
+        protected string OutputFileOptions = "";
+        protected bool OutOptionToOverwriteExistingItem = false;
+        protected bool OutOptionToCheckItemIds = false;
+        protected bool OutOptionToEnterEachItemId = false;
+        protected bool OutOptionToLogActivity = false;
+        protected bool OutOptionToProceedAutomatically = false;
+        protected bool OutOptionToAddAnotherOption = false;
+
+        ///
+        public void MControl1()
+        {
+            ImportFileName = "";
+        }
+        
+        public int AppPage1Loaded()
+        {
+
+            LocalMob = new Mobject1();
+            LocalMob.MdmProcessIntStatusText2 = "initialised";
+            MdmAction = new MimportTld1();
+            MdmAction.StartApp(LocalMob);
+            ImportFileName = "";
+            //        protected Mfile1 ImportTldImpFile;
+            OutputFileName = "";
+            //        protected Mfile1 ImportTldOutFile;
+            OutputFileItemId = "";
+            OutputFileOptions = "";
+
+            return 0;
+        }
+
+        public Mobject1 AppGetObject()
+        {
+            if (LocalMob == null)
+            {
+                // Error Condition
+                LocalIntResult = AppPage1Loaded();
+            } 
+            return LocalMob;
+        }
+        
+        public int AppDoProcessing()
+        {
+            LocalMob.MdmMethodIntResult = MdmAction.ProcessFile("Import", ImportFileName, OutputFileName, OutputFileItemId, OutputFileOptions);
+            return 0;
+        }
+
+        public int AppDoProcessing(
+            string PassedInputFileLine, 
+            string PassedOutputFileLine, 
+            string PassedOutputFileItemId, 
+            bool PassedOptionToOverwriteExistingItem, 
+            bool PassedOptionToCheckItemIds, 
+            bool PassedOptionToEnterEachItemId, 
+            bool PassedOptionToLogActivity, 
+            bool PassedOptionToProceedAutomatically, 
+            bool PassedOptionToAddAnotherOption
+            )
+        {
+            ImportFileName = PassedInputFileLine; 
+            OutputFileName = PassedOutputFileLine; 
+            OutputFileItemId = PassedOutputFileItemId; 
+
+            OutOptionToOverwriteExistingItem = false;
+            OutOptionToCheckItemIds = false;
+            OutOptionToEnterEachItemId = false;
+            OutOptionToLogActivity = false;
+            OutOptionToProceedAutomatically = false;
+            OutOptionToAddAnotherOption = false;
+
+            OutputFileOptions = "";
+
+            if (PassedOptionToOverwriteExistingItem) {
+                OutOptionToOverwriteExistingItem = true;
+                OutputFileOptions += "O";
+            };
+                
+            if (PassedOptionToCheckItemIds) { 
+                OutOptionToCheckItemIds = true;
+                OutputFileOptions += "E";
+            };
+                
+            
+            if (PassedOptionToEnterEachItemId) { 
+                OutOptionToEnterEachItemId = true;
+                OutputFileOptions += "I";
+            };
+
+            if (PassedOptionToLogActivity) { 
+                OutOptionToLogActivity = true;
+                OutputFileOptions += "L";
+            };
+                
+            if (PassedOptionToProceedAutomatically) { 
+                OutOptionToProceedAutomatically = true;
+                OutputFileOptions += "A";
+            };
+                
+            if (PassedOptionToAddAnotherOption) {
+                OutOptionToAddAnotherOption = true;
+                OutputFileOptions += "Z";
+            };
+
+            LocalMob.MdmMethodIntResult = MdmAction.ProcessFile("Import", ImportFileName, OutputFileName, OutputFileItemId, OutputFileOptions);    
+
+            return 0;
+        }
+
+
+        public int AppCancelProcessing()
+        {
+
+            return 0;
+        }
+
+        public int InputFileCheck(string ImpPassedName)
+        {
+            ImportFileName = ImpPassedName;
+            LocalMob.MdmProcessIntStatusText2 = "Check Input File";
+
+            LocalIntResult = InputFileValidation(ImportFileName);
+
+            LocalMob.MdmMethodIntResult = MdmAction.CheckFileExists(ImportFileName);
+            if (LocalMob.MdmSystemBoolResult == true)
+                LocalMob.MdmMethodIntResult = 0;
+            else
+                LocalMob.MdmMethodIntResult = 11;
+
+            return LocalMob.MdmMethodIntResult;
+        }
+
+        public int InputFileValidation(string ImpPassedName)
+        {
+
+            return LocalMob.MdmMethodIntResult;
+        }
+
+        public int OutputFileCheck(string OutPassedName)
+        {
+            OutputFileName = OutPassedName;
+            LocalMob.MdmProcessIntStatusText2 = "Check Output File";
+
+            LocalIntResult = OutputFileValidation(OutPassedName);
+
+            LocalMob.MdmMethodIntResult = MdmAction.CheckFileExists(OutputFileName);
+
+            if (LocalMob.MdmSystemBoolResult == false)
+                LocalMob.MdmMethodIntResult = 0;
+            else
+                LocalMob.MdmMethodIntResult = 12;
+            return LocalMob.MdmMethodIntResult;
+        }
+
+        public int OutputFileValidation(string ImpPassedName)
+        {
+
+            return LocalMob.MdmMethodIntResult;
+        }
+        
+        public int OutputFileItemIdCheck(string OutPassedIdName)
+        {
+            OutputFileItemId = OutPassedIdName;
+            LocalMob.MdmProcessIntStatusText2 = "Check Output File Item Id";
+
+            LocalIntResult = OutputFileItemIdValidation(OutPassedIdName);
+
+            LocalMob.MdmMethodIntResult = MdmAction.CheckFileExists(OutputFileName);
+
+            if (LocalMob.MdmSystemBoolResult == false)
+                LocalMob.MdmMethodIntResult = 0;
+            else
+                LocalMob.MdmMethodIntResult = 12;
+            return LocalMob.MdmMethodIntResult;
+        }
+
+        public int OutputFileItemIdValidation(string OutPassedIdName)
+        {
+
+            return LocalMob.MdmMethodIntResult;
+        }
+/// ====================================================
+/// 
+        // Initialize constants for connecting to the database
+        // and displaying a connection error to the user.
+        protected bool bolDidPreviouslyConnect = false;
+
+        protected bool bolDidCreateTable = false;
+
+        protected string connectionstring = SQL_CONNECTION_STRING;
+
+
+        /// ====================================================
+        /// 
+
+        // This routine executes a SQL statement that
+        // drops the database (if it exists) 
+        // and then creates it. 
+
+        //=============== Database Objects
+
+        protected Exception MexceptDbCommandException;
+
+        protected SqlConnection MobjSqlDbConnection;
+        protected SqlException MexceptSqlDbException;
+
+        protected string MformStatusMessage = "";
+        protected string MmessageBoxMessage = "";
+
+        //=============== General Commands
+
+        protected string MstrSqlCommand;
+
+        //=============== Connection
+
+        protected string MstrDbCommandCreateConnection;
+
+        protected bool MboolDbIsInvalid = false;
+
+        protected bool MboolDbIsConnecting = false;
+        protected bool MboolDbIsConnected= false;
+
+        protected const string SQL_CONNECTION_STRING =
+            "Server=localhost;" +
+            "DataBase=;" +
+            "Integrated Security=SSPI";
+
+        protected string MstrDbConnectionString = SQL_CONNECTION_STRING;
+
+        protected const string CONNECTION_ERROR_MSG =
+            "To run this sample, you must have SQL " +
+            "or MSDE with the Northwind database installed.  For " +
+            "instructions on installing MSDE, view the ReadMe file.";
+
+        /*
+        protected const string MSDE_CONNECTION_STRING =
+            @"Server=(local)\NetSDK;" +
+            "DataBase=;" +
+            "Integrated Security=SSPI";
+        */
+
+        //=============== Server
+
+        protected string MstrSqlDbServerId;
+        protected string MstrSqlDbServer = "tempserver";
+            // HowTo = "master..sysdatabases";
+
+        protected string MstrSqlCommandCreateServer;
+
+        //=============== Database
+
+        protected string MstrSqlDbDatabaseId;
+        protected string MstrSqlDbDatabase = "..tempdatabase";
+
+        protected string MstrSqlCommandCreateDb;
+
+        //=============== Security
+
+        protected string MstrSqlDbSecurityId;
+        protected string MstrSqlDbSecurity;
+
+        //=============== User
+
+        protected string MstrSqlDbUserId;
+        protected string MstrSqlDbUser;
+        protected string MstrSqlDbUserPw;
+
+        //=============== Master Files Location
+
+        protected string MstrSqlDbMasterFile = "master..sysdatabases";
+
+
+        //=============== File Group
+
+        protected string MstrSqlDbFileGroupId;
+        protected string MstrSqlDbFileGroup;
+        protected string MstrSqlDbFileGroupDbId;
+
+        protected string MstrSqlCommandCreateDbFileGroup;
+
+        //=============== File
+
+        protected string MstrSqlDbFileId;
+        protected string MstrSqlDbFile;
+
+        protected string MstrSqlDbFileDbId;
+        protected string MstrSqlDbFileDb = "";
+        protected string MstrSqlDbFileGroupId;
+        protected string MstrSqlDbFileGroup = "";
+
+        protected bool MboolSqlDbTableExists= false;
+        protected bool MboolSqlDbTableIsCreated = false;
+
+        protected string MstrSqlCommandCreateDbFile;
+
+        //=============== Phrases
+
+        protected string MstrSqlDbPhraseServer;
+        protected string MstrSqlDbPhraseDatabase;
+        protected string MstrSqlDbPhraseSecurity;
+        protected string MstrSqlDbPhraseUser;
+        protected string MstrSqlDbPhraseUserPw;
+
+        protected string MstrSqlDbPhrase;
+
+        protected bool MboolSqlDbPhraseIfUsed = true;
+        protected string MstrSqlDbPhraseIf = "IF EXISTS (";
+        protected string MstrSqlDbPhraseIfEnd = ")";
+
+        protected bool MbollSqlDbPhraseSelectUsed = true;
+        protected string MstrSqlDbPhraseSelect = "SELECT * ";
+
+        protected bool MboolSqlDbPhraseFromUsed = true;
+        protected string MstrSqlDbPhraseFrom = "FROM ";
+        protected string MstrSqlDbPhraseFromItems = "master..sysdatabases";
+        protected string MstrSqlDbPhraseFromEnd = " ";
+
+        protected bool MboolSqlDbPhraseWhereUsed = true;
+        protected string MstrSqlDbPhraseWhere = "WHERE ";
+        // sb paired list of dict + value
+        protected string MstrSqlDbPhraseWhereItems = "Name = 'HowToDemo'";
+
+
+        protected bool MboolSqlDbPhraseDropUsed = true;
+        protected string MstrSqlDbPhraseDrop = "DROP ";
+        // sb paired list of dict + value
+        protected string MstrSqlDbPhraseDropItems = "DATABASE HowToDemo";
+
+        protected bool MboolSqlDbPhraseCreateUsed = true;
+        protected string MstrSqlDbPhraseCreate = "CREATE ";
+        // sb paired list of dict + value
+        protected string MstrSqlDbPhraseCreateItems = "CREATE DATABASE HowToDemo";
+
+        protected bool MstrSqlDbFileGroupused = false;
+        protected string MstrSqlDbFileGroup = "HowToDemoFileGroup";
+
+        protected string MstrSqlDbFilePhrase;
+        protected string MstrSqlDbFilePhraseIf;
+        protected string MstrSqlDbFilePhraseSelect;
+        protected string MstrSqlDbFilePhraseFrom;
+        protected string MstrSqlDbFilePhraseWhere;
+        protected string MstrSqlDbFilePhraseIfEnd;
+        protected string MstrSqlDbFilePhraseDrop;
+        protected string MstrSqlDbFilePhraseCreate;
+
+        /*
+        //================ Msde ============
+
+        protected SqlConnection MobjMsdeDbConnection;
+        protected SqlException MexceptMsdeException;
+
+        protected string MstrMsdeCommand;
+        protected string MstrMsdePhraseServer;
+        protected string MstrMsdePhraseDatabase;
+        protected string MstrMsdePhraseSecurity;
+        protected string MstrMsdePhraseUser;
+        protected string MstrMsdePhraseUserPw;
+        */
+
+        private int MdmBuildCreateSqlDbCommand()
+        {
+
+            MstrSqlCommandCreateDb = "";
+
+            if (MboolSqlDbPhraseIfUsed)
+            {
+                MstrSqlCommandCreateDb += MstrSqlDbPhraseIf;
+            }
+
+            if (MbollSqlDbPhraseSelectUsed)
+            {
+                MstrSqlCommandCreateDb += MstrSqlDbPhraseSelect;
+            }
+
+            if (MboolSqlDbPhraseFromUsed)
+            {
+                MstrSqlCommandCreateDb += MstrSqlDbPhraseFrom;
+                MstrSqlCommandCreateDb += MstrSqlDbPhraseFromItems;
+                MstrSqlCommandCreateDb += MstrSqlDbPhraseFromEnd;
+            }
+
+            if (MboolSqlDbPhraseWhereUsed)
+            {
+                MstrSqlCommandCreateDb += MstrSqlDbPhraseWhere;
+                // sb paired list of dict + value
+                MstrSqlCommandCreateDb += MstrSqlDbPhraseWhereItems;
+            }
+
+            if (MboolSqlDbPhraseIfUsed)
+            {
+                MstrSqlCommandCreateDb += MstrSqlDbPhraseIfEnd;
+            }
+
+            if (MboolSqlDbPhraseDropUsed)
+            {
+                MstrSqlCommandCreateDb += Environment.NewLine;
+                MstrSqlCommandCreateDb += MstrSqlDbPhraseDrop;
+                MstrSqlCommandCreateDb += MstrSqlDbPhraseDropItems;
+            }
+
+            if (MboolSqlDbPhraseCreateUsed)
+            {
+                MstrSqlCommandCreateDb += Environment.NewLine;
+                MstrSqlCommandCreateDb += MstrSqlDbPhraseCreate;
+                MstrSqlCommandCreateDb += MstrSqlDbPhraseCreateItems;
+            }
+
+
+            /*
+            MstrSqlCommandCreateDb = "IF EXISTS (" +
+                "SELECT * " +
+                "FROM master..sysdatabases " +
+                "WHERE Name = 'HowToDemo')" + Environment.NewLine +
+                "DROP DATABASE HowToDemo" + Environment.NewLine +
+                "CREATE DATABASE HowToDemo";
+             */
+
+            return 0;
+        }
+
+        private int MdmDoCreateSqlDbCommand()
+        {
+            try
+            {
+
+                //=================
+
+                SqlConnection TempMobjSqlDbConnection = new SqlConnection(MstrDbConnectionString);
+
+
+                //=================
+
+                SqlCommand TempMstrSqlCommandCreateDb = new SqlCommand(MstrSqlCommandCreateDb, MobjSqlDbConnection);
+
+                MobjSqlDbConnection.Open();
+                TempMstrSqlCommandCreateDb.ExecuteNonQuery();
+                MobjSqlDbConnection.Close();
+
+
+                //=================
+
+                // Data has been successfully submitted, so break out of the loop
+                // and close the status form.
+
+                MboolDbIsConnecting = false;
+                MboolDbIsConnected = true;
+
+                MboolSqlDbTableIsCreated= true;
+
+                // MformStatusMessage.Close();
+                MformStatusMessage = "";
+
+
+                //=================
+                MmessageBoxMessage = @"Database Creation Status" + "/n" + "Database " + MstrSqlDbPhraseDatabase + @" successfully created!";
+                //================= Catch Try
+            }
+            catch (SqlException MexceptSqlDbException)
+            {
+                //=================
+                MmessageBoxMessage = "SQL Exception Error!" + "/n" + MexceptSqlDbException.ToString();
+            }
+            return 0;
+        }
+
+        private void MdmCreateSqlDb()
+        {
+
+            // Display a status message saying that we're attempting to connect.
+            // This only needs to be done the very first time a connection is
+            // attempted.  After we've determined that MSDE or SQL Server is
+            // installed, this message no longer needs to be displayed.
+
+            // frmStatus 
+            MformStatusMessage = "";
+            //= new frmStatus();
+
+            if (MboolDbIsConnected== false)
+            {
+
+            //    MformStatusMessage.Show("Connecting to SQL Server");
+            MformStatusMessage = @"Connecting to SQL Server";
+
+            }
+
+            MstrDbConnectionString = "";
+
+            MstrDbConnectionString += "Server=l";
+            MstrDbConnectionString += "localhost";
+            MstrDbConnectionString += ";";
+            MstrDbConnectionString += "Database=";
+            MstrDbConnectionString += "";
+            MstrDbConnectionString += ";";
+            MstrDbConnectionString += "Integrated Security=";
+            MstrDbConnectionString += "SSPI";
+
+
+
+
+            // Attempt to connect to the local SQL server instance, and a local
+            // MSDE installation (with Northwind).  
+
+            MboolDbIsConnecting = true;
+
+            while (MboolDbIsConnecting)
+            {
+                try
+                {
+
+                    //=================
+                   
+                    // The SqlConnection class allows you to 
+                    // communicate with SQL Server.
+                    // The constructor accepts a 
+                    // connection string an argument.  This
+                    // connection string uses 
+                    // Integrated Security, which means that you must have a 
+                    // login in SQL Server, or be part of the 
+                    // Administrators group for this to work.
+
+                    SqlConnection TempMobjSqlDbConnection = new SqlConnection(MstrDbConnectionString);
+
+
+                    //=================
+
+                    // A SqlCommand object is used to execute the SQL commands.
+
+                    
+                     SqlCommand TempMstrSqlCommandCreateDb = new SqlCommand(MstrSqlCommandCreateDb, MobjSqlDbConnection);
+
+                    // Tried these:
+                    // MstrSqlCommandCreateDb = new SqlCommand(MstrSqlCommandCreateDb, MobjSqlDbConnection);
+                    //SqlCommand MstrSqlCommandCreateDb = new SqlCommand(MstrSqlCommandCreateDb, MobjSqlDbConnection);
+                    // MobjSqlDbConnection. ;
+                    //(MstrSqlCommandCreateDb, MobjSqlDbConnection);
+                    // MobjSqlDbConnection.MstrSqlCommandCreateDb.SqlCommand(MstrSqlCommandCreateDb, MobjSqlDbConnection);
+                    
+                    //=================
+                    
+                    // Open the connection, execute the command, and close the 
+                    // connection. It is more efficient to 
+                    // ExecuteNonQuery when data is 
+                    // not being returned.
+
+                    MobjSqlDbConnection.Open();
+                    TempMstrSqlCommandCreateDb.ExecuteNonQuery();
+                    MobjSqlDbConnection.Close();
+
+
+                    //=================
+
+                    // Data has been successfully submitted, so break out of the loop
+                    // and close the status form.
+
+                    MboolDbIsConnecting = false;
+                    MboolDbIsConnected= true;
+
+                    // MboolSqlDbTableIsCreated= true;
+
+                    // MformStatusMessage.Close();
+                    MformStatusMessage = "";
+
+
+                    //=================
+
+                    // Show the controls for the next step.
+                    /*
+                    lblArrow1.Visible = true;
+                    lblStep2.Enabled = true;
+                    btnCreateTable.Enabled = true;
+                     */
+                    /*
+                    MessageBox.Show("Database 'HowToDemo' successfully created!", "Database Creation Status", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    */
+                    MmessageBoxMessage = @"Database Creation Status" + "/n" + "Database " + MstrSqlDbPhraseDatabase + @" successfully created!";
+
+                //================= Catch Try
+                }
+                catch (SqlException MexceptSqlDbException)
+                {
+                    /*
+                    MessageBox.Show(MexceptSqlDbException.ToString(), "SQL Exception Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                     */
+                    MmessageBoxMessage = "SQL Exception Error!" + "/n" + MexceptSqlDbException.ToString();
+
+                //=================
+
+                }
+                catch (Exception MexceptDbCommandException)
+                {
+                    /*
+                    if (MstrDbConnectionString == SQL_CONNECTION_STRING)
+                    {
+
+                        // Couldn't connect to SQL Server.  Now try MSDE.
+                        MstrDbConnectionString = MSDE_CONNECTION_STRING;
+                        // MformStatusMessage.Show("Connecting to MSDE");
+                        MformStatusMessage = @"Connecting to MSDE";
+                    }
+                    else
+                    {
+                    */
+                        // Unable to connect to SQL Server or MSDE
+                        /*
+                        MformStatusMessage.Close();
+                        MessageBox.Show(CONNECTION_ERROR_MSG, "Connection Failed!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                        Application.Exit();
+                         */
+
+
+                        MformStatusMessage = "";
+                        MmessageBoxMessage = @"Database Creation Status" + "/n" + CONNECTION_ERROR_MSG + "/nConnection Failed!";
+
+                        // *** Application.Job.Exit(); *** TODO
+
+                    /*}*/
+
+                }
+
+            }
+
+            // frmStatusMessage.Close();
+            MformStatusMessage = "";
+
+        }
+
+        private void MdmCreateSqlDbFile()
+        {
+
+            
+            //btnCreateTable_Click(object sender, System.EventArgs e)
+            string MstrSqlCommandCreateDbFile = "USE HowToDemo" + Environment.NewLine +
+                                "IF EXISTS (" +
+                                "SELECT * " +
+                                "FROM HowToDemo.dbo.sysobjects " +
+                                "WHERE Name = 'NW_Seafood' " +
+                                "AND TYPE = 'u')" + Environment.NewLine +
+                                "BEGIN" + Environment.NewLine +
+                                "DROP TABLE HowToDemo.dbo.NW_Seafood" + Environment.NewLine +
+                                "END" + Environment.NewLine +
+                                "CREATE TABLE NW_Seafood (" +
+                                "ProductID Int NOT NULL," +
+                                "ProductName NVarChar(40) NOT NULL," +
+                                "QuantityPerUnit NVarChar(20) NOT NULL," +
+                                "UnitPrice Money NOT NULL," +
+                                "CONSTRAINT [PK_Product] PRIMARY KEY CLUSTERED" +
+                                "(ProductID))";
+
+            try
+            {
+
+                // The SqlConnection class allows you to communicate with SQL Server.
+                // The constructor accepts a connection string an argument.  This
+                // connection string uses Integrated Security, which means that you 
+                // must have a login in SQL Server, or be part of the Administrators
+                // group for this to work.
+
+                SqlConnection MobjSqlDbConnection = new SqlConnection(connectionstring);
+
+                // A SqlCommand object is used to execute the SQL commands.
+
+                SqlCommand TempMstrSqlCommandCreateDbFile = new SqlCommand(MstrSqlCommandCreateDbFile, MobjSqlDbConnection);
+
+                // Open the connection, execute the command, and close the connection.
+                // It is more efficient to ExecuteNonQuery when data is not being 
+                // returned.
+
+                MobjSqlDbConnection.Open();
+                TempMstrSqlCommandCreateDbFile.ExecuteNonQuery();
+                MobjSqlDbConnection.Close();
+
+                // Show the controls for the next step.
+                /*
+                lblArrow2.Visible = true;
+                lblStep3.Enabled = true;
+                btnCreateSP.Enabled = true;
+                MessageBox.Show("Table 'NW_Seafood' successfully created.",
+                                "Table Creation Status",
+                                MessageBoxButtons.OK, MessageBoxIcon.Information);
+                */
+
+                MmessageBoxMessage = @"Database Creation Status" + "/n" + "Table Creation Status" + "/n" + "Table " + MstrSqlDbFile + " successfully created.";
+
+            }
+            catch (SqlException MexceptSqlDbException)
+            {
+                //MessageBox.Show(sqlExc.ToString(), "SQL Exception Error!",
+                //                MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                MmessageBoxMessage = @"Database Creation Status" + "/n" + "Table Creation Status" + "/n" + "SQL Exception Error!" + "/n" + MexceptSqlDbException.ToString();
+
+            }
+
+        }
+
+        /*
+        private void OrigCreateTable()
+        {
+
+            string strSQL = "IF EXISTS (" +
+                            "SELECT * " +
+                            "FROM master..sysdatabases " +
+                            "WHERE Name = 'HowToDemo')" + Environment.NewLine +
+                            "DROP DATABASE HowToDemo" + Environment.NewLine +
+                            "CREATE DATABASE HowToDemo";
+
+            // Display a status message saying that we're attempting to connect.
+            // This only needs to be done the very first time a connection is
+            // attempted.  After we've determined that MSDE or SQL Server is
+            // installed, this message no longer needs to be displayed.
+
+            frmStatus frmStatusMessage = new frmStatus();
+
+            if (bolDidPreviouslyConnect == false)
+            {
+
+                frmStatusMessage.Show("Connecting to SQL Server");
+
+            }
+
+            // Attempt to connect to the local SQL server instance, and a local
+            // MSDE installation (with Northwind).  
+
+            bool bolIsConnecting = true;
+
+            while (bolIsConnecting)
+            {
+                try
+                {
+
+                    // The SqlConnection class allows you to communicate with SQL Server.
+                    // The constructor accepts a connection string an argument.  This
+                    // connection string uses Integrated Security, which means that you 
+                    // must have a login in SQL Server, or be part of the Administrators
+                    // group for this to work.
+
+                    SqlConnection northwindConnection = new SqlConnection(connectionstring);
+
+                    // A SqlCommand object is used to execute the SQL commands.
+
+                    SqlCommand cmd = new SqlCommand(strSQL, northwindConnection);
+
+                    // Open the connection, execute the command, and close the 
+                    // connection. It is more efficient to ExecuteNonQuery when data is 
+                    // not being returned.
+
+                    northwindConnection.Open();
+                    cmd.ExecuteNonQuery();
+                    northwindConnection.Close();
+
+                    // Data has been successfully submitted, so break out of the loop
+                    // and close the status form.
+
+                    bolIsConnecting = false;
+                    bolDidPreviouslyConnect = true;
+                    bolDidCreateTable = true;
+                    frmStatusMessage.Close();
+
+                    // Show the controls for the next step.
+
+                    lblArrow1.Visible = true;
+                    lblStep2.Enabled = true;
+                    btnCreateTable.Enabled = true;
+                    MessageBox.Show("Database 'HowToDemo' successfully created!", "Database Creation Status", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                }
+                catch (SqlException sqlExc)
+                {
+
+                    MessageBox.Show(sqlExc.ToString(), "SQL Exception Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                catch (Exception exc)
+                {
+
+                    if (connectionstring == SQL_CONNECTION_STRING)
+                    {
+
+                        // Couldn't connect to SQL Server.  Now try MSDE.
+                        connectionstring = MSDE_CONNECTION_STRING;
+                        frmStatusMessage.Show("Connecting to MSDE");
+                    }
+                    else
+                    {
+
+                        // Unable to connect to SQL Server or MSDE
+
+                        frmStatusMessage.Close();
+                        MessageBox.Show(CONNECTION_ERROR_MSG, "Connection Failed!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                        Application.Exit();
+
+                    }
+
+                }
+
+            }
+
+            frmStatusMessage.Close();
+
+        }
+
+        // Sets up the user interface so that the user proceeds in proper order
+
+        // through the steps.
+*/
+
+        /*
+        private void OrigbtnCreateTable_Click(object sender, System.EventArgs e)
+        {
+
+            string strSQL = "USE HowToDemo" + Environment.NewLine +
+                                "IF EXISTS (" +
+                                "SELECT * " +
+                                "FROM HowToDemo.dbo.sysobjects " +
+                                "WHERE Name = 'NW_Seafood' " +
+                                "AND TYPE = 'u')" + Environment.NewLine +
+                                "BEGIN" + Environment.NewLine +
+                                "DROP TABLE HowToDemo.dbo.NW_Seafood" + Environment.NewLine +
+                                "END" + Environment.NewLine +
+                                "CREATE TABLE NW_Seafood (" +
+                                "ProductID Int NOT NULL," +
+                                "ProductName NVarChar(40) NOT NULL," +
+                                "QuantityPerUnit NVarChar(20) NOT NULL," +
+                                "UnitPrice Money NOT NULL," +
+                                "CONSTRAINT [PK_Product] PRIMARY KEY CLUSTERED" +
+                                "(ProductID))";
+
+            try
+            {
+
+                // The SqlConnection class allows you to communicate with SQL Server.
+                // The constructor accepts a connection string an argument.  This
+                // connection string uses Integrated Security, which means that you 
+                // must have a login in SQL Server, or be part of the Administrators
+                // group for this to work.
+
+                SqlConnection northwindConnection = new SqlConnection(connectionstring);
+
+                // A SqlCommand object is used to execute the SQL commands.
+
+                SqlCommand cmd = new SqlCommand(strSQL, northwindConnection);
+
+                // Open the connection, execute the command, and close the connection.
+                // It is more efficient to ExecuteNonQuery when data is not being 
+                // returned.
+
+                northwindConnection.Open();
+                cmd.ExecuteNonQuery();
+                northwindConnection.Close();
+
+                // Show the controls for the next step.
+
+                lblArrow2.Visible = true;
+                lblStep3.Enabled = true;
+                btnCreateSP.Enabled = true;
+                MessageBox.Show("Table 'NW_Seafood' successfully created.",
+                                "Table Creation Status",
+                                MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+            catch (SqlException sqlExc)
+            {
+                MessageBox.Show(sqlExc.ToString(), "SQL Exception Error!",
+                                MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+
+        }
+         */
+
+    }
+}
+
+
+
+===============================================================
+
+		private void zGotFocus(object sender, RoutedEventArgs e)
+        {
+            StatusLine1.Text = "Enter the file name to place the data into.";
+        }
+
+        private void zLostFocus(object sender, RoutedEventArgs e)
+        {
+            StatusLine1.Text = "";
+        }
+===============================================================

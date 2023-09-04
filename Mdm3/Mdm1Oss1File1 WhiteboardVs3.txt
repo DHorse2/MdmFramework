@@ -1,0 +1,15 @@
+
+SELECT [ALL | DISTINCT] [TOP nExpr [PERCENT]] [Alias.] Select_Item 
+   [[AS] Column_Name] [, [Alias.] Select_Item [[AS] Column_Name] ...] 
+   FROM [FORCE][DatabaseName!]Table [[AS] Local_Alias] 
+   [[INNER | LEFT [OUTER] | RIGHT [OUTER] | FULL [OUTER] JOIN 
+      DatabaseName!] Table [[AS] Local_Alias] [ON JoinCondition ]
+      [[INTO Destination] | [TO FILE FileName [ADDITIVE] | TO PRINTER 
+      [PROMPT] | TO SCREEN]] [PREFERENCE PreferenceName]
+      [NOCONSOLE] [PLAIN] [NOWAIT]
+   [WHERE JoinCondition [AND JoinCondition ...]
+      [AND | OR FilterCondition [AND | OR FilterCondition ...]]]
+   [GROUP BY GroupColumn [, GroupColumn ...]] 
+   [HAVING FilterCondition] [UNION [ALL] SELECTCommand] 
+   [ORDER BY Order_Item [ASC | DESC] [, Order_Item [ASC | DESC] ...]]
+========================================

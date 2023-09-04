@@ -1,0 +1,111 @@
+        #region MdmFileDatabaseControlConstants
+        // <Section Summary>
+        // <Section Role="Declarations">
+        // <Section Id = "MdmFileDatabaseControlConstants">
+        // <Section Vs="MdmStdRunVs0_9_0">
+        // <Section Id = "FileIOConstants">
+        // <Area Id = "FileSchemaLevel"
+        const int FILE_DICT_DATA = 1;
+        const int FILE_DATA = 2;
+        // - XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+        // <Area Id = "FileOpenConstants">
+        // protected int FileIsOpenStatus = 0;
+        const int FILE_IO_OPEN_OK = 0;
+        const int FILE_IO_OPEN_TRY_FIRST = -3;
+        const int FILE_IO_OPEN_TRY_AGAIN = -2;
+        const int FILE_IO_OPEN_TRY_DEFAULT = 2;
+        const int FILE_IO_OPEN_TRY_ORIGINAL = 3;
+        const int FILE_IO_OPEN_TRY_ALL = 3;
+        // - XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+        public int omvOfObject = 0;
+        public int omvOfAction = 0;
+        public int omvOfResult = 0;
+        public int omvOfExistStatus = 0;
+        public int omvOfVerb = 0;
+        // ovvOfVerb  = omvOfObject + omvOfAction + omvOfResult;
+        // OBJECT XXX TODO
+        const int OF_OBJECT_OK = 0;
+        const int OF_OBJECT_FILEDATA = 1000;
+        const int OF_OBJECT_FILEDICT = 2000;
+        const int OF_OBJECT_DATABASE = 3000;
+        const int OF_OBJECT_SERVICE = 4000;
+        const int OF_OBJECT_SERVER = 5000;
+        const int OF_OBJECT_SYSTEM = 6000;
+        const int OF_OBJECT_NETWORK = 7000;
+        const int OF_OBJECT_SECURITY = 8000;
+        const int OF_OBJECT_USER = 9000;
+        const int OF_OBJECT_UNDEFINED = 90000;
+        // ACTION XXX TODO
+        const int OF_ACTION_OK = 0;
+        const int OF_ACTION_OPEN = 100;
+        const int OF_ACTION_CLOSE = 200;
+        const int OF_ACTION_CREATE = 300;
+        const int OF_ACTION_DELETE = 400;
+        const int OF_ACTION_READ = 500;
+        const int OF_ACTION_WRITE = 600;
+        const int OF_ACTION_CONNECT = 700;
+        const int OF_ACTION_UNDEFINED = 90000;
+        // RESULT XXX TODO
+        const int OF_RESULT_OK = 0;
+        const int OF_RESULT_STARTED = 1;
+        const int OF_RESULT_FAILED = 2;
+        const int OF_RESULT_CANCELLED = 4;
+        const int OF_RESULT_TIMEDOUT = 5;
+        const int OF_RESULT_UNKNOWN_FAILURE = 6;
+        const int OF_RESULT_OS_ERROR = 7;
+        const int OF_RESULT_DB_ERROR = 8;
+        const int OF_RESULT_OPERATION_IN_PROGRESS = 41;
+        const int OF_RESULT_MISSING_NAME = 21;
+        const int OF_RESULT_UNDEFINED = 90000;
+        // - XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+        // <Area Id = "FileExistanceConstants">
+        const int OF_RESULT_SHOULD_NOT_EXIST = 53;
+        const int OF_RESULT_DOES_EXIST = 52;
+        const int OF_RESULT_DOES_NOT_EXIST = 51;
+        const int DBOF_RESULT_DOES_NOT_EXIST = -1;
+        // - XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+        // <Area Id = "FileReadModeConstants">
+        // protected int ipFileReadMode = 0;
+        const int READ_MODE_NOT_SET = 0;
+        const int READ_MODE_BLOCK = 1;
+        const int READ_MODE_LINE = 2;
+        const int READ_MODE_ALL = 3;
+        const int READ_MODE_SQL = 4;
+        const int READ_MODE_ERROR = 5;
+        const int READ_MODE_UNDEFINED = -99999;
+        // additional access modes
+        const int READ_MODE_BINARY = 25;
+        const int READ_MODE_SEEK = 28;
+        // - XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+        // DIST AND NETWORK
+        const int FILE_IO_DISK_FULL = 8001;
+        const int FILE_IO_DISK_ERROR = 8002;
+        const int FILE_IO_NETWORK_ERROR = 8003;
+        const int FILE_IO_INTERNET_ERROR = 8004;
+        // - XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+        // <Area Id = "AsciiOpenOptions">
+        // protected int AsciiOpenOptions = 0;
+        // <Area Id = "FileAccess">
+        const int FILE_IO_ACCESS_NOT_SET = 0;
+        const int FILE_IO_ACCESS_READ_ONLY = 21;
+        const int FILE_IO_ACCESS_APPEND_ONLY = 22;
+        const int FILE_IO_ACCESS_ERROR = 5;
+        // <Area Id = "FileCreation">
+        const int FILE_IO_CREATE_IF_MISSING = 23;
+        const int FILE_IO_CREATE_ONLY = 24;
+        // - XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+        // FileNull
+        // FileField
+        // FileTable
+        // FileTableRow
+        // FileTableColumn
+        // <Area Id = "FileNullErrorsConstants">
+        // <Area Id = "FileFileIdErrorsConstants">
+        // <Area Id = "FileTableErrorsConstants">
+        // <Area Id = "FileTableRowErrorsConstants">
+        const int FILE_IO_NO_ROW_ID = 99;
+        const int FILE_IO_ROW_ID_SHOULD_NOT_EXIST = 33;
+        const int FILE_IO_ROW_ID_DOES_EXIST = 32;
+        const int FILE_IO_ROW_ID_DOES_NOT_EXIST = 31;
+        // <Area Id = "FileTableColumnErrorsConstants">
+        #endregion

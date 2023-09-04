@@ -1,0 +1,430 @@
+// Mdm Standard Object Prefixes
+		// ________________________________________________________
+		// cs - 		struct
+		// ________________________________________________________
+		// a - 		array
+		//
+		// al - 		ArrayList
+		//
+		// ________________________________________________________
+		// bi - 		binary
+		// bia -		binary array
+		//
+		// ________________________________________________________
+		// bb - 		byte
+		// bba -	byte array
+		//
+		// ________________________________________________________
+		// bc - 		char
+		// bca - 	char array
+		//
+		// ________________________________________________________
+		// c - 		class
+		//
+		// ________________________________________________________
+		// fde -		decimal
+		//
+		// ________________________________________________________
+		// fd - 		double
+		//
+		// ________________________________________________________
+		// lc - 		collection
+		//
+		// ________________________________________________________
+		// b - 		bool 					(b1) 	( 0 to 1 )
+		// ba - 		bool array
+		//
+		// ________________________________________________________
+		// bs - 		sbyte					(i8) 		( -128 to 127 ) 
+																( Signed 8-bit integer ) 
+		// bsa -		sbyte array
+		//
+		// bb - 		byte 					(i8) 		( 0 to 255 )
+																( Unsigned 8-bit integer ) 
+		// bba - 	byte array
+		//
+		// ________________________________________________________
+		// bc - 		char 					(b16) 	( U+0000 to U+ffff )
+		// bca - 	char array
+		//
+		// ________________________________________________________
+		// bi - 		binary					( not a native type, used as a data type )
+		//											( don't know about this one )
+		//
+		// bii  - 		image???			( not a native type, used as a data type 
+		//											( an image large object )
+		//
+		// bib - 		blob ?					( not a native type, used as a data type )
+		//											( a binary large object )
+		//
+		// bic -		clob ?					( not a native type, used as a data type )
+		//											( a character large object )
+		//
+		// ________________________________________________________
+		// e - 		exception
+		//
+		// ________________________________________________________
+		// f - 			float 					(f8) 		( ±1.5 × 10^-45 to ±3.4 × 10^38 ) 							( float x = 3.5F )
+																( 7 digits )
+		// fa - 		float array
+		// F -		Float
+		//
+		// ________________________________________________________
+		// fd - 		double 				(f64) 	( ±5.0 × 10^-324 to ±1.7 × 10^308 ) 					( double x = 9D )
+																( 15-16 digits )
+		// fda -		double array
+		//
+		// ________________________________________________________
+		// fde - 	decimal 				(f128) 	( -7.9 x 10^28 to 7.9 x 10^28 ) / (10^{0 to 28}) 	( decimal x = 999.9m;) 
+		//														( 28-29 significant digits )
+		// fdea - 	decimal array
+		//
+		// ________________________________________________________
+		// id - 		double
+		//
+		// ________________________________________________________
+		// l - 			list
+		// lc - 		collection
+		// ln - 		enumeration
+		// la - 		list array
+		//
+		//
+		// ________________________________________________________
+		// is -		short 					(int16)		( -32,768 to 32,767 )
+																	( Signed 16-bit integer )
+		// isa - 		short array
+		//
+		// isu - 		ushort					(int16) 	( 0 to 65,535 )
+																	( Unsigned 16-bit integer )
+		// ________________________________________________________
+		// i - 			int		 				(int32)		( -2,147,483,648 to 2,147,483,647 )
+																	( Signed 32-bit integer )
+		//				int						(MsSql)	Integer (whole number) data from 
+		// 															-2^31 (-2,147,483,648) through 
+		// 															2^31 - 1 (2,147,483,647). 
+		//															Storage size is 4 bytes. 
+		//															The SQL-92 synonym for int is integer.
+		// ia - 		int array
+		//
+		// iu - 		uint						(int32) 	( 0 to 4,294,967,295 )
+																	( Unsigned 32-bit integer )
+																	( Not CLS compliant, do not use )
+		// ________________________________________________________
+ 		// il -			long 					(int64) 	( 9,223,372,036,854,775,808 to 9,223,372,036,854,775,807 )
+																	( Signed 64-bit integer )
+		// 				bigint					(MsSql)	Integer (whole number) data from 
+		// 															-2^63 (-9,223,372,036,854,775,808) through 
+		//															2^63-1 (9,223,372,036,854,775,807). 
+		//															Storage size is 8 bytes.
+		// ila -		long array
+		//
+		// ilu -		ulong					(int64)		( 0 to 18,446,744,073,709,551,615 )
+																	( Unsigned 64-bit integer )
+		//
+		// ________________________________________________________
+ 		// s - 		string (extendable)
+		// sa - 		string array
+		//
+		// ________________________________________________________
+		// sb - 		string builder string
+		// sms - 	string - memory stream
+		//
+		// ________________________________________________________
+		// cs - 		struct
+		( constructors, constants, fields, methods, properties, indexers, operators, events, and nested types )
+		//
+		// ________________________________________________________
+		// v - 		event
+
+		// ________________________________________________________
+		// ________________________________________________________
+OBJECTS
+		// a - 	Application
+		// al - 	ArrayList
+		// c - 	Class
+		// cd - 	Delegate
+		// cs - 	Struct
+		// cs - 	Struct
+		// cv - 	Event
+		// l - 		List
+		// m - 	Method
+		// n - 	Namespace (NOT USED)
+		
+		// ________________________________________________________
+		// ________________________________________________________
+OBJECT INSTANCES		
+		// oa - 		Object - Application
+		// oal - 		Object - ArrayList
+		// oc - 		Class Instance
+		// ocs - 	Struct Instance
+		// om - 	Method Instance (NOT USED)
+		
+		
+		// ________________________________________________________
+		// Console
+		// ocot  - 	Object Console Output TextWrtier
+		// ocos - 	Object Console Output StreamWrtier
+		// oci  - 	Object Console Input
+		// ocet - 	Object Console Error TextWriter
+		// ocee - 	Object Console Error Exception
+		
+		// ________________________________________________________
+		// DotNet Object
+		// od  - 	Object - DotNet
+		// ocd - 	Object - DotNet - DELEGATE
+		
+		// ________________________________________________________
+		// DotNet Object - Namespaces
+		// odxx - 	Object - DontNet Namespace
+		// ods  - 	Object - DotNet - System Namespace
+		// odst - 	Object - DotNet - System.Type
+		
+		// ________________________________________________________
+		// DotNet Object - Types
+		// tt		-	Type - Type Type
+		// tdt		-	Type - DateTime
+		// tdto	-	Type - DateTimeOffset
+		// tdts	-	Type - DateTimeSpan
+		// tcb	-	Type - CommandBehavior (SqlDataReader)
+		// tg		-	Type - Guid
+		// tfdt	-	Type - DataTable (SqlDataReader)
+		
+		// ________________________________________________________
+		// Generic Object
+		// oo   - 	Object - Object Type not specified
+        // oe   - 	Object - Exception
+		// ocd - 	Object - Delegate
+		// ocv - 	Object - Event
+		
+		// ________________________________________________________
+		// Mdm Objects - Generice
+        // omo  - Object - Mdm  - Mobject - Mdm framework object object
+		
+		// Mdm Objects - Namespaces
+		// omm - Object - Mdm - Mapplication - Mdm framework application object
+		
+        // oma  - Object - Mdm - Mdm Application - the application
+		
+        // omh  - Object - Mdm - Mdm Handler - application control
+		
+		// omp  - Object - Mdm - Main Page - for this app
+
+		// omv  - 		Object - Mdm - Mdm Verb - process that performs the action
+		// ________________________________________________________
+		//  Mdm Object Validation
+		// omvv - 		Object - Mdm - Mdm Verb - Event
+		// omvva - 	Object - Mdm - Mdm Verb - Validation
+		// omvvae - 	Object - Mdm - Mdm Verb - Validation- Exception
+		// omvOf  -	Object - Mdm - Mdm File Action
+		
+		// ________________________________________________________
+        // of - 		Object - File
+        // ofb - 	Object - File - Buffer
+		// ofcd - 	Object - File - Delegate
+		// ofcv - 	Object - File - Event
+        // ofe  - 	Object - File - Exception
+		
+		// ________________________________________________________
+        // ofs  - 		Object - File - File Stream
+        // ofsr - 		Object - File - File Stream Reader
+		// ofsrcd - 	Object - File - File Stream Reader - Delegate
+		
+		
+		// ________________________________________________________
+		// Database Connection
+        // ofd  - 		Object - File - Database Connection
+        // ofde - 		Object - File - Database Connection - Error
+		// ofdcd - 	Object - File - Database Connection - Delegate
+        // ofdcv - 	Object - File - Database Connection - Event
+		
+		// ________________________________________________________
+		// Database Sql Data Reader
+		// ofddr - 		Object - File - Database Connection - DataReader
+        // ofddre - 	Object - File - Database Connection - DataReader- Error
+		// ofddrcd - 	Object - File - Database Connection - DataReader- Delegate
+        // ofddrcv - 	Object - File - Database Connection - DataReader- Event
+		
+		// ________________________________________________________
+		// Database Sql Text Reader
+		// ofdtr - 		Object - File - Database Connection - TextReader
+        // ofdtre - 	Object - File - Database Connection - TextReader- Error
+		// ofdtrcd - 	Object - File - Database Connection - TextReader- Delegate
+        // ofdtrcv - 	Object - File - Database Connection - TextReader- Event
+
+		// ________________________________________________________
+		// oh - 		Object - HashTable
+		// ol - 		Object - List 
+		// op - 		Object - Page
+        // os - 		Object - Structure
+
+		// ________________________________________________________
+		// ________________________________________________________
+============================================================
+var (C# Reference)
+Beginning in Visual C# 3.0, variables that are declared at method scope can have an implicit type var. 
+An implicitly typed local variable 
+is strongly typed just as if you had declared the type yourself, 
+but the compiler determines the type. 
+The following two declarations of i are functionally equivalent: 
+var i = 10; // implicitly typed
+int i = 10; //explicitly typed
+============================================================
+		// ________________________________________________________
+		// ________________________________________________________
+// Class Hierarchy
+// Note: 
+Please note that the 
+mismatches in abstraction 
+between
+C#, Win32 and Linq compared to
+and
+Mdm infrastructure 
+are deliberate.
+
+		// ________________________________________________________
+Level 0
+// Hardware Classes
+		// ________________________________________________________
+Level 1
+// Clipboard
+// Other Os / Win32 Functionality
+		// ________________________________________________________
+Level 2
+// Mdm Support Layer
+// Mdm Standards Functions
+		// ________________________________________________________
+Level 3
+// Networking Layers
+		// ________________________________________________________
+Level 5
+// Mdm Code
+		// ________________________________________________________
+Level 10
+// Mdm Application Layer
+		// ________________________________________________________
+Level 16
+// Mdm Object
+		// ________________________________________________________
+Level 5
+// Mdm Protocol
+		// ________________________________________________________
+Level 8
+// Mdm File Io
+// Mdm Printer Io
+// Mdm DCom, Corba, Soap, etc.
+		// ________________________________________________________
+Level 11
+// Mdm Document
+		// ________________________________________________________
+// Level 21
+// Mdm C# Application
+
+
+
+// Reserved Constants
+
+null - Never Used
+0 - Normal Start
+0 - Normal End
+1 - 
+
+==============================================
+
+        const int FILE_DICT_DATA = 1;
+        const int FILE_DATA = 2;
+        // <Area Id = "FileExistanceConstants">
+        // protected int FileExistanceStatus = 0;
+        const int FILE_IO_FILE_SHOULD_NOT_EXIST = 3;
+        const int FILE_IO_FILE_DOES_EXIST = 2;
+        const int FILE_IO_FILE_DOES_NOT_EXIST = 1;
+        // <Area Id = "GeneralStatusConditionConstants">
+        const int FILE_IO_OK = 0;
+        const int FILE_IO_NO_STATUS_SET = 99999;
+        // <Area Id = "FileOpenConstants">
+        // protected int FileOpenStatus = 0;
+        const int FILE_IO_OPEN_TRY_FIRST = -3;
+        const int FILE_IO_OPEN_TRY_AGAIN = -2;
+        const int FILE_IO_OPEN_TRY_DEFAULT = 2;
+        const int FILE_IO_OPEN_TRY_ORIGINAL = 3;
+        const int FILE_IO_OPEN_TRY_ALL = 3;
+        const int FILE_IO_OPEN_FAILED = 121;
+        const int FILE_IO_CLOSE_FAILED = 122;
+        const int FILE_IO_NO_FILE_OPEN = 128;
+        const int FILE_IO_NO_FILE_NAME = 129;
+        // <Area Id = "FileIOTypeConstants">
+        // protected int FileIOType = 0;
+        const int DATABASE_IO_OK = 0;
+        const int DATABASE_IO_OPEN_FAILED = 131;
+        const int DATABASE_IO_CLOSE_FAILED = 132;
+        const int DATABASE_IO_NO_FILE_OPEN = 138;
+        const int DATABASE_IO_NO_FILE_NAME = 139;
+        const int STREAM_IO_OK = 0;
+        const int STREAM_IO_OPEN_FAILED = 141;
+        const int STREAM_IO_CLOSE_FAILED = 142;
+        const int STREAM_IO_NO_FILE_OPEN = 148;
+        const int STREAM_IO_NO_FILE_NAME = 149;
+        const int BINARY_IO_OK = 0;
+        const int BINARY_IO_OPEN_FAILED = 151;
+        const int BINARY_IO_CLOSE_FAILED = 152;
+        const int BINARY_IO_NO_FILE_OPEN = 158;
+        const int BINARY_IO_NO_FILE_NAME = 159;
+        // <Area Id = "FileReadModeConstants">
+        protected int iFileReadMode = 0;
+        const int IMPORT_FILE_READ_NOT_SET_MODE = 0;
+        const int IMPORT_FILE_READ_BUFFER_MODE = 1;
+        const int IMPORT_FILE_READ_LINE_MODE = 2;
+        const int IMPORT_FILE_READ_ALL_MODE = 3;
+        const int IMPORT_FILE_READ_SQL_MODE = 4;
+        const int IMPORT_FILE_READ_MODE_ERROR = 5;
+        // <Area Id = "AsciiOpenOptions">
+        // protected int AsciiOpenOptions = 0;
+        const int FILE_IO_READ_ONLY = 21;
+        const int FILE_IO_BINARY_MODE = 25;
+        const int FILE_IO_SEEK_MODE = 28;
+        const int FILE_IO_APPEND_ONLY = 22;
+        const int FILE_IO_CREATE_IF_MISSING = 23;
+        const int FILE_IO_CREATE_ONLY = 24;
+        // <Area Id = "FileReadErrors">
+        // FileReadAscii
+        const int FILE_IO_READ_OK = 0;
+        const int FILE_IO_READ_END_OF_FILE = 123;
+        const int FILE_IO_READ_FAILED = 125;
+        // FileReadDatabase
+        const int DATABASE_IO_READ_END_OF_FILE = 133;
+        const int DATABASE_IO_READ_OK = 0;
+        const int DATABASE_IO_READ_FAILED = 135;
+        // FileReadStream
+        const int STREAM_IO_READ_END_OF_FILE = 143;
+        const int STREAM_IO_READ_OK = 0;
+        const int STREAM_IO_READ_FAILED = 145;
+        // FileReadBinary
+        const int BINARY_IO_READ_END_OF_FILE = 153;
+        const int BINARY_IO_READ_OK = 0;
+        const int BINARY_IO_READ_FAILED = 155;
+        // <Area Id = "FileWriteErrorsConstants">
+        // FileWrite
+        // FileWriteAscii
+        const int FILE_IO_WRITE_OK = 0;
+        const int FILE_IO_WRITE_FAILED = 126;
+        // FileWriteDatabase
+        const int DATABASE_IO_WRITE_OK = 0;
+        const int DATABASE_IO_WRITE_FAILED = 136;
+        // FileWriteBinary
+        const int BINARY_IO_WRITE_OK = 0;
+        const int BINARY_IO_WRITE_FAILED = 156;
+        // FileWriteStream
+        const int STREAM_IO_WRITE_OK = 0;
+        const int STREAM_IO_WRITE_FAILED = 146;
+        // FileNull
+        // FileField
+        // FileTable
+        // FileTableRow
+        // FileTableColumn
+        // <Area Id = "FileNullErrorsConstants">
+        // <Area Id = "FileFileIdErrorsConstants">
+        // <Area Id = "FileTableErrorsConstants">
+        // <Area Id = "FileTableRowErrorsConstants">
+        const int FILE_IO_NO_ROW_ID = 99;
+        const int FILE_IO_ROW_ID_SHOULD_NOT_EXIST = 33;
+        const int FILE_IO_ROW_ID_DOES_EXIST = 32;
+        const int FILE_IO_ROW_ID_DOES_NOT_EXIST = 31;

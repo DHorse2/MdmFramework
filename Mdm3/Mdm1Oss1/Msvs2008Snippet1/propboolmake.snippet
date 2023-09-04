@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>PropertyMake</Title>
+			<Shortcut>pm</Shortcut>
+			<Description>Code snippet Property Create</Description>
+			<Author>DaveHorsman MacroDM</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+				<SnippetType>SurroundsWith</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal Editable="true">
+					<ID>propertygetaccess</ID>
+					<ToolTip>Scope Access for GET</ToolTip>
+					<Default>public</Default>
+				</Literal>
+				<Literal Editable="true">
+					<ID>propertysetaccess</ID>
+					<ToolTip>Scope Access for SET</ToolTip>
+					<Default>internal</Default>
+				</Literal>
+				<Literal Editable="true">
+					<ID>type</ID>
+					<ToolTip>Type of Property to create</ToolTip>
+					<Default>string</Default>
+				</Literal>
+				<Literal Editable="true">
+					<ID>prefixpolish</ID>
+					<ToolTip>Type Polish Prefix</ToolTip>
+					<Default>s</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="csharp"><![CDATA[
+        // property $type$ $selected$
+        private $type$ $prefixpolish$p$selected$ = false$end$
+        public $type$ $prefixpolish$$selected$ {
+        $propertygetaccess$ get { return $prefixpolish$p$selected$; }
+        $propertysetaccess$ set { $prefixpolish$p$selected$ = value; }
+        }]]>
+
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
