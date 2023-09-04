@@ -1,0 +1,29 @@
+Silverlight implements limited support for markup extensions, using only
+
+x:Null, 
+StaticResource, 
+Binding, and 
+TemplateBinding. 
+
+Also, since Silverlight doesn’t implement a public MarkupExtension class, there is no support for custom markup extensions. The Binding markup extension is the only extension that Silverlight supports that has a corresponding class accessible via code.
+
+Silverlight also doesn’t support the alternative syntax of adding the “Extension” suffix like WPF does. So, 
+
+{x:Null} is valid, but 
+{x:NullExtension} is not.
+
+Markup extensions, in Silverlight, can not specify constructor parameters by name. Therefore 
+
+{StaticResource myKey} is valid, but 
+{StaticResource ResourceKey=myKey} is not.
+
+ROUTEDEVENTARGS 
+Property WPF Silverlight
+Device Yes No
+Handled Yes Yes
+InputSource Yes No
+OriginalSource Yes Yes
+RoutedEvent Yes No
+Source Yes No
+Timestamp Yes No
+

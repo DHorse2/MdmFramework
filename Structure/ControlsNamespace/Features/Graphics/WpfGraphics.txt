@@ -1,0 +1,10 @@
+Both Silverlight and WPF support vector-based drawing elements as well as support for raster images in a variety of formats.
+
+Blur
+Drop Shadow
+Outer Glow
+Bevel
+Embos
+
+Important Note:
+BitmapEffects are actively being discouraged by Microsoft and are being deprecated. Instead, the recommended approach is to use Effects; however, only blur and drop shadow effects have been created. Effects, not coincidentally, are written with the same pixel-shading technology that will be available to Silverlight 3; so shaders written today will be usable with Silverlight 3.

@@ -1,0 +1,17 @@
+
+Property WPF Silverlight
+ImeProcessedKey Yes No
+IsDown Yes No
+IsRepeat Yes No
+IsToggled Yes No
+IsUp Yes No
+Key Yes Yes
+KeyboardDevice Yes No
+KeyStates Yes No
+SystemKey Yes No
+PlatformKeyCode No Yes
+
+
+In addition, the Key enumeration contains different values between Silverlight’s version and WPF’s. For example, Silverlight contains Key.Alt to represent the Alt key, while WPF’s enumeration contains Key.LeftAlt and Key.RightAlt.
+
+WPF also exposed two additional event handlers, PreviewKeyDown and PreviewKeyUp, that Silverlight does not implement.
