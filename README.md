@@ -8,7 +8,9 @@ A scholastic and proprietary journey duplicating a few well understood patterns 
 * In addition, broad duplication of OS classes within an API **is an antipattern**. It almost always is although there are specific use cases like wrappers. Again this is a "lesson".
 * An Application Layers abstraction immitating the Network Abstraction Layers is a discussion... Somewhat an academic topic, really interesting and not in demand.
 * The MVVC product is structured is built using these classes. Overtop of them and another, higher level.
-* The database import product is build using the MVVC. It's turtles all the way down.
+* The database import product is built using the MVVC. It's turtles all the way down.
+* Finally, the clipboard is defined at a lower level but still does database IO.
+* I should find a diagram I have and include it here. todo
 
 ## Mdm Win Link Tool
 You will notice many links everywhere. It show the presence of, and widespread usage of Windows shortcuts (links).
