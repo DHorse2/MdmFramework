@@ -4,11 +4,11 @@ Being prepared for distribution (public)
 ## The Framework
 A scholastic and proprietary journey duplicating a few well understood patterns and solutions within the .Net C# world. What this project assumed:
 * I'm aware many good frameworks exist. The purpose was educational first and foremost.
-* Database conversion tools too, where databases typically can import data from disparate environments (assuming the source has an export feature).
-* In addition, broad duplication of OS classes within an API is an antipattern. It almost always is although there are specific use cases like wrappers. Again this is a "lesson".
-* An Application Layers abstraction immitating the Network Abstraction Layers is a discussion...
-* The MVVC product is structured this way or build using these classes.
-* The database import product is build using the MVVC.
+* Database conversion tools exist too or might be built in. Databases typically can import data from disparate environments (assuming the source has an export feature). Powerful ETL might justify having this.
+* In addition, broad duplication of OS classes within an API **is an antipattern**. It almost always is although there are specific use cases like wrappers. Again this is a "lesson".
+* An Application Layers abstraction immitating the Network Abstraction Layers is a discussion... Somewhat an academic topic, really interesting and not in demand.
+* The MVVC product is structured is built using these classes. Overtop of them and another, higher level.
+* The database import product is build using the MVVC. It's turtles all the way down.
 
 ## Mdm Win Link Tool
 You will notice many links everywhere. It show the presence of, and widespread usage of Windows shortcuts (links).
